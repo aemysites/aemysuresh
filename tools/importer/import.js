@@ -11,26 +11,24 @@
  */
 /* global WebImporter */
 /* eslint-disable no-console */
-import columns8Parser from './parsers/columns8.js';
-import carousel9Parser from './parsers/carousel9.js';
+import cards5Parser from './parsers/cards5.js';
+import cards6Parser from './parsers/cards6.js';
 import columns1Parser from './parsers/columns1.js';
-import columns12Parser from './parsers/columns12.js';
-import carousel11Parser from './parsers/carousel11.js';
-import columns4Parser from './parsers/columns4.js';
-import cards17Parser from './parsers/cards17.js';
-import cards15Parser from './parsers/cards15.js';
-import cardsNoImages16Parser from './parsers/cardsNoImages16.js';
-import cards19Parser from './parsers/cards19.js';
-import cards14Parser from './parsers/cards14.js';
+import cards9Parser from './parsers/cards9.js';
+import cards8Parser from './parsers/cards8.js';
 import cards10Parser from './parsers/cards10.js';
-import columns3Parser from './parsers/columns3.js';
-import columns6Parser from './parsers/columns6.js';
-import carousel20Parser from './parsers/carousel20.js';
+import carousel14Parser from './parsers/carousel14.js';
+import cards16Parser from './parsers/cards16.js';
+import carousel21Parser from './parsers/carousel21.js';
+import cards15Parser from './parsers/cards15.js';
+import tableNoHeader3Parser from './parsers/tableNoHeader3.js';
+import table4Parser from './parsers/table4.js';
+import cards11Parser from './parsers/cards11.js';
+import cards19Parser from './parsers/cards19.js';
+import table22Parser from './parsers/table22.js';
+import carousel18Parser from './parsers/carousel18.js';
 import cards7Parser from './parsers/cards7.js';
-import cards21Parser from './parsers/cards21.js';
-import cards13Parser from './parsers/cards13.js';
-import columns18Parser from './parsers/columns18.js';
-import cards22Parser from './parsers/cards22.js';
+import cards20Parser from './parsers/cards20.js';
 import headerParser from './parsers/header.js';
 import metadataParser from './parsers/metadata.js';
 import cleanupTransformer from './transformers/cleanup.js';
@@ -47,26 +45,24 @@ import {
 
 const parsers = {
   metadata: metadataParser,
-  columns8: columns8Parser,
-  carousel9: carousel9Parser,
+  cards5: cards5Parser,
+  cards6: cards6Parser,
   columns1: columns1Parser,
-  columns12: columns12Parser,
-  carousel11: carousel11Parser,
-  columns4: columns4Parser,
-  cards17: cards17Parser,
-  cards15: cards15Parser,
-  cardsNoImages16: cardsNoImages16Parser,
-  cards19: cards19Parser,
-  cards14: cards14Parser,
+  cards9: cards9Parser,
+  cards8: cards8Parser,
   cards10: cards10Parser,
-  columns3: columns3Parser,
-  columns6: columns6Parser,
-  carousel20: carousel20Parser,
+  carousel14: carousel14Parser,
+  cards16: cards16Parser,
+  carousel21: carousel21Parser,
+  cards15: cards15Parser,
+  tableNoHeader3: tableNoHeader3Parser,
+  table4: table4Parser,
+  cards11: cards11Parser,
+  cards19: cards19Parser,
+  table22: table22Parser,
+  carousel18: carousel18Parser,
   cards7: cards7Parser,
-  cards21: cards21Parser,
-  cards13: cards13Parser,
-  columns18: columns18Parser,
-  cards22: cards22Parser,
+  cards20: cards20Parser,
   ...customParsers,
 };
 

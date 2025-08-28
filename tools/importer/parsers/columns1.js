@@ -1,17 +1,21 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Get all immediate child divs (columns)
+  // Header should be a single column: ['Columns (columns1)']
+  const headerRow = ['Columns (columns1)'];
+
+  // Extract direct child divs as columns (each cell)
   const columns = Array.from(element.querySelectorAll(':scope > div'));
 
-  // Build cells array: first row is single header, second row has N columns
+  // Each row must be an array, and the header row must only have one column
+  // Data row can have N columns as needed
   const cells = [
-    ['Columns (columns1)'], // Header row: exactly one column
-    columns                // Second row: N columns, each cell is a column element
+    headerRow,
+    columns
   ];
 
-  // Create table using WebImporter.DOMUtils.createTable
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  // The header row will be a single <th> cell, matching the example markdown
+  // Create the block table
+  const table = WebImporter.DOMUtils.createTable(cells, document);
 
-  element.replaceWith(block);
+  // Replace the original element with the new table
+  element.replaceWith(table);
 }

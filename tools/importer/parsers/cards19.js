@@ -1,56 +1,47 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Block name header row, exactly as in the example
-  const headerRow = ['Cards (cards19)'];
+  // Table header as per block spec
+  const cells = [['Cards (cards19)']];
 
-  // Find the swiper-wrapper with the cards/slides
-  const swiperWrapper = element.querySelector('.swiper-wrapper');
-  const cells = [headerRow];
-
-  if (swiperWrapper) {
-    const slides = swiperWrapper.querySelectorAll(':scope > .swiper-slide');
-    slides.forEach((slide) => {
-      // Each slide contains .image-carousel--card
-      const card = slide.querySelector('.image-carousel--card');
-      if (!card) return;
-
-      // Extract image element (reference existing element)
-      let imgEl = null;
-      const imgContainer = card.querySelector('.image-carousel--img-container');
-      if (imgContainer) {
-        const img = imgContainer.querySelector('img');
-        if (img) imgEl = img;
-      }
-
-      // Extract title (use strong to mimic bold heading)
-      let titleEl = null;
-      const contentContainer = card.querySelector('.image-carousel--content-container');
-      if (contentContainer) {
-        const title = contentContainer.querySelector('.title');
-        if (title) {
-          titleEl = document.createElement('strong');
-          titleEl.textContent = title.textContent.trim();
-        }
-      }
-
-      // Compose text cell: only the title in this source
-      // If other text content existed, it would go here (none per HTML provided)
-      let textCell;
-      if (titleEl) {
-        textCell = titleEl;
-      } else {
-        // Fallback if no title
-        textCell = '';
-      }
-
-      // Compose row [image, text cell]
-      cells.push([imgEl, textCell]);
-    });
+  // Card rows: each card = [image, text-content]
+  // Find all cards from both main and extra containers
+  const mainContainer = element.querySelector('.card-main-container');
+  const extraContainer = element.querySelector('.card-extra-container');
+  const allCards = [];
+  if (mainContainer) {
+    mainContainer.querySelectorAll('.card').forEach(card => allCards.push(card));
+  }
+  if (extraContainer) {
+    extraContainer.querySelectorAll('.card').forEach(card => allCards.push(card));
   }
 
-  // Create block table
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  allCards.forEach(card => {
+    // First cell: image
+    const img = card.querySelector('img');
+    // Second cell: title, description, info, and ribbon (if present)
+    const cardDetails = card.querySelector('.card--details');
+    const cellContent = [];
+    if (cardDetails) {
+      // Title (h2)
+      const title = cardDetails.querySelector('.card--title');
+      if (title) cellContent.push(title);
+      // Description (p), sometimes missing
+      const desc = cardDetails.querySelector('.card--description');
+      if (desc) cellContent.push(desc);
+      // Info (span), exploration time
+      const info = cardDetails.querySelector('.card--info');
+      if (info) cellContent.push(info);
+    }
+    // Ribbon (Trending, etc) may be outside details
+    const ribbon = card.querySelector('.ribbon');
+    if (ribbon) cellContent.push(ribbon);
+    cells.push([
+      img,
+      cellContent
+    ]);
+  });
 
-  // Replace the original element in the DOM
+  // Replace element with table block
+  const block = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(block);
 }
