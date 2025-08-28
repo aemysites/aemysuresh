@@ -458,6 +458,9 @@
     {
       "name": "Carousel",
       "cluster": 21,
+      "source": "Carousel",
+      "target": "Carousel (carousel21)",
+      "key": "carousel21"
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
