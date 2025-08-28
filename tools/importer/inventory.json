@@ -454,6 +454,19 @@
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[2]"
         }
       ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 21,
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-07-c722ba85a355075615c3317f910051dd9a7aeb60",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[2]/section[1]",
+          "section": "section-4"
+        }
+      ]
     }
   ],
   "outliers": [
@@ -743,13 +756,6 @@
       "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
       "uuid": "ffb2a411-06-cf8c8cbcc23e17641606a11e25091d969bc3d68c",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[1]"
-    },
-    {
-      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
-      "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
-      "uuid": "ffb2a411-07-c722ba85a355075615c3317f910051dd9a7aeb60",
-      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[2]/section[1]",
-      "section": "section-4"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
