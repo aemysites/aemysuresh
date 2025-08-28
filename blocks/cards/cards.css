@@ -1577,7 +1577,6 @@
   padding: 0;
 }
 
-/* Horizontally scrollable row of cards */
 .cards.cards10 > ul {
   display: flex;
   flex-direction: row;
@@ -1591,7 +1590,6 @@
   scrollbar-color: #eee #fff;
 }
 
-/* Card: reduce height and tighten spacing */
 .cards.cards10 > ul > li {
   background: #fff;
   border-radius: 16px;
@@ -1607,7 +1605,6 @@
   overflow: hidden;
 }
 
-/* Image section */
 .cards.cards10 .cards-card-image {
   width: 100%;
   height: 112px;
@@ -1620,7 +1617,6 @@
   align-items: flex-start;
 }
 
-/* Card image */
 .cards.cards10 .cards-card-image img {
   width: 100%;
   height: 100%;
@@ -1629,7 +1625,6 @@
   border-top-right-radius: 16px;
 }
 
-/* Badge overlay (rating) */
 .cards.cards10 > ul > li .cards-card-body p:nth-child(3) {
   position: absolute;
   top: 10px;
@@ -1648,12 +1643,10 @@
   line-height: 1.1;
 }
 
-/* Hide location pill if present as first <p> */
 .cards.cards10 > ul > li .cards-card-body p:first-child {
   display: none;
 }
 
-/* Card body layout: tighter stacking, remove excess padding */
 .cards.cards10 > ul > li .cards-card-body {
   display: flex;
   flex-direction: column;
@@ -1663,7 +1656,6 @@
   box-sizing: border-box;
 }
 
-/* Hotel name */
 .cards.cards10 > ul > li .cards-card-body h3 {
   font-family: Poppins, Arial, sans-serif;
   font-size: 14px;
@@ -1676,7 +1668,6 @@
   white-space: nowrap;
 }
 
-/* Location (2nd <p>): lighter and smaller */
 .cards.cards10 > ul > li .cards-card-body p:nth-child(2) {
   font-family: Poppins, Arial, sans-serif;
   font-size: 11px;
@@ -1687,7 +1678,6 @@
   white-space: nowrap;
 }
 
-/* Price/tax block: group tightly */
 .cards.cards10 > ul > li .cards-card-body .price-block,
 .cards.cards10 > ul > li .cards-card-body .price-block-alt {
   display: flex;
@@ -1696,7 +1686,6 @@
   margin-bottom: 4px;
 }
 
-/* Price (4th <p>) */
 .cards.cards10 > ul > li .cards-card-body p:nth-child(4) {
   font-size: 14px;
   font-weight: 700;
@@ -1706,7 +1695,6 @@
   line-height: 1.12;
 }
 
-/* Taxes (5th <p>): lighter and smaller */
 .cards.cards10 > ul > li .cards-card-body p:nth-child(5) {
   font-size: 10px;
   color: #c4c4c4;
@@ -1716,7 +1704,6 @@
   line-height: 1.12;
 }
 
-/* Old price if present */
 .cards.cards10 > ul > li .cards-card-body .old-price,
 .cards.cards10 > ul > li .cards-card-body p.strikethrough {
   text-decoration: line-through;
@@ -1727,7 +1714,6 @@
   white-space: nowrap;
 }
 
-/* Book button: minimal bottom spacing, always pinned to bottom */
 .cards.cards10 > ul > li .cards-card-body p:last-child {
   display: flex;
   align-items: center;
@@ -1752,7 +1738,6 @@
   background: #005fa3;
 }
 
-/* Ellipsis for text overflow in hotel name and price/tax lines */
 .cards.cards10 > ul > li .cards-card-body h3,
 .cards.cards10 > ul > li .cards-card-body p:nth-child(2),
 .cards.cards10 > ul > li .cards-card-body p:nth-child(4),
@@ -1762,7 +1747,6 @@
   white-space: nowrap;
 }
 
-/* Responsive adjustments */
 @media (width <= 900px) {
   .cards.cards10 > ul > li {
     min-width: 95vw;
@@ -1803,5 +1787,217 @@
     font-size: 11px;
     padding: 7px 0 5px;
     min-height: 23px;
+  }
+}
+
+
+.cards.cards11 {
+  background: linear-gradient(180deg, #e6f1fa 0%, #8a90c9 100%);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgb(138 144 201 / 10%);
+  padding: 44px 36px 36px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+/* Grid layout for multi-column/multi-row arrangement */
+.cards.cards11 > ul {
+  display: grid;
+  grid-template-columns: 2.15fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 28px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Large card left */
+.cards.cards11 > ul > li:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+
+  /* Remove thick border, add trending highlight as subtle corner accent */
+  box-shadow: 0 0 0 #ffb64d, -10px 10px 0 -8px #ffb64d inset;
+}
+
+/* Four smaller cards right, 2x2 grid */
+.cards.cards11 > ul > li:nth-child(2) {
+.cards.cards11 > ul > li:nth-child(3) {
+.cards.cards11 > ul > li:nth-child(4) {
+.cards.cards11 > ul > li:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+  grid-row: 2;
+}
+
+  grid-row: 1;
+}
+
+  grid-row: 1;
+}
+.cards.cards11 > ul > li:nth-child(3) {
+.cards.cards11 > ul > li:nth-child(4) {
+.cards.cards11 > ul > li:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+  grid-row: 2;
+}
+  grid-row: 1;
+}
+.cards.cards11 > ul > li:nth-child(4) { grid-column: 2; grid-row: 2; }
+.cards.cards11 > ul > li:nth-child(5) { grid-column: 3; grid-row: 2; }
+.cards.cards11 > ul > li:nth-child(n+6) { display: none; }
+
+/* Card appearance */
+.cards.cards11 > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 18px rgb(138 144 201 / 12%);
+  overflow: hidden;
+  min-width: 0;
+  min-height: 220px;
+  position: relative;
+  transition: box-shadow 0.18s;
+  margin: 0;
+}
+
+/* Card image area: assign background images, set height, remove background */
+.cards.cards11 > ul > li .cards-card-body:first-child {
+  width: 100%;
+  min-height: 140px;
+  height: 140px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  flex-shrink: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards.cards11 > ul > li:first-child .cards-card-body:first-child {
+  min-height: 200px;
+  height: 200px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+/* Example image assignments (replace with actual URLs) */
+.cards.cards11 > ul > li:nth-child(1) .cards-card-body:first-child { background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'); }
+.cards.cards11 > ul > li:nth-child(2) .cards-card-body:first-child { background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80'); }
+.cards.cards11 > ul > li:nth-child(3) .cards-card-body:first-child { background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80'); }
+.cards.cards11 > ul > li:nth-child(4) .cards-card-body:first-child { background-image: url('https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=800&q=80'); }
+.cards.cards11 > ul > li:nth-child(5) .cards-card-body:first-child { background-image: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80'); }
+
+/* Hide image body for extra cards if present */
+.cards.cards11 > ul > li:nth-child(n+6) .cards-card-body:first-child {
+  display: none;
+}
+
+/* Card content area */
+.cards.cards11 > ul > li .cards-card-body:last-child {
+  padding: 22px 22px 16px;
+  background: #fff;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1 1 0%;
+  align-items: flex-start;
+  text-align: left;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cards.cards11 > ul > li:first-child .cards-card-body:last-child {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 32px 32px 24px;
+}
+
+/* Strong/title styling */
+.cards.cards11 > ul > li .cards-card-body:last-child strong {
+  font-family: Poppins, var(--body-font-family), sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #001677;
+  margin: 0 0 10px;
+  display: block;
+}
+
+/* Card description */
+.cards.cards11 > ul > li .cards-card-body:last-child p {
+  font-family: Poppins, var(--body-font-family), sans-serif;
+  font-size: 16px;
+  color: #232323;
+  margin: 0 0 7px;
+  line-height: 1.52;
+}
+
+/* Exploration time highlight */
+.cards.cards11 > ul > li .cards-card-body:last-child p:last-child {
+  color: #ffb64d;
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-family: Poppins, var(--body-font-family), sans-serif;
+}
+
+/* Responsive stacking for mobile */
+@media (width <= 900px) {
+  .cards.cards11 {
+    padding: 16px 0;
+    border-radius: 14px;
+    max-width: 99vw;
+  }
+
+  .cards.cards11 > ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 14px;
+    max-width: 98vw;
+    padding: 0 4px;
+  }
+
+  .cards.cards11 > ul > li,
+  .cards.cards11 > ul > li:first-child {
+    min-height: 120px;
+    border-radius: 14px;
+  }
+
+  .cards.cards11 > ul > li .cards-card-body:first-child {
+    min-height: 80px;
+    height: 80px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+
+  .cards.cards11 > ul > li .cards-card-body:last-child,
+  .cards.cards11 > ul > li:first-child .cards-card-body:last-child {
+    padding: 12px 8px 8px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
   }
 }
