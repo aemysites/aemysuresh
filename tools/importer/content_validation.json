@@ -1,0 +1,3392 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-00-3a8584d0f1e2b03d0dee50c532054ba4e78528b5",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-00-3a8584d0f1e2b03d0dee50c532054ba4e78528b5",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+          "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
+          "uuid": "d8babc7d-00-9764ff3e5ee31c28757d8d3e04a490aa98d413b3",
+          "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-00-ef5a53ce5eb1d9e0696fbcae9c817358c8f4326b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/header[1]/div[1]"
+        }
+      ],
+      "styles": {
+        "height": 40,
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-33-39be441317c41ee24bc849a58ec00529c08291eb",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_10__div__div__div__div__footer__div__div__div_3",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-31-391befa03f134dda7d62eebea54951133e1af74b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_9__div__div__div__div__footer__div__div__div_3",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+          "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
+          "uuid": "d8babc7d-02-92fb277beec479558369d1be5abd15e0d606d239",
+          "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div__div__div__div_2__div__div__div__div__div__div_5__div__div__div__div__footer__div__div__div_3",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-16-30f60cd18723d7bbf3622758e84cbbd104c250a5",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_6__div__div__div__div__footer__div__div__div_3",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ],
+      "styles": {
+        "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(0, 0, 153), rgb(0, 0, 92)) repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Columns",
+      "cluster": 1,
+      "source": "Columns",
+      "target": "Columns (columns1)",
+      "key": "columns1",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-05-4346d22cbeab7d3d8fe878f3862d3dfb7c6a0d8c",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-05-4346d22cbeab7d3d8fe878f3862d3dfb7c6a0d8c",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-04-4346d22cbeab7d3d8fe878f3862d3dfb7c6a0d8c",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 2,
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-02-94a941038f704458dcf1b67880ca61e8608360fa",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-02-94a941038f704458dcf1b67880ca61e8608360fa",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 3,
+      "source": "Columns",
+      "target": "Columns (columns3)",
+      "key": "columns3",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-04-66a8914591701e592eda646e0b21e68d03aeffc6",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-04-66a8914591701e592eda646e0b21e68d03aeffc6",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-03-66a8914591701e592eda646e0b21e68d03aeffc6",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 4,
+      "source": "Columns",
+      "target": "Columns (columns4)",
+      "key": "columns4",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-32-e6eb65e87b2cde2dcccb3158749e468917c6f0c0",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[2]",
+          "section": "section-3",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_10__div__div__div__div__footer__div__div__div_2",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android"
+                }
+              ],
+              "dissimilarity_score": 0.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-30-67e3bd31f2ee10ef9982724c31ed3efc0cbd5276",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[2]",
+          "section": "section-3",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_9__div__div__div__div__footer__div__div__div_2",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android"
+                }
+              ],
+              "dissimilarity_score": 0.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+          "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
+          "uuid": "d8babc7d-01-e0bbb6c3fc615d79244f991220a341168f1c528c",
+          "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[2]",
+          "section": "section-3",
+          "differences": [
+            {
+              "element_id": "html__body__main__div__div__div__div_2__div__div__div__div__div__div_5__div__div__div__div__footer__div__div__div_2",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android"
+                }
+              ],
+              "dissimilarity_score": 0.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-15-efd8e730b408d053d2d822f6de21f722b4a01d28",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[2]",
+          "section": "section-3",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_6__div__div__div__div__footer__div__div__div_2",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android"
+                }
+              ],
+              "dissimilarity_score": 0.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 5,
+      "source": "Header",
+      "target": "Header (header5)",
+      "key": "header5",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-00-3a8584d0f1e2b03d0dee50c532054ba4e78528b5",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-00-3a8584d0f1e2b03d0dee50c532054ba4e78528b5",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 6,
+      "source": "Columns",
+      "target": "Columns (columns6)",
+      "key": "columns6",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-07-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div_3",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-07-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div_3",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-06-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div_3",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 7,
+      "source": "Cards",
+      "target": "Cards (cards7)",
+      "key": "cards7",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-06-bd32759b5e37b20cf30189249f694c499f75646e",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div_2",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-06-bd32759b5e37b20cf30189249f694c499f75646e",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div_2",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-05-bd32759b5e37b20cf30189249f694c499f75646e",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div_2",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 8,
+      "source": "Columns",
+      "target": "Columns (columns8)",
+      "key": "columns8",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-31-e7b29dc29e3d3f65da6219c3896d33ba47325cc2",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_10__div__div__div__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-29-46d1269ddbfb0926c33649de5c6a21ea1edc6d4a",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_9__div__div__div__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+          "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
+          "uuid": "d8babc7d-00-9764ff3e5ee31c28757d8d3e04a490aa98d413b3",
+          "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-4"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-14-ea973c9fa70ef0d0c7ecaf5477aed5fbdb1589b2",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-4",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_6__div__div__div__div__div",
+              "differences": [],
+              "dissimilarity_score": 1.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 9,
+      "source": "Carousel",
+      "target": "Carousel (carousel9)",
+      "key": "carousel9",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-03-4ddda9f674db34ab5cdaf3b62a80ecd241d3c39e",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div__section__div__div_3__div__div",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "Mumbai Photo Credits: Akshada Balasaheb Aher"
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 10,
+      "source": "Cards",
+      "target": "Cards (cards10)",
+      "key": "cards10",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-17-ba21365e1a7d8bea45d5b9516f0a93d2750a3e5b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_7__div__div_3__div__div__div__div__div__div__div_3",
+              "differences": [
+                {
+                  "change_type": "deletion",
+                  "text": "3.8/5 (148 reviews) "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Deventure Sarovar Portico Kapashera Delhi"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605 3.8/5 (148 reviews) \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "4,213 \u20b9 3,763 /night + \u20b9 486 Taxes & fees Book "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "4/5 (926 reviews) "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "The LaLiT New Delhi Delhi"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (926 reviews) \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "11,424 /night Incl of taxes & fees Book "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "4.2/5 (729 reviews) "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Bloomrooms @ New Delhi Railway Station Delhi"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605 4.2/5 (729 reviews) \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "2,696 /night Incl of taxes & fees Book "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "3.8/5 (910 reviews) "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Pride Plaza Hotel Aerocity New Delhi Delhi"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605\u2605 3.8/5 (910 reviews) \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "6,415 /night Incl of taxes & fees Book "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "4/5 (924 reviews) "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "The Metropolitan Hotel and Spa New Delhi Delhi"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (924 reviews) \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "7,577 /night Incl of taxes & fees Book "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "4.3/5 (7 reviews) "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Bloom Hotel - Karol Bagh Delhi"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605 4.3/5 (7 reviews) \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "3,754 /night + \u20b9 465 Taxes & fees Book Hotel Bawa Gurgaon Delhi"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "2,700 /night + \u20b9 324 Taxes & fees Book "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Hotel Diplomat Delhi \u2605\u2605\u2605\u2605 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "3.2/5 (63 reviews"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": ") Hotel Diplomat Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": ") \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "9,055 \u20b9 6,955 /night + \u20b9 1,512 Taxes & fees Book "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "4.3/5 (53 reviews) "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Le ROI Express Paharganj Delhi"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605 4.3/5 (53 reviews) \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "1,736 /night Incl of taxes & fees Book "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Bloomrooms @ Janpath Delhi \u2605\u2605\u2605 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "4.3/5 (157 reviews"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": ") Bloomrooms @ Janpath Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": ") \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "5,570 /night Incl of taxes & fees Book"
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 11,
+      "source": "Carousel",
+      "target": "Carousel (carousel11)",
+      "key": "carousel11",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-03-4ddda9f674db34ab5cdaf3b62a80ecd241d3c39e",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div__section__div__div_3__div__div",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "Delhi Photo Credits: Santosh kumar"
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 12,
+      "source": "Columns",
+      "target": "Columns (columns12)",
+      "key": "columns12",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-12-5d9615006d1e59147c01f405dcbf3fea73f0e176",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[2]/div[2]",
+          "section": "section-7",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_5__div__div__div__div_2__div_2",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "View All"
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 13,
+      "source": "Cards",
+      "target": "Cards (cards13)",
+      "key": "cards13",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-13-7ce210e779277ab3ecc2d686304baa4feb56c8e1",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]",
+          "section": "section-2",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_6",
+              "differences": [
+                {
+                  "change_type": "deletion",
+                  "text": "Places to visit Trending "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Gateway of India An iconic monument overlooking the Arabian Sea, known for its grand archway, intricate design, and historical significance. Exploration time: 1-2 hours"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u00b7 Trending"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Juhu Beach Exploration time: 1-2 hours Marine Drive Exploration time: 1-2 hours Hanging Garden Exploration time: 1-2 hours Prince of Wales Museum Exploration time: 3-5 hours Film City Mumbai Exploration time: 3-4 hours, Movie studio"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " View All 6 places View less"
+                }
+              ],
+              "dissimilarity_score": 0.07
+            }
+          ],
+          "similarity_score": 0.9299999999999999
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 14,
+      "source": "Cards",
+      "target": "Cards (cards14)",
+      "key": "cards14",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-17-ba21365e1a7d8bea45d5b9516f0a93d2750a3e5b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_7__div__div_3__div__div__div__div__div__div__div_3",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "4.2/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "783 reviews) Holiday Inn Mumbai International Airport by IHG"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "6,115 /night Incl of taxes & fees Book 3.3/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "56 reviews) Bawa Regency"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "9,750 /night + \u20b9 1,755 Taxes & fees Book 4.4/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "138 reviews) Novotel Mumbai International Airport"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "7,599 \u20b9 6,840 /night + \u20b9 821 Taxes & fees Book 4/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "90 reviews) Lemon Tree Premier Mumbai Intl. Airport"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "7,638 /night Incl of taxes & fees Book 3.6/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "252 reviews) Bawa International"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "5,000 /night + \u20b9 600 Taxes & fees Book 3.9/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "76 reviews) Suba Galaxy"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "3,420 /night + \u20b9 411 Taxes & fees Book 3.5/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "154 reviews) Hotel Parle International"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "7,500 \u20b9 6,750 /night + \u20b9 810 Taxes & fees Book 3.5/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "840 reviews) Novotel Mumbai Juhu Beach Hotel"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "11,180 /night Incl of taxes & fees Book 3.8/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "123 reviews) Hotel Oriental Aster - Mumbai International Airport"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "4,938 /night Incl of taxes & fees Book 3.6/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "130 reviews) T24 Residency Mumbai International Airport Hotel"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Mumbai \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "6,599 /night Incl of taxes & fees Book"
+                }
+              ],
+              "dissimilarity_score": 0.05
+            }
+          ],
+          "similarity_score": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 15,
+      "source": "Cards",
+      "target": "Cards (cards15)",
+      "key": "cards15",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-19-7ae5c8018322de190166848419cfdad0e934ca7a",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[5]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_7__div__div_5",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food Vibrant nightlife Temple visits Beach outing Museum visits Local cuisine"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Back"
+                }
+              ],
+              "dissimilarity_score": 0.03
+            }
+          ],
+          "similarity_score": 0.97
+        }
+      ]
+    },
+    {
+      "name": "Cards (no images)",
+      "cluster": 16,
+      "source": "Cards",
+      "target": "Cards (cardsNoImages16)",
+      "key": "cardsNoImages16",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-13-dc6909045e3733b4385a79a4c546f9d1fb60ad14",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[2]/div[3]",
+          "section": "section-7",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_5__div__div__div__div_2__div_3",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "Pre book Fast forward at up to 50% discount Priority check-in and anytime boarding. "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Learn more "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Pre-paid excess baggage starting at \u20b91515 Excess baggage and additional piece "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Learn more "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "XL (Extra legroom) seat starting at \u20b9500 Window, aisle or seat with extra legroom"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " Learn more"
+                }
+              ],
+              "dissimilarity_score": 0.2
+            }
+          ],
+          "similarity_score": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 17,
+      "source": "Cards",
+      "target": "Cards (cards17)",
+      "key": "cards17",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-27-80aad53c169962f723791094d5773818e4fdeccc",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[9]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_7__div__div_9",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "Diwali Celebrated with grandeur and enthusiasm, the festival of lights Holi Delhi bursts with colours and laughter as streets come alive with playful water Eid-ul-Fitr Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful Durga Puja Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful"
+                }
+              ],
+              "dissimilarity_score": -0.0
+            }
+          ],
+          "similarity_score": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 18,
+      "source": "Columns",
+      "target": "Columns (columns18)",
+      "key": "columns18",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-01-c9a9b5f3b98d0b1e53f2629322ff7e6f50d599da",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/header[1]/div[2]",
+          "section": "section-5",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div__div__div__div__div_3__header__div_2",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "Book "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Trips "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Change flight Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Deals and Offers Check-in IndiGo BluChip "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Tariff Sheet IndiGo BluChips Balance Login"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME"
+                }
+              ],
+              "dissimilarity_score": 0.51
+            }
+          ],
+          "similarity_score": 0.49
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 19,
+      "source": "Cards",
+      "target": "Cards (cards19)",
+      "key": "cards19",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-19-7ae5c8018322de190166848419cfdad0e934ca7a",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[5]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_7__div__div_5",
+              "differences": [
+                {
+                  "change_type": "equal",
+                  "text": "Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Back"
+                }
+              ],
+              "dissimilarity_score": 0.05
+            }
+          ],
+          "similarity_score": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 20,
+      "source": "Carousel",
+      "target": "Carousel (carousel20)",
+      "key": "carousel20",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-10-247eac70c2fe15cee497852045bf2a7093b0b3b6",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_4",
+              "differences": [
+                {
+                  "change_type": "deletion",
+                  "text": "AYJ BKK BLR DEL GOI HYD IXL BOM PNQ SXR Embark on a journey of inspiration with IndiGo, where discovery meets the sky. Explore Namaste Manchester: IndiGo announces its long-haul debut with non- stop flights connecting Mumbai and Manchester starting 01 July 2025 21 May 2025 View more IndiGo brings Indian warmth to Dutch skies: Opens bookings for its long-haul debut on Mumbai-Amsterdam route starting 02 July 2025 21 May 2025 View more Explore Amsterdam Explore Manchester Explore Seychelles "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Ayodhya, Uttar Pradesh Journey into the Spiritual Heart of Ayodhya Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Bangkok, Thailand Dive into the Vibrant Energy of Bangkok Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Bengaluru Explore the Silicon Valley of India: Bengaluru Beckons Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Delhi Discover the Heartbeat of India in the Capital City Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " GOA Soak up the sun and fun in vibrant Goa Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Hyderabad, Telangana Step into the Charms of the City of Pearls Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " LEH, Ladakh Embrace the Serenity of Leh's Majestic Landscapes Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Mumbai, Maharashtra Dive into the Dream City: Mumbai Awaits Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Pune, Maharashtra Unravel the heritage and modernity of Pune Explore"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Srinagar, Jammu and Kashmir Explore everything that makes this place a \u2018Paradise on Earth\u2019 Explore"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Ayodhya, Uttar Pradesh Bangkok, Thailand Bengaluru Delhi GOA Hyderabad, Telangana LEH, Ladakh Mumbai, Maharashtra Pune, Maharashtra Srinagar, Jammu and Kashmir"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+                }
+              ],
+              "dissimilarity_score": 0.57
+            }
+          ],
+          "similarity_score": 0.43000000000000005
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 21,
+      "source": "Cards",
+      "target": "Cards (cards21)",
+      "key": "cards21",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-13-7ce210e779277ab3ecc2d686304baa4feb56c8e1",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]",
+          "section": "section-2",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_6",
+              "differences": [
+                {
+                  "change_type": "deletion",
+                  "text": "Places to visit Trending "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Safdarjung Tomb Historical elegance, Mughal heritage, soaring height, and intricate carvings. Exploration time: 1-2 hours"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " Trending"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Qutub Minar Exploration time: 1-2 hours Humayun\u2019s Tomb Exploration time: 1-2 hours Lotus Temple Exploration time: 1 hour Jantar Mantar Exploration time: 2 hour Rashtrapati Bhawan Exploration time: 2-3 hours India Gate Exploration time: 1 hours Red Fort Exploration time: 1 hours Akshardham Temple Exploration time: 3-4 hours"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " View All 9 places View less"
+                }
+              ],
+              "dissimilarity_score": 0.04
+            }
+          ],
+          "similarity_score": 0.96
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 22,
+      "source": "Cards",
+      "target": "Cards (cards22)",
+      "key": "cards22",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-09-a80647bd078c625e1ee398c69d21c044ad73f160",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[2]/div[1]",
+          "section": "section-6",
+          "differences": [
+            {
+              "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_3__section__div_2__div",
+              "differences": [
+                {
+                  "change_type": "insertion",
+                  "text": "/indigo-stretch.html Learn more /loyalty/partners/kotak-mahindra-bank-credit-card.html?linkNav=%7C2%7Coffer%20%26%20links Learn more "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "Book your stay on goIndiGo.in and get up to 25%* off "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Learn more "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "T&C apply* Expiry: : No expiry"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": " Learn more"
+                }
+              ],
+              "dissimilarity_score": 0.61
+            }
+          ],
+          "similarity_score": 0.39
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-01-e4ff005ff11d38329025ad0caed6ccf3eab7f625",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/a[1]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-08-34c33152fa064c0d1c7a2d93175ecafc1a587f21",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-09-247eac70c2fe15cee497852045bf2a7093b0b3b6",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-10-50a752eae62d95b49c324a18ca66eae86e168b42",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[2]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-11-0e5e57595dd4bfae65fdf9a72e8b17ecd26fc487",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-12-65cda75fa33f01b6093c0988881f0f7c24a38963",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[4]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-14-1771008bd5a043bf6c1e32905e7631cdb3b9044c",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-15-7404eceacdb211cc41be5ba8e0f21fb8e6c3c591",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-16-9eea6b2ca5853d85c2cee2e47cc8f05dd1501691",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-18-f1d72434ac7dc0152fa72637af7d582806085a93",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[4]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-20-9238d7907341e60c5a9871510b83ffcd29d333d3",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[6]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-21-40098005ae6c5c75fe3ffcd7e42b2dea9cbc55b7",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-22-67d8cbf3d9b55d11570f16c2379d3d528ac945bc",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[4]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-23-cf967c644f8a1170dd12b54002c9ef0236ef9c62",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[5]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-24-d0b0f9a40a305d4c6ccda1596e50ea89a2ff9ec3",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[6]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-25-265113f81edaf297bcea90bfcecb033fee11533c",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[7]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-26-c1af56173eeac31befd69958f3d01a32cfd261ee",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[8]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-28-feeb781a7bb8d195139401c7f94412af382d4c2c",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[10]/div[1]/div[1]/div[1]/span[1]/ul[3]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-29-0b497486ec212937b2302d4136a345c8c74edfa4",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[11]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-30-82eb2484df49a9db163b9e0e3ac0d6c2d2a81c33",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[2]/section[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-33-39be441317c41ee24bc849a58ec00529c08291eb",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+      "section": "section-3",
+      "differences": [
+        {
+          "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_10__div__div__div__div__footer__div__div__div_3",
+          "differences": [
+            {
+              "change_type": "equal",
+              "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+            }
+          ],
+          "dissimilarity_score": -0.0
+        }
+      ],
+      "similarity_score": 0.0
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-01-e4ff005ff11d38329025ad0caed6ccf3eab7f625",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/a[1]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-08-34c33152fa064c0d1c7a2d93175ecafc1a587f21",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-09-247eac70c2fe15cee497852045bf2a7093b0b3b6",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-10-50a752eae62d95b49c324a18ca66eae86e168b42",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[2]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-11-0e5e57595dd4bfae65fdf9a72e8b17ecd26fc487",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-12-65cda75fa33f01b6093c0988881f0f7c24a38963",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[4]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-14-1771008bd5a043bf6c1e32905e7631cdb3b9044c",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-15-7404eceacdb211cc41be5ba8e0f21fb8e6c3c591",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-16-9eea6b2ca5853d85c2cee2e47cc8f05dd1501691",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-18-f1d72434ac7dc0152fa72637af7d582806085a93",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[4]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-20-9238d7907341e60c5a9871510b83ffcd29d333d3",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[6]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-21-c809740312df90d275cf72110678ff8b9679aea4",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-22-32104e1e4b5b8343cc5a9451afa95e2348d26622",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[8]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-23-8ec294a9f21f5f97d4586216fa5300e250193b90",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[8]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[4]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-24-80aad53c169962f723791094d5773818e4fdeccc",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[9]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-25-6578284f6883b424b191d75a064ecdd15198cf53",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[11]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-26-4b6e06ade568aaa6607d8f3049690d27ede926c8",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[12]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-27-82eb2484df49a9db163b9e0e3ac0d6c2d2a81c33",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[2]/section[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-28-9e4764f32275fc5cc842799790931fa6b4aef2d0",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[10]/section[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-31-391befa03f134dda7d62eebea54951133e1af74b",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+      "section": "section-3",
+      "differences": [
+        {
+          "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_9__div__div__div__div__footer__div__div__div_3",
+          "differences": [
+            {
+              "change_type": "equal",
+              "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+            }
+          ],
+          "dissimilarity_score": -0.0
+        }
+      ],
+      "similarity_score": 0.0
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+      "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
+      "uuid": "d8babc7d-02-92fb277beec479558369d1be5abd15e0d606d239",
+      "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+      "section": "section-3",
+      "differences": [
+        {
+          "element_id": "html__body__main__div__div__div__div_2__div__div__div__div__div__div_5__div__div__div__div__footer__div__div__div_3",
+          "differences": [
+            {
+              "change_type": "equal",
+              "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+            }
+          ],
+          "dissimilarity_score": -0.0
+        }
+      ],
+      "similarity_score": 0.0
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+      "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+      "uuid": "ffb2a411-00-ef5a53ce5eb1d9e0696fbcae9c817358c8f4326b",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/header[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+      "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+      "uuid": "ffb2a411-02-9b4933c2d119aa8e0f52e5af26763c645d9204aa",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+      "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+      "uuid": "ffb2a411-07-cf8c8cbcc23e17641606a11e25091d969bc3d68c",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[1]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+      "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+      "uuid": "ffb2a411-08-c722ba85a355075615c3317f910051dd9a7aeb60",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[2]/section[1]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+      "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+      "uuid": "ffb2a411-11-81fdfcfa1f85a1c0d7c03f1b137055afd5475189",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "section": "section-7"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+      "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+      "uuid": "ffb2a411-16-30f60cd18723d7bbf3622758e84cbbd104c250a5",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[3]",
+      "section": "section-3",
+      "differences": [
+        {
+          "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_6__div__div__div__div__footer__div__div__div_3",
+          "differences": [
+            {
+              "change_type": "equal",
+              "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+            }
+          ],
+          "dissimilarity_score": -0.0
+        }
+      ],
+      "similarity_score": 0.0
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+      "differences": [
+        {
+          "change_type": "deletion",
+          "text": "Skip to main content 1/1 6E Rewards and IndiGo BluChip Accounts are managed separately. To use Voucher, Credit Shell & 6E Rewards, Click Here . View All "
+        },
+        {
+          "change_type": "equal",
+          "text": "Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+        },
+        {
+          "change_type": "equal",
+          "text": "Trips "
+        },
+        {
+          "change_type": "deletion",
+          "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Change flight Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+        },
+        {
+          "change_type": "equal",
+          "text": "Deals and Offers Check-in IndiGo BluChip "
+        },
+        {
+          "change_type": "deletion",
+          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Skip"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Partners"
+        },
+        {
+          "change_type": "insertion",
+          "text": "to"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": "main"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up Tariff Sheet"
+        },
+        {
+          "change_type": "insertion",
+          "text": "content"
+        },
+        {
+          "change_type": "equal",
+          "text": " IndiGo BluChips Balance Login "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Your Information Flight Status IndiGo BluChip"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Explore"
+        },
+        {
+          "change_type": "equal",
+          "text": " My "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Scratch"
+        },
+        {
+          "change_type": "insertion",
+          "text": "trips"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Card"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Book"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "6E"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Check-in"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Rewards Other"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Profile"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "information"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Skip"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "About us Contact us"
+        },
+        {
+          "change_type": "insertion",
+          "text": "to"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "WhatsApp"
+        },
+        {
+          "change_type": "insertion",
+          "text": "main"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Terms"
+        },
+        {
+          "change_type": "insertion",
+          "text": "content"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "and"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Book"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Conditions"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Trips"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Help"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Deals"
+        },
+        {
+          "change_type": "equal",
+          "text": " and "
+        },
+        {
+          "change_type": "deletion",
+          "text": "FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Offers"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "About"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Check-in"
+        },
+        {
+          "change_type": "equal",
+          "text": " IndiGo BluChip "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Tiers & Benefits Terms & Conditions FAQ Earn and Redeem"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Tariff"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Our Partners New Earn"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Sheet"
+        },
+        {
+          "change_type": "equal",
+          "text": " IndiGo BluChips "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Redeem IndiGo BluChips Hello IndiGo"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Balance"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Login"
+        },
+        {
+          "change_type": "equal",
+          "text": " Explore My trips Book Check-in Profile Hi there, plan your journey with ease - Flights, Hotels and beyond! What's new? Find exclusive offers and the best deals available for you"
+        },
+        {
+          "change_type": "deletion",
+          "text": ". "
+        },
+        {
+          "change_type": "insertion",
+          "text": ". /indigo-stretch.html Learn more /loyalty/partners/kotak-mahindra-bank-credit-card.html?linkNav=%7C2%7Coffer%20%26%20links Learn more "
+        },
+        {
+          "change_type": "equal",
+          "text": "Book your stay on goIndiGo.in and get up to 25%* off "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Learn more "
+        },
+        {
+          "change_type": "equal",
+          "text": "T&C apply* Expiry: : No expiry "
+        },
+        {
+          "change_type": "deletion",
+          "text": "View All Offer AYJ BKK BLR DEL GOI HYD IXL BOM PNQ SXR Embark on a journey of inspiration with IndiGo, where discovery meets the sky. Explore Namaste Manchester: IndiGo announces its long-haul debut with non- stop flights connecting Mumbai and Manchester starting 01 July 2025 21 May 2025 View"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Learn"
+        },
+        {
+          "change_type": "equal",
+          "text": " more "
+        },
+        {
+          "change_type": "deletion",
+          "text": "IndiGo brings Indian warmth to Dutch skies: Opens bookings for its long-haul debut on Mumbai-Amsterdam route starting 02 July 2025 21 May 2025 "
+        },
+        {
+          "change_type": "equal",
+          "text": "View "
+        },
+        {
+          "change_type": "deletion",
+          "text": "more"
+        },
+        {
+          "change_type": "insertion",
+          "text": "All"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Explore Amsterdam Explore Manchester Explore Seychelles"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Offer"
+        },
+        {
+          "change_type": "equal",
+          "text": " Ayodhya, Uttar Pradesh Journey into the Spiritual Heart of Ayodhya Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " Bangkok, Thailand Dive into the Vibrant Energy of Bangkok Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " Bengaluru Explore the Silicon Valley of India: Bengaluru Beckons Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " Delhi Discover the Heartbeat of India in the Capital City Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " GOA Soak up the sun and fun in vibrant Goa Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " Hyderabad, Telangana Step into the Charms of the City of Pearls Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " LEH, Ladakh Embrace the Serenity of Leh's Majestic Landscapes Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " Mumbai, Maharashtra Dive into the Dream City: Mumbai Awaits Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " Pune, Maharashtra Unravel the heritage and modernity of Pune Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " Srinagar, Jammu and Kashmir Explore everything that makes this place a \u2018Paradise on Earth\u2019 Explore"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Ayodhya, Uttar Pradesh Bangkok, Thailand Bengaluru Delhi GOA Hyderabad, Telangana LEH, Ladakh Mumbai, Maharashtra Pune, Maharashtra Srinagar, Jammu and Kashmir"
+        },
+        {
+          "change_type": "insertion",
+          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+        },
+        {
+          "change_type": "equal",
+          "text": " Add more 6E Add-ons to your journey Add more 6E Add-ons to your journey View All Pre book Fast forward at up to 50% discount Priority check-in and anytime boarding. "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Learn more "
+        },
+        {
+          "change_type": "equal",
+          "text": "Pre-paid excess baggage starting at \u20b91515 Excess baggage and additional piece "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Learn more "
+        },
+        {
+          "change_type": "equal",
+          "text": "XL (Extra legroom) seat starting at \u20b9500 Window, aisle or seat with extra legroom "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Learn more "
+        },
+        {
+          "change_type": "equal",
+          "text": "Share Feedback"
+        },
+        {
+          "change_type": "insertion",
+          "text": " Add e-mail id to get inspired"
+        },
+        {
+          "change_type": "equal",
+          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android"
+        },
+        {
+          "change_type": "insertion",
+          "text": " Kindly accept cookies and continue using our website for a smoother experience. Accept Accept cookies"
+        },
+        {
+          "change_type": "equal",
+          "text": " +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved"
+        },
+        {
+          "change_type": "deletion",
+          "text": ". Kindly accept cookies and continue using our website for a smoother experience. Accept Accept cookies"
+        },
+        {
+          "change_type": "insertion",
+          "text": "."
+        }
+      ],
+      "similarity_score": 0.6034811104943933
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+      "differences": [
+        {
+          "change_type": "deletion",
+          "text": "Skip to main content "
+        },
+        {
+          "change_type": "equal",
+          "text": "Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+        },
+        {
+          "change_type": "equal",
+          "text": "Trips "
+        },
+        {
+          "change_type": "deletion",
+          "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+        },
+        {
+          "change_type": "equal",
+          "text": "Deals and Offers Check-in IndiGo BluChip "
+        },
+        {
+          "change_type": "deletion",
+          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Skip"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "BluChips"
+        },
+        {
+          "change_type": "insertion",
+          "text": "to"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Login"
+        },
+        {
+          "change_type": "insertion",
+          "text": "main"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "or Sign up for IndiGo BluChip Log In Sign Up"
+        },
+        {
+          "change_type": "insertion",
+          "text": "content"
+        },
+        {
+          "change_type": "equal",
+          "text": " IndiGo BluChips Balance Login "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Your Information Flight Status IndiGo BluChip"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Explore"
+        },
+        {
+          "change_type": "equal",
+          "text": " My "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Scratch"
+        },
+        {
+          "change_type": "insertion",
+          "text": "trips"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Card"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Book"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "6E Rewards Other information"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Check-in"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "About"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Profile"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "us Contact"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Skip"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "us"
+        },
+        {
+          "change_type": "insertion",
+          "text": "to"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "WhatsApp"
+        },
+        {
+          "change_type": "insertion",
+          "text": "main"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Terms"
+        },
+        {
+          "change_type": "insertion",
+          "text": "content"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "and"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Book"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Conditions"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Trips"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Help"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Deals"
+        },
+        {
+          "change_type": "equal",
+          "text": " and "
+        },
+        {
+          "change_type": "deletion",
+          "text": "FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Offers"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Program Join Program My dashboard About"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Check-in"
+        },
+        {
+          "change_type": "equal",
+          "text": " IndiGo BluChip "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn "
+        },
+        {
+          "change_type": "equal",
+          "text": "IndiGo BluChips "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Balance"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Login"
+        },
+        {
+          "change_type": "equal",
+          "text": " Explore My trips Book Check-in Profile Home Flights Flight Tracker Delhi to Mumbai Delhi to Mumbai Flight Status "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Search by 6E flight number or by PNR Departing Arriving "
+        },
+        {
+          "change_type": "equal",
+          "text": "28/08/2025 - Today Search Flight Share Feedback"
+        },
+        {
+          "change_type": "insertion",
+          "text": " Add e-mail id to get inspired"
+        },
+        {
+          "change_type": "equal",
+          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+        }
+      ],
+      "similarity_score": 0.7382213296639115
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "differences": [
+        {
+          "change_type": "deletion",
+          "text": "Skip to main content "
+        },
+        {
+          "change_type": "equal",
+          "text": "Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+        },
+        {
+          "change_type": "equal",
+          "text": "Trips "
+        },
+        {
+          "change_type": "deletion",
+          "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+        },
+        {
+          "change_type": "equal",
+          "text": "Deals and Offers Check-in IndiGo BluChip "
+        },
+        {
+          "change_type": "deletion",
+          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Skip"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Retro"
+        },
+        {
+          "change_type": "insertion",
+          "text": "to"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Claim"
+        },
+        {
+          "change_type": "insertion",
+          "text": "main"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up"
+        },
+        {
+          "change_type": "insertion",
+          "text": "content"
+        },
+        {
+          "change_type": "equal",
+          "text": " IndiGo BluChips Balance Login "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME "
+        },
+        {
+          "change_type": "equal",
+          "text": "Explore My trips Book Check-in Profile Back Explore"
+        },
+        {
+          "change_type": "deletion",
+          "text": " "
+        },
+        {
+          "change_type": "insertion",
+          "text": " # "
+        },
+        {
+          "change_type": "equal",
+          "text": "Copy Link Copied Delhi Photo Credits: Santosh kumar Delhi Photo Credits: Akshana Prasad Delhi Photo Credits: Chandan Mishra Delhi Photo Credits: Ekansh Mehta Delhi Photo Credits: Lalit Singh Delhi Photo Credits: Santosh kumar Delhi Photo Credits: Akshana Prasad Places To visit Places to eat Where to stay Things to do Best time to visit Shopping Festivals More reasons to visit Delhi, the bustling capital of India, holds a rich history, inclusive culture, and progressive modernity. Its ancient monuments, like the iconic Red Fort and Qutub Minar, are a testament to its storied past while its colourful markets and diverse cuisine reflect its dynamic present. Sure to be a memorable trip, Delhi tourism promises a beautiful contrast of tradition and modernity alongside its resilience and cosmopolitan atmosphere. This Delhi travel guide covers everything, from places that deserve your attention to delicious cuisine that will melt in your mouth. Let\u2019s explore the heart of India. How to reach Delhi By air: Indira Gandhi International Airport (DEL) , or Delhi Airport, is the main airport, around 16 km from the city\u2019s centre. Terminals 1 and 2 cater to domestic flights, and Terminal 3 handles domestic and international. These terminals handle all flights to Delhi and from it. By train: Delhi is served by several major railway stations. Old Delhi Railway Station and New Delhi Railway Station are the primary ones connecting the city to major destinations across the country. By bus: Delhi boasts an extensive network of state-run and private bus services. They offer connections to many cities and towns. Getting around/local transport in Delhi : Delhi offers various modes of local transportation, including taxis, buses, auto rickshaws, and cycle rickshaws. Additionally, the Delhi Metro is a popular and efficient way to navigate the city. View More "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Places to visit Trending "
+        },
+        {
+          "change_type": "equal",
+          "text": "Safdarjung Tomb Historical elegance, Mughal heritage, soaring height, and intricate carvings. Exploration time: 1-2 hours"
+        },
+        {
+          "change_type": "insertion",
+          "text": " Trending"
+        },
+        {
+          "change_type": "equal",
+          "text": " Qutub Minar Exploration time: 1-2 hours Humayun\u2019s Tomb Exploration time: 1-2 hours Lotus Temple Exploration time: 1 hour Jantar Mantar Exploration time: 2 hour Rashtrapati Bhawan Exploration time: 2-3 hours India Gate Exploration time: 1 hours Red Fort Exploration time: 1 hours Akshardham Temple Exploration time: 3-4 hours "
+        },
+        {
+          "change_type": "deletion",
+          "text": "View All 9 places View less "
+        },
+        {
+          "change_type": "equal",
+          "text": "Places to eat Chennai is considered the best east coast destination to visit in South India. So, if you plan to book your flights to Chennai, make sure to plan between November to February. Karim\u2019s This iconic eatery in Old Delhi was established in 1913. The restaurant is popular for its non-vegetarian dishes. Popular dishes: Kebabs, meat curries, naan Moti Mahal Tandoori food is their expertise, and their ability to retain those distinguished flavours makes Moti Mahal a must-visit. Popular dishes: Butter chicken, butter naan, dal makhani Embassy Embassy offers a beautiful journey through North Indian cuisine, captivating the taste buds of food enthusiasts from near and far. Popular dishes: Butter chicken, chicken tikka masala, garlic naan Yeti - Himalayan Kitchen Yeti is celebrated for offering an authentic taste of Nepalese and Tibetan cuisine. Known for its dedication to quality and authenticity, Yeti promises an unforgettable dining experience. Popular dishes: Momos, thukpa, and ema datshi Kake Di Hatti This eatery is renowned for its hearty Punjabi cuisine and generous portions. Kake Di Hatti promises a feast for the senses, from aromatic curries to sizzling tandoori delights. Popular dishes: Naan, chole bhature, dal makhani Bukhara Bukhara is the epitome of culinary excellence and is one of Delhi's most revered dining destinations. With its rustic charm and timeless elegance, you will find an open kitchen at this restaurant in the ITC Hotel. It is renowned for its curries cooked in traditional clay ovens.an see, feel and experience in Chennai. Where to stay in Delhi Up to 25%* off on hotel bookings with IndiGo, Use code GOSTAY "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Deventure Sarovar Portico Kapashera Delhi \u2605\u2605\u2605\u2605 "
+        },
+        {
+          "change_type": "equal",
+          "text": "3.8/5 (148 reviews"
+        },
+        {
+          "change_type": "deletion",
+          "text": ") Deventure Sarovar Portico Kapashera Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": ") \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "4,213 \u20b9 3,763 /night + \u20b9 486 Taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "4/5 (926 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "The LaLiT New Delhi Delhi"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (926 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "11,424 /night Incl of taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "4.2/5 (729 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "Bloomrooms @ New Delhi Railway Station Delhi"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605 4.2/5 (729 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "2,696 /night Incl of taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "3.8/5 (910 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "Pride Plaza Hotel Aerocity New Delhi Delhi"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605\u2605 3.8/5 (910 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "6,415 /night Incl of taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "4/5 (924 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "The Metropolitan Hotel and Spa New Delhi Delhi"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (924 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "7,577 /night Incl of taxes & fees Book "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Bloom Hotel - Karol Bagh Delhi \u2605\u2605\u2605 "
+        },
+        {
+          "change_type": "equal",
+          "text": "4.3/5 (7 reviews"
+        },
+        {
+          "change_type": "deletion",
+          "text": ") Bloom Hotel - Karol Bagh Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": ") \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "3,754 /night + \u20b9 465 Taxes & fees Book Hotel Bawa Gurgaon Delhi"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "2,700 /night + \u20b9 324 Taxes & fees Book "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Hotel Diplomat Delhi \u2605\u2605\u2605\u2605 "
+        },
+        {
+          "change_type": "equal",
+          "text": "3.2/5 (63 reviews"
+        },
+        {
+          "change_type": "deletion",
+          "text": ") Hotel Diplomat Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": ") \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "9,055 \u20b9 6,955 /night + \u20b9 1,512 Taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "4.3/5 (53 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "Le ROI Express Paharganj Delhi"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605 4.3/5 (53 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "1,736 /night Incl of taxes & fees Book "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Bloomrooms @ Janpath Delhi \u2605\u2605\u2605 "
+        },
+        {
+          "change_type": "equal",
+          "text": "4.3/5 (157 reviews"
+        },
+        {
+          "change_type": "deletion",
+          "text": ") Bloomrooms @ Janpath Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": ") \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "5,570 /night Incl of taxes & fees Book Show more Things To Do There are innumerable things to do in Delhi. Here are some experiences that can make your time in the city fulfilling. Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Back"
+        },
+        {
+          "change_type": "equal",
+          "text": " Best time to visit The best time to visit the city is during the winter months, from October to March, when the weather is pleasant for outdoor activities. View More Shopping The best way to take memories from a place is by shopping and collecting souvenirs. Let\u2019s explore some places that hold the best of Delhi\u2019s novelties: Sarojini Nagar: This market is well-known for its lively and budget-friendly shopping options. It is a popular destination for trendy clothes, accessories, and household items. Lajpat Nagar: Lajpat Nagar market has an eclectic mix of clothing, accessories, and household items. It caters to a wide range of tastes and budgets. It is also a popular destination for bridal shopping. Janpath: Janpath is famous for its shops, boutiques, and street vendors offering diverse merchandise. It caters to varied tastes and budgets, offering traditional handicrafts, textiles, trendy clothes, and accessories. Chandni Chowk: Chandni Chowk is one of Delhi's oldest and busiest marketplaces, offering various things at economical prices. The place is known for wedding shopping. Additionally, its street food is quite a favourite and attracts many foreign visitors. Dilli Haat: Here artisans from different states display and sell traditional handicrafts, textiles, and artworks. It is a great place to shop specialities from various regions like dhokra sculptures from Chhattisgarh, and Madhubani and bamboo handicrafts from the North-East. Chor Bazaar: Chor Bazaar, also known as the Thieves Market, is a bustling flea market where one can find many second-hand goods, antiques, and vintage items at bargain prices. Khan Market: One of Delhi's most premium shopping places, Khan Market houses a range of dining options, boutique stores, expensive brands, and more. Known for its chic ambience and high-end offerings, Khan Market is a favourite destination for fashionistas and foodies. View More Festivals Delhi becomes vibrant during the festive season, and if you can plan your visit during these times, you will witness a unique side of the city: Diwali Celebrated with grandeur and enthusiasm, the festival of lights Holi Delhi bursts with colours and laughter as streets come alive with playful water Eid-ul-Fitr Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful Durga Puja Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful More reasons to visit While Delhi brings uncountable reasons to plan a visit, let\u2019s go through some more reasons that can make your trip even more wholesome: Explore the street art: Explore India's first public open-air art gallery in the Lodhi Art District. Several famous international and local artists have painted over 50 murals on the walls. Explore spice markets: From aromatic cloves and cardamom to fiery chilli peppers and fragrant saffron, the spice markets in Delhi hold several culinary delights. Wander through the lanes of Khari Baoli and encounter fellow tourists marvelling at the abundance of spices. The National Museum: The National Museum is one of India's premier cultural institutions. Established in 1949, it boasts an extensive collection of artefacts spanning thousands of years of Indian history and culture. View More Related travel blogs Exciting activities to indulge in a Delhi tour with family and friends Dilli ki sardi: Here\u2019s why Delhi winters are worth all the hype 12 places to explore the art and culture of Delhi Iconic Delhi markets to shop till you drop at Share Feedback"
+        },
+        {
+          "change_type": "insertion",
+          "text": " Add e-mail id to get inspired"
+        },
+        {
+          "change_type": "equal",
+          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+        }
+      ],
+      "similarity_score": 0.9763497864993455
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "differences": [
+        {
+          "change_type": "deletion",
+          "text": "Skip to main content "
+        },
+        {
+          "change_type": "equal",
+          "text": "Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+        },
+        {
+          "change_type": "equal",
+          "text": "Trips "
+        },
+        {
+          "change_type": "deletion",
+          "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+        },
+        {
+          "change_type": "equal",
+          "text": "Deals and Offers Check-in IndiGo BluChip "
+        },
+        {
+          "change_type": "deletion",
+          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Skip"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Number"
+        },
+        {
+          "change_type": "insertion",
+          "text": "to"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Our"
+        },
+        {
+          "change_type": "insertion",
+          "text": "main"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up"
+        },
+        {
+          "change_type": "insertion",
+          "text": "content"
+        },
+        {
+          "change_type": "equal",
+          "text": " IndiGo BluChips Balance Login "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME "
+        },
+        {
+          "change_type": "equal",
+          "text": "Explore My trips Book Check-in Profile Back Explore"
+        },
+        {
+          "change_type": "deletion",
+          "text": " "
+        },
+        {
+          "change_type": "insertion",
+          "text": " # "
+        },
+        {
+          "change_type": "equal",
+          "text": "Copy Link Copied Mumbai Photo Credits: Akshada Balasaheb Aher Mumbai Photo Credits: Mihir Joshi Mumbai Photo Credits: Sagar Sanjay Kulkarni Mumbai Photo Credits: Vedant Sanjay Chavan Mumbai Photo Credits: Akshada Balasaheb Aher Mumbai Photo Credits: Mihir Joshi Places To visit Places to eat Where to stay Things to do Best time to visit Shopping Festivals More reasons to visit Mumbai, India's bustling metropolis, is a dynamic tourist destination offering a blend of history, culture, and modernity. Mumbai tourism is known for its iconic landmarks, such as the Gateway of India, Marine Drive, and the Colaba and Crawford market. Mumbai is also home to the Bollywood film industry, with Film City being a major attraction. The city's diverse gourmet scene, offering everything from street food to fine dining, is a culinary delight. Additionally, Mumbai's rich history is evident in its colonial-era architecture and heritage sites like the Chhatrapati Shivaji Terminus and Elephanta Caves. Let's explore some of the best aspects of the dream city in this detailed Mumbai travel guide. How to reach Mumbai By air: Chhatrapati Shivaji International Airport (BOM) , or Mumbai Airport, is approximately 30 km from the city centre. It ranks among India's busiest airports, serving as a significant hub for domestic and international flights to Mumbai . It has two main terminals. Terminal 1 operates domestic flights, and Terminal 2 handles international flights. By train: Mumbai boasts an extensive train network connecting it to various parts of the country. Travellers from central, eastern, and western India can book tickets to Chhatrapati Shivaji Terminus, while Mumbai Central Station caters to those from the north. By road: Mumbai Central Bus Station is Mumbai's main bus terminus. It serves buses operated by the Maharashtra State Road Transport Corporation (MSRTC) for various destinations in Maharashtra and inter-state routes to cities in Gujarat, Madhya Pradesh, and Karnataka. Getting around/local transport in Mumbai: Mumbai has multiple modes of public transport primarily facilitated by suburban trains, city buses, taxis, cabs, and auto-rickshaws. The suburban train network, known as Mumbai Local, is the lifeline of the city, connecting various parts of Mumbai and its suburbs. View More "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Places to visit Trending "
+        },
+        {
+          "change_type": "equal",
+          "text": "Gateway of India An iconic monument overlooking the Arabian Sea, known for its grand archway, intricate design, and historical significance. Exploration time: 1-2 hours"
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u00b7 Trending"
+        },
+        {
+          "change_type": "equal",
+          "text": " Juhu Beach Exploration time: 1-2 hours Marine Drive Exploration time: 1-2 hours Hanging Garden Exploration time: 1-2 hours Prince of Wales Museum Exploration time: 3-5 hours Film City Mumbai Exploration time: 3-4 hours, Movie studio "
+        },
+        {
+          "change_type": "deletion",
+          "text": "View All 6 places View less "
+        },
+        {
+          "change_type": "equal",
+          "text": "Places to eat Mumbai is renowned for its diverse culinary scene, offering various dining options to suit every palate. Here are some popular places to eat in Mumbai: Joey\u2019s Pizza Joey's Pizza is a popular pizza chain in Mumbai known for its delicious and innovative pizzas. They offer a variety of toppings and flavours, catering to vegetarian and non-vegetarian preferences. Popular dishes: Supreme pizza, roasted chicken salad, chicken tornado, and makhani pizza. Cafe Madras Cafe Madras is a legendary restaurant located in Mumbai's Matunga area. It is famous for its authentic and delicious South Indian cuisine in a warm and welcoming ambience. Popular dishes: Dosa, idli, upma, butter idli, and filter coffee. The Bombay Canteen The Bombay Canteen is a popular restaurant in Mumbai known for its innovative take on traditional Indian cuisine. The place offers a lively ambience and a menu celebrating local flavours and ingredients. Popular dishes: Egg Kejriwal, ghee roast chicken seekh, and chilled seabass. Cafe Noorani Cafe Noorani is a popular restaurant located in Mumbai. It is known for its delicious and authentic Mughlai and North Indian cuisine. Popular dishes: Chicken tikka biryani, brain masala, Hyderabadi biryani and caramel custard. Indigo Delicatessen The award-winning restaurant specialises in European-style cuisine. The place offers an impeccable fine dining experience with flavorful dishes and exceptional service. Popular dishes: Pasta, burgers, tiramisu, and waffles. The Table The Table is popular for its contemporary European and American cuisine, focusing on using fresh, locally sourced ingredients. The restaurant offers a stylish and elegant dining experience. Popular dishes: Panna cotta, zucchini spaghetti, and truffle fries Where to stay in Mumbai Up to 25%* off on hotel bookings with IndiGo, Use code GOSTAY 4.2/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "783 reviews) Holiday Inn Mumbai International Airport by IHG"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "6,115 /night Incl of taxes & fees Book 3.3/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "56 reviews) Bawa Regency"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "9,750 /night + \u20b9 1,755 Taxes & fees Book 4.4/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "138 reviews) Novotel Mumbai International Airport"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "7,599 \u20b9 6,840 /night + \u20b9 821 Taxes & fees Book 4/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "90 reviews) Lemon Tree Premier Mumbai Intl. Airport"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "7,638 /night Incl of taxes & fees Book 3.6/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "252 reviews) Bawa International"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "5,000 /night + \u20b9 600 Taxes & fees Book 3.9/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "76 reviews) Suba Galaxy"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "3,420 /night + \u20b9 411 Taxes & fees Book 3.5/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "154 reviews) Hotel Parle International"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "7,500 \u20b9 6,750 /night + \u20b9 810 Taxes & fees Book 3.5/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "840 reviews) Novotel Mumbai Juhu Beach Hotel"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "11,180 /night Incl of taxes & fees Book 3.8/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "123 reviews) Hotel Oriental Aster - Mumbai International Airport"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "4,938 /night Incl of taxes & fees Book 3.6/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "130 reviews) T24 Residency Mumbai International Airport Hotel"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "6,599 /night Incl of taxes & fees Book Show more Things To Do Mumbai is a city filled with many experiences. The city never stops to fascinate its travellers. Here are some of the best things to do and fun activities on your trip to Mumbai that will surely keep you engaged: Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food Vibrant nightlife Temple visits Beach outing Museum visits Local cuisine"
+        },
+        {
+          "change_type": "deletion",
+          "text": " Back"
+        },
+        {
+          "change_type": "equal",
+          "text": " Best time to visit The best time to visit Mumbai is from November to February when the weather is cool and pleasant. View More Most commonly spoken languages Mumbai's official language is Marathi. Other languages spoken in this region are Hindi, English, and Gujarati. View More Shopping Mumbai offers an indulging shopping scene with markets catering to every need. Here are some famous shopping destinations: Colaba Causeway: Colaba Causeway is a throbbing shopping street in South Mumbai, known for its bustling atmosphere and various goods. Here, you can find everything from clothes, accessories, and jewellery to handicrafts, home decor items, and souvenirs. It's a great place to shop for local and street fashion, with many shops offering unique and affordable items. Crawford Market: Crawford Market, officially known as Mahatma Jyotiba Phule Market, is a bustling market in South Mumbai that offers a wide range of goods. It's an excellent place for local shopping, especially for fresh fruits, vegetables, spices, and household items. The market is also known for its high-spirited atmosphere and architecture, blending Gothic and Romanesque styles. It is also a hub for pets, birds, and flowers, making it a unique shopping experience. Fashion Street: Fashion Street is a bustling street market known for its affordable fashion items. It is a favourite among college students and budget shoppers looking for trendy clothing at bargain prices. The market offers various items, including western wear, ethnic wear, shoes, bags, and accessories. Linking Road: Linking Road in Bandra is a top destination for street shopping. The place has shops and stalls offering various clothing, footwear, bags, and accessories. It is especially famous for its affordable prices and the latest fashion trends. View More Festivals With a seamless mix of different cultures, Mumbai celebrates various festivals with great enthusiasm and zeal. Some of the major festivals celebrated in Mumbai include: Ganesh Chaturthi Ganesh Chaturthi is one of Mumbai's most significant and widely celebrated festivals. The city comes alive with colourful decorations, elaborate pandals (temporary structures), and huge processions carrying Ganesha idols. The festival lasts 10 days and culminates in the immersion of idols in the water amidst joyous chants and music. Navratri Navratri is celebrated with immense joy and enthusiasm in Mumbai. The festival spans nine nights of vibrant dance performances, Garba and Dandiya Raas, where people dress in traditional attire and dance to rhythmic music. Many locals and societies organise Navratri events, attracting people of all ages to participate in the festivities. Christmas Christmas in Mumbai is a lively and festive affair, celebrated with great enthusiasm by the city's locals. Many areas, especially in South Mumbai, are lit with fairy lights and Christmas trees, creating a magical atmosphere. One of the highlights of Christmas in Mumbai is the Mount Mary Church in Bandra, which attracts thousands of devotees for prayers and blessings. Janmashtami The festival marking the birth of Lord Krishna is celebrated with great enthusiasm in Mumbai. The city is adorned with decorations, and temples are beautifully decorated. Dahi Handi is a popular event where groups form human pyramids to break a pot filled with curd hung at a height. The streets are filled with joyous celebrations, and temples like ISKCON witness a massive influx of devotees. Gudi Padwa The Marathi New Year is enthusiastically celebrated in Mumbai. Homes are cleaned and decorated with rangoli, flowers, and mango leaves. People dress traditionally and perform rituals like raising the Gudi (a decorated pole) outside their homes. Maharashtrian delicacies like Puran Poli and Shrikhand are prepared and shared. Cultural programs, processions, and community gatherings are organised. The festival signifies new beginnings and is a time for family reunions and bonding. More reasons to visit There are several reasons why Mumbai can be your ideal next travel destination. Here are some more of them: Victoria Terminus: Chhatrapati Shivaji Terminus (CST), formerly known as Victoria Terminus, is a historic railway station in Mumbai. Built in 1878, it is renowned for its stunning Victorian Gothic architecture, blending traditional Indian and Victorian styles. The station is a significant hub for long-distance and suburban trains, including the iconic Mumbai local trains. CST was designated a UNESCO World Heritage Site in 2004, recognising its historical and architectural significance. Sanjay Gandhi National Park: Sanjay Gandhi National Park, once known as Borivali National Park, is renowned for its rich biodiversity, including rare flora like the Karvi plant, teak, shisham, and flame of the woods trees. The park is also home to various wildlife, such as deer, hyenas, leopards, monkeys, and a diverse range of bird species, making it a haven for nature lovers and wildlife enthusiasts. Additionally, the park features the ancient Kanheri Caves, which offer a glimpse into the region's rich history and cultural heritage. Siddhivinayak Temple: Siddhivinayak Temple is a temple dedicated to Lord Ganesha. The temple is known for its beautiful architecture and spiritual significance. The idol of Lord Ganesha is carved out of a single black stone and is believed to be self-manifested (Swayambhu). View More Related travel blogs Want to explore the true Maharashtrian culture? Visit Kolhapur and witness amazing cultural festivals Here\u2019s why you should visit Shirdi during the festive season Want to explo Discover Aurangabad: Here\u2019s are the seven reasons why Aurangabad should be your next travel destination re the true Maharashtrian culture? Visit Kolhapur and witness amazing cultural festivals Why Mumbai should be your go-to destination to bring in the New Year Share Feedback"
+        },
+        {
+          "change_type": "insertion",
+          "text": " Add e-mail id to get inspired"
+        },
+        {
+          "change_type": "equal",
+          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+        }
+      ],
+      "similarity_score": 0.9855075581520291
+    }
+  ]
+}
