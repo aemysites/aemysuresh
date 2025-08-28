@@ -37,4 +37,32 @@ export const customElements = [];
 /**
  * Custom transformers
  */
-export const customTransformers = {};
+// export const customTransformers = {};
+
+export const customTransformers = {
+  inject: (hookName, element, { document }) => {
+    if (hookName === 'beforeTransform') {
+      try {
+        // remove site header
+        document.querySelector('.headerv2')?.remove();
+
+        // Remove site footer
+        document.querySelector('.footerv2')?.remove();
+
+        // remove accept cookie banner
+        document.querySelector('.cookies')?.remove();
+
+        // remove chat widget
+        document.querySelector('.chat-widget')?.remove();
+
+        // remove back to top button
+        document.querySelector('.back-to-top')?.remove();
+
+        // remove share container
+        document.querySelector('.share-container')?.remove();
+      } catch (e) {
+        // noop
+      }
+    }
+  },
+};
