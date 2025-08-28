@@ -450,8 +450,6 @@
   height: 100vh;
 }
 
-
-/* Vibrant, more immersive background */
 .carousel.carousel20 {
   background: radial-gradient(ellipse 100% 66% at 52% 0%, #d0eafb 2%, #eaf5fc 45%, #fafdff 100%);
   min-height: 750px;
@@ -459,7 +457,6 @@
   overflow: visible;
 }
 
-/* --- Main Card --- */
 .carousel.carousel20 .carousel-slide .carousel-slide-content {
   background: #fff;
   color: #202a38;
@@ -476,7 +473,6 @@
   align-items: flex-start;
 }
 
-/* --- Simulated card stack with creative layering for pseudo-image feel --- */
 .carousel.carousel20 .carousel-slide .carousel-slide-image {
   position: absolute;
   left: calc(60vw);
@@ -524,7 +520,6 @@
   opacity: 0.19;
 }
 
-/* --- Avatar-style indicators with simulated image feel --- */
 .carousel.carousel20 .carousel-slide-indicators {
   position: absolute;
   left: 50%;
@@ -564,7 +559,6 @@
 }
 
 .carousel.carousel20 .carousel-slide-indicator button::after {
-  /* Simulate faint 'avatar' highlight ring */
   display: block;
   position: absolute;
   z-index: 2;
@@ -584,7 +578,6 @@
   box-shadow: 0 0 0 4px #b4e2ff, 0 16px 54px #38a1fa22;
 }
 
-/* --- Navigation buttons --- */
 .carousel.carousel20 .carousel-navigation-buttons {
   display: flex;
   position: absolute;
@@ -641,7 +634,6 @@
   border-color: #1961bb;
 }
 
-/* --- Buttons --- */
 .carousel.carousel20 .carousel-slide .carousel-slide-content .button-container {
   margin-top: 14px;
   margin-bottom: 0;
@@ -685,7 +677,6 @@
   border-color: #1961bb;
 }
 
-/* --- Typography adjustments for card --- */
 .carousel.carousel20 .carousel-slide .carousel-slide-content h2 {
   font-size: 2.7rem;
   font-family: var(--heading-font-family);
@@ -703,7 +694,6 @@
   font-weight: 400;
 }
 
-/* --- Responsive --- */
 @media (width <= 800px) {
   .carousel.carousel20 {
     min-height: 480px;
@@ -741,5 +731,365 @@
   .carousel.carousel20 .carousel-slide-indicator button {
     width: 32px;
     height: 32px;
+  }
+}
+
+
+.carousel.carousel17 {
+  background: linear-gradient(135deg, #f4faff 0%, #e4f3ff 80%), radial-gradient(ellipse 72% 65% at 55% 0%, #d9eaff 0%, #f2f9ff 100%);
+  min-height: 540px;
+  position: relative;
+  overflow: visible;
+}
+
+/* --- Card Stack: Add "photo gradient" and vivid accent border --- */
+.carousel.carousel17 .carousel-slide {
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 540px;
+  background: none;
+  position: relative;
+}
+
+.carousel.carousel17 .carousel-slide-image {
+  position: absolute;
+  right: 10vw;
+  top: 90px;
+  width: 370px;
+  height: 370px;
+  border-radius: 32px;
+  box-shadow: 0 18px 54px 0 #99c8ff38, 0 12px 32px 0 #91bfff2a;
+  border: 6px solid #83d1ff;
+  background: 
+    linear-gradient(120deg, rgb(255 255 255 / 23%) 19%, rgb(255 255 255 / 0%) 66%),
+    linear-gradient(116deg, #c3eaff 30%, #6db9fa 120%);
+  z-index: 3;
+  opacity: 1;
+  transition: box-shadow 0.2s, border-color 0.18s;
+}
+
+.carousel.carousel17 .carousel-slide-image::before,
+.carousel.carousel17 .carousel-slide-image::after {
+  content: "";
+  position: absolute;
+  left: 52%;
+  top: 54%;
+  width: 340px;
+  height: 340px;
+  border-radius: 28px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.carousel.carousel17 .carousel-slide-image::before {
+  transform: translate(-70%, -70%) rotate(-8deg) scale(0.98);
+  background: linear-gradient(108deg, #f0f8ff 30%, #b3e3ff 100%);
+  box-shadow: 0 16px 42px 0 #a6cdf84a, 0 4px 16px 0 #b1e0ff33;
+  opacity: 0.74;
+  border: 4px solid #e3f5ff;
+}
+
+.carousel.carousel17 .carousel-slide-image::after {
+  transform: translate(-32%, -42%) rotate(12deg) scale(0.99);
+  background: linear-gradient(114deg, #d8f2ff 35%, #8fbbfc 100%);
+  box-shadow: 0 14px 38px 0 #7fc5f242, 0 2px 11px 0 #e1f5ff29;
+  opacity: 0.62;
+  border: 4px solid #bde0ff;
+}
+
+/* Pop effect for active/current card */
+.carousel.carousel17 .carousel-slide[aria-current="true"] .carousel-slide-image,
+.carousel.carousel17 .carousel-slide.active .carousel-slide-image {
+  box-shadow: 0 38px 90px 0 #5db8ff7b, 0 7px 22px 0 #b1e0ff4a;
+  border-color: #2ebbfb;
+  background:
+    linear-gradient(118deg, rgb(255 255 255 / 33%) 7%, rgb(255 255 255 / 0%) 65%),
+    linear-gradient(112deg, #b1e0ff 30%, #2ec6fb 142%);
+}
+
+/* --- Slide Content: Add playful, friendly headline & green accent --- */
+.carousel.carousel17 .carousel-slide-content {
+  position: absolute;
+  left: 8vw;
+  top: 115px;
+  background: none;
+  margin: 0;
+  padding: 0;
+  max-width: 440px;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.carousel.carousel17 .carousel-slide-content h2 {
+  font-family: Quicksand, Nunito, 'Open Sans', Arial, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a2c4d;
+  margin: 0 0 12px;
+  letter-spacing: 0.012em;
+  line-height: 1.12;
+  text-shadow: 0 1.5px 14px #e3f0fa, 0 1px 2px #fff7;
+}
+
+.carousel.carousel17 .carousel-slide-content p {
+  font-family: Nunito, 'Open Sans', Arial, sans-serif;
+  font-size: 1.13rem;
+  font-weight: 500;
+  color: #3a4756;
+  margin: 0 0 6px;
+  letter-spacing: 0.01em;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  text-shadow: 0 1.5px 8px #e8faff85;
+  line-height: 1.45;
+}
+
+.carousel.carousel17 .carousel-slide-content p strong,
+.carousel.carousel17 .carousel-slide-content p span,
+.carousel.carousel17 .carousel-slide-content em {
+  color: #25ba75;
+  font-weight: 700;
+  font-style: normal;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  text-shadow: 0 1px 5px #baffd8;
+}
+
+/* --- Button Styling --- */
+.carousel.carousel17 .carousel-slide-content .button-container {
+  margin-top: 8px;
+}
+
+.carousel.carousel17 .carousel-slide-content .button {
+  background: none;
+  color: #1363df;
+  border: 2px solid #1363df;
+  border-radius: 22px;
+  font-size: 1.13rem;
+  padding: 8px 32px;
+  font-weight: 700;
+  transition: background 0.13s, color 0.13s, border-color 0.13s, box-shadow 0.13s;
+  box-shadow: 0 2px 10px 0 #b9e0ff3f;
+  margin: 0;
+}
+
+.carousel.carousel17 .carousel-slide-content .button:hover,
+.carousel.carousel17 .carousel-slide-content .button:focus {
+  background: #eaf4ff;
+  color: #1676f7;
+  border-color: #1676f7;
+}
+
+/* --- Navigation Buttons: Arrow Left/Right, visual pop --- */
+.carousel.carousel17 .carousel-navigation-buttons {
+  display: flex;
+  position: absolute;
+  top: 38px;
+  left: 34px;
+  right: 34px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.carousel.carousel17 .carousel-navigation-buttons button {
+  pointer-events: auto;
+  background: #fff;
+  border: 2.5px solid #b9daff;
+  box-shadow: 0 3px 22px 0 #b2d8fa7a;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.16s, box-shadow 0.17s, background 0.14s;
+  margin: 0 2px;
+  position: relative;
+}
+
+.carousel.carousel17 .carousel-navigation-buttons button:hover,
+.carousel.carousel17 .carousel-navigation-buttons button:focus-visible {
+  border-color: #1363df;
+  box-shadow: 0 9px 28px 0 #49a6ff2a;
+  background: #eaf4ff;
+}
+
+/* Proper left/right arrow using borders */
+.carousel.carousel17 .carousel-navigation-buttons button::after {
+  border: solid #1363df;
+  border-width: 0 0.19em 0.19em 0;
+  display: inline-block;
+  padding: 0.48em;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  content: "";
+  border-radius: 3px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-60%,-50%) rotate(135deg) scale(1.2);
+  transition: border-color 0.15s;
+}
+
+.carousel.carousel17 .carousel-navigation-buttons button.slide-next::after {
+  transform: translate(-40%,-50%) rotate(-45deg) scale(1.2);
+}
+
+/* --- Pagination Indicators --- */
+.carousel.carousel17 .carousel-slide-indicators {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+  background: none;
+  padding: 0;
+  margin: 0;
+  z-index: 20;
+  display: flex;
+  gap: 0 16px;
+  align-items: center;
+}
+
+.carousel.carousel17 .carousel-slide-indicator button {
+  width: 18px;
+  height: 8px;
+  border-radius: 12px;
+  background: #cce6ff;
+  border: none;
+  margin: 0;
+  padding: 0;
+  transition: background 0.18s, width 0.18s;
+  box-shadow: 0 1.5px 6px 0 #7bccff3a;
+  cursor: pointer;
+}
+
+.carousel.carousel17 .carousel-slide-indicator button:disabled,
+.carousel.carousel17 .carousel-slide-indicator button[aria-current="true"] {
+  background: #33baff;
+  width: 40px;
+  box-shadow: 0 2px 13px 0 #54baff4a;
+}
+
+/* --- Simulate Top Tabs Row (Stub for future image tabs) --- */
+.carousel.carousel17 .carousel-tabs {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 23;
+}
+
+.carousel.carousel17 .carousel-tab {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 3.5px solid #b6d9ff;
+  background: linear-gradient(130deg, #fff 70%, #dff4ff 100%);
+  box-shadow: 0 2.5px 20px 0 #e8f2ff8b;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.99;
+  font-weight: 700;
+  color: #1363df;
+  font-family: Nunito, Arial, sans-serif;
+  font-size: 1.08rem;
+  letter-spacing: 0.04em;
+  transition: border-color 0.17s, box-shadow 0.17s;
+}
+
+.carousel.carousel17 .carousel-tab.active,
+.carousel.carousel17 .carousel-tab:focus {
+  border-color: #33baff;
+  box-shadow: 0 4px 28px 0 #45baff2a;
+  opacity: 1;
+}
+
+/* --- Responsive tweaks --- */
+@media (width <= 900px) {
+  .carousel.carousel17 .carousel-slide-content {
+    left: 3vw;
+    top: 82px;
+    max-width: 95vw;
+  }
+
+  .carousel.carousel17 .carousel-slide-image {
+    right: 1vw;
+    top: 130px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .carousel.carousel17 .carousel-slide-image::before,
+  .carousel.carousel17 .carousel-slide-image::after {
+    width: 160px;
+    height: 160px;
+  }
+
+  .carousel.carousel17 .carousel-navigation-buttons {
+    top: 10px;
+    left: 6px;
+    right: 6px;
+  }
+
+  .carousel.carousel17 .carousel-navigation-buttons button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .carousel.carousel17 .carousel-slide-indicators {
+    bottom: 10px;
+    gap: 0 6px;
+  }
+
+  .carousel.carousel17 .carousel-slide-indicator button {
+    width: 8px;
+    height: 3.5px;
+  }
+
+  .carousel.carousel17 .carousel-slide-indicator button:disabled,
+  .carousel.carousel17 .carousel-slide-indicator button[aria-current="true"] {
+    width: 19px;
+  }
+
+  .carousel.carousel17 .carousel-tab {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (width <= 600px) {
+  .carousel.carousel17 {
+    min-height: 310px;
+  }
+
+  .carousel.carousel17 .carousel-slide-content {
+    left: 0;
+    right: 0;
+    top: 28vw;
+    max-width: 99vw;
+    padding: 0 8px;
+    gap: 10px;
+  }
+
+  .carousel.carousel17 .carousel-slide-image {
+    right: 2vw;
+    top: 70px;
+    width: 32vw;
+    height: 32vw;
+    min-width: 85px;
+    min-height: 85px;
+    max-width: 130px;
+    max-height: 130px;
   }
 }
