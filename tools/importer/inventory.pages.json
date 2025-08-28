@@ -1,7 +1,7 @@
 {
   "templates": [
     {
-      "name": "'Travel Destination Grid'",
+      "name": "'Travel Blog Overview'",
       "cluster": 1,
       "pages": [
         {
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "name": "'Flight Status Page'",
+      "name": "'Flight Status Search Page'",
       "cluster": 2,
       "pages": [
         {
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "'Portfolio Showcase'",
+      "name": "'Gaming Hub'",
       "cluster": 3,
       "pages": [
         {
