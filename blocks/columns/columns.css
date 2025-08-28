@@ -362,172 +362,6 @@
 }
 
 
-.columns.columns8 {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 24px rgb(44 50 96 / 12%);
-  padding: 36px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 340px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.columns.columns8 > div {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  width: 100%;
-  gap: 40px;
-  box-sizing: border-box;
-  min-height: 260px;
-}
-
-.columns.columns8 > div > div:first-child {
-  background: #0719A3;
-  color: #fff;
-  border-radius: 16px;
-  min-width: 320px;
-  width: 340px;
-  max-width: 370px;
-  min-height: 260px;
-  height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  box-sizing: border-box;
-  padding: 48px 36px;
-  font-family: var(--heading-font-family, sans-serif);
-  font-weight: 600;
-  font-size: 2.3rem;
-}
-
-.columns.columns8 > div > div:not(:first-child) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 24px 28px;
-  align-items: stretch;
-  min-width: 440px;
-  max-width: 800px;
-  width: 100%;
-  padding: 8px 0;
-  box-sizing: border-box;
-  min-height: 260px;
-  position: relative;
-}
-
-.columns.columns8 > div > div:not(:first-child):empty {
-  position: relative;
-  min-height: 260px;
-  background:
-    /* horizontal line */
-    linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 24px,
-      #e6f0fe 24px,
-      #e6f0fe calc(100% - 24px),
-      transparent calc(100% - 24px),
-      transparent 100%
-    ) 0 50% / 100% 2px no-repeat,
-    /* vertical line */
-    linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 28px,
-      #e6f0fe 28px,
-      #e6f0fe calc(100% - 28px),
-      transparent calc(100% - 28px),
-      transparent 100%
-    ) 50% 0 / 2px 100% no-repeat,
-    /* 4 card backgrounds (simulate cards in grid) */
-    linear-gradient(#fff, #fff) 0 0 / calc(50% - 14px) calc(50% - 12px) no-repeat,
-    linear-gradient(#fff, #fff) 100% 0 / calc(50% - 14px) calc(50% - 12px) no-repeat,
-    linear-gradient(#fff, #fff) 0 100% / calc(50% - 14px) calc(50% - 12px) no-repeat,
-    linear-gradient(#fff, #fff) 100% 100% / calc(50% - 14px) calc(50% - 12px) no-repeat;
-  border-radius: 14px;
-  border: 1.5px solid #E6F0FE;
-  box-sizing: border-box;
-}
-
-.columns.columns8 > div > div:not(:first-child):empty .card-placeholder {
-  display: none;
-}
-
-.columns.columns8 > div > div:not(:first-child):empty::before,
-.columns.columns8 > div > div:not(:first-child):empty::after {
-  display: none;
-}
-
-@media (width <= 900px) {
-  .columns.columns8 {
-    border-radius: 14px;
-    padding: 16px 0;
-    min-height: unset;
-  }
-
-  .columns.columns8 > div {
-    flex-direction: column;
-    gap: 16px;
-    align-items: stretch;
-    min-height: unset;
-  }
-
-  .columns.columns8 > div > div:first-child {
-    min-width: unset;
-    max-width: unset;
-    width: 100%;
-    min-height: 120px;
-    height: unset;
-    align-items: center;
-    text-align: center;
-    padding: 22px 12px;
-    font-size: 1.6rem;
-  }
-
-  .columns.columns8 > div > div:not(:first-child),
-  .columns.columns8 > div > div:not(:first-child):empty {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 12px 0;
-    min-width: unset;
-    max-width: unset;
-    width: 100%;
-    padding: 0;
-    min-height: 220px;
-    background:
-      linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 25%,
-        #e6f0fe 25%,
-        #e6f0fe 25.5%,
-        transparent 25.5%,
-        transparent 50%,
-        #e6f0fe 50%,
-        #e6f0fe 50.5%,
-        transparent 50.5%,
-        transparent 75%,
-        #e6f0fe 75%,
-        #e6f0fe 75.5%,
-        transparent 75.5%,
-        transparent 100%
-      ) 0 0 / 100% 100% no-repeat,
-      linear-gradient(#fff, #fff) 0 0 / 100% calc(25% - 6px) no-repeat,
-      linear-gradient(#fff, #fff) 0 33.33% / 100% calc(25% - 6px) no-repeat,
-      linear-gradient(#fff, #fff) 0 66.66% / 100% calc(25% - 6px) no-repeat,
-      linear-gradient(#fff, #fff) 0 100% / 100% calc(25% - 6px) no-repeat;
-    border-radius: 14px;
-    border: 1.5px solid #E6F0FE;
-    box-sizing: border-box;
-  }
-}
-
-
 .columns.columns4 {
   background: #0a1ca5;
   color: #fff;
@@ -538,7 +372,6 @@
   max-width: 1200px;
 }
 
-/* 7 columns: first 4 wider for text, last 3 narrower for awards/social/download */
 .columns.columns4 > div {
   display: grid;
   grid-template-columns: repeat(4, 1fr) 0.7fr 0.7fr 0.7fr;
@@ -547,7 +380,6 @@
   width: 100%;
 }
 
-/* All columns: stack items vertically, align to top */
 .columns.columns4 > div > div {
   display: flex;
   flex-direction: column;
@@ -558,7 +390,6 @@
   padding: 0;
 }
 
-/* Column headers styling */
 .columns.columns4 > div > div > p:first-child {
   font-weight: bold;
   text-transform: uppercase;
@@ -569,7 +400,6 @@
   font-family: Arial, 'Helvetica Neue', sans-serif;
 }
 
-/* List styling */
 .columns.columns4 ul {
   list-style: none;
   padding: 0;
@@ -599,7 +429,6 @@
   text-decoration: underline;
 }
 
-/* Awards section: center and control pill width, spacing */
 .columns.columns4 > div > div:nth-child(5) {
   align-items: center;
 }
@@ -629,7 +458,6 @@
   text-overflow: ellipsis;
 }
 
-/* Social media: center icons, keep top-aligned */
 .columns.columns4 > div > div:nth-child(6) {
   align-items: center;
 }
@@ -666,7 +494,6 @@
   color: #0a1ca5;
 }
 
-/* Download App: center content horizontally, even spacing */
 .columns.columns4 > div > div:nth-child(7) {
   align-items: center;
 }
@@ -707,7 +534,6 @@
   box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
 }
 
-/* Responsive: Stack columns, always center elements in columns 5-7 */
 @media (width <= 1150px) {
   .columns.columns4 {
     padding: 24px 10px;
@@ -756,5 +582,146 @@
   .columns.columns4 > div > div:nth-child(7) {
     align-items: center;
     justify-content: flex-start;
+  }
+}
+
+
+.columns.columns8 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgb(44 50 96 / 9%);
+  padding: 36px 40px;
+  gap: 40px;
+  min-height: 340px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Ensure inner row is side by side and top-aligned */
+.columns.columns8 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 40px;
+  box-sizing: border-box;
+  min-height: 260px;
+}
+
+/* Left statistic card styling */
+.columns.columns8 > div > div:first-child {
+  background: #0719A3;
+  border-radius: 16px;
+  min-width: 320px;
+  width: 340px;
+  max-width: 370px;
+  min-height: 260px;
+  height: 260px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 34px 34px;
+  margin: 0;
+}
+
+/* Right section: always show a visual grid placeholder, even when empty */
+.columns.columns8 > div > div:not(:first-child) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px 28px;
+  align-items: stretch;
+  min-width: 440px;
+  max-width: 800px;
+  width: 100%;
+  padding: 8px 0;
+  min-height: 260px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 14px;
+  border: 1.5px solid #e6f0fe;
+  background-color: #f4f7fd;
+
+  /* Simulate four stat cards with visible borders */
+  background-image:
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0% 0% / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 0% / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0% 100% / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 100% / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(to right, transparent 0%, transparent 24px, #e6f0fe 24px, #e6f0fe calc(100% - 24px), transparent calc(100% - 24px), transparent 100%) 0% 50% / 100% 2px,
+    linear-gradient(to bottom, transparent 0%, transparent 28px, #e6f0fe 28px, #e6f0fe calc(100% - 28px), transparent calc(100% - 28px), transparent 100%) 50% 0% / 2px 100%;
+  background-repeat: no-repeat;
+}
+
+/* Responsive: stack vertically and show 4 rows of placeholders on smaller screens */
+@media (width <= 900px) {
+  .columns.columns8 {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+    min-height: unset;
+    border-radius: 14px;
+  }
+
+  .columns.columns8 > div {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+    min-height: unset;
+  }
+
+  .columns.columns8 > div > div:first-child {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    min-height: 120px;
+    height: unset;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 12px;
+    border-radius: 12px;
+  }
+
+  .columns.columns8 > div > div:not(:first-child) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px 0;
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    padding: 0;
+    min-height: 220px;
+    border-radius: 14px;
+    border: 1.5px solid #e6f0fe;
+    background-color: #f4f7fd;
+    background-image:
+      linear-gradient(#fff, #fff) 0 0 / 100% calc(25% - 6px),
+      linear-gradient(#fff, #fff) 0 33.33% / 100% calc(25% - 6px),
+      linear-gradient(#fff, #fff) 0 66.66% / 100% calc(25% - 6px),
+      linear-gradient(#fff, #fff) 0 100% / 100% calc(25% - 6px),
+      linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 25%,
+        #e6f0fe 25%,
+        #e6f0fe 25.5%,
+        transparent 25.5%,
+        transparent 50%,
+        #e6f0fe 50%,
+        #e6f0fe 50.5%,
+        transparent 50.5%,
+        transparent 75%,
+        #e6f0fe 75%,
+        #e6f0fe 75.5%,
+        transparent 75.5%,
+        transparent 100%
+      ) 0 0 / 100% 100%;
+    background-repeat: no-repeat;
   }
 }
