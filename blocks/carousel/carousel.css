@@ -153,114 +153,6 @@
 }
 
 
-.carousel.carousel11,
-.carousel.carousel11 .carousel-slides-container,
-.carousel.carousel11 .carousel-slides,
-.carousel.carousel11 .carousel-slide-image {
-  width: 100vw;
-  min-height: 100vh;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.carousel.carousel11 .carousel-slide {
-  min-height: 100vh;
-  position: relative;
-  justify-content: flex-end;
-  align-items: flex-start;
-  background: none;
-}
-
-.carousel.carousel11 .carousel-slide-image {
-  position: absolute;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1920&q=80') center center / cover no-repeat;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.carousel.carousel11 .carousel-slide-content {
-  position: absolute;
-  left: 54px;
-  bottom: 115px;
-  margin: 0;
-  padding: 28px 42px 24px 28px;
-  background: rgb(19 19 19 / 15%);
-  border-radius: 13px;
-  color: #fff;
-  max-width: 420px;
-  box-shadow: 0 4px 24px 0 rgb(19 19 19 / 9%);
-  z-index: 2;
-  backdrop-filter: blur(7px);
-}
-
-.carousel.carousel11 .carousel-slide-content h2 {
-  font-size: 2.7rem;
-  font-weight: 700;
-  margin: 0 0 16px;
-  color: #fff;
-  letter-spacing: 0.01em;
-}
-
-.carousel.carousel11 .carousel-slide-content p {
-  margin: 0;
-  color: #fff;
-  font-size: 1rem;
-  background: rgb(255 255 255 / 15%);
-  border-radius: 2em;
-  padding: 7px 22px;
-  display: inline-block;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  border: 1.5px solid rgb(255 255 255 / 8%);
-  box-shadow: 0 1px 8px 0 rgb(19 19 19 / 4%);
-}
-
-.carousel.carousel11 .carousel-slide-indicators {
-  position: absolute;
-  left: 54px;
-  bottom: 62px;
-  padding: 0;
-  gap: 0 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  z-index: 3;
-  background: none;
-  box-shadow: none;
-}
-
-.carousel.carousel11 .carousel-slide-indicator button {
-  width: 32px;
-  height: 5px;
-  border-radius: 4px;
-  background-color: rgb(255 255 255 / 23%);
-  margin: 0 5px 0 0;
-  transition: background-color 0.22s;
-  border: none;
-  box-shadow: none;
-}
-
-.carousel.carousel11 .carousel-slide-indicator:last-child button {
-  margin-right: 0;
-}
-
-.carousel.carousel11 .carousel-slide-indicator button:disabled,
-.carousel.carousel11 .carousel-slide-indicator button[aria-current="true"] {
-  background-color: #fff;
-  box-shadow: 0 0 8px 2px rgb(255 255 255 / 7%);
-}
-
-.carousel.carousel11 .carousel-navigation-buttons {
-  display: none;
-}
-
-
 .carousel.carousel20 {
   background: radial-gradient(ellipse 75% 68% at 52% 0%, #eaf5fc 0%, #fafdff 100%);
   min-height: 520px;
@@ -423,8 +315,6 @@
   inset: 0;
   width: 100%;
   height: 100%;
-
-  /* Try to load image from public/photo directory as fallback */
   background:
     linear-gradient(180deg, rgb(30 28 25 / 42%) 0%, rgb(180 130 80 / 13%) 68%, rgb(255 220 160 / 7%) 100%),
     url('/images/gateway-of-india-pigeons.jpg'),
@@ -437,7 +327,6 @@
   transition: background-image 0.4s cubic-bezier(.4,0,.2,1);
 }
 
-/* Overlay text refinement: more punch, better shadow, more room */
 .carousel.carousel9 .carousel-slide-content {
   position: absolute;
   left: 5vw;
@@ -492,7 +381,6 @@
   }
 }
 
-/* Carousel indicators: visible, punchy, a bit larger, positioned under text */
 .carousel.carousel9 .carousel-slide-indicators {
   position: absolute;
   left: 6vw;
@@ -542,7 +430,6 @@
   }
 }
 
-/* Share icon: visible, prominent, elegant shadow */
 .carousel.carousel9 .carousel-share-icon {
   position: absolute;
   top: 32px;
@@ -565,7 +452,157 @@
   }
 }
 
-/* Utility: allow interaction with child elements of overlay text */
 .carousel.carousel9 .carousel-slide-content * {
   pointer-events: auto;
+}
+
+
+.carousel.carousel11,
+.carousel.carousel11 .carousel-slides-container,
+.carousel.carousel11 .carousel-slides,
+.carousel.carousel11 .carousel-slide-image {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Dramatic full-bleed background with stronger overlay */
+.carousel.carousel11 .carousel-slide-image {
+  background:
+    linear-gradient(180deg, rgb(19 19 19 / 68%) 0%, rgb(70 35 15 / 33%) 60%, rgb(19 19 19 / 82%) 100%),
+    url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  z-index: 0;
+}
+
+/* Remove white margins from the wrapper and content */
+.carousel-wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw !important;
+  min-height: 100vh !important;
+  background: transparent !important;
+  box-sizing: border-box;
+}
+
+/* Slide content: no card, bigger, more dramatic, left-aligned, better contrast */
+.carousel.carousel11 .carousel-slide-content {
+  position: absolute;
+  left: 48px;
+  bottom: 140px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  max-width: 500px;
+  z-index: 2;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Title: bigger, bolder, more shadow */
+.carousel.carousel11 .carousel-slide-content h2,
+.carousel.carousel11 .carousel-slide-content .city-title {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-shadow: 0 6px 24px rgb(0 0 0 / 67%), 0 1px 0 #222;
+}
+
+/* Photo credit: smaller, lighter, barely-there background */
+.carousel.carousel11 .carousel-slide-content p,
+.carousel.carousel11 .carousel-slide-content .photo-credit {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 12px rgb(0 0 0 / 22%);
+  background: rgb(40 28 17 / 11%);
+  display: inline-block;
+  padding: 3px 18px;
+  border-radius: 2em;
+  border: none;
+  box-shadow: none;
+}
+
+/* Carousel dots: pill style, orange highlight active, bottom left */
+.carousel.carousel11 .carousel-slide-indicators {
+  position: absolute;
+  left: 52px;
+  bottom: 64px;
+  padding: 0;
+  gap: 0 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 5;
+  background: none;
+  box-shadow: none;
+}
+
+.carousel.carousel11 .carousel-slide-indicator button {
+  width: 30px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: rgb(255 255 255 / 21%);
+  margin: 0 6px 0 0;
+  border: none;
+  box-shadow: 0 1px 7px rgb(19 19 19 / 10%);
+  transition: background-color 0.22s;
+}
+
+.carousel.carousel11 .carousel-slide-indicator:last-child button {
+  margin-right: 0;
+}
+
+.carousel.carousel11 .carousel-slide-indicator button:disabled,
+.carousel.carousel11 .carousel-slide-indicator button[aria-current="true"] {
+  background-color: #FFA500;
+  box-shadow: 0 0 8px 2px rgb(255 165 0 / 18%);
+}
+
+/* Hide navigation arrows */
+.carousel.carousel11 .carousel-navigation-buttons {
+  display: none;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (width <= 700px) {
+  .carousel.carousel11 .carousel-slide-content {
+    left: 16px;
+    bottom: 78px;
+    max-width: 92vw;
+  }
+
+  .carousel.carousel11 .carousel-slide-indicators {
+    left: 16px;
+    bottom: 24px;
+  }
+}
+
+/* Optional: fade at bottom for dot contrast */
+.carousel.carousel11::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 110px;
+  background: linear-gradient(to top, rgb(22 22 22 / 44%) 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
 }
