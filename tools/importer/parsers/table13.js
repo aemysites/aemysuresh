@@ -1,21 +1,19 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // 1. Table header matches example exactly
+  // Define the header row exactly as specified
   const headerRow = ['Table (table13)'];
 
-  // 2. Extract column blocks from the given HTML
-  // Each child div represents a column in a single row
+  // Edge case: If there are no children, insert an empty cell
   const columns = Array.from(element.children);
+  const dataRow = columns.length > 0 ? [columns] : [''];
 
-  // Edge case: If no columns found, create an empty cell row
-  const row = columns.length > 0 ? [columns] : [''];
+  // Build table structure: header row, then row containing all columns
+  const cells = [
+    headerRow,
+    dataRow,
+  ];
 
-  // 3. Build table structure: header, row (single row of columns)
-  const cells = [headerRow, row];
-
-  // 4. Create the table block with referenced elements (not cloned or new)
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-
-  // 5. Replace the original element with the new block
-  element.replaceWith(block);
+  // Create the table and replace the original element
+  const blockTable = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(blockTable);
 }

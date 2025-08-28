@@ -1,27 +1,37 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Table header as specified in the example
+  // Header row matches the example: 'Cards (cards3)'
   const headerRow = ['Cards (cards3)'];
 
-  // The provided HTML is a single image-based card, no inner text blocks
-  // Find the picture element for the card's image
+  // Find the wrapper containing the card content
   const wrapper = element.querySelector('.flights_stats__wrapper');
-  let picture = null;
+  let imageEl = null;
   if (wrapper) {
-    picture = wrapper.querySelector('picture');
+    const picture = wrapper.querySelector('picture');
+    if (picture) {
+      // Reference the <img> element for the card image
+      imageEl = picture.querySelector('img');
+    }
   }
 
-  // Only create a card row if picture was found
-  const cardRows = [];
-  if (picture) {
-    // There is no text content in the HTML so the second cell is empty
-    cardRows.push([picture, '']);
-  }
+  // There is no section metadata in the example markdown, so do not create such block.
 
-  // Create the block table - no Section Metadata per the example
-  const cells = [headerRow, ...cardRows];
+  // The screenshot shows a main stat (2,300+ Daily Flights) and 4 smaller stats
+  // The stats themselves do not appear in the HTML. To avoid hardcoding,
+  // we should extract only what is present in the HTML.
+  // However, the source HTML contains only an image; no text.
+
+  // Therefore, the only content to extract is the image itself.
+  // The block should contain a single card row: image only in the first cell, empty second cell.
+
+  // If there's an image, create a card with the image and empty text cell
+  const cardRow = imageEl ? [imageEl, ''] : ['', ''];
+
+  const cells = [
+    headerRow,
+    cardRow
+  ];
+
   const block = WebImporter.DOMUtils.createTable(cells, document);
-
-  // Replace the original element with the new block table
   element.replaceWith(block);
 }

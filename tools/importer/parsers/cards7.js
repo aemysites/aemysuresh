@@ -1,61 +1,54 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // 1. Header row
+  // Table header must match example exactly
   const headerRow = ['Cards (cards7)'];
 
-  // 2. Find all cards inside the carousel
-  // The actual cards are inside .swiper-wrapper > .swiper-slide > .services-carousel--card
+  // Find the carousel wrapper
   const swiperWrapper = element.querySelector('.swiper-wrapper');
-  if (!swiperWrapper) {
-    // If there's no swiper wrapper, nothing to process, so just return
-    return;
-  }
+  if (!swiperWrapper) return;
 
-  const slides = swiperWrapper.querySelectorAll('.swiper-slide');
+  const slides = swiperWrapper.querySelectorAll(':scope > .swiper-slide');
   const rows = [];
 
-  slides.forEach((slide) => {
+  slides.forEach(slide => {
     const card = slide.querySelector('.services-carousel--card');
     if (!card) return;
+    // Image: select <img> inside .services-carousel--img-container
+    const imgContainer = card.querySelector('.services-carousel--img-container');
+    let imgElem = null;
+    if (imgContainer) {
+      imgElem = imgContainer.querySelector('img');
+    }
 
-    // IMAGE/ICON (mandatory)
-    const imgEl = card.querySelector('.services-carousel--img-container img');
-    let image = imgEl || '';
-
-    // TEXT CONTENT (mandatory)
+    // Content: title and description
     const contentContainer = card.querySelector('.services-carousel--content-container');
-    let textCell = [];
+    let contentCell = [];
     if (contentContainer) {
-      // Title (optional)
-      const titleEl = contentContainer.querySelector('.title');
-      if (titleEl && titleEl.textContent.trim()) {
-        // Use strong for heading (as styled in the example)
-        const strong = document.createElement('strong');
-        strong.textContent = titleEl.textContent.trim();
-        textCell.push(strong);
+      const title = contentContainer.querySelector('.title');
+      let titleElem = null;
+      if (title && title.textContent.trim()) {
+        titleElem = document.createElement('strong');
+        titleElem.textContent = title.textContent.trim();
+        contentCell.push(titleElem);
       }
-      // Description (optional)
-      const descEl = contentContainer.querySelector('.description');
-      if (descEl && descEl.textContent.trim()) {
-        // Add a <br> if there is a title
-        if (textCell.length > 0) {
-          textCell.push(document.createElement('br'));
-        }
-        textCell.push(descEl);
+      const desc = contentContainer.querySelector('.description');
+      if (desc && desc.textContent.trim()) {
+        // Description below title
+        const descElem = document.createElement('div');
+        descElem.textContent = desc.textContent.trim();
+        contentCell.push(descElem);
       }
     }
-    // Fallback if something is missing
-    if (textCell.length === 0) {
-      textCell = '';
-    }
-    // Each row: [image, text content]
-    rows.push([image, textCell]);
+
+    // Ensure both image and text are included. If missing, use empty placeholder.
+    rows.push([
+      imgElem || '',
+      contentCell.length > 0 ? contentCell : ''
+    ]);
   });
 
-  // 3. Compose final cells array
+  // Assemble table
   const cells = [headerRow, ...rows];
-
-  // 4. Create table and replace element
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(table);
+  const blockTable = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(blockTable);
 }

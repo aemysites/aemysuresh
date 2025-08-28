@@ -1,100 +1,91 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Cards (cards10) header row exactly as required
-  const cells = [['Cards (cards10)']];
+  // Table header matches example exactly
+  const headerRow = ['Cards (cards10)'];
 
-  // Find the main swiper wrapper for hotel cards
-  const swiperWrapper = element.querySelector('.swiper-wrapper');
-  if (!swiperWrapper) return;
-  // Each card is a .swiper-slide
-  const slides = swiperWrapper.querySelectorAll(':scope > .swiper-slide');
+  // Find all card slides
+  const slides = element.querySelectorAll('.swiper-slide');
+  const rows = [headerRow];
 
   slides.forEach(slide => {
+    // Card root
     const card = slide.querySelector('.seo-hotel-strip--item');
     if (!card) return;
 
-    // First cell: the image element from .seo-hotel-strip--image-block img
-    let imageCell = null;
-    const img = card.querySelector('.seo-hotel-strip--image-block img');
-    if (img) {
-      imageCell = img;
+    // IMAGE CELL
+    const imgBlock = card.querySelector('.seo-hotel-strip--image-block');
+    let imageCell = [];
+    // Image
+    if (imgBlock) {
+      const img = imgBlock.querySelector('img');
+      if (img) imageCell.push(img);
+      // Rating (as badge-like, below image)
+      const ratingDiv = imgBlock.querySelector('.seo-hotel-strip--rating');
+      if (ratingDiv && ratingDiv.textContent.trim()) {
+        const ratingPara = document.createElement('p');
+        ratingPara.appendChild(ratingDiv);
+        imageCell.push(ratingPara);
+      }
     }
-
-    // Second cell: all structured text content
-    const textCell = document.createElement('div');
-    // Title
+    if (imageCell.length === 1) imageCell = imageCell[0];
+    
+    // TEXT CELL
+    let textCell = [];
+    // Title (as strong)
     const titleEl = card.querySelector('.seo-hotel-strip--title-block--title');
-    if (titleEl) {
-      const heading = document.createElement('strong');
-      heading.textContent = titleEl.textContent;
-      textCell.appendChild(heading);
-      textCell.appendChild(document.createElement('br'));
+    if (titleEl && titleEl.textContent.trim()) {
+      const strong = document.createElement('strong');
+      strong.textContent = titleEl.textContent.trim();
+      textCell.push(strong);
     }
-    // Location and stars (combine inline)
+    // Location and Stars
     const locationEl = card.querySelector('.seo-hotel-strip--location span');
     const starsEl = card.querySelector('.seo-hotel-strip--stars');
-    if (locationEl || starsEl) {
-      const locationStars = document.createElement('span');
-      let locText = locationEl ? locationEl.textContent.trim() : '';
-      let starText = '';
+    if ((locationEl && locationEl.textContent.trim()) || starsEl) {
+      const metaDiv = document.createElement('div');
+      if (locationEl && locationEl.textContent.trim()) {
+        metaDiv.appendChild(locationEl);
+      }
       if (starsEl) {
-        const starCount = starsEl.querySelectorAll('.icon-star_filled').length;
-        if (starCount > 0) {
-          starText = ' ' + '★'.repeat(starCount);
-        }
+        metaDiv.appendChild(starsEl);
       }
-      locationStars.textContent = locText + starText;
-      if (locationStars.textContent.trim().length) {
-        textCell.appendChild(locationStars);
-        textCell.appendChild(document.createElement('br'));
-      }
+      textCell.push(metaDiv);
     }
-    // Rating (e.g. "4.2/5 (783 reviews)")
-    const ratingBlock = card.querySelector('.seo-hotel-strip--rating');
-    if (ratingBlock) {
-      // Directly reference the rating block which contains both pieces
-      textCell.appendChild(ratingBlock);
-      textCell.appendChild(document.createElement('br'));
+    // Price (actual price and display price)
+    const actualPriceEl = card.querySelector('.seo-hotel-strip--price-block--actual-price');
+    if (actualPriceEl && actualPriceEl.textContent.trim()) {
+      const actualPriceP = document.createElement('p');
+      actualPriceP.textContent = actualPriceEl.textContent.trim();
+      textCell.push(actualPriceP);
     }
-    // Price block (actual price and/or discounted price)
-    const priceBlock = card.querySelector('.seo-hotel-strip--price-block--price');
-    if (priceBlock) {
-      // actual-price (sometimes empty), then hotel-price
-      const actualPrice = priceBlock.querySelector('.seo-hotel-strip--price-block--actual-price');
-      if (actualPrice && actualPrice.textContent.trim()) {
-        textCell.appendChild(actualPrice);
-        textCell.appendChild(document.createElement('br'));
-      }
-      const hotelPrice = priceBlock.querySelector('.seo-hotel-strip--hotel-price');
-      if (hotelPrice) {
-        textCell.appendChild(hotelPrice);
-        textCell.appendChild(document.createElement('br'));
-      }
+    const hotelPriceEl = card.querySelector('.seo-hotel-strip--hotel-price');
+    if (hotelPriceEl) {
+      textCell.push(hotelPriceEl);
     }
     // Tax info
-    const taxBlock = card.querySelector('.seo-hotel-strip--price-block--tax');
-    if (taxBlock) {
-      textCell.appendChild(taxBlock);
-      textCell.appendChild(document.createElement('br'));
+    const taxPriceEl = card.querySelector('.tax-price');
+    const taxLabelEl = card.querySelector('.tax-label');
+    if ((taxPriceEl && taxPriceEl.textContent.trim()) || (taxLabelEl && taxLabelEl.textContent.trim())) {
+      const taxDiv = document.createElement('div');
+      if (taxPriceEl && taxPriceEl.textContent.trim()) {
+        taxDiv.appendChild(taxPriceEl);
+      }
+      if (taxLabelEl && taxLabelEl.textContent.trim()) {
+        taxDiv.appendChild(taxLabelEl);
+      }
+      textCell.push(taxDiv);
     }
-    // CTA button
-    const bookBtn = card.querySelector('.seo-hotel-strip--book-now-cta');
-    if (bookBtn) {
-      textCell.appendChild(bookBtn);
+    // CTA Button
+    const bookButton = card.querySelector('.seo-hotel-strip--book-now-cta');
+    if (bookButton) {
+      textCell.push(bookButton);
     }
-
-    // Remove trailing <br> if present
-    while (textCell.lastChild && textCell.lastChild.tagName === 'BR') {
-      textCell.removeChild(textCell.lastChild);
-    }
-
-    cells.push([
-      imageCell,
-      textCell
-    ]);
+    // If only one item, don't wrap in array
+    if (textCell.length === 1) textCell = textCell[0];
+    rows.push([imageCell, textCell]);
   });
 
-  // Create and replace with the block table
-  const table = WebImporter.DOMUtils.createTable(cells, document);
+  // Create and replace
+  const table = WebImporter.DOMUtils.createTable(rows, document);
   element.replaceWith(table);
 }

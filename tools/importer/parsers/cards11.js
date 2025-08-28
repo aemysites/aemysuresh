@@ -1,78 +1,61 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Block header row
-  const headerRow = ['Cards (cards11)'];
+  // Find all the card elements (main + extra)
+  const mainCards = Array.from(element.querySelectorAll('.card-main-container .card'));
+  const extraCards = Array.from(element.querySelectorAll('.card-extra-container .card'));
+  const cards = [...mainCards, ...extraCards];
 
-  // Gather all card nodes (main + extra)
-  const cardNodes = [
-    ...element.querySelectorAll('.card-main-container .card'),
-    ...element.querySelectorAll('.card-extra-container .card')
-  ];
+  // Table header row exactly as specified
+  const cells = [['Cards (cards11)']];
 
-  // Helper to build the text cell, preserving semantic structure
-  function buildTextCell(card) {
+  // For each card, build a row [image, text content]
+  cards.forEach(card => {
+    // Get the image element (must reference the existing node)
+    const img = card.querySelector('img');
+
+    // Get card details containing the title, description, and info
     const details = card.querySelector('.card--details');
-    // Title (h2) as <strong>
-    let titleEl = null;
-    const title = details?.querySelector('.card--title');
+
+    // Compose content cell: title (strong), description (p), info (span), ribbon (em, if present)
+    const contentParts = [];
+
+    // Title (display as <strong>)
+    const title = details.querySelector('.card--title');
     if (title) {
-      titleEl = document.createElement('strong');
-      titleEl.textContent = title.textContent.trim();
+      const strong = document.createElement('strong');
+      strong.textContent = title.textContent;
+      contentParts.push(strong);
     }
-    // Description (may be missing)
-    let descEl = null;
-    const desc = details?.querySelector('.card--description');
+
+    // Description (<p>) if present
+    const desc = details.querySelector('.card--description');
     if (desc) {
-      descEl = document.createElement('span');
-      descEl.textContent = desc.textContent.trim();
+      // Use the real element
+      contentParts.push(document.createElement('br'));
+      contentParts.push(desc);
     }
-    // Info (may be missing)
-    let infoEl = null;
-    const info = details?.querySelector('.card--info');
+
+    // Info (span) if present
+    const info = details.querySelector('.card--info');
     if (info) {
-      infoEl = document.createElement('span');
-      infoEl.textContent = info.textContent.trim();
-      infoEl.style.display = 'block';
+      contentParts.push(document.createElement('br'));
+      contentParts.push(info);
     }
-    // Marker/ribbon (may be missing)
-    let markerEl = null;
+
+    // Ribbon/marker if present
     const ribbon = card.querySelector('.ribbon');
     if (ribbon) {
-      markerEl = document.createElement('em');
-      markerEl.textContent = ribbon.textContent.trim();
-      markerEl.style.display = 'block';
+      contentParts.push(document.createElement('br'));
+      const em = document.createElement('em');
+      em.textContent = ribbon.textContent;
+      contentParts.push(em);
     }
-    // Compose cell, using array so createTable does not wrap in <span>
-    const cellContent = [];
-    if (titleEl) cellContent.push(titleEl);
-    if (descEl) {
-      if (cellContent.length) cellContent.push(document.createElement('br'));
-      cellContent.push(descEl);
-    }
-    if (infoEl) {
-      if (cellContent.length) cellContent.push(document.createElement('br'));
-      cellContent.push(infoEl);
-    }
-    if (markerEl) {
-      if (cellContent.length) cellContent.push(document.createElement('br'));
-      cellContent.push(markerEl);
-    }
-    return cellContent;
-  }
 
-  // Build all table rows (one per card)
-  const rows = cardNodes.map(card => {
-    // Image element, reference as-is
-    const img = card.querySelector('img');
-    // Text cell content
-    const textCell = buildTextCell(card);
-    return [img, textCell];
+    // Push the row: [image, [content parts]]
+    cells.push([img, contentParts]);
   });
 
-  // Compose table cells
-  const cells = [headerRow, ...rows];
-
-  // Create and replace block table
+  // Create the table block
   const block = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(block);
 }

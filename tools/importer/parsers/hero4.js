@@ -1,54 +1,48 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Block table header matches example
+  // Table header row
   const headerRow = ['Hero (hero4)'];
 
-  // --- Background Image Row ---
-  // Find the background image element, use src attribute
-  let backgroundImageRow = [''];
-  const imgDiv = element.querySelector('.slider-img');
-  if (imgDiv && imgDiv.dataset.bgImage) {
-    // Create an <img> element using src from data-bg-image
-    const imgEl = document.createElement('img');
-    imgEl.src = imgDiv.dataset.bgImage;
-    imgEl.title = imgDiv.title || '';
-    backgroundImageRow = [imgEl];
-  }
-
-  // --- Content/Text Row ---
-  // Gather heading, (optional) tag, and photo credit as in the source HTML
-  const contentElements = [];
-
-  // Heading (always present in this HTML)
-  const headingContainer = element.querySelector('.slider-heading');
-  if (headingContainer) {
-    const titleEl = headingContainer.querySelector('.slider-heading--location');
-    if (titleEl && titleEl.textContent.trim()) {
-      contentElements.push(titleEl);
-    }
-    // Subheading/tag (optional, but empty string in provided HTML)
-    const tagEl = headingContainer.querySelector('.slider-heading--tag');
-    if (tagEl && tagEl.textContent.trim()) {
-      contentElements.push(tagEl);
+  // --- IMAGE ROW ---
+  // Find the background image URL
+  let imageElem = null;
+  const sliderImg = element.querySelector('.slider-img');
+  if (sliderImg) {
+    const bgUrl = sliderImg.getAttribute('data-bg-image');
+    if (bgUrl) {
+      imageElem = document.createElement('img');
+      imageElem.src = bgUrl;
+      imageElem.alt = sliderImg.title || '';
+      if (sliderImg.title) imageElem.title = sliderImg.title;
     }
   }
+  const imageRow = [imageElem || ''];
 
-  // Photo credit
-  const creditContainer = element.querySelector('.slider--credit-container');
-  if (creditContainer) {
-    const creditTextEl = creditContainer.querySelector('.slider--credit-text');
-    if (creditTextEl && creditTextEl.textContent.trim()) {
-      contentElements.push(creditTextEl);
-    }
+  // --- CONTENT ROW ---
+  // Compose all content elements (heading, subheading, credit)
+  const contentElems = [];
+  // Heading (h2)
+  const sliderHeading = element.querySelector('.slider-heading');
+  if (sliderHeading) {
+    const heading = sliderHeading.querySelector('h2');
+    if (heading && heading.textContent.trim()) contentElems.push(heading);
+    // Subheading (tag) - only if it contains text
+    const subheading = sliderHeading.querySelector('.slider-heading--tag');
+    if (subheading && subheading.textContent.trim()) contentElems.push(subheading);
   }
+  // Photo credit (optional)
+  const credit = element.querySelector('.slider--credit-text');
+  if (credit && credit.textContent.trim()) contentElems.push(credit);
 
-  // Content row is a single cell with all content elements
-  const contentRow = [contentElements];
+  // If there are no content elements, ensure cell is not empty string (use '')
+  const contentRow = [contentElems.length ? contentElems : ''];
 
-  // Compose the cells per spec: header, bg image, content
-  const cells = [headerRow, backgroundImageRow, contentRow];
-
-  // Create table and replace original element
-  const blockTable = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(blockTable);
+  // Build the table
+  const cells = [
+    headerRow,
+    imageRow,
+    contentRow
+  ];
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(table);
 }

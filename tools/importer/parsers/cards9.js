@@ -1,105 +1,111 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row as per example
-  const header = ['Cards (cards9)'];
+  // Table header must match example exactly
+  const headerRow = ["Cards (cards9)"];
 
-  // Find the swiper wrapper that holds all slides
+  // Find the main swiper-wrapper for the hotel cards
   const swiperWrapper = element.querySelector('.swiper-wrapper');
-  const slides = swiperWrapper ? swiperWrapper.querySelectorAll('.swiper-slide') : [];
+  if (!swiperWrapper) return;
+
+  // Get all swiper-slide elements (each is a card)
+  const slides = Array.from(swiperWrapper.children)
+    .filter(slide => slide.classList.contains('swiper-slide'));
 
   const rows = [];
 
-  slides.forEach(slide => {
+  slides.forEach((slide) => {
     const card = slide.querySelector('.seo-hotel-strip--item');
     if (!card) return;
-    // === LEFT CELL: IMAGE ===
+
+    // ----------- IMAGE CELL (first column) -----------
     let img = null;
-    const imgBlock = card.querySelector('.seo-hotel-strip--image-block');
-    if (imgBlock) {
-      img = imgBlock.querySelector('img');
+    const imageBlock = card.querySelector('.seo-hotel-strip--image-block');
+    if (imageBlock) {
+      img = imageBlock.querySelector('img'); // reference the actual element in document
     }
+    // If missing, cell is left blank per guidelines
 
-    // === RIGHT CELL: TEXTUAL CONTENT ===
-    let rightCellParts = [];
+    // ----------- TEXT CELL (second column) -----------
+    const textCell = document.createElement('div');
 
-    // Title (always present)
+    // Title (always a <strong> per example block)
     const title = card.querySelector('.seo-hotel-strip--title-block--title');
-    if (title && title.textContent.trim() !== '') {
+    if (title && title.textContent.trim()) {
       const strong = document.createElement('strong');
       strong.textContent = title.textContent.trim();
-      rightCellParts.push(strong);
+      textCell.appendChild(strong);
     }
-
-    // Location (Delhi)
-    const location = card.querySelector('.seo-hotel-strip--location span');
-    if (location && location.textContent.trim() !== '') {
+    // Location (if available)
+    const locationSpan = card.querySelector('.seo-hotel-strip--location span');
+    if (locationSpan && locationSpan.textContent.trim()) {
       const locDiv = document.createElement('div');
-      locDiv.textContent = location.textContent.trim();
-      rightCellParts.push(locDiv);
+      locDiv.textContent = locationSpan.textContent.trim();
+      textCell.appendChild(locDiv);
     }
-
-    // Star rating (number of .icon-star_filled)
-    const starBlock = card.querySelector('.seo-hotel-strip--stars');
-    if (starBlock) {
-      const stars = starBlock.querySelectorAll('.icon-star_filled');
-      if (stars.length > 0) {
-        const starsDiv = document.createElement('div');
-        starsDiv.textContent = '★'.repeat(stars.length);
-        rightCellParts.push(starsDiv);
+    // Star rating
+    const starsDiv = card.querySelector('.seo-hotel-strip--stars');
+    if (starsDiv) {
+      const starCount = starsDiv.querySelectorAll('.icon-star_filled').length;
+      if (starCount > 0) {
+        const stars = document.createElement('div');
+        stars.textContent = '★'.repeat(starCount);
+        textCell.appendChild(stars);
       }
     }
-
-    // Hotel review rating (e.g. 4.3/5 (7 reviews))
-    const ratingBlock = imgBlock ? imgBlock.querySelector('.seo-hotel-strip--rating') : null;
-    if (ratingBlock && ratingBlock.textContent.trim() !== '') {
+    // Rating (if present)
+    const ratingBlock = imageBlock && imageBlock.querySelector('.seo-hotel-strip--rating');
+    if (ratingBlock && ratingBlock.textContent.trim()) {
       const ratingDiv = document.createElement('div');
       ratingDiv.textContent = ratingBlock.textContent.trim();
-      rightCellParts.push(ratingDiv);
+      textCell.appendChild(ratingDiv);
     }
-
-    // Price details
+    // Price block
     const priceBlock = card.querySelector('.seo-hotel-strip--price-block');
     if (priceBlock) {
-      // Actual price (strikethrough/old price, may be empty)
+      // Actual price
       const actualPrice = priceBlock.querySelector('.seo-hotel-strip--price-block--actual-price');
-      if (actualPrice && actualPrice.textContent.trim() !== '') {
-        const actualPriceDiv = document.createElement('div');
-        actualPriceDiv.textContent = actualPrice.textContent.trim();
-        rightCellParts.push(actualPriceDiv);
+      if (actualPrice && actualPrice.textContent.trim()) {
+        const actualDiv = document.createElement('div');
+        actualDiv.textContent = actualPrice.textContent.trim();
+        textCell.appendChild(actualDiv);
       }
-      // Current hotel price per night
+      // Main price and /night tag
       const hotelPrice = priceBlock.querySelector('.seo-hotel-strip--hotel-price');
-      if (hotelPrice && hotelPrice.textContent.trim() !== '') {
-        const hotelPriceDiv = document.createElement('div');
-        hotelPriceDiv.innerHTML = hotelPrice.innerHTML;
-        rightCellParts.push(hotelPriceDiv);
+      if (hotelPrice && hotelPrice.textContent.trim()) {
+        const priceDiv = document.createElement('div');
+        priceDiv.innerHTML = hotelPrice.innerHTML;
+        textCell.appendChild(priceDiv);
       }
-      // Taxes info
+      // Tax info
       const taxPrice = priceBlock.querySelector('.tax-price');
       const taxLabel = priceBlock.querySelector('.tax-label');
-      if ((taxPrice && taxPrice.textContent.trim() !== '') || (taxLabel && taxLabel.textContent.trim() !== '')) {
-        const taxesDiv = document.createElement('div');
-        taxesDiv.textContent =
-          (taxPrice && taxPrice.textContent.trim() !== '' ? taxPrice.textContent.trim() + ' ' : '') +
-          (taxLabel && taxLabel.textContent.trim() !== '' ? taxLabel.textContent.trim() : '');
-        rightCellParts.push(taxesDiv);
+      if ((taxPrice && taxPrice.textContent.trim()) || (taxLabel && taxLabel.textContent.trim())) {
+        const taxDiv = document.createElement('div');
+        if (taxPrice && taxPrice.textContent.trim()) {
+          taxDiv.textContent = taxPrice.textContent.trim() + ' ';
+        }
+        if (taxLabel && taxLabel.textContent.trim()) {
+          taxDiv.textContent += taxLabel.textContent.trim();
+        }
+        textCell.appendChild(taxDiv);
       }
     }
-
-    // CTA (Book button, always present)
+    // CTA (Book button as text)
     const bookBtn = card.querySelector('.seo-hotel-strip--book-now-cta');
-    if (bookBtn && bookBtn.textContent.trim() !== '') {
+    if (bookBtn && bookBtn.textContent.trim()) {
       const ctaDiv = document.createElement('div');
       ctaDiv.textContent = bookBtn.textContent.trim();
-      rightCellParts.push(ctaDiv);
+      textCell.appendChild(ctaDiv);
     }
 
-    // Compose row: always 2 columns
-    rows.push([img, rightCellParts]);
+    // Add this card row
+    rows.push([
+      img || '',
+      textCell
+    ]);
   });
 
-  // Compose the whole table
-  const tableArr = [header, ...rows];
-  const block = WebImporter.DOMUtils.createTable(tableArr, document);
-  element.replaceWith(block);
+  const cells = [headerRow, ...rows];
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(table);
 }

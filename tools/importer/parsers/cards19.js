@@ -1,46 +1,62 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row must match example
+  // Block header
   const headerRow = ['Cards (cards19)'];
+  const cells = [headerRow];
 
-  // Helper: Extract image and all text content from card, referencing existing elements
-  function getCardParts(card) {
-    // Find the image (if any) in the card
+  // Gather all card elements
+  const cardElems = [
+    ...element.querySelectorAll('.card-main-container .card'),
+    ...element.querySelectorAll('.card-extra-container .card')
+  ];
+
+  cardElems.forEach(card => {
+    // Image (first cell)
     const img = card.querySelector('img');
 
-    // Compose all relevant text content from the card
-    const textParts = [];
-    // Ribbon/marker (only in first card)
-    const ribbon = card.querySelector('.ribbon');
-    if (ribbon) textParts.push(ribbon); // reference, do not clone
-    // Card details
+    // Text (second cell)
     const details = card.querySelector('.card--details');
-    if (details) {
-      // Include all children (title, description, info)
-      Array.from(details.children).forEach((el) => {
-        if (el.textContent && el.textContent.trim()) {
-          textParts.push(el); // reference, do not clone
-        }
-      });
+    const textContent = [];
+
+    // Title (heading)
+    const title = details && details.querySelector('.card--title');
+    if (title) {
+      const heading = document.createElement('strong');
+      heading.textContent = title.textContent;
+      textContent.push(heading);
     }
-    return [img ? img : '', textParts.length ? textParts : ''];
-  }
 
-  // Find all cards, main and extra
-  const cards = [];
-  const mainCards = element.querySelectorAll('.card-container > .card');
-  mainCards.forEach(card => cards.push(card));
-  const extraCards = element.querySelectorAll('.card-extra-container > .card');
-  extraCards.forEach(card => cards.push(card));
+    // Description (optional)
+    const description = details && details.querySelector('.card--description');
+    if (description && description.textContent.trim()) {
+      textContent.push(document.createElement('br'));
+      textContent.push(document.createTextNode(description.textContent));
+    }
 
-  // Build table rows: header + one row per card
-  const rows = [headerRow];
-  cards.forEach(card => {
-    const [imgCell, textCell] = getCardParts(card);
-    rows.push([imgCell, textCell]);
+    // Exploration time info
+    const info = details && details.querySelector('.card--info');
+    if (info && info.textContent.trim()) {
+      textContent.push(document.createElement('br'));
+      textContent.push(document.createElement('br'));
+      textContent.push(document.createTextNode(info.textContent));
+    }
+
+    // Ribbon/marker (optional)
+    const ribbon = card.querySelector('.ribbon');
+    if (ribbon && ribbon.textContent.trim()) {
+      textContent.push(document.createElement('br'));
+      textContent.push(document.createElement('br'));
+      const ribbonElem = document.createElement('span');
+      ribbonElem.textContent = ribbon.textContent;
+      ribbonElem.style.fontWeight = 'bold';
+      textContent.push(ribbonElem);
+    }
+
+    // Add row with [img, textContent]
+    cells.push([img, textContent]);
   });
 
-  // Create and replace with table block
-  const block = WebImporter.DOMUtils.createTable(rows, document);
+  // Create and replace block table
+  const block = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(block);
 }

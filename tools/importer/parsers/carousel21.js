@@ -1,56 +1,70 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row: matches example exactly
+  // Table header as required
   const headerRow = ['Carousel (carousel21)'];
+  const wrapper = element.querySelector('.carousel__wrapper');
+  if (!wrapper) return;
+  const slides = Array.from(wrapper.querySelectorAll('a.carousel__slide'));
+  const rows = [headerRow];
 
-  // Slide row: [image, text content]
-  // Extract image
-  let imgEl = null;
-  const imgDiv = element.querySelector('.slider-img');
-  if (imgDiv) {
-    const imgSrc = imgDiv.getAttribute('data-bg-image');
-    if (imgSrc) {
-      imgEl = document.createElement('img');
-      imgEl.src = imgSrc;
-      imgEl.alt = '';
+  slides.forEach((slide) => {
+    // IMAGE CELL
+    let imageEl = null;
+    const picture = slide.querySelector('picture');
+    if (picture) {
+      imageEl = picture;
+    } else {
+      const img = slide.querySelector('img');
+      if (img) imageEl = img;
     }
-  }
+    if (!imageEl) return;
 
-  // Extract text content (title, credit)
-  const textFragments = [];
-  const headingContainer = element.querySelector('.slider-heading');
-  let titleEl = null;
-  if (headingContainer) {
-    // Use existing h2 as heading
-    titleEl = headingContainer.querySelector('h2');
-    if (titleEl) {
-      textFragments.push(titleEl);
+    // TEXT CELL (dynamic extraction, not hardcoded)
+    let textParts = [];
+
+    // 1. Try to extract direct text nodes and non-image elements
+    // Only include elements that are not <picture> or <img>
+    Array.from(slide.childNodes).forEach((node) => {
+      if (node.nodeType === 3) { // Text node
+        const txt = node.textContent.trim();
+        if (txt) {
+          textParts.push(document.createTextNode(txt));
+        }
+      } else if (node.nodeType === 1 && node.tagName !== 'PICTURE' && node.tagName !== 'IMG') {
+        // Reference the element directly (do not clone)
+        textParts.push(node);
+      }
+    });
+
+    // 2. If no text content found, use anchor attributes for heading
+    if (textParts.length === 0) {
+      const headingText = slide.getAttribute('title') || slide.getAttribute('aria-label');
+      if (headingText) {
+        const h2 = document.createElement('h2');
+        h2.textContent = headingText;
+        textParts.push(h2);
+      }
     }
-    // If there's a tag, and it's not empty, include it
-    const tagEl = headingContainer.querySelector('.slider-heading--tag');
-    if (tagEl && tagEl.textContent.trim()) {
-      textFragments.push(tagEl);
+
+    // 3. Always include CTA link at the end (unless it's already included with visible text)
+    // If the slide anchor has no visible text content (which is the case in this HTML), create a CTA link
+    if (slide.href) {
+      const linkText = slide.getAttribute('title') || slide.getAttribute('aria-label') || 'Learn more';
+      const link = document.createElement('a');
+      link.href = slide.href;
+      link.target = slide.target || '_self';
+      link.textContent = linkText;
+      textParts.push(link);
     }
-  }
 
-  // Photo credits
-  const creditContainer = element.querySelector('.slider--credit-container');
-  if (creditContainer) {
-    const creditTextEl = creditContainer.querySelector('.slider--credit-text');
-    if (creditTextEl && creditTextEl.textContent.trim()) {
-      // Add a <br> for spacing before credit
-      textFragments.push(document.createElement('br'));
-      textFragments.push(creditTextEl);
-    }
-  }
+    // If nothing found, ensure empty string for cell
+    if (textParts.length === 0) textParts = [''];
 
-  // Compose table rows
-  const cells = [
-    headerRow,
-    [imgEl, textFragments]
-  ];
+    rows.push([imageEl, textParts.length === 1 ? textParts[0] : textParts]);
+  });
 
-  // Create and replace with the block table
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  // Create block table
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+  // Replace original element with the block
   element.replaceWith(block);
 }

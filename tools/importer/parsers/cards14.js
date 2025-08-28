@@ -1,37 +1,33 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row as per instructions and example
-  const rows = [["Cards (cards14)"]];
+  // Header row exactly as example
+  const headerRow = ['Cards (cards14)'];
+  const rows = [headerRow];
 
-  // Select all cards (links as direct children)
-  const cards = element.querySelectorAll('a.swiper-slide');
-  cards.forEach((card) => {
-    // FIRST CELL: Icon (span), or null if not present
-    const icon = card.querySelector('.swiper-slide__flight-icon');
-
-    // SECOND CELL: Text content - preserve all p's in order, and add a CTA link at the end
-    const textCellContent = [];
-    // Get all p tags inside card in order (title and desc)
-    const ps = card.querySelectorAll('p');
-    ps.forEach((p) => {
-      textCellContent.push(p);
+  // Get all card <a> elements directly under .swiper-wrapper
+  const slides = element.querySelectorAll('.swiper-wrapper > a');
+  slides.forEach((slide) => {
+    // First cell: icon (always present, use reference)
+    const icon = slide.querySelector('.swiper-slide__flight-icon') || '';
+    // Second cell: all text content (including headings, paragraphs)
+    const textCellParts = [];
+    // Title (typically first <p> with title class, but be flexible)
+    const title = slide.querySelector('.swiper-slide__main, .slider-heading-text');
+    if (title) textCellParts.push(title);
+    // Additional paragraphs (descriptions), but skip the title if already added
+    slide.querySelectorAll('p').forEach((p) => {
+      if (p !== title) textCellParts.push(p);
     });
-
-    // Add CTA link to the end if href exists (use existing card href)
-    if (card.href) {
+    // CTA: only if the card is a link (use href from the <a>)
+    if (slide.hasAttribute('href') && slide.getAttribute('href')) {
       const cta = document.createElement('a');
-      cta.href = card.href;
+      cta.href = slide.getAttribute('href');
       cta.textContent = 'Learn more';
-      // copy target if present
-      if (card.target) cta.target = card.target;
-      textCellContent.push(cta);
+      textCellParts.push(cta);
     }
-
-    // Add row: icon (may be null), text content array
-    rows.push([icon, textCellContent]);
+    rows.push([icon, textCellParts]);
   });
 
-  // Build the table and replace the original element
   const table = WebImporter.DOMUtils.createTable(rows, document);
   element.replaceWith(table);
 }
