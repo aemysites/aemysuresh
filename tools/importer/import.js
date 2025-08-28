@@ -11,24 +11,23 @@
  */
 /* global WebImporter */
 /* eslint-disable no-console */
-import cards5Parser from './parsers/cards5.js';
-import cards6Parser from './parsers/cards6.js';
-import columns1Parser from './parsers/columns1.js';
-import cards9Parser from './parsers/cards9.js';
+import hero4Parser from './parsers/hero4.js';
+import columns6Parser from './parsers/columns6.js';
 import cards8Parser from './parsers/cards8.js';
-import cards10Parser from './parsers/cards10.js';
-import carousel14Parser from './parsers/carousel14.js';
-import cards16Parser from './parsers/cards16.js';
-import carousel21Parser from './parsers/carousel21.js';
-import cards15Parser from './parsers/cards15.js';
-import tableNoHeader3Parser from './parsers/tableNoHeader3.js';
-import table4Parser from './parsers/table4.js';
-import cards11Parser from './parsers/cards11.js';
-import cards19Parser from './parsers/cards19.js';
-import table22Parser from './parsers/table22.js';
-import carousel18Parser from './parsers/carousel18.js';
+import columns2Parser from './parsers/columns2.js';
 import cards7Parser from './parsers/cards7.js';
-import cards20Parser from './parsers/cards20.js';
+import cards5Parser from './parsers/cards5.js';
+import cards9Parser from './parsers/cards9.js';
+import carousel20Parser from './parsers/carousel20.js';
+import cards14Parser from './parsers/cards14.js';
+import table13Parser from './parsers/table13.js';
+import cards10Parser from './parsers/cards10.js';
+import carousel17Parser from './parsers/carousel17.js';
+import cards11Parser from './parsers/cards11.js';
+import table1Parser from './parsers/table1.js';
+import columns18Parser from './parsers/columns18.js';
+import cards3Parser from './parsers/cards3.js';
+import cards19Parser from './parsers/cards19.js';
 import headerParser from './parsers/header.js';
 import metadataParser from './parsers/metadata.js';
 import cleanupTransformer from './transformers/cleanup.js';
@@ -45,24 +44,23 @@ import {
 
 const parsers = {
   metadata: metadataParser,
-  cards5: cards5Parser,
-  cards6: cards6Parser,
-  columns1: columns1Parser,
-  cards9: cards9Parser,
+  hero4: hero4Parser,
+  columns6: columns6Parser,
   cards8: cards8Parser,
-  cards10: cards10Parser,
-  carousel14: carousel14Parser,
-  cards16: cards16Parser,
-  carousel21: carousel21Parser,
-  cards15: cards15Parser,
-  tableNoHeader3: tableNoHeader3Parser,
-  table4: table4Parser,
-  cards11: cards11Parser,
-  cards19: cards19Parser,
-  table22: table22Parser,
-  carousel18: carousel18Parser,
+  columns2: columns2Parser,
   cards7: cards7Parser,
-  cards20: cards20Parser,
+  cards5: cards5Parser,
+  cards9: cards9Parser,
+  carousel20: carousel20Parser,
+  cards14: cards14Parser,
+  table13: table13Parser,
+  cards10: cards10Parser,
+  carousel17: carousel17Parser,
+  cards11: cards11Parser,
+  table1: table1Parser,
+  columns18: columns18Parser,
+  cards3: cards3Parser,
+  cards19: cards19Parser,
   ...customParsers,
 };
 
@@ -302,22 +300,6 @@ export default {
     }
 
     let main = document.body;
-
-    // remove unwanted elements
-    WebImporter.DOMUtils.remove(main, [
-      '.headerv2',
-      '.footerv2',
-      'nav',
-      '.nav',
-      'footer',
-      '.footer',
-      '.cookies',
-      '.chat-widget',
-      '.back-to-top',
-      '.share-container',
-      'noscript',
-      'script',
-    ]);
 
     // before transform hook
     WebImporter.Import.transform(TransformHook.beforeTransform, main, { ...source, inventory });
