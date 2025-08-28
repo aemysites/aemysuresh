@@ -1,69 +1,71 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // The block header, from the example
+  // Block header row - exact match
   const headerRow = ['Carousel (carousel20)'];
-  const cells = [headerRow];
 
-  // Extract image slides (city avatars)
-  const avatarSwiper = element.querySelector('.discover__destination__stories .swiper-wrapper');
-  // Extract city detail info for each slide
-  const storyViewSwiper = element.querySelector('.story__view .swiper-wrapper');
-
-  if (avatarSwiper && storyViewSwiper) {
-    const avatarSlides = Array.from(avatarSwiper.querySelectorAll('.swiper-slide'));
-    const detailSlides = Array.from(storyViewSwiper.querySelectorAll('.swiper-slide'));
-
-    // Loop through all slides, matching each avatar to its detail info
-    for (let i = 0; i < avatarSlides.length && i < detailSlides.length; i++) {
-      const avatar = avatarSlides[i];
-      const detail = detailSlides[i];
-      // IMAGE CELL (always required)
-      let imgEl = null;
-      const avatarBg = avatar.querySelector('.slide-content');
-      if (avatarBg) {
-        const imgUrl = avatarBg.getAttribute('data-bg-image');
-        const imgAlt = avatarBg.getAttribute('title') || '';
-        if (imgUrl) {
-          // Create an img referencing the source
-          imgEl = document.createElement('img');
-          imgEl.src = imgUrl;
-          imgEl.alt = imgAlt;
-          imgEl.title = imgAlt;
-        }
+  // Get slide image
+  const imgContainer = element.querySelector('.slider--img-container');
+  let imgSrc = '';
+  let imgAlt = '';
+  let imgEl = null;
+  if (imgContainer) {
+    const bgDiv = imgContainer.querySelector('.slider-img');
+    if (bgDiv) {
+      imgSrc = bgDiv.getAttribute('data-bg-image') || '';
+      imgAlt = bgDiv.getAttribute('title') || '';
+      if (imgSrc) {
+        imgEl = document.createElement('img');
+        imgEl.src = imgSrc;
+        imgEl.alt = imgAlt || '';
       }
-      // TEXT CELL (all content from .trip-info, including heading, description, and links)
-      let contentArr = [];
-      const tripInfo = detail.querySelector('.trip-info');
-      if (tripInfo) {
-        // Heading - use <h2> to retain semantic meaning
-        const heading = tripInfo.querySelector('h5');
-        if (heading && heading.textContent.trim()) {
-          const h2 = document.createElement('h2');
-          h2.textContent = heading.textContent.trim();
-          contentArr.push(h2);
-        }
-        // Description - use <p>
-        const desc = tripInfo.querySelector('p.description');
-        if (desc && desc.textContent.trim()) {
-          const p = document.createElement('p');
-          p.textContent = desc.textContent.trim();
-          contentArr.push(p);
-        }
-        // Add all CTAs/buttons in order as they appear
-        const ctaLinks = tripInfo.querySelectorAll('a');
-        ctaLinks.forEach(link => {
-          contentArr.push(link);
-        });
-      }
-      // Add the row, with always an image, and text cell if contentArr is not empty
-      cells.push([
-        imgEl,
-        contentArr.length > 0 ? contentArr : ''
-      ]);
     }
   }
 
-  // Create the table block
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(table);
+  // Get slide text content
+  let textElements = [];
+  if (imgContainer) {
+    // Heading: must retain heading level and semantic meaning
+    const headingContainer = imgContainer.querySelector('.slider-heading');
+    if (headingContainer) {
+      const heading = headingContainer.querySelector('.slider-heading--location');
+      if (heading && heading.textContent.trim()) {
+        // reference only text
+        const h2 = document.createElement('h2');
+        h2.textContent = heading.textContent.trim();
+        textElements.push(h2);
+      }
+      // If there's a tag or description, include it
+      const tag = headingContainer.querySelector('.slider-heading--tag');
+      if (tag && tag.textContent.trim()) {
+        const p = document.createElement('p');
+        p.textContent = tag.textContent.trim();
+        textElements.push(p);
+      }
+    }
+    // Photo credits - semantic meaning is a plain paragraph
+    const creditContainer = imgContainer.querySelector('.slider--credit-container');
+    if (creditContainer) {
+      const creditText = creditContainer.querySelector('.slider--credit-text');
+      if (creditText && creditText.textContent.trim()) {
+        const p = document.createElement('p');
+        p.textContent = creditText.textContent.trim();
+        textElements.push(p);
+      }
+    }
+  }
+
+  // If there is no text content, cell should be an empty array
+  const textCell = textElements.length > 0 ? textElements : [''];
+
+  // Compose table cells, matching 2 columns (image, text)
+  const cells = [
+    headerRow,
+    [imgEl, textCell]
+  ];
+
+  // Create block table
+  const blockTable = WebImporter.DOMUtils.createTable(cells, document);
+
+  // Replace original element
+  element.replaceWith(blockTable);
 }

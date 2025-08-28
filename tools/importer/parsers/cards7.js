@@ -1,47 +1,61 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Table header: block name EXACTLY as in the requirement
+  // 1. Header row
   const headerRow = ['Cards (cards7)'];
 
-  // Find the main wrapper inside the block
-  const wrapper = element.querySelector('.flights_stats__wrapper');
+  // 2. Find all cards inside the carousel
+  // The actual cards are inside .swiper-wrapper > .swiper-slide > .services-carousel--card
+  const swiperWrapper = element.querySelector('.swiper-wrapper');
+  if (!swiperWrapper) {
+    // If there's no swiper wrapper, nothing to process, so just return
+    return;
+  }
 
-  // Find the picture (image for the first card)
-  const picture = wrapper ? wrapper.querySelector('picture') : null;
+  const slides = swiperWrapper.querySelectorAll('.swiper-slide');
+  const rows = [];
 
-  // We'll need to extract all stats cards. In this HTML, stats are NOT individual elements, but visually represented.
-  // All text is part of the background image, so we only have the image itself.
-  // To ensure all content is included, we reference the <picture> or <img> as the image for the card,
-  // and put the entire visible block in the text cell.
-  // Since the only real content is the image, and all stats are embedded as text in the image, this is what we do.
+  slides.forEach((slide) => {
+    const card = slide.querySelector('.services-carousel--card');
+    if (!card) return;
 
-  // Get text content (if any) outside of picture (for future-proofing, e.g. if text is present as real HTML)
-  let visibleText = '';
-  // For robustness, check for text nodes or elements with text directly under the wrapper.
-  if (wrapper) {
-    Array.from(wrapper.childNodes).forEach(node => {
-      if (node.nodeType === 3) {
-        const t = node.textContent.trim();
-        if (t) visibleText += t + ' ';
-      } else if (node.nodeType === 1 && node !== picture) {
-        const t = node.textContent.trim();
-        if (t) visibleText += t + ' ';
+    // IMAGE/ICON (mandatory)
+    const imgEl = card.querySelector('.services-carousel--img-container img');
+    let image = imgEl || '';
+
+    // TEXT CONTENT (mandatory)
+    const contentContainer = card.querySelector('.services-carousel--content-container');
+    let textCell = [];
+    if (contentContainer) {
+      // Title (optional)
+      const titleEl = contentContainer.querySelector('.title');
+      if (titleEl && titleEl.textContent.trim()) {
+        // Use strong for heading (as styled in the example)
+        const strong = document.createElement('strong');
+        strong.textContent = titleEl.textContent.trim();
+        textCell.push(strong);
       }
-    });
-    visibleText = visibleText.trim();
-  }
+      // Description (optional)
+      const descEl = contentContainer.querySelector('.description');
+      if (descEl && descEl.textContent.trim()) {
+        // Add a <br> if there is a title
+        if (textCell.length > 0) {
+          textCell.push(document.createElement('br'));
+        }
+        textCell.push(descEl);
+      }
+    }
+    // Fallback if something is missing
+    if (textCell.length === 0) {
+      textCell = '';
+    }
+    // Each row: [image, text content]
+    rows.push([image, textCell]);
+  });
 
-  // Build the cards array: In this case only one card, with the image and any visible text (could be empty)
-  const cardRows = [];
-  if (picture) {
-    // Reference the existing picture element
-    cardRows.push([picture, visibleText || '']);
-  }
+  // 3. Compose final cells array
+  const cells = [headerRow, ...rows];
 
-  // Compose the table
-  const cells = [headerRow, ...cardRows];
-
-  // Create table and replace
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(block);
+  // 4. Create table and replace element
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(table);
 }

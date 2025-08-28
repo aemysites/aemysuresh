@@ -1,109 +1,100 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Block table header exactly as in example
-  const headerRow = ['Cards (cards10)'];
-  const cells = [headerRow];
+  // Cards (cards10) header row exactly as required
+  const cells = [['Cards (cards10)']];
 
-  // Find all .swiper-slide direct children (each is a card)
+  // Find the main swiper wrapper for hotel cards
   const swiperWrapper = element.querySelector('.swiper-wrapper');
   if (!swiperWrapper) return;
-  const slides = Array.from(swiperWrapper.children).filter(c => c.classList.contains('swiper-slide'));
+  // Each card is a .swiper-slide
+  const slides = swiperWrapper.querySelectorAll(':scope > .swiper-slide');
 
-  slides.forEach((slide) => {
-    // IMAGE cell: always in .seo-hotel-strip--image-block > img
-    const imageBlock = slide.querySelector('.seo-hotel-strip--image-block');
-    let img = imageBlock ? imageBlock.querySelector('img') : null;
+  slides.forEach(slide => {
+    const card = slide.querySelector('.seo-hotel-strip--item');
+    if (!card) return;
 
-    // TEXT content cell construction
-    const textElements = [];
-    const infoBlock = slide.querySelector('.seo-hotel-strip--info');
-    if (infoBlock) {
-      // TITLE as heading: .seo-hotel-strip--title-block--title
-      const titleEl = infoBlock.querySelector('.seo-hotel-strip--title-block--title');
-      if (titleEl && titleEl.textContent.trim()) {
-        const strong = document.createElement('strong');
-        strong.textContent = titleEl.textContent.trim();
-        textElements.push(strong);
-      }
-
-      // LOCATION and STARS
-      const locationEl = infoBlock.querySelector('.seo-hotel-strip--location span');
-      const starsEl = infoBlock.querySelector('.seo-hotel-strip--stars');
-      if (locationEl || starsEl) {
-        let locStars = '';
-        if (locationEl && locationEl.textContent.trim()) {
-          locStars += locationEl.textContent.trim();
-        }
-        if (starsEl) {
-          const starCount = starsEl.querySelectorAll('.icon-star_filled').length;
-          if (starCount) {
-            locStars += (locStars ? ' ' : '') + Array(starCount).fill('★').join('');
-          }
-        }
-        if (locStars) {
-          const span = document.createElement('span');
-          span.textContent = locStars;
-          textElements.push(span);
-        }
-      }
-
-      // RATING (e.g. 4.2/5 (729 reviews)), if present
-      const ratingBlock = imageBlock ? imageBlock.querySelector('.seo-hotel-strip--rating') : null;
-      if (ratingBlock && ratingBlock.textContent.trim()) {
-        const small = document.createElement('small');
-        small.textContent = ratingBlock.textContent.trim();
-        textElements.push(small);
-      }
-
-      // PRICE details
-      const priceBlock = infoBlock.querySelector('.seo-hotel-strip--price-block');
-      let priceText = '';
-      if (priceBlock) {
-        // Actual Price (might be empty)
-        const actualPriceEl = priceBlock.querySelector('.seo-hotel-strip--price-block--actual-price');
-        if (actualPriceEl && actualPriceEl.textContent.trim()) {
-          priceText += actualPriceEl.textContent.trim() + '\n';
-        }
-        // Main Hotel Price (always present)
-        const hotelPriceEl = priceBlock.querySelector('.seo-hotel-strip--hotel-price');
-        if (hotelPriceEl && hotelPriceEl.textContent.trim()) {
-          // Remove any extra whitespace
-          priceText += hotelPriceEl.textContent.replace(/\s+/g, ' ').trim() + '\n';
-        }
-        // Tax details (if present)
-        const taxPriceEl = priceBlock.querySelector('.tax-price');
-        if (taxPriceEl && taxPriceEl.textContent.trim()) {
-          priceText += taxPriceEl.textContent.trim() + ' ';
-        }
-        const taxLabelEl = priceBlock.querySelector('.tax-label');
-        if (taxLabelEl && taxLabelEl.textContent.trim()) {
-          priceText += taxLabelEl.textContent.trim();
-        }
-      }
-      if (priceText.trim()) {
-        const p = document.createElement('p');
-        p.textContent = priceText.trim();
-        textElements.push(p);
-      }
-
-      // CTA button (Book) as a link (no href available, so using '#')
-      const bookBtn = infoBlock.querySelector('.seo-hotel-strip--book-now-cta');
-      if (bookBtn && bookBtn.textContent.trim()) {
-        const a = document.createElement('a');
-        a.textContent = bookBtn.textContent.trim();
-        a.href = '#';
-        textElements.push(a);
-      }
+    // First cell: the image element from .seo-hotel-strip--image-block img
+    let imageCell = null;
+    const img = card.querySelector('.seo-hotel-strip--image-block img');
+    if (img) {
+      imageCell = img;
     }
 
-    // If no image, keep cell empty
+    // Second cell: all structured text content
+    const textCell = document.createElement('div');
+    // Title
+    const titleEl = card.querySelector('.seo-hotel-strip--title-block--title');
+    if (titleEl) {
+      const heading = document.createElement('strong');
+      heading.textContent = titleEl.textContent;
+      textCell.appendChild(heading);
+      textCell.appendChild(document.createElement('br'));
+    }
+    // Location and stars (combine inline)
+    const locationEl = card.querySelector('.seo-hotel-strip--location span');
+    const starsEl = card.querySelector('.seo-hotel-strip--stars');
+    if (locationEl || starsEl) {
+      const locationStars = document.createElement('span');
+      let locText = locationEl ? locationEl.textContent.trim() : '';
+      let starText = '';
+      if (starsEl) {
+        const starCount = starsEl.querySelectorAll('.icon-star_filled').length;
+        if (starCount > 0) {
+          starText = ' ' + '★'.repeat(starCount);
+        }
+      }
+      locationStars.textContent = locText + starText;
+      if (locationStars.textContent.trim().length) {
+        textCell.appendChild(locationStars);
+        textCell.appendChild(document.createElement('br'));
+      }
+    }
+    // Rating (e.g. "4.2/5 (783 reviews)")
+    const ratingBlock = card.querySelector('.seo-hotel-strip--rating');
+    if (ratingBlock) {
+      // Directly reference the rating block which contains both pieces
+      textCell.appendChild(ratingBlock);
+      textCell.appendChild(document.createElement('br'));
+    }
+    // Price block (actual price and/or discounted price)
+    const priceBlock = card.querySelector('.seo-hotel-strip--price-block--price');
+    if (priceBlock) {
+      // actual-price (sometimes empty), then hotel-price
+      const actualPrice = priceBlock.querySelector('.seo-hotel-strip--price-block--actual-price');
+      if (actualPrice && actualPrice.textContent.trim()) {
+        textCell.appendChild(actualPrice);
+        textCell.appendChild(document.createElement('br'));
+      }
+      const hotelPrice = priceBlock.querySelector('.seo-hotel-strip--hotel-price');
+      if (hotelPrice) {
+        textCell.appendChild(hotelPrice);
+        textCell.appendChild(document.createElement('br'));
+      }
+    }
+    // Tax info
+    const taxBlock = card.querySelector('.seo-hotel-strip--price-block--tax');
+    if (taxBlock) {
+      textCell.appendChild(taxBlock);
+      textCell.appendChild(document.createElement('br'));
+    }
+    // CTA button
+    const bookBtn = card.querySelector('.seo-hotel-strip--book-now-cta');
+    if (bookBtn) {
+      textCell.appendChild(bookBtn);
+    }
+
+    // Remove trailing <br> if present
+    while (textCell.lastChild && textCell.lastChild.tagName === 'BR') {
+      textCell.removeChild(textCell.lastChild);
+    }
+
     cells.push([
-      img || '',
-      textElements
+      imageCell,
+      textCell
     ]);
   });
 
-  // Create and replace with block table
+  // Create and replace with the block table
   const table = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(table);
 }

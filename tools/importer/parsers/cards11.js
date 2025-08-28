@@ -1,66 +1,78 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
+  // Block header row
   const headerRow = ['Cards (cards11)'];
-  const cells = [headerRow];
 
-  // Find all card elements in the containers
-  // There are two containers for cards
-  const cardMainContainer = element.querySelector('.card-main-container');
-  const cardExtraContainer = element.querySelector('.card-extra-container');
+  // Gather all card nodes (main + extra)
+  const cardNodes = [
+    ...element.querySelectorAll('.card-main-container .card'),
+    ...element.querySelectorAll('.card-extra-container .card')
+  ];
 
-  const cardNodes = [];
-  if (cardMainContainer) {
-    cardMainContainer.querySelectorAll('.card').forEach(card => cardNodes.push(card));
-  }
-  if (cardExtraContainer) {
-    cardExtraContainer.querySelectorAll('.card').forEach(card => cardNodes.push(card));
-  }
-
-  cardNodes.forEach(card => {
-    // Image, always present
-    const img = card.querySelector('img');
-
-    // Card Details
+  // Helper to build the text cell, preserving semantic structure
+  function buildTextCell(card) {
     const details = card.querySelector('.card--details');
-    const textContent = [];
-
-    // Ribbon (e.g., Trending) as a strong, if present
+    // Title (h2) as <strong>
+    let titleEl = null;
+    const title = details?.querySelector('.card--title');
+    if (title) {
+      titleEl = document.createElement('strong');
+      titleEl.textContent = title.textContent.trim();
+    }
+    // Description (may be missing)
+    let descEl = null;
+    const desc = details?.querySelector('.card--description');
+    if (desc) {
+      descEl = document.createElement('span');
+      descEl.textContent = desc.textContent.trim();
+    }
+    // Info (may be missing)
+    let infoEl = null;
+    const info = details?.querySelector('.card--info');
+    if (info) {
+      infoEl = document.createElement('span');
+      infoEl.textContent = info.textContent.trim();
+      infoEl.style.display = 'block';
+    }
+    // Marker/ribbon (may be missing)
+    let markerEl = null;
     const ribbon = card.querySelector('.ribbon');
     if (ribbon) {
-      const strong = document.createElement('strong');
-      strong.textContent = ribbon.textContent;
-      textContent.push(strong);
-      textContent.push(document.createElement('br'));
+      markerEl = document.createElement('em');
+      markerEl.textContent = ribbon.textContent.trim();
+      markerEl.style.display = 'block';
     }
+    // Compose cell, using array so createTable does not wrap in <span>
+    const cellContent = [];
+    if (titleEl) cellContent.push(titleEl);
+    if (descEl) {
+      if (cellContent.length) cellContent.push(document.createElement('br'));
+      cellContent.push(descEl);
+    }
+    if (infoEl) {
+      if (cellContent.length) cellContent.push(document.createElement('br'));
+      cellContent.push(infoEl);
+    }
+    if (markerEl) {
+      if (cellContent.length) cellContent.push(document.createElement('br'));
+      cellContent.push(markerEl);
+    }
+    return cellContent;
+  }
 
-    if (details) {
-      // Title
-      const title = details.querySelector('.card--title');
-      if (title) {
-        const strong = document.createElement('strong');
-        strong.textContent = title.textContent;
-        textContent.push(strong);
-      }
-      // Description (optional)
-      const desc = details.querySelector('.card--description');
-      if (desc) {
-        textContent.push(document.createElement('br'));
-        textContent.push(desc);
-      }
-      // Info (e.g. Exploration time)
-      const info = details.querySelector('.card--info');
-      if (info) {
-        textContent.push(document.createElement('br'));
-        textContent.push(info);
-      }
-    }
-
-    // Only add the row if both image and textContent exist
-    if (img && textContent.length > 0) {
-      cells.push([img, textContent]);
-    }
+  // Build all table rows (one per card)
+  const rows = cardNodes.map(card => {
+    // Image element, reference as-is
+    const img = card.querySelector('img');
+    // Text cell content
+    const textCell = buildTextCell(card);
+    return [img, textCell];
   });
 
+  // Compose table cells
+  const cells = [headerRow, ...rows];
+
+  // Create and replace block table
   const block = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(block);
 }
