@@ -568,84 +568,95 @@
 }
 
 
-.columns.columns18 > div {
-  /* Improved proportions: left column wider, right column narrower */
-  display: grid;
-  grid-template-columns: minmax(0, 620px) minmax(0, 420px);
-  grid-template-rows: repeat(3, auto);
-  gap: 24px;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+.columns.columns18 {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 24px 0;
+  background: none;
 }
 
-/* All cards: spacing, border, flex align top */
+/* Refined grid: Left two columns for offers, right column for BluChip (spans both rows) */
+.columns.columns18 > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.18fr;
+  grid-template-rows: minmax(160px, auto) minmax(220px, auto); /* Ensures bottom row is taller, visually balanced */
+  gap: 18px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+/* Card base styling */
 .columns.columns18 > div > div {
   border-radius: 18px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 3%);
-  margin: 0;
-  padding: 36px 28px 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-height: 180px;
-  position: relative;
+  box-shadow: 0 4px 24px 0 rgb(44 50 96 / 9%);
   overflow: hidden;
-  width: 100%;
-  grid-column: 1;
-}
-
-/* IndiGo Stretch Card: left column, first row */
-.columns.columns18 > div > div:nth-child(1) {
-  background: #FFD9C1;
-  color: #1C46B5;
-  font-family: var(--heading-font-family);
-  font-size: var(--heading-font-size-s);
-  grid-row: 1;
-  grid-column: 1;
-}
-
-/* Kotak Card: left column, second row */
-.columns.columns18 > div > div:nth-child(2) {
-  background: #18181F;
-  color: #fff;
-  font-family: var(--heading-font-family);
-  font-size: var(--body-font-size-m);
-  grid-row: 2;
-  grid-column: 1;
-}
-
-/* Hotels Card: left column, third row */
-.columns.columns18 > div > div:nth-child(3) {
-  background: #19315D;
-  color: #fff;
-  font-family: var(--heading-font-family);
-  font-size: var(--body-font-size-m);
-  grid-row: 3;
-  grid-column: 1;
-}
-
-/* BluChip Card: right column, spans all three rows vertically, content aligned top & left */
-.columns.columns18 > div > div:nth-child(4) {
-  background: #18181F;
-  color: #A3C6F9;
-  font-family: var(--heading-font-family);
-  font-size: var(--heading-font-size-m);
-  text-align: left;
-  align-items: flex-start;
-  justify-content: flex-start;
-  grid-column: 2;
-  grid-row: 1 / span 3;
-  min-height: 100%;
-  width: 100%;
-  position: relative;
+  padding: 28px 24px 24px;
+  background: #fff;
   display: flex;
   flex-direction: column;
-  padding-top: 56px; /* visually nudge down for balance */
+  justify-content: flex-start;
+  box-sizing: border-box;
+  min-height: 0;
+  height: 100%;
+  position: relative;
 }
 
-/* Headings and major text in cards */
+/* Top-left (Stretch) card */
+.columns.columns18 > div > div:nth-child(1) {
+  background: #FFE3CF;
+  color: #181922;
+  grid-column: 1;
+  grid-row: 1;
+  font-family: var(--heading-font-family);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Top-middle (Credit Card) card */
+.columns.columns18 > div > div:nth-child(2) {
+  background: #181922;
+  color: #fff;
+  grid-column: 2;
+  grid-row: 1;
+  font-family: var(--heading-font-family);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Hotels card: spans bottom of left two columns, taller than top row, content centered vertically */
+.columns.columns18 > div > div:nth-child(3) {
+  background: linear-gradient(180deg, #1B2B4B 65%, #112042 100%);
+  color: #fff;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  font-family: var(--heading-font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 220px;
+  height: 100%;
+}
+
+/* BluChip card: full height, right column, aligns with both top and bottom rows */
+.columns.columns18 > div > div:nth-child(4) {
+  background: #181922;
+  color: #A2CCFF;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  font-family: var(--heading-font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;      /* Content aligned closer to top to match original */
+  align-items: flex-start;
+  min-height: 0;
+  height: 100%;
+  padding-top: 56px;
+  padding-bottom: 0;
+}
+
+/* Headings inside cards */
 .columns.columns18 h1,
 .columns.columns18 h2,
 .columns.columns18 h3 {
@@ -657,19 +668,20 @@
   line-height: 1.18;
 }
 
+/* Hotels card headline color */
 .columns.columns18 > div > div:nth-child(3) h3 {
   color: #FFA94D;
   font-size: var(--heading-font-size-m);
-  margin-bottom: 10px;
 }
 
+/* BluChip card headline color */
 .columns.columns18 > div > div:nth-child(4) h3 {
-  color: #A3C6F9;
+  color: #A2CCFF;
   font-size: var(--heading-font-size-xl);
   margin-bottom: 18px;
 }
 
-/* Paragraphs and links in cards */
+/* Paragraphs and links */
 .columns.columns18 p,
 .columns.columns18 a {
   font-family: var(--body-font-family);
@@ -678,48 +690,62 @@
   color: inherit;
 }
 
-/* Button base style */
+/* Buttons */
 .columns.columns18 .button {
   border-radius: 24px;
   font-weight: 600;
   padding: 12px 32px;
   box-shadow: 0 2px 8px rgb(44 50 96 / 9%);
-  margin: 0;
   font-size: var(--body-font-size-s);
   background-color: #fff;
   color: #1C46B5;
   border: none;
   transition: background-color 0.18s, color 0.18s;
+  margin: 0;
 }
 
-/* Hotels CTA outlined style */
+/* Hotels card: outlined button */
 .columns.columns18 > div > div:nth-child(3) .button {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
 
-/* BluChip CTA style */
+/* BluChip card: solid blue button */
 .columns.columns18 > div > div:nth-child(4) .button {
-  background-color: #A3C6F9;
+  background-color: #A2CCFF;
   color: #18181F;
 }
 
-/* Responsive: stack all cards in one column for small screens */
+/* Responsive: stack cards vertically below 900px */
 @media (width <= 900px) {
   .columns.columns18 > div {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
   }
 
   .columns.columns18 > div > div {
-    grid-row: auto;
-    grid-column: auto;
-    min-height: 160px;
+    min-width: 0;
+    min-height: 140px;
     width: 100%;
     position: static;
+    padding-top: 24px;
+    grid-column: auto;
+    grid-row: auto;
     height: auto;
-    padding-top: 36px;
+    justify-content: flex-start;
+  }
+}
+
+/* Responsive: card padding and radius on very small screens */
+@media (width <= 600px) {
+  .columns.columns18 {
+    padding: 8px 0;
+  }
+
+  .columns.columns18 > div > div {
+    padding: 14px 10px 10px;
+    border-radius: 12px;
   }
 }
