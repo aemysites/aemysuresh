@@ -303,6 +303,22 @@ export default {
 
     let main = document.body;
 
+    // remove unwanted elements
+    WebImporter.DOMUtils.remove(main, [
+      '.headerv2',
+      '.footerv2',
+      'nav',
+      '.nav',
+      'footer',
+      '.footer',
+      '.cookies',
+      '.chat-widget',
+      '.back-to-top',
+      '.share-container',
+      'noscript',
+      'script',
+    ]);
+
     // before transform hook
     WebImporter.Import.transform(TransformHook.beforeTransform, main, { ...source, inventory });
 

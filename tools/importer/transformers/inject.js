@@ -15,6 +15,9 @@
     // remove site header
     document.querySelector('.headerv2')?.remove();
 
+    // Remove site footer
+    document.querySelector('.footerv2')?.remove();
+
     // remove accept cookie banner
     document.querySelector('.cookies')?.remove();
 
@@ -24,8 +27,8 @@
     // remove back to top button
     document.querySelector('.back-to-top')?.remove();
 
-    // Remove site footer
-    document.querySelector('.footerv2')?.remove();
+    // remove share container
+    document.querySelector('.share-container')?.remove();
   } catch (e) {
     // noop
   }
