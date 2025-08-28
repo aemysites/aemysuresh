@@ -35,7 +35,6 @@
   box-sizing: border-box;
 }
 
-/* Grid: Five columns, edge-to-edge flush with no outer margin */
 .cards.cards7 > ul {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -49,12 +48,10 @@
   box-sizing: border-box;
 }
 
-/* Add gap only between cards, not at the edges */
 .cards.cards7 > ul > li:not(:last-child) {
   margin-right: 14px;
 }
 
-/* Card style: fill grid cell, pill shape, no extra margin */
 .cards.cards7 > ul > li {
   background: linear-gradient(135deg, #F3F4F6 0%, #E9EAEC 100%);
   border-radius: 16px;
@@ -70,14 +67,12 @@
   min-width: 0;
 }
 
-/* Remove any default margin/padding from inner body divs */
 .cards.cards7 .cards-card-body {
   margin: 0;
   padding: 0;
   flex: 1 1 0;
 }
 
-/* Responsive: stack cards vertically on small screens, full width */
 @media (width <= 700px) {
   .cards.cards7 > ul {
     grid-template-columns: 1fr;
@@ -92,4 +87,188 @@
     margin-right: 0;
     margin-bottom: 12px;
   }
+}
+
+
+.cards.cards10 {
+  padding: 32px 0 0;
+}
+
+/* Horizontal flex row, tighter gap */
+.cards.cards10 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: #eee #fff;
+}
+
+/* Card styling: more compact, less bottom padding */
+.cards.cards10 > ul > li {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 7%);
+  min-width: 270px;
+  max-width: 295px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: none;
+  padding-bottom: 10px;
+  transition: box-shadow 0.2s;
+}
+
+/* Card image: slightly taller */
+.cards.cards10 .cards-card-image {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  overflow: hidden;
+  margin: 0;
+  background: #eee;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.cards.cards10 .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  display: block;
+}
+
+/* Rating badge: visually attached to image edge */
+.cards.cards10 > ul > li .cards-card-body p:nth-child(3) {
+  position: absolute;
+  left: 18px;
+  top: -110px;
+  background: rgb(245 245 245 / 98%);
+  color: #222;
+  font-size: 14px;
+  border-radius: 16px;
+  padding: 6px 18px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 13%);
+  z-index: 2;
+  display: inline-block;
+}
+
+/* Card body */
+.cards.cards10 .cards-card-body {
+  padding: 18px 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+/* Card title */
+.cards.cards10 .cards-card-body p strong {
+  font-size: 17px;
+  font-weight: bold;
+  color: #222;
+  display: block;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Subtitle/location */
+.cards.cards10 .cards-card-body p:nth-child(2) {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 3px;
+}
+
+
+/* Price styling */
+.cards.cards10 .cards-card-body p:nth-child(4) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+/* Fees text */
+.cards.cards10 .cards-card-body p:nth-child(5) {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+/* Button container: center at bottom */
+.cards.cards10 .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+
+/* Book button styling */
+.cards.cards10 .button-container .button {
+  background: #0019FF;
+  color: #fff;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 34px;
+  border: none;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.2s;
+  margin-top: 0;
+}
+
+.cards.cards10 .button-container .button:hover,
+.cards.cards10 .button-container .button:focus {
+  background: #03C;
+}
+
+/* Responsive: slightly smaller image, tighter cards */
+@media (width <= 800px) {
+  .cards.cards10 > ul > li {
+    min-width: 190px;
+    max-width: 92vw;
+  }
+
+  .cards.cards10 .cards-card-image {
+    height: 110px;
+  }
+
+  .cards.cards10 > ul {
+    gap: 12px;
+  }
+
+  .cards.cards10 .cards-card-body {
+    padding: 10px 8px 0;
+  }
+}
+
+/* Hide scrollbar for aesthetics */
+.cards.cards10 > ul::-webkit-scrollbar {
+  height: 7px;
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+
+.cards.cards10 > ul::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 10px;
 }
