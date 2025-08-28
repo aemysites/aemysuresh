@@ -50,11 +50,11 @@
               "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_10__div__div__div__div__footer__div__div__div_3",
               "differences": [
                 {
-                  "change_type": "equal",
+                  "change_type": "deletion",
                   "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
                 }
               ],
-              "dissimilarity_score": -0.0
+              "dissimilarity_score": 1.0
             }
           ],
           "similarity_score": 0.0
@@ -69,11 +69,11 @@
               "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_9__div__div__div__div__footer__div__div__div_3",
               "differences": [
                 {
-                  "change_type": "equal",
+                  "change_type": "deletion",
                   "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
                 }
               ],
-              "dissimilarity_score": -0.0
+              "dissimilarity_score": 1.0
             }
           ],
           "similarity_score": 0.0
@@ -88,11 +88,11 @@
               "element_id": "html__body__main__div__div__div__div_2__div__div__div__div__div__div_5__div__div__div__div__footer__div__div__div_3",
               "differences": [
                 {
-                  "change_type": "equal",
+                  "change_type": "deletion",
                   "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
                 }
               ],
-              "dissimilarity_score": -0.0
+              "dissimilarity_score": 1.0
             }
           ],
           "similarity_score": 0.0
@@ -107,11 +107,11 @@
               "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_6__div__div__div__div__footer__div__div__div_3",
               "differences": [
                 {
-                  "change_type": "equal",
+                  "change_type": "deletion",
                   "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
                 }
               ],
-              "dissimilarity_score": -0.0
+              "dissimilarity_score": 1.0
             }
           ],
           "similarity_score": 0.0
@@ -571,20 +571,32 @@
               "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_7__div__div_3__div__div__div__div__div__div__div_3",
               "differences": [
                 {
-                  "change_type": "deletion",
-                  "text": "3.8/5 (148 reviews) "
+                  "change_type": "insertion",
+                  "text": "Deventure Sarovar Portico Kapashera \u2605\u2605\u2605\u2605"
                 },
                 {
                   "change_type": "equal",
-                  "text": "Deventure Sarovar Portico Kapashera Delhi"
+                  "text": "3.8/5"
                 },
                 {
                   "change_type": "deletion",
-                  "text": " \u20b9 "
+                  "text": " ("
                 },
                 {
                   "change_type": "insertion",
-                  "text": " \u2605\u2605\u2605\u2605 3.8/5 (148 reviews) \u20b9 "
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "148 reviews"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": ") Deventure Sarovar Portico Kapashera Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": ") \u20b9 "
                 },
                 {
                   "change_type": "equal",
@@ -596,15 +608,23 @@
                 },
                 {
                   "change_type": "equal",
-                  "text": "The LaLiT New Delhi Delhi"
-                },
-                {
-                  "change_type": "deletion",
-                  "text": " \u20b9 "
+                  "text": "The LaLiT New Delhi"
                 },
                 {
                   "change_type": "insertion",
-                  "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (926 reviews) \u20b9 "
+                  "text": " \u2605\u2605\u2605\u2605\u26054/5(926"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "reviews) \u20b9 "
                 },
                 {
                   "change_type": "equal",
@@ -616,15 +636,23 @@
                 },
                 {
                   "change_type": "equal",
-                  "text": "Bloomrooms @ New Delhi Railway Station Delhi"
-                },
-                {
-                  "change_type": "deletion",
-                  "text": " \u20b9 "
+                  "text": "Bloomrooms @ New Delhi Railway Station"
                 },
                 {
                   "change_type": "insertion",
-                  "text": " \u2605\u2605\u2605 4.2/5 (729 reviews) \u20b9 "
+                  "text": " \u2605\u2605\u26054.2/5(729"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "reviews) \u20b9 "
                 },
                 {
                   "change_type": "equal",
@@ -636,15 +664,23 @@
                 },
                 {
                   "change_type": "equal",
-                  "text": "Pride Plaza Hotel Aerocity New Delhi Delhi"
-                },
-                {
-                  "change_type": "deletion",
-                  "text": " \u20b9 "
+                  "text": "Pride Plaza Hotel Aerocity New Delhi"
                 },
                 {
                   "change_type": "insertion",
-                  "text": " \u2605\u2605\u2605\u2605\u2605 3.8/5 (910 reviews) \u20b9 "
+                  "text": " \u2605\u2605\u2605\u2605\u26053.8/5(910"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "reviews) \u20b9 "
                 },
                 {
                   "change_type": "equal",
@@ -656,43 +692,63 @@
                 },
                 {
                   "change_type": "equal",
-                  "text": "The Metropolitan Hotel and Spa New Delhi Delhi"
-                },
-                {
-                  "change_type": "deletion",
-                  "text": " \u20b9 "
+                  "text": "The Metropolitan Hotel and Spa New Delhi"
                 },
                 {
                   "change_type": "insertion",
-                  "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (924 reviews) \u20b9 "
+                  "text": " \u2605\u2605\u2605\u2605\u26054/5(924"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "reviews) \u20b9 "
                 },
                 {
                   "change_type": "equal",
                   "text": "7,577 /night Incl of taxes & fees Book "
                 },
                 {
-                  "change_type": "deletion",
-                  "text": "4.3/5 (7 reviews) "
+                  "change_type": "insertion",
+                  "text": "Bloom Hotel - Karol Bagh \u2605\u2605\u2605"
                 },
                 {
                   "change_type": "equal",
-                  "text": "Bloom Hotel - Karol Bagh Delhi"
+                  "text": "4.3/5"
                 },
                 {
                   "change_type": "deletion",
-                  "text": " \u20b9 "
+                  "text": " ("
                 },
                 {
                   "change_type": "insertion",
-                  "text": " \u2605\u2605\u2605 4.3/5 (7 reviews) \u20b9 "
+                  "text": "("
                 },
                 {
                   "change_type": "equal",
-                  "text": "3,754 /night + \u20b9 465 Taxes & fees Book Hotel Bawa Gurgaon Delhi"
+                  "text": "7 reviews"
                 },
                 {
                   "change_type": "deletion",
-                  "text": " \u20b9 "
+                  "text": ") Bloom Hotel - Karol Bagh Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": ") \u20b9 "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "3,754 /night + \u20b9 465 Taxes & fees Book Hotel Bawa Gurgaon"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " Delhi \u20b9 "
                 },
                 {
                   "change_type": "insertion",
@@ -704,11 +760,23 @@
                 },
                 {
                   "change_type": "insertion",
-                  "text": "Hotel Diplomat Delhi \u2605\u2605\u2605\u2605 "
+                  "text": "Hotel Diplomat \u2605\u2605\u2605\u2605"
                 },
                 {
                   "change_type": "equal",
-                  "text": "3.2/5 (63 reviews"
+                  "text": "3.2/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "63 reviews"
                 },
                 {
                   "change_type": "deletion",
@@ -728,15 +796,23 @@
                 },
                 {
                   "change_type": "equal",
-                  "text": "Le ROI Express Paharganj Delhi"
-                },
-                {
-                  "change_type": "deletion",
-                  "text": " \u20b9 "
+                  "text": "Le ROI Express Paharganj"
                 },
                 {
                   "change_type": "insertion",
-                  "text": " \u2605\u2605\u2605 4.3/5 (53 reviews) \u20b9 "
+                  "text": " \u2605\u2605\u26054.3/5(53"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Delhi \u20b9 "
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "reviews) \u20b9 "
                 },
                 {
                   "change_type": "equal",
@@ -744,11 +820,23 @@
                 },
                 {
                   "change_type": "insertion",
-                  "text": "Bloomrooms @ Janpath Delhi \u2605\u2605\u2605 "
+                  "text": "Bloomrooms @ Janpath \u2605\u2605\u2605"
                 },
                 {
                   "change_type": "equal",
-                  "text": "4.3/5 (157 reviews"
+                  "text": "4.3/5"
+                },
+                {
+                  "change_type": "deletion",
+                  "text": " ("
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "("
+                },
+                {
+                  "change_type": "equal",
+                  "text": "157 reviews"
                 },
                 {
                   "change_type": "deletion",
@@ -763,10 +851,10 @@
                   "text": "5,570 /night Incl of taxes & fees Book"
                 }
               ],
-              "dissimilarity_score": -0.0
+              "dissimilarity_score": 0.06
             }
           ],
-          "similarity_score": 0.0
+          "similarity_score": 0.94
         }
       ]
     },
@@ -1323,18 +1411,186 @@
               "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_7__div__div_5",
               "differences": [
                 {
+                  "change_type": "deletion",
+                  "text": "Architectural"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Safdarjung Tomb Historical elegance, Mughal heritage, soaring height, and intricate"
+                },
+                {
                   "change_type": "equal",
-                  "text": "Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food"
+                  "text": " "
                 },
                 {
                   "change_type": "deletion",
-                  "text": " Back"
+                  "text": "Tours"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "carvings. Exploration"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Heritage"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "time: 1-2"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Excursions"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "hours"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Historical"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Trending"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Site"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Qutub"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Visits"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Minar"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Cultural"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Exploration"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Tour"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "time: 1-2"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Street"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "hours"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Shopping"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Humayun\u2019s"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Museum"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Tomb"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " Exploration "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Street"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "time: 1-2 hours"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "food"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Lotus"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Back"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Temple Exploration time: 1 hour Jantar Mantar Exploration time: 2 hour Rashtrapati Bhawan Exploration time: 2-3 hours India Gate Exploration time: 1 hours Red Fort Exploration time: 1 hours Akshardham Temple Exploration time: 3-4 hours"
                 }
               ],
-              "dissimilarity_score": 0.05
+              "dissimilarity_score": 0.9
             }
           ],
-          "similarity_score": 0.95
+          "similarity_score": 0.09999999999999998
         }
       ]
     },
@@ -1675,11 +1931,11 @@
           "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_10__div__div__div__div__footer__div__div__div_3",
           "differences": [
             {
-              "change_type": "equal",
+              "change_type": "deletion",
               "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
             }
           ],
-          "dissimilarity_score": -0.0
+          "dissimilarity_score": 1.0
         }
       ],
       "similarity_score": 0.0
@@ -1812,11 +2068,11 @@
           "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_9__div__div__div__div__footer__div__div__div_3",
           "differences": [
             {
-              "change_type": "equal",
+              "change_type": "deletion",
               "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
             }
           ],
-          "dissimilarity_score": -0.0
+          "dissimilarity_score": 1.0
         }
       ],
       "similarity_score": 0.0
@@ -1832,11 +2088,11 @@
           "element_id": "html__body__main__div__div__div__div_2__div__div__div__div__div__div_5__div__div__div__div__footer__div__div__div_3",
           "differences": [
             {
-              "change_type": "equal",
+              "change_type": "deletion",
               "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
             }
           ],
-          "dissimilarity_score": -0.0
+          "dissimilarity_score": 1.0
         }
       ],
       "similarity_score": 0.0
@@ -1885,11 +2141,11 @@
           "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_6__div__div__div__div__footer__div__div__div_3",
           "differences": [
             {
-              "change_type": "equal",
+              "change_type": "deletion",
               "text": "+917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
             }
           ],
-          "dissimilarity_score": -0.0
+          "dissimilarity_score": 1.0
         }
       ],
       "similarity_score": 0.0
@@ -1925,7 +2181,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our"
+          "text": "DISCOVER"
         },
         {
           "change_type": "insertion",
@@ -1937,7 +2193,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Partners"
+          "text": "Join Program"
         },
         {
           "change_type": "insertion",
@@ -1949,7 +2205,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Explore"
+          "text": "Join"
         },
         {
           "change_type": "insertion",
@@ -1961,7 +2217,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up Tariff Sheet"
+          "text": "Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up Tariff Sheet"
         },
         {
           "change_type": "insertion",
@@ -1973,219 +2229,11 @@
         },
         {
           "change_type": "deletion",
-          "text": "Your Information Flight Status IndiGo BluChip"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Explore"
+          "text": "Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME "
         },
         {
           "change_type": "equal",
-          "text": " My "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Scratch"
-        },
-        {
-          "change_type": "insertion",
-          "text": "trips"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Card"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Book"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "6E"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Check-in"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Rewards Other"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Profile"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "information"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Skip"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "About us Contact us"
-        },
-        {
-          "change_type": "insertion",
-          "text": "to"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "WhatsApp"
-        },
-        {
-          "change_type": "insertion",
-          "text": "main"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Terms"
-        },
-        {
-          "change_type": "insertion",
-          "text": "content"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "and"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Book"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Conditions"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Trips"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Help"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Deals"
-        },
-        {
-          "change_type": "equal",
-          "text": " and "
-        },
-        {
-          "change_type": "deletion",
-          "text": "FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Offers"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "About"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Check-in"
-        },
-        {
-          "change_type": "equal",
-          "text": " IndiGo BluChip "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Tiers & Benefits Terms & Conditions FAQ Earn and Redeem"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Tariff"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Our Partners New Earn"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Sheet"
-        },
-        {
-          "change_type": "equal",
-          "text": " IndiGo BluChips "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Redeem IndiGo BluChips Hello IndiGo"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Balance"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Login"
-        },
-        {
-          "change_type": "equal",
-          "text": " Explore My trips Book Check-in Profile Hi there, plan your journey with ease - Flights, Hotels and beyond! What's new? Find exclusive offers and the best deals available for you"
+          "text": "Explore My trips Book Check-in Profile Hi there, plan your journey with ease - Flights, Hotels and beyond! What's new? Find exclusive offers and the best deals available for you"
         },
         {
           "change_type": "deletion",
@@ -2201,55 +2249,27 @@
         },
         {
           "change_type": "insertion",
-          "text": "Learn more "
+          "text": "hotels "
         },
         {
           "change_type": "equal",
           "text": "T&C apply* Expiry: : No expiry "
         },
         {
-          "change_type": "deletion",
-          "text": "View All Offer AYJ BKK BLR DEL GOI HYD IXL BOM PNQ SXR Embark on a journey of inspiration with IndiGo, where discovery meets the sky. Explore Namaste Manchester: IndiGo announces its long-haul debut with non- stop flights connecting Mumbai and Manchester starting 01 July 2025 21 May 2025 View"
-        },
-        {
           "change_type": "insertion",
-          "text": "Learn"
+          "text": "6exclusive-fare "
         },
         {
           "change_type": "equal",
-          "text": " more "
+          "text": "View All Offer "
         },
         {
           "change_type": "deletion",
-          "text": "IndiGo brings Indian warmth to Dutch skies: Opens bookings for its long-haul debut on Mumbai-Amsterdam route starting 02 July 2025 21 May 2025 "
+          "text": "AYJ BKK BLR DEL GOI HYD IXL BOM PNQ SXR Embark on a journey of inspiration with IndiGo, where discovery meets the sky. Explore Namaste Manchester: IndiGo announces its long-haul debut with non- stop flights connecting Mumbai and Manchester starting 01 July 2025 21 May 2025 View more IndiGo brings Indian warmth to Dutch skies: Opens bookings for its long-haul debut on Mumbai-Amsterdam route starting 02 July 2025 21 May 2025 View more Explore Amsterdam Explore Manchester Explore Seychelles "
         },
         {
           "change_type": "equal",
-          "text": "View "
-        },
-        {
-          "change_type": "deletion",
-          "text": "more"
-        },
-        {
-          "change_type": "insertion",
-          "text": "All"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Explore Amsterdam Explore Manchester Explore Seychelles"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Offer"
-        },
-        {
-          "change_type": "equal",
-          "text": " Ayodhya, Uttar Pradesh Journey into the Spiritual Heart of Ayodhya Explore"
+          "text": "Ayodhya, Uttar Pradesh Journey into the Spiritual Heart of Ayodhya Explore"
         },
         {
           "change_type": "insertion",
@@ -2349,15 +2369,15 @@
         },
         {
           "change_type": "equal",
-          "text": "XL (Extra legroom) seat starting at \u20b9500 Window, aisle or seat with extra legroom "
+          "text": "XL (Extra legroom) seat starting at \u20b9500 Window, aisle or seat with extra legroom"
         },
         {
           "change_type": "insertion",
-          "text": "Learn more "
+          "text": " Learn more"
         },
         {
           "change_type": "equal",
-          "text": "Share Feedback"
+          "text": " Share Feedback"
         },
         {
           "change_type": "insertion",
@@ -2365,26 +2385,10 @@
         },
         {
           "change_type": "equal",
-          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android"
-        },
-        {
-          "change_type": "insertion",
-          "text": " Kindly accept cookies and continue using our website for a smoother experience. Accept Accept cookies"
-        },
-        {
-          "change_type": "equal",
-          "text": " +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved"
-        },
-        {
-          "change_type": "deletion",
-          "text": ". Kindly accept cookies and continue using our website for a smoother experience. Accept Accept cookies"
-        },
-        {
-          "change_type": "insertion",
-          "text": "."
+          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved. Kindly accept cookies and continue using our website for a smoother experience. Accept Accept cookies"
         }
       ],
-      "similarity_score": 0.6034811104943933
+      "similarity_score": 0.5780994720857004
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
@@ -2415,7 +2419,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo"
+          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log"
         },
         {
           "change_type": "insertion",
@@ -2427,7 +2431,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "BluChips"
+          "text": "In"
         },
         {
           "change_type": "insertion",
@@ -2439,7 +2443,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Login"
+          "text": "Sign"
         },
         {
           "change_type": "insertion",
@@ -2451,7 +2455,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "or Sign up for IndiGo BluChip Log In Sign Up"
+          "text": "Up"
         },
         {
           "change_type": "insertion",
@@ -2463,203 +2467,11 @@
         },
         {
           "change_type": "deletion",
-          "text": "Your Information Flight Status IndiGo BluChip"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Explore"
+          "text": "Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME "
         },
         {
           "change_type": "equal",
-          "text": " My "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Scratch"
-        },
-        {
-          "change_type": "insertion",
-          "text": "trips"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Card"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Book"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "6E Rewards Other information"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Check-in"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "About"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Profile"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "us Contact"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Skip"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "us"
-        },
-        {
-          "change_type": "insertion",
-          "text": "to"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "WhatsApp"
-        },
-        {
-          "change_type": "insertion",
-          "text": "main"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Terms"
-        },
-        {
-          "change_type": "insertion",
-          "text": "content"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "and"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Book"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Conditions"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Trips"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Help"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Deals"
-        },
-        {
-          "change_type": "equal",
-          "text": " and "
-        },
-        {
-          "change_type": "deletion",
-          "text": "FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Offers"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Program Join Program My dashboard About"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Check-in"
-        },
-        {
-          "change_type": "equal",
-          "text": " IndiGo BluChip "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn "
-        },
-        {
-          "change_type": "equal",
-          "text": "IndiGo BluChips "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Balance"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME"
-        },
-        {
-          "change_type": "insertion",
-          "text": "Login"
-        },
-        {
-          "change_type": "equal",
-          "text": " Explore My trips Book Check-in Profile Home Flights Flight Tracker Delhi to Mumbai Delhi to Mumbai Flight Status "
+          "text": "Explore My trips Book Check-in Profile Home Flights Flight Tracker Delhi to Mumbai Delhi to Mumbai Flight Status "
         },
         {
           "change_type": "insertion",
@@ -2678,7 +2490,7 @@
           "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
         }
       ],
-      "similarity_score": 0.7382213296639115
+      "similarity_score": 0.7042847725614679
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
@@ -2709,7 +2521,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips"
+          "text": "DISCOVER"
         },
         {
           "change_type": "insertion",
@@ -2721,7 +2533,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Retro"
+          "text": "Join"
         },
         {
           "change_type": "insertion",
@@ -2733,7 +2545,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Claim"
+          "text": "Program"
         },
         {
           "change_type": "insertion",
@@ -2745,7 +2557,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up"
+          "text": "Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up"
         },
         {
           "change_type": "insertion",
@@ -2801,11 +2613,23 @@
         },
         {
           "change_type": "insertion",
-          "text": "Deventure Sarovar Portico Kapashera Delhi \u2605\u2605\u2605\u2605 "
+          "text": "Deventure Sarovar Portico Kapashera \u2605\u2605\u2605\u2605"
         },
         {
           "change_type": "equal",
-          "text": "3.8/5 (148 reviews"
+          "text": "3.8/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "148 reviews"
         },
         {
           "change_type": "deletion",
@@ -2825,15 +2649,23 @@
         },
         {
           "change_type": "equal",
-          "text": "The LaLiT New Delhi Delhi"
-        },
-        {
-          "change_type": "deletion",
-          "text": " \u20b9 "
+          "text": "The LaLiT New Delhi"
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (926 reviews) \u20b9 "
+          "text": " \u2605\u2605\u2605\u2605\u26054/5(926"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": "reviews) \u20b9 "
         },
         {
           "change_type": "equal",
@@ -2845,15 +2677,23 @@
         },
         {
           "change_type": "equal",
-          "text": "Bloomrooms @ New Delhi Railway Station Delhi"
-        },
-        {
-          "change_type": "deletion",
-          "text": " \u20b9 "
+          "text": "Bloomrooms @ New Delhi Railway Station"
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u2605 4.2/5 (729 reviews) \u20b9 "
+          "text": " \u2605\u2605\u26054.2/5(729"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": "reviews) \u20b9 "
         },
         {
           "change_type": "equal",
@@ -2865,15 +2705,23 @@
         },
         {
           "change_type": "equal",
-          "text": "Pride Plaza Hotel Aerocity New Delhi Delhi"
-        },
-        {
-          "change_type": "deletion",
-          "text": " \u20b9 "
+          "text": "Pride Plaza Hotel Aerocity New Delhi"
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605\u2605 3.8/5 (910 reviews) \u20b9 "
+          "text": " \u2605\u2605\u2605\u2605\u26053.8/5(910"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": "reviews) \u20b9 "
         },
         {
           "change_type": "equal",
@@ -2885,15 +2733,23 @@
         },
         {
           "change_type": "equal",
-          "text": "The Metropolitan Hotel and Spa New Delhi Delhi"
-        },
-        {
-          "change_type": "deletion",
-          "text": " \u20b9 "
+          "text": "The Metropolitan Hotel and Spa New Delhi"
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (924 reviews) \u20b9 "
+          "text": " \u2605\u2605\u2605\u2605\u26054/5(924"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": "reviews) \u20b9 "
         },
         {
           "change_type": "equal",
@@ -2901,11 +2757,23 @@
         },
         {
           "change_type": "insertion",
-          "text": "Bloom Hotel - Karol Bagh Delhi \u2605\u2605\u2605 "
+          "text": "Bloom Hotel - Karol Bagh \u2605\u2605\u2605"
         },
         {
           "change_type": "equal",
-          "text": "4.3/5 (7 reviews"
+          "text": "4.3/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "7 reviews"
         },
         {
           "change_type": "deletion",
@@ -2917,11 +2785,11 @@
         },
         {
           "change_type": "equal",
-          "text": "3,754 /night + \u20b9 465 Taxes & fees Book Hotel Bawa Gurgaon Delhi"
+          "text": "3,754 /night + \u20b9 465 Taxes & fees Book Hotel Bawa Gurgaon"
         },
         {
           "change_type": "deletion",
-          "text": " \u20b9 "
+          "text": " Delhi \u20b9 "
         },
         {
           "change_type": "insertion",
@@ -2933,11 +2801,23 @@
         },
         {
           "change_type": "insertion",
-          "text": "Hotel Diplomat Delhi \u2605\u2605\u2605\u2605 "
+          "text": "Hotel Diplomat \u2605\u2605\u2605\u2605"
         },
         {
           "change_type": "equal",
-          "text": "3.2/5 (63 reviews"
+          "text": "3.2/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "63 reviews"
         },
         {
           "change_type": "deletion",
@@ -2957,15 +2837,23 @@
         },
         {
           "change_type": "equal",
-          "text": "Le ROI Express Paharganj Delhi"
-        },
-        {
-          "change_type": "deletion",
-          "text": " \u20b9 "
+          "text": "Le ROI Express Paharganj"
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u2605 4.3/5 (53 reviews) \u20b9 "
+          "text": " \u2605\u2605\u26054.3/5(53"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Delhi \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": "reviews) \u20b9 "
         },
         {
           "change_type": "equal",
@@ -2973,11 +2861,23 @@
         },
         {
           "change_type": "insertion",
-          "text": "Bloomrooms @ Janpath Delhi \u2605\u2605\u2605 "
+          "text": "Bloomrooms @ Janpath \u2605\u2605\u2605"
         },
         {
           "change_type": "equal",
-          "text": "4.3/5 (157 reviews"
+          "text": "4.3/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "157 reviews"
         },
         {
           "change_type": "deletion",
@@ -3008,7 +2908,7 @@
           "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
         }
       ],
-      "similarity_score": 0.9763497864993455
+      "similarity_score": 0.9754205966066933
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
@@ -3039,7 +2939,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip"
+          "text": "DISCOVER"
         },
         {
           "change_type": "insertion",
@@ -3051,7 +2951,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Number"
+          "text": "Join Program Join Program"
         },
         {
           "change_type": "insertion",
@@ -3063,7 +2963,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Our"
+          "text": "Loyalty"
         },
         {
           "change_type": "insertion",
@@ -3075,7 +2975,7 @@
         },
         {
           "change_type": "deletion",
-          "text": "Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up"
+          "text": "Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up"
         },
         {
           "change_type": "insertion",
@@ -3107,267 +3007,27 @@
         },
         {
           "change_type": "deletion",
-          "text": "Places to visit Trending "
+          "text": "Places to visit "
         },
         {
           "change_type": "equal",
-          "text": "Gateway of India An iconic monument overlooking the Arabian Sea, known for its grand archway, intricate design, and historical significance. Exploration time: 1-2 hours"
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u00b7 Trending"
-        },
-        {
-          "change_type": "equal",
-          "text": " Juhu Beach Exploration time: 1-2 hours Marine Drive Exploration time: 1-2 hours Hanging Garden Exploration time: 1-2 hours Prince of Wales Museum Exploration time: 3-5 hours Film City Mumbai Exploration time: 3-4 hours, Movie studio "
+          "text": "Trending Gateway of India An iconic monument overlooking the Arabian Sea, known for its grand archway, intricate design, and historical significance. Exploration time: 1-2 hours Juhu Beach Exploration time: 1-2 hours Marine Drive Exploration time: 1-2 hours Hanging Garden Exploration time: 1-2 hours Prince of Wales Museum Exploration time: 3-5 hours Film City Mumbai Exploration time: 3-4 hours, Movie studio"
         },
         {
           "change_type": "deletion",
-          "text": "View All 6 places View less "
+          "text": " View All 6 places View less"
         },
         {
           "change_type": "equal",
-          "text": "Places to eat Mumbai is renowned for its diverse culinary scene, offering various dining options to suit every palate. Here are some popular places to eat in Mumbai: Joey\u2019s Pizza Joey's Pizza is a popular pizza chain in Mumbai known for its delicious and innovative pizzas. They offer a variety of toppings and flavours, catering to vegetarian and non-vegetarian preferences. Popular dishes: Supreme pizza, roasted chicken salad, chicken tornado, and makhani pizza. Cafe Madras Cafe Madras is a legendary restaurant located in Mumbai's Matunga area. It is famous for its authentic and delicious South Indian cuisine in a warm and welcoming ambience. Popular dishes: Dosa, idli, upma, butter idli, and filter coffee. The Bombay Canteen The Bombay Canteen is a popular restaurant in Mumbai known for its innovative take on traditional Indian cuisine. The place offers a lively ambience and a menu celebrating local flavours and ingredients. Popular dishes: Egg Kejriwal, ghee roast chicken seekh, and chilled seabass. Cafe Noorani Cafe Noorani is a popular restaurant located in Mumbai. It is known for its delicious and authentic Mughlai and North Indian cuisine. Popular dishes: Chicken tikka biryani, brain masala, Hyderabadi biryani and caramel custard. Indigo Delicatessen The award-winning restaurant specialises in European-style cuisine. The place offers an impeccable fine dining experience with flavorful dishes and exceptional service. Popular dishes: Pasta, burgers, tiramisu, and waffles. The Table The Table is popular for its contemporary European and American cuisine, focusing on using fresh, locally sourced ingredients. The restaurant offers a stylish and elegant dining experience. Popular dishes: Panna cotta, zucchini spaghetti, and truffle fries Where to stay in Mumbai Up to 25%* off on hotel bookings with IndiGo, Use code GOSTAY 4.2/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
+          "text": " Places to eat Mumbai is renowned for its diverse culinary scene, offering various dining options to suit every palate. Here are some popular places to eat in Mumbai: Joey\u2019s Pizza Joey's Pizza is a popular pizza chain in Mumbai known for its delicious and innovative pizzas. They offer a variety of toppings and flavours, catering to vegetarian and non-vegetarian preferences. Popular dishes: Supreme pizza, roasted chicken salad, chicken tornado, and makhani pizza. Cafe Madras Cafe Madras is a legendary restaurant located in Mumbai's Matunga area. It is famous for its authentic and delicious South Indian cuisine in a warm and welcoming ambience. Popular dishes: Dosa, idli, upma, butter idli, and filter coffee. The Bombay Canteen The Bombay Canteen is a popular restaurant in Mumbai known for its innovative take on traditional Indian cuisine. The place offers a lively ambience and a menu celebrating local flavours and ingredients. Popular dishes: Egg Kejriwal, ghee roast chicken seekh, and chilled seabass. Cafe Noorani Cafe Noorani is a popular restaurant located in Mumbai. It is known for its delicious and authentic Mughlai and North Indian cuisine. Popular dishes: Chicken tikka biryani, brain masala, Hyderabadi biryani and caramel custard. Indigo Delicatessen The award-winning restaurant specialises in European-style cuisine. The place offers an impeccable fine dining experience with flavorful dishes and exceptional service. Popular dishes: Pasta, burgers, tiramisu, and waffles. The Table The Table is popular for its contemporary European and American cuisine, focusing on using fresh, locally sourced ingredients. The restaurant offers a stylish and elegant dining experience. Popular dishes: Panna cotta, zucchini spaghetti, and truffle fries "
         },
         {
           "change_type": "insertion",
-          "text": "("
+          "text": "Where to stay in Mumbai Up to 25%* off on hotel bookings with IndiGo, Use code GOSTAY Holiday Inn Mumbai International Airport by IHG \u2605\u2605\u2605\u2605 4.2/5(783 reviews) \u20b9 6,115 /night Incl of taxes & fees Book Bawa Regency \u2605\u2605 3.3/5(56 reviews) \u20b9 9,750 /night + \u20b9 1,755 Taxes & fees Book Novotel Mumbai International Airport \u2605\u2605\u2605\u2605\u2605 4.4/5(138 reviews) \u20b9 7,599 \u20b9 6,840 /night + \u20b9 821 Taxes & fees Book Lemon Tree Premier Mumbai Intl. Airport \u2605\u2605\u2605\u2605 4/5(90 reviews) \u20b9 7,638 /night Incl of taxes & fees Book Bawa International \u2605\u2605\u2605\u2605 3.6/5(252 reviews) \u20b9 5,000 /night + \u20b9 600 Taxes & fees Book Suba Galaxy \u2605\u2605\u2605\u2605 3.9/5(76 reviews) \u20b9 3,420 /night + \u20b9 411 Taxes & fees Book Hotel Parle International \u2605\u2605\u2605 3.5/5(154 reviews) \u20b9 7,500 \u20b9 6,750 /night + \u20b9 810 Taxes & fees Book Novotel Mumbai Juhu Beach Hotel \u2605\u2605\u2605\u2605\u2605 3.5/5(840 reviews) \u20b9 11,180 /night Incl of taxes & fees Book Hotel Oriental Aster - Mumbai International Airport \u2605\u2605\u2605\u2605 3.8/5(123 reviews) \u20b9 4,938 /night Incl of taxes & fees Book T24 Residency Mumbai International Airport Hotel \u2605\u2605\u2605\u2605 3.6/5(130 reviews) \u20b9 6,599 /night Incl of taxes & fees Book Show more "
         },
         {
           "change_type": "equal",
-          "text": "783 reviews) Holiday Inn Mumbai International Airport by IHG"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "6,115 /night Incl of taxes & fees Book 3.3/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "56 reviews) Bawa Regency"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "9,750 /night + \u20b9 1,755 Taxes & fees Book 4.4/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "138 reviews) Novotel Mumbai International Airport"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "7,599 \u20b9 6,840 /night + \u20b9 821 Taxes & fees Book 4/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "90 reviews) Lemon Tree Premier Mumbai Intl. Airport"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "7,638 /night Incl of taxes & fees Book 3.6/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "252 reviews) Bawa International"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "5,000 /night + \u20b9 600 Taxes & fees Book 3.9/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "76 reviews) Suba Galaxy"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "3,420 /night + \u20b9 411 Taxes & fees Book 3.5/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "154 reviews) Hotel Parle International"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "7,500 \u20b9 6,750 /night + \u20b9 810 Taxes & fees Book 3.5/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "840 reviews) Novotel Mumbai Juhu Beach Hotel"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "11,180 /night Incl of taxes & fees Book 3.8/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "123 reviews) Hotel Oriental Aster - Mumbai International Airport"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "4,938 /night Incl of taxes & fees Book 3.6/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "130 reviews) T24 Residency Mumbai International Airport Hotel"
-        },
-        {
-          "change_type": "deletion",
-          "text": " Mumbai \u20b9 "
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605 \u20b9 "
-        },
-        {
-          "change_type": "equal",
-          "text": "6,599 /night Incl of taxes & fees Book Show more Things To Do Mumbai is a city filled with many experiences. The city never stops to fascinate its travellers. Here are some of the best things to do and fun activities on your trip to Mumbai that will surely keep you engaged: Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food Vibrant nightlife Temple visits Beach outing Museum visits Local cuisine"
+          "text": "Things To Do Mumbai is a city filled with many experiences. The city never stops to fascinate its travellers. Here are some of the best things to do and fun activities on your trip to Mumbai that will surely keep you engaged: Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food Vibrant nightlife Temple visits Beach outing Museum visits Local cuisine"
         },
         {
           "change_type": "deletion",
@@ -3386,7 +3046,7 @@
           "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
         }
       ],
-      "similarity_score": 0.9855075581520291
+      "similarity_score": 0.9653984296211219
     }
   ]
 }
