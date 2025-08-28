@@ -1,62 +1,61 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the swiper-wrapper containing the cards
-  const swiperWrapper = element.querySelector('.swiper-wrapper');
-  if (!swiperWrapper) return;
-  const slides = Array.from(swiperWrapper.querySelectorAll('.swiper-slide'));
+  // Build the block table header
+  const cells = [['Cards (cards15)']];
 
-  // Prepare table rows: first is header
-  const rows = [['Cards (cards15)']];
+  // Find the card container
+  const wrapper = element.querySelector('.swiper-wrapper');
+  if (!wrapper) return;
+  // Each card is an <a> child of wrapper
+  const cards = Array.from(wrapper.children).filter(el => el.tagName.toLowerCase() === 'a');
 
-  // Each slide is a card
-  slides.forEach((slide) => {
-    // Image
-    const img = slide.querySelector('.image-carousel--img-container img');
-    // Title
-    const titleContainer = slide.querySelector('.image-carousel--content-container .title');
-    // Description (if present)
-    // Try to find a description under the title (not present in the current HTML, but future-proof)
-    let descriptionEl = null;
-    const contentContainer = slide.querySelector('.image-carousel--content-container');
-    if (contentContainer) {
-      // Any text nodes after the title div?
-      // Get all child nodes, filter out the title node
-      let foundTitle = false;
-      Array.from(contentContainer.childNodes).forEach((node) => {
-        if (node === titleContainer) {
-          foundTitle = true;
-        } else if (foundTitle && node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
-          // Text node after title
-          if (!descriptionEl) descriptionEl = document.createElement('p');
-          descriptionEl.textContent += node.textContent.trim();
-        } else if (foundTitle && node.nodeType === Node.ELEMENT_NODE && node !== titleContainer) {
-          // Any element after title
-          if (!descriptionEl) descriptionEl = document.createElement('p');
-          descriptionEl.textContent += node.textContent.trim();
-        }
-      });
+  cards.forEach(card => {
+    // FIRST CELL: icon or image (always use the span.icon if present)
+    let icon = card.querySelector('span.swiper-slide__flight-icon');
+    if (!icon) {
+      // fallback: empty span for structure
+      icon = document.createElement('span');
     }
-    // Compose cell content
-    let cellContent = [];
-    if (titleContainer) {
+    // Reference the actual element, do not clone
+
+    // SECOND CELL: all text (title + description + optional CTA)
+    // We want to preserve all text content and reference actual nodes
+    // Title is usually the first <p> in the card
+    const titleP = card.querySelector('.swiper-slide__main, p');
+    // Description is the next <p> in .swiper-slide__text
+    const descP = card.querySelector('.swiper-slide__text p');
+    // CTA is present in the form of the card's href
+    const textFragments = [];
+    // Strong for title
+    if (titleP && titleP.textContent.trim()) {
       const strong = document.createElement('strong');
-      strong.textContent = titleContainer.textContent.trim();
-      cellContent.push(strong);
-      if (descriptionEl && descriptionEl.textContent.trim()) {
-        cellContent.push(document.createElement('br'));
-        cellContent.push(descriptionEl);
-      }
+      strong.textContent = titleP.textContent.trim();
+      textFragments.push(strong);
     }
-    // Add card row only if image and title exist
-    if (img && cellContent.length) {
-      rows.push([
-        img,
-        cellContent
-      ]);
+    // Description
+    if (descP && descP.textContent.trim()) {
+      textFragments.push(document.createElement('br'));
+      const descSpan = document.createElement('span');
+      descSpan.textContent = descP.textContent.trim();
+      textFragments.push(descSpan);
     }
+    // CTA (optional): Only if card has a non-empty, non-# href
+    const href = card.getAttribute('href');
+    if (href && href !== '#' && href !== '') {
+      textFragments.push(document.createElement('br'));
+      const link = document.createElement('a');
+      link.href = href;
+      link.textContent = 'Learn more';
+      textFragments.push(link);
+    }
+    // Build the row: [icon, all text content]
+    cells.push([
+      icon,
+      textFragments
+    ]);
   });
 
-  // Create block table and replace element
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+  // Create and replace block
+  const block = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(block);
 }
