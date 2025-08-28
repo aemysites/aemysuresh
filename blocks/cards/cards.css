@@ -1360,7 +1360,7 @@
 .cards.cards8 > ul {
   display: flex;
   flex-direction: row;
-  gap: 7px; /* Compact and even gap for true carousel feel */
+  gap: 7px;
   padding: 0 6px;
   margin: 0;
   list-style: none;
@@ -1386,7 +1386,6 @@
   align-items: stretch;
 }
 
-/* Full image fill for card backgrounds */
 .cards.cards8 > ul > li > .cards-card-body:first-child {
   position: absolute;
   inset: 0;
@@ -1399,7 +1398,6 @@
   z-index: 1;
 }
 
-/* Unique image assignment for each card (sample URLs) */
 .cards.cards8 > ul > li:nth-child(1) > .cards-card-body:first-child {
   background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80');
 }
@@ -1428,7 +1426,6 @@
   background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=400&q=80');
 }
 
-/* Overlay gradient for text readability: taller and darker for contrast */
 .cards.cards8 > ul > li > .cards-card-body:first-child::after {
   display: block;
   position: absolute;
@@ -1440,7 +1437,6 @@
   content: "";
 }
 
-/* Label at bottom with a bit more space for closer match */
 .cards.cards8 > ul > li > .cards-card-body:last-child {
   position: absolute;
   left: 0;
@@ -1472,12 +1468,10 @@
   white-space: nowrap;
 }
 
-/* Hide any additional paragraphs except the first label paragraph */
 .cards.cards8 .cards-card-body p:not(:first-child) {
   display: none;
 }
 
-/* Arrow icon for Street Shopping card, pixel-tuned */
 .cards.cards8 > ul > li:nth-child(5) > .cards-card-body:last-child {
   position: absolute;
   left: 0;
@@ -1495,7 +1489,7 @@
 
 .cards.cards8 > ul > li:nth-child(5) > .cards-card-body:last-child p {
   position: relative;
-  padding-right: 30px; /* space for the icon */
+  padding-right: 30px;
 }
 
 .cards.cards8 > ul > li:nth-child(5) > .cards-card-body:last-child p::after {
@@ -1511,7 +1505,6 @@
   content: "";
 }
 
-/* Remove any inner margin/padding that could cause misalignment */
 .cards.cards8 .cards-card-body {
   margin: 0;
   padding: 0;
@@ -1520,7 +1513,6 @@
   border-radius: 0;
 }
 
-/* Responsive layout for smaller screens */
 @media (width <= 700px) {
   .cards.cards8 > ul {
     gap: 2px;
@@ -1558,5 +1550,240 @@
     bottom: 1px;
     width: 11px;
     height: 11px;
+  }
+}
+
+
+.cards.cards9 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  overflow: auto visible;
+  white-space: nowrap;
+  padding: 0 14px 18px;
+  margin: 0;
+  list-style: none;
+  align-items: flex-start;
+
+  /* Ensure the row stays tight; fix vertical alignment */
+  min-height: 0;
+  height: auto;
+}
+
+.cards.cards9 > ul > li {
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px 18px rgb(16 24 40 / 14%);
+  width: 285px;
+  min-width: 285px;
+  max-width: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  flex: 0 0 auto;
+  transition: box-shadow 0.18s;
+}
+
+/* Card block layout: stack image and card body vertically */
+.cards.cards9 .cards-card-image {
+  position: relative;
+  height: 180px;
+  background: #e7ebf1;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Card body shows below the image, stacked vertically */
+.cards.cards9 .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  padding: 14px 18px 8px;
+  background: transparent;
+  min-height: 80px;
+  flex: 1 1 auto;
+}
+
+/* Ensure card body and its children are visible and fill width */
+.cards.cards9 .cards-card-body p {
+  display: block;
+  margin: 0;
+  line-height: 1.18;
+  font-size: 15px;
+  color: #232b38;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cards.cards9 .cards-card-body p + p {
+  margin-top: 4px;
+}
+
+/* Hotel name styling */
+.cards.cards9 .cards-card-body p strong {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #232b38;
+  margin-bottom: 2px;
+  margin-top: 0;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.13;
+}
+
+/* Star rating styling (second p) */
+.cards.cards9 .cards-card-body p:nth-child(2) {
+  color: #f6ad26;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 3px;
+  margin-bottom: 0;
+  line-height: 1.07;
+}
+
+/* Review overlay badge correctly overlays image */
+.cards.cards9 > ul > li .cards-card-body p:nth-child(3) {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  background: rgb(75 85 99 / 60%);
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  z-index: 2;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+  max-width: 82%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  margin: 0;
+}
+
+/* Price styling */
+.cards.cards9 .cards-card-body p:nth-child(4),
+.cards.cards9 .cards-card-body p:nth-child(5) {
+  font-size: 17px;
+  font-weight: 700;
+  color: #232b38;
+  margin-top: 7px;
+  margin-bottom: 0;
+  line-height: 1.18;
+}
+
+/* Fees/info styling ("Incl of taxes & fees" and "+ ₹ ... Taxes & fees") */
+.cards.cards9 .cards-card-body p:nth-child(5),
+.cards.cards9 .cards-card-body p:nth-child(6) {
+  font-size: 14px;
+  color: #c0c7d1;
+  margin-bottom: 0;
+  margin-top: 3px;
+  line-height: 1.18;
+}
+
+/* Old price (del) styling */
+.cards.cards9 .cards-card-body del {
+  color: #b6b6b6;
+  font-size: 15px;
+  margin-right: 6px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Book button styling (last p) */
+.cards.cards9 .cards-card-body p:last-child {
+  background-color: #0070C9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 7%);
+  transition: background 0.2s;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
+}
+
+.cards.cards9 .cards-card-body p:last-child:hover {
+  background-color: #005fa3;
+}
+
+/* Image block: ensure image is visible, fills slot, and is above background */
+.cards.cards9 .cards-card-image picture,
+.cards.cards9 .cards-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  background: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* Remove background on picture/img, keep only as fallback on .cards-card-image */
+
+/* Responsive tweaks: maintain stacking and visibility */
+@media (width <= 900px) {
+  .cards.cards9 > ul {
+    gap: 14px;
+    padding: 0 2vw 12px;
+  }
+
+  .cards.cards9 > ul > li {
+    width: 84vw;
+    min-width: 220px;
+    max-width: 320px;
+    border-radius: 12px;
+  }
+
+  .cards.cards9 .cards-card-image {
+    height: 115px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .cards.cards9 .cards-card-image picture,
+  .cards.cards9 .cards-card-image img {
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+@media (width <= 600px) {
+  .cards.cards9 > ul > li {
+    width: 98vw;
+    min-width: 140px;
+    max-width: 98vw;
+    border-radius: 9px;
+  }
+
+  .cards.cards9 .cards-card-image {
+    height: 70px;
+    border-radius: 9px 9px 0 0;
+  }
+
+  .cards.cards9 .cards-card-image picture,
+  .cards.cards9 .cards-card-image img {
+    border-radius: 9px 9px 0 0;
   }
 }
