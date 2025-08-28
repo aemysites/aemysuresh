@@ -154,132 +154,6 @@
 }
 
 
-.columns.columns8 {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 24px rgb(44 50 96 / 12%);
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 320px;
-  box-sizing: border-box;
-}
-
-.columns.columns8 > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  min-height: 260px;
-  gap: 0;
-}
-
-.columns.columns8 > div > div:first-child {
-  background: #0a23b9;
-  border-radius: 16px;
-  width: 340px;
-  min-width: 260px;
-  max-width: 350px;
-  height: 260px;
-  margin: 0 0 0 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  box-sizing: border-box;
-}
-
-.columns.columns8 > div > div:not(:first-child) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 24px;
-  width: 480px;
-  min-width: 300px;
-  max-width: 640px;
-  height: 260px;
-  margin: 0 32px;
-  box-sizing: border-box;
-  align-items: stretch;
-  position: relative;
-}
-
-.columns.columns8 > div > div:not(:first-child):empty {
-  background: none;
-}
-
-.columns.columns8 > div > div:not(:first-child):empty::before,
-.columns.columns8 > div > div:not(:first-child):empty::after,
-.columns.columns8 > div > div:not(:first-child):empty::marker {
-  display: none;
-}
-
-.columns.columns8 > div > div:not(:first-child):empty::after {
-  content: '';
-  display: block;
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background: 
-    linear-gradient(to top left, #fff 0%, #fff 0%) 0% 0% / calc(50% - 12px) calc(50% - 12px) no-repeat,
-    linear-gradient(to top right, #fff 0%, #fff 0%) 100% 0% / calc(50% - 12px) calc(50% - 12px) no-repeat,
-    linear-gradient(to bottom left, #fff 0%, #fff 0%) 0% 100% / calc(50% - 12px) calc(50% - 12px) no-repeat,
-    linear-gradient(to bottom right, #fff 0%, #fff 0%) 100% 100% / calc(50% - 12px) calc(50% - 12px) no-repeat;
-  border-radius: 12px;
-  box-shadow: 
-    0 1px 6px 0 rgb(44 50 96 / 3%),
-    0 0 0 1px #e8f0fe inset;
-}
-
-@media (width <= 900px) {
-  .columns.columns8 {
-    border-radius: 16px;
-    min-height: 0;
-    padding: 0;
-    box-shadow: 0 2px 16px rgb(44 50 96 / 9%);
-  }
-
-  .columns.columns8 > div {
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 0;
-    width: 100%;
-    gap: 0;
-  }
-
-  .columns.columns8 > div > div:first-child,
-  .columns.columns8 > div > div:not(:first-child) {
-    margin: 20px 16px 0;
-    width: 100%;
-    max-width: unset;
-    min-width: unset;
-    height: 180px;
-  }
-
-  .columns.columns8 > div > div:not(:first-child) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 16px 0;
-    margin-bottom: 20px;
-  }
-
-  .columns.columns8 > div > div:not(:first-child):empty::after {
-    background:
-      linear-gradient(#fff 0 0) 0% 0% /100% calc(25% - 8px) no-repeat,
-      linear-gradient(#fff 0 0) 0% 33.33% /100% calc(25% - 8px) no-repeat,
-      linear-gradient(#fff 0 0) 0% 66.66% /100% calc(25% - 8px) no-repeat,
-      linear-gradient(#fff 0 0) 0% 100% /100% calc(25% - 8px) no-repeat;
-    border-radius: 12px;
-    box-shadow:
-      0 1px 6px 0 rgb(44 50 96 / 3%),
-      0 0 0 1px #e8f0fe inset;
-  }
-}
-
-
 .columns.columns12 {
   display: flex;
   flex-direction: row;
@@ -498,7 +372,6 @@
   max-width: 1200px;
 }
 
-/* Main grid: first row for main columns, second row for footer container */
 .columns.columns4 > div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -509,13 +382,12 @@
   row-gap: 24px;
 }
 
-/* Main columns (COMPANY, SUPPORT, QUICK LINKS, MEDIA) row 1 */
-.columns.columns4 > div > div:nth-child(1) { grid-column: 1; grid-row: 1; }
-.columns.columns4 > div > div:nth-child(2) { grid-column: 2; grid-row: 1; }
-.columns.columns4 > div > div:nth-child(3) { grid-column: 3; grid-row: 1; }
-.columns.columns4 > div > div:nth-child(4) { grid-column: 4; grid-row: 1; }
+.columns.columns4 > div > div:nth-child(1) {
+.columns.columns4 > div > div:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
 
-/* Footer row: visually center the 3 items as a flex row across columns 2-4 */
 .columns.columns4 > div > div:nth-child(5),
 .columns.columns4 > div > div:nth-child(6),
 .columns.columns4 > div > div:nth-child(7) {
@@ -529,18 +401,32 @@
   align-items: center;
 }
 
-/* Place the three items in columns 2, 3, 4 on the second row */
-.columns.columns4 > div > div:nth-child(5) { grid-column: 2; margin-right: 16px; }
-.columns.columns4 > div > div:nth-child(6) { grid-column: 3; margin-right: 16px; }
+  padding: 0;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columns.columns4 > div > div:nth-child(5) { 
+.columns.columns4 > div > div:nth-child(6) { 
+.columns.columns4 > div > div:nth-child(7) { 
+  grid-column: 4; 
+  margin-right: 0; 
+}
+
+  margin-right: 16px; 
+}
+
+  margin-right: 16px; 
+}
+.columns.columns4 > div > div:nth-child(6) {
+.columns.columns4 > div > div:nth-child(7) {
+  margin-right: 0;
+}
+}
 .columns.columns4 > div > div:nth-child(7) { grid-column: 4; margin-right: 0; }
 
-/* Footer row horizontal flex alignment using parent grid container */
-
-/* Footer columns: align content to center horizontally */
-
-/* Footer spacing between items */
-
-/* Header styles */
 .columns.columns4 > div > div > p:first-child {
   font-weight: bold;
   text-transform: uppercase;
@@ -551,7 +437,6 @@
   font-family: Arial, 'Helvetica Neue', sans-serif;
 }
 
-/* Column lists */
 .columns.columns4 ul {
   list-style: none;
   padding: 0;
@@ -566,7 +451,6 @@
   margin-bottom: 0;
 }
 
-/* Links */
 .columns.columns4 ul li a {
   color: #fff;
   font-size: 14px;
@@ -581,7 +465,6 @@
   color: #ffdc00;
 }
 
-/* Awards badges (column 5) */
 .columns.columns4 > div > div:nth-child(5) .button-container {
   margin-bottom: 10px;
 }
@@ -602,7 +485,6 @@
   text-overflow: ellipsis;
 }
 
-/* Social media icons (column 6) - assumes links, not icons */
 .columns.columns4 > div > div:nth-child(6) > p:first-child {
   font-size: 12px;
   text-transform: uppercase;
@@ -640,7 +522,6 @@
   color: #0a1987;
 }
 
-/* Download app styling (column 7) */
 .columns.columns4 > div > div:nth-child(7) > p:first-child {
   font-weight: bold;
   text-transform: uppercase;
@@ -667,7 +548,6 @@
   margin-bottom: 6px;
 }
 
-/* Responsive stacking for mobile */
 @media (width <= 900px) {
   .columns.columns4 {
     padding: 24px 12px;
@@ -689,5 +569,178 @@
   .columns.columns4 > div > div:nth-child(6),
   .columns.columns4 > div > div:nth-child(7) {
     align-items: flex-start;
+  }
+}
+
+
+.columns.columns8 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgb(44 50 96 / 12%);
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Top-level flex: left and right panels side-by-side */
+.columns.columns8 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  gap: 40px;
+  box-sizing: border-box;
+  min-height: 260px;
+}
+
+/* Left card (blue) */
+.columns.columns8 > div > div:first-child {
+  background: #0719A3;
+  color: #fff;
+  border-radius: 16px;
+  min-width: 320px;
+  width: 340px;
+  max-width: 370px;
+  min-height: 260px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 48px 36px;
+  font-family: var(--heading-font-family, sans-serif);
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+
+/* Right panel: stat card grid always visible with 4 placeholders */
+.columns.columns8 > div > div:not(:first-child) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px 28px;
+  align-items: stretch;
+  min-width: 440px;
+  max-width: 800px;
+  width: 100%;
+  padding: 8px 0;
+  box-sizing: border-box;
+  min-height: 260px;
+  position: relative;
+}
+
+/* Always show 4 card placeholders when grid is empty */
+.columns.columns8 > div > div:not(:first-child):empty {
+  position: relative;
+  min-height: 260px;
+  background:
+    /* horizontal line */
+    linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 24px,
+      #e6f0fe 24px,
+      #e6f0fe calc(100% - 24px),
+      transparent calc(100% - 24px),
+      transparent 100%
+    ) 0 50% / 100% 2px no-repeat,
+    /* vertical line */
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 28px,
+      #e6f0fe 28px,
+      #e6f0fe calc(100% - 28px),
+      transparent calc(100% - 28px),
+      transparent 100%
+    ) 50% 0 / 2px 100% no-repeat,
+    /* 4 card backgrounds (simulate cards in grid) */
+    linear-gradient(#fff, #fff) 0 0 / calc(50% - 14px) calc(50% - 12px) no-repeat,
+    linear-gradient(#fff, #fff) 100% 0 / calc(50% - 14px) calc(50% - 12px) no-repeat,
+    linear-gradient(#fff, #fff) 0 100% / calc(50% - 14px) calc(50% - 12px) no-repeat,
+    linear-gradient(#fff, #fff) 100% 100% / calc(50% - 14px) calc(50% - 12px) no-repeat;
+  border-radius: 14px;
+  border: 1.5px solid #E6F0FE;
+  box-sizing: border-box;
+}
+
+.columns.columns8 > div > div:not(:first-child):empty .card-placeholder {
+  display: none;
+}
+
+.columns.columns8 > div > div:not(:first-child):empty::before,
+.columns.columns8 > div > div:not(:first-child):empty::after {
+  display: none;
+}
+
+/* Simulate 4 card placeholders by overlaying grid backgrounds and borders with a repeating-linear-gradient approach */
+
+/* Responsive adjustments */
+@media (width <= 900px) {
+  .columns.columns8 {
+    border-radius: 14px;
+    padding: 16px 0;
+    min-height: unset;
+  }
+
+  .columns.columns8 > div {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+    min-height: unset;
+  }
+
+  .columns.columns8 > div > div:first-child {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    min-height: 120px;
+    height: unset;
+    align-items: center;
+    text-align: center;
+    padding: 22px 12px;
+    font-size: 1.6rem;
+  }
+
+  .columns.columns8 > div > div:not(:first-child),
+  .columns.columns8 > div > div:not(:first-child):empty {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px 0;
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    padding: 0;
+    min-height: 220px;
+    background:
+      linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 25%,
+        #e6f0fe 25%,
+        #e6f0fe 25.5%,
+        transparent 25.5%,
+        transparent 50%,
+        #e6f0fe 50%,
+        #e6f0fe 50.5%,
+        transparent 50.5%,
+        transparent 75%,
+        #e6f0fe 75%,
+        #e6f0fe 75.5%,
+        transparent 75.5%,
+        transparent 100%
+      ) 0 0 / 100% 100% no-repeat,
+      linear-gradient(#fff, #fff) 0 0 / 100% calc(25% - 6px) no-repeat,
+      linear-gradient(#fff, #fff) 0 33.33% / 100% calc(25% - 6px) no-repeat,
+      linear-gradient(#fff, #fff) 0 66.66% / 100% calc(25% - 6px) no-repeat,
+      linear-gradient(#fff, #fff) 0 100% / 100% calc(25% - 6px) no-repeat;
+    border-radius: 14px;
+    border: 1.5px solid #E6F0FE;
+    box-sizing: border-box;
   }
 }
