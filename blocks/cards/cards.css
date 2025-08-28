@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -24,4 +25,71 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+
+.cards.cards7 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grid: Five columns, edge-to-edge flush with no outer margin */
+.cards.cards7 > ul {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Add gap only between cards, not at the edges */
+.cards.cards7 > ul > li:not(:last-child) {
+  margin-right: 14px;
+}
+
+/* Card style: fill grid cell, pill shape, no extra margin */
+.cards.cards7 > ul > li {
+  background: linear-gradient(135deg, #F3F4F6 0%, #E9EAEC 100%);
+  border-radius: 16px;
+  border: none;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+/* Remove any default margin/padding from inner body divs */
+.cards.cards7 .cards-card-body {
+  margin: 0;
+  padding: 0;
+  flex: 1 1 0;
+}
+
+/* Responsive: stack cards vertically on small screens, full width */
+@media (width <= 700px) {
+  .cards.cards7 > ul {
+    grid-template-columns: 1fr;
+  }
+
+  .cards.cards7 > ul > li {
+    height: 56px;
+    border-radius: 16px;
+  }
+
+  .cards.cards7 > ul > li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
 }
