@@ -1,0 +1,38 @@
+{
+  "templates": [
+    {
+      "name": "'Travel Destination Grid'",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "uuid": "addaec9a4b587eb9a92478bbcbd4520a38d43a14"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "uuid": "5cb71fd68d6725cf9445436fb02627fe45f78440"
+        }
+      ]
+    },
+    {
+      "name": "'Flight Status Page'",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+          "uuid": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0"
+        }
+      ]
+    },
+    {
+      "name": "'Portfolio Showcase'",
+      "cluster": 3,
+      "pages": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "uuid": "ffb2a41160fb417e317865000df5f9c2e3a22d3f"
+        }
+      ]
+    }
+  ]
+}
