@@ -153,153 +153,6 @@
 }
 
 
-.carousel.carousel9 .carousel-slide-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background:
-    linear-gradient(180deg, rgb(30 28 25 / 42%) 0%, rgb(180 130 80 / 13%) 68%, rgb(255 220 160 / 7%) 100%),
-    url('/images/gateway-of-india-pigeons.jpg'),
-    url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80');
-  background-size: cover, cover, cover;
-  background-position: center, center, center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  z-index: 0;
-  opacity: 1;
-  transition: background-image 0.4s cubic-bezier(.4,0,.2,1);
-}
-
-.carousel.carousel9 .carousel-slide-content {
-  position: absolute;
-  left: 5vw;
-  bottom: 8vh;
-  margin: 0;
-  padding: 0;
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
-  color: #fff;
-  max-width: 36vw;
-  z-index: 2;
-  text-align: left;
-  pointer-events: none;
-}
-
-.carousel.carousel9 .carousel-slide-content h2 {
-  font-size: clamp(2.7rem, 4vw, 3.6rem);
-  font-weight: 900;
-  margin-bottom: 0.7em;
-  color: #fff;
-  letter-spacing: 0.01em;
-  line-height: 1.08;
-  text-shadow:
-    0 8px 48px rgb(0 0 0 / 50%),
-    0 2px 12px rgb(0 0 0 / 34%),
-    0 0 1px #000;
-}
-
-.carousel.carousel9 .carousel-slide-content p {
-  font-size: clamp(1.08rem, 1.7vw, 1.22rem);
-  margin-bottom: 2.3em;
-  color: #fff;
-  opacity: 0.94;
-  text-shadow: 0 2px 16px rgb(0 0 0 / 21%);
-}
-
-@media (width <= 900px) {
-  .carousel.carousel9 .carousel-slide-content {
-    left: 18px;
-    bottom: 24px;
-    max-width: 90vw;
-  }
-
-  .carousel.carousel9 .carousel-slide-content h2 {
-    font-size: 2rem;
-  }
-
-  .carousel.carousel9 .carousel-slide-content p {
-    font-size: 1rem;
-  }
-}
-
-.carousel.carousel9 .carousel-slide-indicators {
-  position: absolute;
-  left: 6vw;
-  bottom: 5vh;
-  display: flex;
-  gap: 16px;
-  background: none;
-  box-shadow: none;
-  padding: 0;
-  z-index: 3;
-  align-items: center;
-}
-
-.carousel.carousel9 .carousel-slide-indicator button {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: rgb(255 255 255 / 58%);
-  margin: 0;
-  padding: 0;
-  border: 2px solid rgb(0 0 0 / 10%);
-  box-shadow: 0 1px 9px rgb(0 0 0 / 13%);
-  transition: opacity 0.2s, background 0.2s, border 0.2s;
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.carousel.carousel9 .carousel-slide-indicator button:disabled,
-.carousel.carousel9 .carousel-slide-indicator button[aria-current="true"],
-.carousel.carousel9 .carousel-slide-indicator button.active {
-  background: #fff;
-  border: 2.5px solid #f7e7bb;
-  opacity: 1;
-  box-shadow: 0 2px 14px rgb(255 220 160 / 19%);
-}
-
-@media (width <= 900px) {
-  .carousel.carousel9 .carousel-slide-indicators {
-    left: 14px;
-    bottom: 14px;
-    gap: 9px;
-  }
-
-  .carousel.carousel9 .carousel-slide-indicator button {
-    width: 12px;
-    height: 12px;
-  }
-}
-
-.carousel.carousel9 .carousel-share-icon {
-  position: absolute;
-  top: 32px;
-  right: 52px;
-  width: 40px;
-  height: 40px;
-  background: url('icon-share.svg') no-repeat center/contain;
-  opacity: 0.93;
-  cursor: pointer;
-  z-index: 4;
-  filter: drop-shadow(0 2px 12px rgb(0 0 0 / 20%));
-}
-
-@media (width <= 900px) {
-  .carousel.carousel9 .carousel-share-icon {
-    top: 12px;
-    right: 14px;
-    width: 28px;
-    height: 28px;
-  }
-}
-
-.carousel.carousel9 .carousel-slide-content * {
-  pointer-events: auto;
-}
-
-
 .carousel.carousel11,
 .carousel.carousel11 .carousel-slides-container,
 .carousel.carousel11 .carousel-slides,
@@ -443,13 +296,11 @@
 
 
 .carousel.carousel20 {
-  /* Add a radial gradient background matching the original */
   background: radial-gradient(ellipse 75% 68% at 52% 0%, #eaf5fc 0%, #fafdff 100%);
   min-height: 520px;
   position: relative;
 }
 
-/* Restore and style the card content */
 .carousel.carousel20 .carousel-slide .carousel-slide-content {
   background: rgb(255 255 255 / 97%);
   color: #202a38;
@@ -463,7 +314,6 @@
   z-index: 2;
 }
 
-/* Improve slide heading appearance */
 .carousel.carousel20 .carousel-slide .carousel-slide-content h2 {
   font-size: 2rem;
   font-family: var(--heading-font-family);
@@ -473,20 +323,17 @@
   color: #202a38;
 }
 
-/* Ensure smaller subtitle text */
 .carousel.carousel20 .carousel-slide .carousel-slide-content p:not(.button-container) {
   color: #444e5f;
   margin: 0 0 0.5em;
   font-size: 1.07rem;
 }
 
-/* Card buttons: outlined for primary, soft filled for secondary */
 .carousel.carousel20 .carousel-slide .carousel-slide-content .button-container {
   margin-top: 8px;
   margin-bottom: 0;
 }
 
-/* Primary button */
 .carousel.carousel20 .carousel-slide .carousel-slide-content a.button {
   background: #fff;
   color: #2494e9;
@@ -504,7 +351,6 @@
   overflow: hidden;
 }
 
-/* Primary button hover */
 .carousel.carousel20 .carousel-slide .carousel-slide-content a.button:hover,
 .carousel.carousel20 .carousel-slide .carousel-slide-content a.button:focus {
   background: #e0f4ff;
@@ -512,7 +358,6 @@
   border-color: #2494e9;
 }
 
-/* Secondary button */
 .carousel.carousel20 .carousel-slide .carousel-slide-content a.button + a.button {
   margin-top: 7px;
   background: #f2f7fa;
@@ -520,7 +365,6 @@
   border: 1.5px solid #d0e9fa;
 }
 
-/* Slide image area with stacking effect */
 .carousel.carousel20 .carousel-slide .carousel-slide-image {
   position: absolute;
   left: 62%;
@@ -534,7 +378,6 @@
   overflow: hidden;
 }
 
-/* Layered background for image */
 .carousel.carousel20 .carousel-slide .carousel-slide-image::before,
 .carousel.carousel20 .carousel-slide .carousel-slide-image::after {
   position: absolute;
@@ -566,7 +409,6 @@
   z-index: 1;
 }
 
-/* Responsive tweaks for smaller screens */
 @media (width <= 800px) {
   .carousel.carousel20 .carousel-slide .carousel-slide-content {
     margin: 32px 10px 0;
@@ -583,7 +425,6 @@
   }
 }
 
-/* Page indicators: show at bottom center as dots */
 .carousel.carousel20 .carousel-slide-indicators {
   position: absolute;
   left: 50%;
@@ -622,7 +463,171 @@
   display: none;
 }
 
-/* Hide navigation buttons */
 .carousel.carousel20 .carousel-navigation-buttons {
   display: none;
+}
+
+
+/* Use full-bleed background image of Gateway of India, fix vertical fill */
+.carousel.carousel9 .carousel-slide-image {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background:
+    linear-gradient(180deg, rgb(38 33 27 / 44%) 0%, rgb(180 130 80 / 14%) 67%, rgb(255 220 160 / 9%) 100%),
+    url('path/to/gateway-of-india-with-pigeons.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 1;
+  transition: background-image 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+/* Overlay text: adjust placement, contrast, and shadow for clarity */
+.carousel.carousel9 .carousel-slide-content {
+  position: absolute;
+  left: 6vw;
+  bottom: 13vh;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #fff;
+  max-width: 40vw;
+  z-index: 2;
+  text-align: left;
+  pointer-events: none;
+}
+
+/* Heading: even bolder and larger, tighter shadow */
+.carousel.carousel9 .carousel-slide-content h2 {
+  font-family: var(--heading-font-family);
+  font-size: clamp(2.7rem, 5vw, 4.2rem);
+  font-weight: 900;
+  margin-bottom: 0.46em;
+  color: #fff;
+  letter-spacing: 0.015em;
+  text-shadow:
+    0 6px 32px rgb(0 0 0 / 72%),
+    0 2px 12px rgb(0 0 0 / 32%),
+    0 0 1.5px #000;
+  line-height: 1.1;
+  pointer-events: auto;
+}
+
+/* Photo credit: semi-transparent, blurred shadow, lighter for image overlay */
+.carousel.carousel9 .carousel-slide-content p {
+  color: rgb(255 255 255 / 79%);
+  font-size: 1.02rem;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+  margin-bottom: 2.4em;
+  text-shadow: 0 3px 22px rgb(0 0 0 / 23%);
+  background: none;
+  padding: 1px 0 0;
+  opacity: 0.92;
+  pointer-events: auto;
+}
+
+/* Add navigation dots: horizontal pills slightly above bottom, better contrast */
+.carousel.carousel9 .carousel-slide-indicators {
+  position: absolute;
+  left: 6vw;
+  bottom: 7vh;
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  z-index: 3;
+  align-items: center;
+}
+
+.carousel.carousel9 .carousel-slide-indicator button {
+  width: 22px;
+  height: 5px;
+  border-radius: 3.5px;
+  background: rgb(255 255 255 / 68%);
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 17%);
+  opacity: 0.72;
+  transition: background 0.19s, width 0.19s;
+  cursor: pointer;
+}
+
+.carousel.carousel9 .carousel-slide-indicator button:disabled,
+.carousel.carousel9 .carousel-slide-indicator button[aria-current="true"],
+.carousel.carousel9 .carousel-slide-indicator button.active {
+  background: #fff;
+  width: 36px;
+  opacity: 1;
+  box-shadow: 0 2px 14px rgb(255 220 160 / 22%);
+}
+
+/* Share icon: overlay next to dots, subtle drop shadow */
+.carousel.carousel9 .carousel-share-icon {
+  position: absolute;
+  inset: auto auto 7vh calc(6vw + 95px);
+  width: 30px;
+  height: 30px;
+  background: url('icon-share.svg') no-repeat center/contain;
+  opacity: 0.95;
+  cursor: pointer;
+  z-index: 4;
+  filter: drop-shadow(0 2px 11px rgb(0 0 0 / 18%));
+}
+
+/* Responsive adjustments for mobile screens */
+@media (width <= 900px) {
+  .carousel.carousel9 .carousel-slide-content {
+    left: 14px;
+    bottom: 18px;
+    max-width: 96vw;
+  }
+
+  .carousel.carousel9 .carousel-slide-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .carousel.carousel9 .carousel-slide-content p {
+    font-size: 0.92rem;
+    margin-bottom: 1.6em;
+  }
+
+  .carousel.carousel9 .carousel-slide-indicators {
+    left: 14px;
+    bottom: 24px;
+    gap: 7px;
+  }
+
+  .carousel.carousel9 .carousel-slide-indicator button {
+    width: 12px;
+    height: 4px;
+  }
+
+  .carousel.carousel9 .carousel-slide-indicator button:disabled,
+  .carousel.carousel9 .carousel-slide-indicator button[aria-current="true"],
+  .carousel.carousel9 .carousel-slide-indicator button.active {
+    width: 19px;
+  }
+
+  .carousel.carousel9 .carousel-share-icon {
+    left: 54px;
+    bottom: 24px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Ensure hero/banner fills entire visible area, avoid white strip at bottom */
+.carousel-wrapper,
+.carousel.carousel9,
+.carousel.carousel9 .carousel-slides-container,
+.carousel.carousel9 .carousel-slides {
+  min-height: 100vh;
+  height: 100vh;
 }
