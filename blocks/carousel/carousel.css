@@ -152,31 +152,6 @@
   }
 }
 
-
-.carousel.carousel11,
-.carousel.carousel11 .carousel-slides-container,
-.carousel.carousel11 .carousel-slides,
-.carousel.carousel11 .carousel-slide-image {
-  width: 100vw;
-  min-height: 100vh;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.carousel.carousel11 .carousel-slide-image {
-  background:
-    linear-gradient(180deg, rgb(19 19 19 / 68%) 0%, rgb(70 35 15 / 33%) 60%, rgb(19 19 19 / 82%) 100%),
-    url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1920&q=80');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
-  z-index: 0;
-}
-
 .carousel-wrapper {
   margin: 0 !important;
   padding: 0 !important;
@@ -184,114 +159,6 @@
   min-height: 100vh !important;
   background: transparent !important;
   box-sizing: border-box;
-}
-
-.carousel.carousel11 .carousel-slide-content {
-  position: absolute;
-  left: 48px;
-  bottom: 140px;
-  margin: 0;
-  padding: 0;
-  background: none;
-  box-shadow: none;
-  border-radius: 0;
-  max-width: 500px;
-  z-index: 2;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.carousel.carousel11 .carousel-slide-content h2,
-.carousel.carousel11 .carousel-slide-content .city-title {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  color: #fff;
-  margin: 0;
-  letter-spacing: 0.02em;
-  line-height: 1.1;
-  text-shadow: 0 6px 24px rgb(0 0 0 / 67%), 0 1px 0 #222;
-}
-
-.carousel.carousel11 .carousel-slide-content p,
-.carousel.carousel11 .carousel-slide-content .photo-credit {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: #fff;
-  margin: 0;
-  letter-spacing: 0.01em;
-  text-shadow: 0 2px 12px rgb(0 0 0 / 22%);
-  background: rgb(40 28 17 / 11%);
-  display: inline-block;
-  padding: 3px 18px;
-  border-radius: 2em;
-  border: none;
-  box-shadow: none;
-}
-
-.carousel.carousel11 .carousel-slide-indicators {
-  position: absolute;
-  left: 52px;
-  bottom: 64px;
-  padding: 0;
-  gap: 0 12px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  z-index: 5;
-  background: none;
-  box-shadow: none;
-}
-
-.carousel.carousel11 .carousel-slide-indicator button {
-  width: 30px;
-  height: 6px;
-  border-radius: 4px;
-  background-color: rgb(255 255 255 / 21%);
-  margin: 0 6px 0 0;
-  border: none;
-  box-shadow: 0 1px 7px rgb(19 19 19 / 10%);
-  transition: background-color 0.22s;
-}
-
-.carousel.carousel11 .carousel-slide-indicator:last-child button {
-  margin-right: 0;
-}
-
-.carousel.carousel11 .carousel-slide-indicator button:disabled,
-.carousel.carousel11 .carousel-slide-indicator button[aria-current="true"] {
-  background-color: #FFA500;
-  box-shadow: 0 0 8px 2px rgb(255 165 0 / 18%);
-}
-
-.carousel.carousel11 .carousel-navigation-buttons {
-  display: none;
-}
-
-@media (width <= 700px) {
-  .carousel.carousel11 .carousel-slide-content {
-    left: 16px;
-    bottom: 78px;
-    max-width: 92vw;
-  }
-
-  .carousel.carousel11 .carousel-slide-indicators {
-    left: 16px;
-    bottom: 24px;
-  }
-}
-
-.carousel.carousel11::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 110px;
-  background: linear-gradient(to top, rgb(22 22 22 / 44%) 0%, transparent 100%);
-  z-index: 1;
-  pointer-events: none;
 }
 
 
@@ -467,8 +334,6 @@
   display: none;
 }
 
-
-/* Use full-bleed background image of Gateway of India, fix vertical fill */
 .carousel.carousel9 .carousel-slide-image {
   position: absolute;
   inset: 0;
@@ -485,7 +350,6 @@
   transition: background-image 0.4s cubic-bezier(.4,0,.2,1);
 }
 
-/* Overlay text: adjust placement, contrast, and shadow for clarity */
 .carousel.carousel9 .carousel-slide-content {
   position: absolute;
   left: 6vw;
@@ -500,7 +364,6 @@
   pointer-events: none;
 }
 
-/* Heading: even bolder and larger, tighter shadow */
 .carousel.carousel9 .carousel-slide-content h2 {
   font-family: var(--heading-font-family);
   font-size: clamp(2.7rem, 5vw, 4.2rem);
@@ -516,7 +379,6 @@
   pointer-events: auto;
 }
 
-/* Photo credit: semi-transparent, blurred shadow, lighter for image overlay */
 .carousel.carousel9 .carousel-slide-content p {
   color: rgb(255 255 255 / 79%);
   font-size: 1.02rem;
@@ -530,7 +392,6 @@
   pointer-events: auto;
 }
 
-/* Add navigation dots: horizontal pills slightly above bottom, better contrast */
 .carousel.carousel9 .carousel-slide-indicators {
   position: absolute;
   left: 6vw;
@@ -568,7 +429,6 @@
   box-shadow: 0 2px 14px rgb(255 220 160 / 22%);
 }
 
-/* Share icon: overlay next to dots, subtle drop shadow */
 .carousel.carousel9 .carousel-share-icon {
   position: absolute;
   inset: auto auto 7vh calc(6vw + 95px);
@@ -581,7 +441,6 @@
   filter: drop-shadow(0 2px 11px rgb(0 0 0 / 18%));
 }
 
-/* Responsive adjustments for mobile screens */
 @media (width <= 900px) {
   .carousel.carousel9 .carousel-slide-content {
     left: 14px;
@@ -623,11 +482,208 @@
   }
 }
 
-/* Ensure hero/banner fills entire visible area, avoid white strip at bottom */
 .carousel-wrapper,
 .carousel.carousel9,
 .carousel.carousel9 .carousel-slides-container,
 .carousel.carousel9 .carousel-slides {
   min-height: 100vh;
   height: 100vh;
+}
+
+
+.carousel.carousel11 .carousel-slide-image {
+  /* Use Qutub Minar hero image with warm overlay for proper subject/context */
+  background:
+    linear-gradient(180deg, rgb(255 128 46 / 32%) 0%, rgb(135 62 10 / 36%) 45%, rgb(22 14 10 / 82%) 100%),
+    url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+/* Position text block higher and left, overlapping monument focal area */
+.carousel.carousel11 .carousel-slide-content {
+  position: absolute;
+  left: 56px;
+  top: 18vh;
+  max-width: 540px;
+  width: auto;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  z-index: 3;
+  padding: 0;
+}
+
+/* Dramatic heading, warm shadow, large and bold */
+.carousel.carousel11 .carousel-slide-content h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 4.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.035em;
+  line-height: 1.08;
+  text-shadow:
+    0 9px 32px rgb(0 0 0 / 67%),
+    0 1px 8px rgb(255 128 46 / 12%),
+    0 2px 5px rgb(135 62 10 / 13%);
+}
+
+/* Photo credit: warm orange pill, italic, more prominent, margin below heading */
+.carousel.carousel11 .carousel-slide-content p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.08rem;
+  font-style: italic;
+  color: #fff;
+  margin: 0;
+  background: linear-gradient(90deg, rgb(255 128 46 / 17%) 0%, rgb(135 62 10 / 29%) 100%);
+  border-radius: 2em;
+  display: inline-block;
+  padding: 6px 26px 6px 20px;
+  box-shadow: 0 2px 16px rgb(255 128 46 / 10%);
+  letter-spacing: 0.01em;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  line-height: 1.32;
+  font-weight: 400;
+}
+
+/* BACK button, top-left overlay, orange accent, shadow, high contrast */
+.carousel.carousel11 .carousel-back-btn {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  z-index: 4;
+  font-size: 1.12rem;
+  color: #fff;
+  background: rgb(135 62 10 / 38%);
+  border-radius: 8px;
+  padding: 10px 25px 10px 40px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 18px rgb(255 128 46 / 14%);
+}
+
+.carousel.carousel11 .carousel-back-btn::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  content: "";
+  margin-left: -32px;
+}
+
+/* Carousel dots, bottom-left, orange active, more spacing, higher off bottom */
+.carousel.carousel11 .carousel-slide-indicators {
+  position: absolute;
+  left: 56px;
+  bottom: 84px;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.carousel.carousel11 .carousel-slide-indicator button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 43%);
+  margin: 0;
+  border: none;
+  box-shadow: 0 1px 8px rgb(255 128 46 / 9%);
+  transition: background 0.17s, opacity 0.17s;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.carousel.carousel11 .carousel-slide-indicator button:disabled,
+.carousel.carousel11 .carousel-slide-indicator button[aria-current="true"] {
+  background: #FFA500;
+  opacity: 1;
+  box-shadow: 0 0 10px 2px rgb(255 165 0 / 18%), 0 2px 8px rgb(135 62 10 / 13%);
+}
+
+/* Share icon, bottom-right, orange hover, circular, larger padding */
+.carousel.carousel11 .carousel-share-btn {
+  position: absolute;
+  bottom: 84px;
+  right: 56px;
+  z-index: 4;
+  font-size: 23px;
+  color: #fff;
+  background: rgb(135 62 10 / 38%);
+  border-radius: 50%;
+  padding: 14px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 18px rgb(255 128 46 / 14%);
+  transition: background 0.18s;
+}
+
+.carousel.carousel11 .carousel-share-btn:hover,
+.carousel.carousel11 .carousel-share-btn:focus-visible {
+  background: rgb(255 128 46 / 63%);
+}
+
+.carousel.carousel11 .carousel-share-btn .icon-share {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* Responsive refinements; keep text near monument on mobile, overlays in corners */
+@media (width <= 700px) {
+  .carousel.carousel11 .carousel-slide-content {
+    left: 10px;
+    top: 14vh;
+    max-width: 95vw;
+  }
+
+  .carousel.carousel11 .carousel-slide-indicators {
+    left: 10px;
+    bottom: 24px;
+    gap: 8px;
+  }
+
+  .carousel.carousel11 .carousel-back-btn {
+    top: 8px;
+    left: 10px;
+    padding-left: 30px;
+    padding-right: 12px;
+    font-size: 0.99rem;
+  }
+
+  .carousel.carousel11 .carousel-share-btn {
+    bottom: 24px;
+    right: 10px;
+    padding: 10px;
+  }
 }
