@@ -31,3 +31,60 @@
     order: unset;
   }
 }
+
+
+.columns.columns1 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+
+  /* Reduce horizontal padding to minimum; allow pills to hug edges */
+  padding: 0.25rem 0.5vw;
+  min-height: 32px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.columns.columns1 > div > div {
+  border-radius: 999px;
+  height: 24px;
+  background: linear-gradient(90deg, #eceeef 0%, #f5f6f7 100%);
+  box-shadow: 0 1px 4px 0 rgb(230 232 234 / 12%);
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Left pill: take as much space as possible, with a wide appearance */
+.columns.columns1 > div > div:first-child {
+  flex: 1 1 0%;
+  min-width: 180px;
+  margin-right: 0;
+}
+
+/* Right pill: fixed, narrow, hugs the right edge */
+.columns.columns1 > div > div:last-child {
+  flex: 0 0 120px;
+  width: 120px;
+  min-width: 72px;
+  max-width: 150px;
+  margin-right: 0;
+}
+
+/* Responsive: stack vertically at small screens */
+@media (width <= 700px) {
+  .columns.columns1 > div {
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1rem;
+  }
+
+  .columns.columns1 > div > div {
+    width: 100%;
+    max-width: unset;
+    min-width: 0;
+  }
+}
