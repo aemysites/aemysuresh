@@ -1,35 +1,18 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row for Columns block
+  // Header row: exactly one column with the block name
   const headerRow = ['Columns (columns18)'];
 
-  // Gather references to the three major columns:
-  // 1. Logo
-  // 2. Navigation
-  // 3. Login/CTA
+  // Second row: one column per card
+  const cards = Array.from(element.querySelectorAll(':scope > a.offer-card'));
+  const columnsRow = cards;
 
-  // 1. Logo
-  const logo = element.querySelector('.headerv2__logo');
-  // 2. Navigation
-  const nav = element.querySelector('nav.headerv2__navbar');
-  // 3. Login/CTA
-  const login = element.querySelector('.headerv2__login');
+  // Compose the cells array with exactly one cell in the header row
+  const cells = [headerRow, columnsRow];
 
-  // Defensive: If any are missing, substitute an empty div, to preserve column count
-  const logoCol = logo || document.createElement('div');
-  const navCol = nav || document.createElement('div');
-  const loginCol = login || document.createElement('div');
+  // Create the block table
+  const block = WebImporter.DOMUtils.createTable(cells, document);
 
-  // Create table row for columns
-  const columnsRow = [logoCol, navCol, loginCol];
-
-  // Compose table
-  const cells = [
-    headerRow,
-    columnsRow
-  ];
-
-  // Create and insert the block table
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(table);
+  // Replace the original element
+  element.replaceWith(block);
 }

@@ -1,34 +1,50 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the carousel slides container
-  const swiperWrapper = element.querySelector('.swiper-wrapper');
-  if (!swiperWrapper) return;
-  const slides = Array.from(swiperWrapper.querySelectorAll('.swiper-slide'));
+  // Get all the cards
+  const slideCards = Array.from(element.querySelectorAll('.swiper-slide .image-carousel--card'));
 
-  // Block table header, matches exactly the example
-  const rows = [
-    ['Cards (cards5)']
+  // Build table header
+  const cells = [
+    ['Cards (cards5)'],
   ];
 
-  slides.forEach((slide) => {
-    // Get the image (reference the existing img element)
-    const img = slide.querySelector('img');
-    // Get the title text
-    const titleDiv = slide.querySelector('.title');
-    let title;
+  slideCards.forEach(card => {
+    // Image
+    const img = card.querySelector('.image-carousel--img-container img');
+
+    // Title (bold)
+    const titleDiv = card.querySelector('.image-carousel--content-container .title');
+    let titleEl = null;
     if (titleDiv && titleDiv.textContent.trim()) {
-      // Use <strong> for semantic heading-like emphasis, as in example screenshot
-      title = document.createElement('strong');
-      title.textContent = titleDiv.textContent.trim();
-    } else {
-      title = '';
+      titleEl = document.createElement('strong');
+      titleEl.textContent = titleDiv.textContent.trim();
     }
-    rows.push([
-      img,
-      title
-    ]);
+
+    // Description: in this HTML, if there is a paragraph, span, or any sibling under content-container
+    let descEls = [];
+    const contentCont = card.querySelector('.image-carousel--content-container');
+    if (contentCont) {
+      // Get all elements except the title
+      descEls = Array.from(contentCont.childNodes).filter(node => {
+        // Only keep element nodes or text nodes that are not pure whitespace
+        if (node === titleDiv) return false;
+        if (node.nodeType === Node.ELEMENT_NODE) return true;
+        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) return true;
+        return false;
+      });
+    }
+
+    // Compose text cell: title on top, description(s) below
+    const cell2 = [];
+    if (titleEl) cell2.push(titleEl);
+    if (descEls.length > 0) {
+      // If there are descriptive elements or text, add them below title
+      descEls.forEach(el => cell2.push(el));
+    }
+    // If only title, cell2 is [title], else [title, ...description]
+    cells.push([img, cell2.length ? cell2 : '']);
   });
 
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+  const block = WebImporter.DOMUtils.createTable(cells, document);
+  element.replaceWith(block);
 }
