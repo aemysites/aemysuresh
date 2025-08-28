@@ -1,4 +1,3 @@
-/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -376,11 +375,155 @@
   min-height: 40px;
   min-width: 220px;
   width: 100%;
-
-  /* Remove border/shadow if present */
   border: none;
   box-shadow: none;
-
-  /* Ensure pills are vertically aligned at top */
   align-self: start;
+}
+
+
+.columns.columns8 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(44, 50, 96, 0.12);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+  box-sizing: border-box;
+}
+
+/* Top-level flex row for two columns */
+.columns.columns8 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 260px;
+  gap: 0;
+}
+
+/* Left column: blue block */
+.columns.columns8 > div > div:first-child {
+  background: #0a23b9;
+  border-radius: 16px;
+  width: 340px;
+  min-width: 260px;
+  max-width: 350px;
+  height: 260px;
+  margin-left: 32px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Right column: grid placeholder, always present and visible */
+.columns.columns8 > div > div:not(:first-child) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px 24px;
+  width: 480px;
+  min-width: 300px;
+  max-width: 640px;
+  height: 260px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  align-items: stretch;
+  position: relative;
+}
+
+/* Show 4 card placeholders using grid background (simulate stat cards if empty) */
+.columns.columns8 > div > div:not(:first-child):empty {
+  background: none;
+}
+.columns.columns8 > div > div:not(:first-child):empty::before,
+.columns.columns8 > div > div:not(:first-child):empty::after,
+.columns.columns8 > div > div:not(:first-child):empty::marker {
+  display: none;
+}
+
+/* Create stat card placeholders using absolutely positioned "blocks" */
+.columns.columns8 > div > div:not(:first-child):empty::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  /* Custom grid using conic-gradient for four rounded boxes */
+  background:
+    /* top left */
+    linear-gradient(#fff 0 0) 0% 0% /calc(50% - 12px) calc(50% - 12px) no-repeat,
+    /* top right */
+    linear-gradient(#fff 0 0) 100% 0% /calc(50% - 12px) calc(50% - 12px) no-repeat,
+    /* bottom left */
+    linear-gradient(#fff 0 0) 0% 100% /calc(50% - 12px) calc(50% - 12px) no-repeat,
+    /* bottom right */
+    linear-gradient(#fff 0 0) 100% 100% /calc(50% - 12px) calc(50% - 12px) no-repeat;
+  border-radius: 12px;
+  /* "cards" shadow and border */
+  box-shadow:
+    0 1px 6px 0 rgba(44,50,96,0.03),
+    0 0 0 1px #e8f0fe inset;
+}
+
+.columns.columns8 > div > div:not(:first-child):empty {
+  /* subtle background for grid area for balance */
+  background: none;
+}
+
+/* Responsive: stack columns and cards */
+@media (max-width: 900px) {
+  .columns.columns8 {
+    border-radius: 16px;
+    min-height: 0;
+    padding: 0;
+    box-shadow: 0 2px 16px rgba(44, 50, 96, 0.09);
+  }
+
+  .columns.columns8 > div {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    width: 100%;
+    gap: 0;
+  }
+
+  .columns.columns8 > div > div:first-child,
+  .columns.columns8 > div > div:not(:first-child) {
+    margin: 20px 16px 0 16px;
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+    height: 180px;
+  }
+
+  .columns.columns8 > div > div:not(:first-child) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px 0;
+    margin-bottom: 20px;
+  }
+
+  .columns.columns8 > div > div:not(:first-child):empty::after {
+    background:
+      linear-gradient(#fff 0 0) 0% 0% /100% calc(25% - 8px) no-repeat,
+      linear-gradient(#fff 0 0) 0% 33.33% /100% calc(25% - 8px) no-repeat,
+      linear-gradient(#fff 0 0) 0% 66.66% /100% calc(25% - 8px) no-repeat,
+      linear-gradient(#fff 0 0) 0% 100% /100% calc(25% - 8px) no-repeat;
+    border-radius: 12px;
+    box-shadow:
+      0 1px 6px 0 rgba(44,50,96,0.03),
+      0 0 0 1px #e8f0fe inset;
+  }
 }
