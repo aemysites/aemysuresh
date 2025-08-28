@@ -22,7 +22,7 @@
     document.querySelector('.chat-widget')?.remove();
 
     // remove back to top button
-    document.querySelector('.back-to-top')?.remove()
+    document.querySelector('.back-to-top')?.remove();
 
     // Remove site footer
     document.querySelector('.footerv2')?.remove();
