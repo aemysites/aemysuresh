@@ -392,8 +392,6 @@
   min-height: 320px;
   box-sizing: border-box;
 }
-
-/* Top-level flex row for two columns */
 .columns.columns8 > div {
   display: flex;
   flex-direction: row;
@@ -403,8 +401,6 @@
   min-height: 260px;
   gap: 0;
 }
-
-/* Left column: blue block */
 .columns.columns8 > div > div:first-child {
   background: #0a23b9;
   border-radius: 16px;
@@ -422,8 +418,6 @@
   align-items: flex-start;
   box-sizing: border-box;
 }
-
-/* Right column: grid placeholder, always present and visible */
 .columns.columns8 > div > div:not(:first-child) {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -441,8 +435,6 @@
   align-items: stretch;
   position: relative;
 }
-
-/* Show 4 card placeholders using grid background (simulate stat cards if empty) */
 .columns.columns8 > div > div:not(:first-child):empty {
   background: none;
 }
@@ -451,8 +443,6 @@
 .columns.columns8 > div > div:not(:first-child):empty::marker {
   display: none;
 }
-
-/* Create stat card placeholders using absolutely positioned "blocks" */
 .columns.columns8 > div > div:not(:first-child):empty::after {
   content: '';
   display: block;
@@ -460,7 +450,6 @@
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  /* Custom grid using conic-gradient for four rounded boxes */
   background:
     /* top left */
     linear-gradient(#fff 0 0) 0% 0% /calc(50% - 12px) calc(50% - 12px) no-repeat,
@@ -471,18 +460,14 @@
     /* bottom right */
     linear-gradient(#fff 0 0) 100% 100% /calc(50% - 12px) calc(50% - 12px) no-repeat;
   border-radius: 12px;
-  /* "cards" shadow and border */
   box-shadow:
     0 1px 6px 0 rgba(44,50,96,0.03),
     0 0 0 1px #e8f0fe inset;
 }
 
 .columns.columns8 > div > div:not(:first-child):empty {
-  /* subtle background for grid area for balance */
   background: none;
 }
-
-/* Responsive: stack columns and cards */
 @media (max-width: 900px) {
   .columns.columns8 {
     border-radius: 16px;
@@ -525,5 +510,60 @@
     box-shadow:
       0 1px 6px 0 rgba(44,50,96,0.03),
       0 0 0 1px #e8f0fe inset;
+  }
+}
+
+
+.columns.columns12 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 36px;
+  padding: 4px 10px; /* tighter vertical and horizontal padding for a compact block */
+  background: var(--background-color);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.columns.columns12 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns12 .button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  min-width: 0;
+}
+
+.columns.columns12 .button {
+  font-size: var(--body-font-size-s);
+  padding: 0.5em 2em;
+  border-radius: 2.4em;
+  background: var(--link-color);
+  color: var(--background-color);
+  box-shadow: none;
+  margin: 0;
+}
+
+/* Responsive adjustments for mobile/small screens */
+@media (max-width: 900px) {
+  .columns.columns12 {
+    min-height: 28px;
+    padding: 2px 5px;
+  }
+  .columns.columns12 .button {
+    font-size: var(--body-font-size-xs);
+    padding: 0.5em 1.5em;
   }
 }
