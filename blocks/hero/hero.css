@@ -45,3 +45,88 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero4 {
+  position: relative;
+  width: 100vw;
+  min-height: 600px;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80'); /* Replace with actual Mumbai image if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Remove top margin from likely parent containers */
+.hero-container > .hero-wrapper,
+main > div,
+.section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hero.hero4 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.hero.hero4 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero.hero4 h2,
+.hero.hero4 h1 {
+  color: #fff;
+  font-family: var(--heading-font-family), 'Open Sans', Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+  line-height: 1.1;
+  text-shadow: 0 2px 6px rgb(0 0 0 / 50%);
+}
+
+.hero.hero4 p {
+  color: #fff;
+  font-family: var(--body-font-family), 'Open Sans', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.92;
+  margin: 0;
+  text-shadow: 0 2px 6px rgb(0 0 0 / 50%);
+}
+
+@media (width <= 900px) {
+  .hero.hero4 {
+    min-height: 320px;
+  }
+
+  .hero.hero4 > div {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 8px;
+  }
+
+  .hero.hero4 h2,
+  .hero.hero4 h1 {
+    font-size: 2rem;
+  }
+
+  .hero.hero4 p {
+    font-size: 1rem;
+  }
+}
