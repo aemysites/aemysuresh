@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -39,8 +40,6 @@
   align-items: center;
   justify-content: space-between;
   background: #fff;
-
-  /* Reduce horizontal padding to minimum; allow pills to hug edges */
   padding: 0.25rem 0.5vw;
   min-height: 32px;
   margin: 0;
@@ -56,14 +55,12 @@
   box-sizing: border-box;
 }
 
-/* Left pill: take as much space as possible, with a wide appearance */
 .columns.columns1 > div > div:first-child {
   flex: 1 1 0%;
   min-width: 180px;
   margin-right: 0;
 }
 
-/* Right pill: fixed, narrow, hugs the right edge */
 .columns.columns1 > div > div:last-child {
   flex: 0 0 120px;
   width: 120px;
@@ -72,7 +69,6 @@
   margin-right: 0;
 }
 
-/* Responsive: stack vertically at small screens */
 @media (width <= 700px) {
   .columns.columns1 > div {
     flex-direction: column;
@@ -86,5 +82,43 @@
     width: 100%;
     max-width: unset;
     min-width: 0;
+  }
+}
+
+
+.columns.columns3 {
+  /* Make sure the block fills its parent/container edge-to-edge */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to right,
+    #e2e3e4 0%,
+    #f4f6f8 12%,
+    #f4f6f8 88%,
+    #e2e3e4 100%
+  );
+  background-color: #f4f6f8;
+  min-height: 80px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.columns.columns3 > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 80px;
+}
+
+.columns.columns3 > div > div {
+  flex: 1 1 0;
+  min-height: 80px;
+  background: none;
+}
+
+@media (width <= 900px) {
+  .columns.columns3 > div {
+    flex-direction: column;
   }
 }
