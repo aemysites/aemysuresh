@@ -519,7 +519,7 @@
   flex-direction: row;
   align-items: center;
   min-height: 36px;
-  padding: 4px 10px; /* tighter vertical and horizontal padding for a compact block */
+  padding: 4px 10px;
   background: var(--background-color);
   width: 100%;
   box-sizing: border-box;
@@ -555,8 +555,6 @@
   box-shadow: none;
   margin: 0;
 }
-
-/* Responsive adjustments for mobile/small screens */
 @media (max-width: 900px) {
   .columns.columns12 {
     min-height: 28px;
@@ -565,5 +563,163 @@
   .columns.columns12 .button {
     font-size: var(--body-font-size-xs);
     padding: 0.5em 1.5em;
+  }
+}
+
+
+.columns.columns18 {
+  background: #f6fafd;
+  width: 100%;
+  font-family: var(--body-font-family);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns18 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 24px;
+  width: 100%;
+  justify-content: space-between;
+  gap: 0;
+}
+
+/* Left (logo/empty) column */
+.columns.columns18 > div > div:first-child {
+  flex: 0 0 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+}
+
+/* Center navigation */
+.columns.columns18 > div > div:nth-child(2) {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  min-width: 0;
+}
+
+.columns.columns18 > div > div:nth-child(2) > p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3c4257;
+  line-height: 1;
+  background: none;
+  padding: 0;
+}
+
+.columns.columns18 > div > div:nth-child(2) a {
+  color: #3c4257;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 8px 0 0;
+  font-size: 15px;
+  transition: color 0.2s;
+  line-height: 1;
+  background: none;
+  padding: 0;
+}
+
+.columns.columns18 > div > div:nth-child(2) a:hover {
+  color: #2e3fa6;
+  text-decoration: underline;
+}
+
+/* Key fix: Make sure all right section items are in a horizontal row and not expanding vertically */
+.columns.columns18 > div > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+  justify-content: flex-end;
+}
+
+/* Ensure p's in right col do NOT expand vertically or horizontally */
+.columns.columns18 > div > div:nth-child(3) > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 15px;
+  color: #3c4257;
+  font-weight: 500;
+  line-height: 1;
+  background: none;
+  padding: 0;
+  flex: 0 0 auto;
+  min-width: 0;
+  width: auto;
+  max-width: unset;
+}
+
+/* Only pills for Tariff Sheet and Login (first and last p in right col) */
+.columns.columns18 > div > div:nth-child(3) > p.button-container .button,
+.columns.columns18 > div > div:nth-child(3) > p:last-child {
+  background: #e4eaf3;
+  border-radius: 18px;
+  padding: 6px 24px;
+  color: #3c4257;
+  font-weight: 600;
+  border: none;
+  font-size: 15px;
+  box-shadow: none;
+  text-decoration: none;
+  line-height: 1;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Middle p ("IndiGo BluChips Balance") remains plain text, side by side with pills */
+.columns.columns18 > div > div:nth-child(3) > p:not(.button-container):not(:last-child) {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 500;
+  color: #3c4257;
+}
+
+/* Remove margins and paddings from all .columns18 p */
+.columns.columns18 p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive: Stack columns vertically on small screens */
+@media (max-width: 899px) {
+  .columns.columns18 > div {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 10px;
+    min-height: unset;
+    gap: 12px;
+  }
+  .columns.columns18 > div > div {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+  .columns.columns18 > div > div:nth-child(2),
+  .columns.columns18 > div > div:nth-child(3) {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .columns.columns18 > div > div:first-child {
+    margin-right: 0;
+    min-width: 0;
+    flex: 0 0 auto;
   }
 }
