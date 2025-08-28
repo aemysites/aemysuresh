@@ -451,128 +451,6 @@
 }
 
 
-.carousel.carousel21 {
-  margin-top: 0;
-  padding-top: 0;
-  position: relative;
-  background: #1439C3;
-  border-radius: 18px;
-  min-height: 370px;
-  box-shadow: 0 4px 32px 0 rgb(20 57 195 / 9%);
-  background-image:
-    linear-gradient(110deg, #1439C3 70%, #1b56e0 87%, #6db7ff 100%);
-}
-
-.carousel.carousel21::before {
-  position: absolute;
-  top: 0; right: 0; width: 59%; height: 100%;
-  background: linear-gradient(106deg, rgb(255 255 255 / 14%) 0%, rgb(255 255 255 / 1%) 54%);
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
-  z-index: 1;
-  pointer-events: none;
-  display: block;
-  content: "";
-  clip-path: polygon(44% 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.carousel.carousel21 .carousel-navigation-buttons {
-  display: none;
-}
-
-.carousel.carousel21 .carousel-slide-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 270px;
-  padding: 0 7vw;
-  background: none;
-  box-shadow: none;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  font-family: Montserrat, Arial, sans-serif;
-  position: relative;
-  z-index: 2;
-}
-
-.carousel.carousel21 .carousel-slide-content > p:only-child {
-  display: none;
-}
-
-.carousel.carousel21 .carousel-slide-indicators {
-  position: absolute;
-  left: 50%;
-  bottom: 23px;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  gap: 0 15px;
-  z-index: 3;
-  background: none;
-  box-shadow: none;
-  padding: 0;
-}
-
-.carousel.carousel21 .carousel-slide-indicator button {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #fff;
-  opacity: 0.44;
-  margin: 0;
-  border: none;
-  box-shadow: 0 1px 8px rgb(20 57 195 / 11%);
-  transition: opacity 0.18s, background 0.18s, box-shadow 0.18s;
-}
-
-.carousel.carousel21 .carousel-slide-indicator button:disabled,
-.carousel.carousel21 .carousel-slide-indicator button[aria-current="true"] {
-  background: #ffcb05;
-  opacity: 1;
-  box-shadow: 0 2px 14px #ffcb0533;
-}
-
-@media (width <= 700px) {
-  .carousel.carousel21 {
-    min-height: 180px;
-    border-radius: 9px;
-    background-image:
-      linear-gradient(110deg, #1439C3 84%, #1b56e0 96%, #6db7ff 100%);
-  }
-
-  .carousel.carousel21::before {
-    border-top-right-radius: 9px;
-    border-bottom-right-radius: 9px;
-    width: 70%;
-    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .carousel.carousel21 .carousel-slide-content {
-    min-height: 90px;
-    padding: 0 3vw;
-    font-size: 0.98rem;
-  }
-
-  .carousel.carousel21 .carousel-slide-indicators {
-    bottom: 10px;
-    gap: 0 7px;
-  }
-
-  .carousel.carousel21 .carousel-slide-indicator button {
-    width: 9px;
-    height: 9px;
-  }
-
-  .carousel.carousel21 .carousel-slide-indicator button:disabled,
-  .carousel.carousel21 .carousel-slide-indicator button[aria-current="true"] {
-    width: 11px;
-    height: 11px;
-  }
-}
-
-
 .carousel.carousel17 {
   background: linear-gradient(127deg, #f6fbff 0%, #e4f3ff 83%), radial-gradient(ellipse 62% 55% at 60% 0%, #d6eaff 0%, #f7fbff 100%);
   min-height: 560px;
@@ -815,7 +693,6 @@
   position: relative;
 }
 
-/* Use the correct, immersive Delhi hero image with a subtle orange overlay */
 .carousel.carousel20 .carousel-slide .carousel-slide-image {
   background-image:
     linear-gradient(120deg, rgb(232 146 78 / 33%) 0%, rgb(139 92 44 / 16%) 60%, rgb(40 28 17 / 21%) 100%),
@@ -829,7 +706,6 @@
   transition: background-image 0.4s cubic-bezier(.4,0,.2,1);
 }
 
-/* Overlay text block: visually left-bottom, with generous spacing */
 .carousel.carousel20 .carousel-slide .carousel-slide-content {
   position: absolute;
   left: 58px;
@@ -846,7 +722,6 @@
   gap: 18px;
 }
 
-/* Heading: large, bold, white, with multi-layer shadow for contrast */
 .carousel.carousel20 .carousel-slide .carousel-slide-content h2 {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 3rem;
@@ -861,7 +736,6 @@
     0 0 2px #222;
 }
 
-/* Photo Credit: pill style, lighter background, improved separation */
 .carousel.carousel20 .carousel-slide .carousel-slide-content p {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1.13rem;
@@ -878,7 +752,6 @@
   box-shadow: 0 4px 24px rgb(0 0 0 / 13%);
 }
 
-/* Pagination dots: pill style, active is larger, subtle shadow */
 .carousel.carousel20 .carousel-slide-indicators {
   position: absolute;
   left: 58px;
@@ -912,7 +785,6 @@
   box-shadow: 0 0 14px 3px rgb(255 200 120 / 32%);
 }
 
-/* Share icon: bottom-right overlay, subtle drop shadow for visibility */
 .carousel.carousel20 .carousel-share-icon {
   position: absolute;
   right: 58px;
@@ -927,7 +799,6 @@
   display: block;
 }
 
-/* Responsive tweaks for mobile */
 @media (width <= 900px) {
   .carousel.carousel20 .carousel-slide .carousel-slide-content {
     left: 14px;
@@ -969,4 +840,203 @@
     width: 20px;
     height: 20px;
   }
+}
+
+
+.carousel.carousel21 {
+  background: linear-gradient(114deg, #1439C3 74%, #1b56e0 98%, #6db7ff 100%);
+  border-radius: 18px;
+  max-width: 1150px;
+  width: 96vw;
+  height: 480px;
+  min-height: 380px;
+  margin: 48px auto 0;
+  box-shadow: 0 8px 32px 0 rgb(20 57 195 / 14%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Hide navigation buttons */
+.carousel.carousel21 .carousel-navigation-buttons {
+  display: none;
+}
+
+/* Improved foreground content: visually stack and tighten pill */
+.carousel.carousel21 .carousel-slide-content {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #fff;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 36px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Montserrat, Arial, sans-serif;
+  position: relative;
+  z-index: 2;
+  min-height: unset;
+}
+
+/* Make headline visually distinct and larger if present */
+.carousel.carousel21 .carousel-slide-content p:first-child,
+.carousel.carousel21 .carousel-slide-content strong,
+.carousel.carousel21 .carousel-slide-content b {
+  font-size: 48px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 12px rgb(20 57 195 / 22%);
+  line-height: 1.09;
+}
+
+/* Subheadline styling for 2nd paragraph */
+.carousel.carousel21 .carousel-slide-content p:nth-child(2) {
+  font-size: 24px;
+  color: #cce3ff;
+  margin-bottom: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Style long links for better contrast and appearance */
+.carousel.carousel21 .carousel-slide-content a {
+  display: inline-block;
+  background: #eaf3ff;
+  color: #1439C3;
+  border-radius: 999px;
+  padding: 10px 30px;
+  font-size: 19px;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgb(20 57 195 / 10%);
+  margin-bottom: 36px;
+  margin-top: 12px;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 90vw;
+  word-break: break-all;
+}
+
+/* Add faux offer cards row using existing slide content if possible */
+.carousel.carousel21 .carousel-slide-content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 22px;
+  width: 100%;
+  padding: 0;
+  margin: 36px 0 7px;
+  list-style: none;
+}
+
+/* Style each card */
+.carousel.carousel21 .carousel-slide-content ul li {
+  background: linear-gradient(100deg, #1439C3 92%, #245fed 100%);
+  border-radius: 13px;
+  color: #fff;
+  padding: 16px 18px 14px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0 1px 6px rgb(20 57 195 / 13%);
+  font-size: 15px;
+  text-align: left;
+  position: relative;
+  margin: 0 2px;
+}
+
+/* Improve dot pagination visibility and centering */
+.carousel.carousel21 .carousel-slide-indicators {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 0 18px;
+  padding: 0;
+  background: none;
+  z-index: 3;
+}
+
+.carousel.carousel21 .carousel-slide-indicator button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.45;
+  margin: 0;
+  border: none;
+  box-shadow: 0 1px 8px rgb(20 57 195 / 8%);
+  transition: opacity 0.14s, background 0.14s, width 0.14s;
+}
+
+.carousel.carousel21 .carousel-slide-indicator button:disabled,
+.carousel.carousel21 .carousel-slide-indicator button[aria-current="true"] {
+  background: #fff;
+  opacity: 0.95;
+  box-shadow: 0 2px 10px rgb(20 57 195 / 13%);
+}
+
+/* Responsive adjustments for mobile/tablet */
+@media (width <= 850px) {
+  .carousel.carousel21 {
+    height: 310px;
+    min-height: 160px;
+    max-width: 99vw;
+    border-radius: 10px;
+  }
+
+  .carousel.carousel21 .carousel-slide-content {
+    padding: 16px 8px 0;
+    max-width: 99vw;
+  }
+
+  .carousel.carousel21 .carousel-slide-content p:first-child,
+  .carousel.carousel21 .carousel-slide-content strong,
+  .carousel.carousel21 .carousel-slide-content b {
+    font-size: 2rem;
+  }
+
+  .carousel.carousel21 .carousel-slide-content ul {
+    gap: 8px;
+    margin: 12px 0 4px;
+  }
+
+  .carousel.carousel21 .carousel-slide-content ul li {
+    min-width: 110px;
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 7px;
+  }
+
+  .carousel.carousel21 .carousel-slide-indicators {
+    bottom: 14px;
+    gap: 0 7px;
+  }
+
+  .carousel.carousel21 .carousel-slide-indicator button {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+/* Add a diagonal accent overlay for subtle branding */
+.carousel.carousel21::after {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(120deg, transparent 68%, rgb(20 57 195 / 44%) 79%, transparent 87%);
 }
