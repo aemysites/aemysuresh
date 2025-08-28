@@ -1,0 +1,40 @@
+{
+  "originUrl": "https://beta-s6web-prod-skyplus6e.goindigo.in",
+  "aborted": false,
+  "urls": [
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+      "source": "MANUAL",
+      "targetPath": "/",
+      "id": "ffb2a41160fb417e317865000df5f9c2e3a22d3f"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+      "source": "MANUAL",
+      "targetPath": "/check-flight-status/delhi-to-mumbai",
+      "id": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "source": "MANUAL",
+      "targetPath": "/indian-destinations/delhi",
+      "id": "5cb71fd68d6725cf9445436fb02627fe45f78440"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "source": "MANUAL",
+      "targetPath": "/indian-destinations/mumbai",
+      "id": "addaec9a4b587eb9a92478bbcbd4520a38d43a14"
+    }
+  ],
+  "lastCrawled": null,
+  "crawlOptions": {
+    "limit": 100,
+    "strategy": "manual",
+    "strategiesAttempted": [
+      "MANUAL"
+    ]
+  },
+  "extractionErrors": [],
+  "errorCountMessage": "none"
+}
