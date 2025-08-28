@@ -429,7 +429,12 @@
           "differences": [
             {
               "element_id": "html__body__main__div_2__div__div__div_2__div__div__div__div__div_2__div__div__div__div__div_2__div__div_2",
-              "differences": [],
+              "differences": [
+                {
+                  "change_type": "insertion",
+                  "text": "Diwali Celebrated with grandeur and enthusiasm, the festival of lights Holi Delhi bursts with colours and laughter as streets come alive with playful water Eid-ul-Fitr Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful Durga Puja Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful"
+                }
+              ],
               "dissimilarity_score": 1.0
             }
           ],
@@ -1355,42 +1360,166 @@
               "element_id": "html__body__main__div_2__div__div__div__div__div__div__div_3__header__div_2",
               "differences": [
                 {
-                  "change_type": "equal",
-                  "text": "Book "
-                },
-                {
                   "change_type": "deletion",
-                  "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+                  "text": "Book Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more"
                 },
                 {
-                  "change_type": "equal",
-                  "text": "Trips "
-                },
-                {
-                  "change_type": "deletion",
-                  "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Change flight Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+                  "change_type": "insertion",
+                  "text": "/indigo-stretch.html /indigo-stretch.html /loyalty/partners/kotak-mahindra-bank-credit-card.html?linkNav=%7C2%7Coffer%20%26%20links /loyalty/partners/kotak-mahindra-bank-credit-card.html?linkNav=%7C2%7Coffer%20%26%20links"
                 },
                 {
                   "change_type": "equal",
-                  "text": "Deals and Offers Check-in IndiGo BluChip "
+                  "text": " Book your stay on goIndiGo.in and get up to 25%* off"
                 },
                 {
                   "change_type": "deletion",
-                  "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up "
+                  "text": ". Trips My trips Find & view booking Upgrade booking Change your journey Edit"
                 },
                 {
                   "change_type": "equal",
-                  "text": "Tariff Sheet IndiGo BluChips Balance Login"
+                  "text": " "
                 },
                 {
                   "change_type": "deletion",
-                  "text": " Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME"
+                  "text": "Booking Change flight Cancel flight Split PNR Update IndiGo BluChip Number Customise"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "Book"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " your "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "stay"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Track"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "on"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "refund View GST Invoice Codeshare Deals and Offers Check-"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "goIndiGo."
+                },
+                {
+                  "change_type": "equal",
+                  "text": "in "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "IndiGo BluChip DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn "
+                },
+                {
+                  "change_type": "equal",
+                  "text": "and "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up Tariff Sheet IndiGo BluChips Balance Login Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "get"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " up to "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "10% on"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "25%* off"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "your"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "T&C"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "bookings. \u200b Log"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "apply* Expiry: : No"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "in"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "expiry"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "as: Customer"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "T&C"
+                },
+                {
+                  "change_type": "equal",
+                  "text": " "
+                },
+                {
+                  "change_type": "deletion",
+                  "text": "Travel partner\u200b SME"
+                },
+                {
+                  "change_type": "insertion",
+                  "text": "apply*"
                 }
               ],
-              "dissimilarity_score": 0.51
+              "dissimilarity_score": 0.78
             }
           ],
-          "similarity_score": 0.49
+          "similarity_score": 0.21999999999999997
         }
       ]
     },
@@ -1416,7 +1545,7 @@
                 },
                 {
                   "change_type": "insertion",
-                  "text": "Safdarjung Tomb Historical elegance, Mughal heritage, soaring height, and intricate"
+                  "text": "Trending Safdarjung Tomb Historical elegance, Mughal heritage, soaring height, and"
                 },
                 {
                   "change_type": "equal",
@@ -1428,7 +1557,7 @@
                 },
                 {
                   "change_type": "insertion",
-                  "text": "carvings. Exploration"
+                  "text": "intricate"
                 },
                 {
                   "change_type": "equal",
@@ -1440,7 +1569,7 @@
                 },
                 {
                   "change_type": "insertion",
-                  "text": "time: 1-2"
+                  "text": "carvings. Exploration"
                 },
                 {
                   "change_type": "equal",
@@ -1452,7 +1581,7 @@
                 },
                 {
                   "change_type": "insertion",
-                  "text": "hours"
+                  "text": "time: 1-2"
                 },
                 {
                   "change_type": "equal",
@@ -1464,7 +1593,7 @@
                 },
                 {
                   "change_type": "insertion",
-                  "text": "Trending"
+                  "text": "hours"
                 },
                 {
                   "change_type": "equal",
@@ -2156,204 +2285,200 @@
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
       "differences": [
         {
+          "change_type": "equal",
+          "text": "Skip to main content "
+        },
+        {
           "change_type": "deletion",
-          "text": "Skip to main content 1/1 6E Rewards and IndiGo BluChip Accounts are managed separately. To use Voucher, Credit Shell & 6E Rewards, Click Here . View All "
+          "text": "1/1 6E Rewards and IndiGo BluChip Accounts are managed separately. To use Voucher, Credit Shell & 6E Rewards, Click Here . View All Book Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. Trips My trips Find & view booking Upgrade booking Change your journey Edit Booking Change flight Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare Deals and Offers Check-in IndiGo BluChip DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up Tariff Sheet IndiGo BluChips Balance Login Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME Explore My trips Book Check-in Profile "
         },
         {
           "change_type": "equal",
-          "text": "Book "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
-        },
-        {
-          "change_type": "equal",
-          "text": "Trips "
-        },
-        {
-          "change_type": "deletion",
-          "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Change flight Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
-        },
-        {
-          "change_type": "equal",
-          "text": "Deals and Offers Check-in IndiGo BluChip "
-        },
-        {
-          "change_type": "deletion",
-          "text": "DISCOVER"
+          "text": "Hi there, plan your journey with ease - Flights, Hotels and beyond! What's new? Find exclusive offers and the best deals available for you. "
         },
         {
           "change_type": "insertion",
-          "text": "Skip"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Join Program"
-        },
-        {
-          "change_type": "insertion",
-          "text": "to"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Join"
-        },
-        {
-          "change_type": "insertion",
-          "text": "main"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up Tariff Sheet"
-        },
-        {
-          "change_type": "insertion",
-          "text": "content"
-        },
-        {
-          "change_type": "equal",
-          "text": " IndiGo BluChips Balance Login "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME "
-        },
-        {
-          "change_type": "equal",
-          "text": "Explore My trips Book Check-in Profile Hi there, plan your journey with ease - Flights, Hotels and beyond! What's new? Find exclusive offers and the best deals available for you"
-        },
-        {
-          "change_type": "deletion",
-          "text": ". "
-        },
-        {
-          "change_type": "insertion",
-          "text": ". /indigo-stretch.html Learn more /loyalty/partners/kotak-mahindra-bank-credit-card.html?linkNav=%7C2%7Coffer%20%26%20links Learn more "
+          "text": "https://beta-s6web-prod-skyplus6e.goindigo.in/content/skyplus6e/in/en/campaigns/indigo-offers?linkNav=Deals%20and%20Offers%7C%7CHeader.html https://beta-s6web-prod-skyplus6e.goindigo.in/sale.html?linkNav=rblBankOfferSale13th-28thAug_1carouselHeroBanner_flights IndiGo IDFC https://beta-s6web-prod-skyplus6e.goindigo.in/campaigns/destinations-of-the-week-offers.html?linkNav=HPCarouselBanner%7C%7CAMS_MAN https://beta-s6web-prod-skyplus6e.goindigo.in/sightseeing.html?linkNav=Sight%20Seeing%7CBanner https://beta-s6web-prod-skyplus6e.goindigo.in/experiences.html?linkNav=experiences%7CBanner https://www.goindigo.in/hotels?linkNav=FlightsHP%7C8%7CBookHotelBanner /indigo-stretch.html /indigo-stretch.html /loyalty/partners/kotak-mahindra-bank-credit-card.html?linkNav=%7C2%7Coffer%20%26%20links /loyalty/partners/kotak-mahindra-bank-credit-card.html?linkNav=%7C2%7Coffer%20%26%20links "
         },
         {
           "change_type": "equal",
           "text": "Book your stay on goIndiGo.in and get up to 25%* off "
         },
         {
-          "change_type": "insertion",
-          "text": "hotels "
-        },
-        {
-          "change_type": "equal",
-          "text": "T&C apply* Expiry: : No expiry "
+          "change_type": "deletion",
+          "text": "T&C apply* Expiry: : No"
         },
         {
           "change_type": "insertion",
-          "text": "6exclusive-fare "
+          "text": "Book"
         },
         {
           "change_type": "equal",
-          "text": "View All Offer "
+          "text": " "
         },
         {
           "change_type": "deletion",
-          "text": "AYJ BKK BLR DEL GOI HYD IXL BOM PNQ SXR Embark on a journey of inspiration with IndiGo, where discovery meets the sky. Explore Namaste Manchester: IndiGo announces its long-haul debut with non- stop flights connecting Mumbai and Manchester starting 01 July 2025 21 May 2025 View more IndiGo brings Indian warmth to Dutch skies: Opens bookings for its long-haul debut on Mumbai-Amsterdam route starting 02 July 2025 21 May 2025 View more Explore Amsterdam Explore Manchester Explore Seychelles "
-        },
-        {
-          "change_type": "equal",
-          "text": "Ayodhya, Uttar Pradesh Journey into the Spiritual Heart of Ayodhya Explore"
+          "text": "expiry"
         },
         {
           "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+          "text": "your"
         },
         {
           "change_type": "equal",
-          "text": " Bangkok, Thailand Dive into the Vibrant Energy of Bangkok Explore"
-        },
-        {
-          "change_type": "insertion",
-          "text": " /indian-destinations.html?linkNav=icon-Bucket_List%7C%7CDiscover"
-        },
-        {
-          "change_type": "equal",
-          "text": " Bengaluru Explore the Silicon Valley of India: Bengaluru Beckons Explore"
-        },
-        {
-          "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
-        },
-        {
-          "change_type": "equal",
-          "text": " Delhi Discover the Heartbeat of India in the Capital City Explore"
-        },
-        {
-          "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
-        },
-        {
-          "change_type": "equal",
-          "text": " GOA Soak up the sun and fun in vibrant Goa Explore"
-        },
-        {
-          "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
-        },
-        {
-          "change_type": "equal",
-          "text": " Hyderabad, Telangana Step into the Charms of the City of Pearls Explore"
-        },
-        {
-          "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
-        },
-        {
-          "change_type": "equal",
-          "text": " LEH, Ladakh Embrace the Serenity of Leh's Majestic Landscapes Explore"
-        },
-        {
-          "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
-        },
-        {
-          "change_type": "equal",
-          "text": " Mumbai, Maharashtra Dive into the Dream City: Mumbai Awaits Explore"
-        },
-        {
-          "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
-        },
-        {
-          "change_type": "equal",
-          "text": " Pune, Maharashtra Unravel the heritage and modernity of Pune Explore"
-        },
-        {
-          "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
-        },
-        {
-          "change_type": "equal",
-          "text": " Srinagar, Jammu and Kashmir Explore everything that makes this place a \u2018Paradise on Earth\u2019 Explore"
+          "text": " "
         },
         {
           "change_type": "deletion",
-          "text": " Ayodhya, Uttar Pradesh Bangkok, Thailand Bengaluru Delhi GOA Hyderabad, Telangana LEH, Ladakh Mumbai, Maharashtra Pune, Maharashtra Srinagar, Jammu and Kashmir"
+          "text": "View All Offer AYJ BKK BLR DEL GOI HYD IXL BOM PNQ SXR Embark"
         },
         {
           "change_type": "insertion",
-          "text": " /indian-destinations/ayodhya.html?linkNav=icon-Bucket_List%7C%7CDiscover"
+          "text": "stay"
         },
         {
           "change_type": "equal",
-          "text": " Add more 6E Add-ons to your journey Add more 6E Add-ons to your journey View All Pre book Fast forward at up to 50% discount Priority check-in and anytime boarding. "
+          "text": " on "
+        },
+        {
+          "change_type": "deletion",
+          "text": "a journey of inspiration with IndiGo, where discovery meets the sky. Explore Namaste Manchester: IndiGo announces its long-haul debut with non- stop flights connecting Mumbai"
+        },
+        {
+          "change_type": "insertion",
+          "text": "goIndiGo.in"
+        },
+        {
+          "change_type": "equal",
+          "text": " and "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Manchester"
+        },
+        {
+          "change_type": "insertion",
+          "text": "get"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "starting 01 July 2025 21 May 2025 View more IndiGo brings Indian warmth"
+        },
+        {
+          "change_type": "insertion",
+          "text": "up"
+        },
+        {
+          "change_type": "equal",
+          "text": " to "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Dutch skies: Opens bookings for its long-haul debut on Mumbai-Amsterdam"
+        },
+        {
+          "change_type": "insertion",
+          "text": "25%* off"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "route"
+        },
+        {
+          "change_type": "insertion",
+          "text": "T&C"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "starting"
+        },
+        {
+          "change_type": "insertion",
+          "text": "apply* Expiry: : No"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "02"
+        },
+        {
+          "change_type": "insertion",
+          "text": "expiry"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "July"
+        },
+        {
+          "change_type": "insertion",
+          "text": "T&C"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "2025 21 May 2025 "
+        },
+        {
+          "change_type": "insertion",
+          "text": "apply* "
+        },
+        {
+          "change_type": "equal",
+          "text": "View "
+        },
+        {
+          "change_type": "deletion",
+          "text": "more Explore Amsterdam Explore Manchester Explore"
+        },
+        {
+          "change_type": "insertion",
+          "text": "All"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Seychelles"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Offer"
+        },
+        {
+          "change_type": "equal",
+          "text": " Ayodhya, Uttar Pradesh Journey into the Spiritual Heart of Ayodhya Explore Bangkok, Thailand Dive into the Vibrant Energy of Bangkok Explore Bengaluru Explore the Silicon Valley of India: Bengaluru Beckons Explore Delhi Discover the Heartbeat of India in the Capital City Explore GOA Soak up the sun and fun in vibrant Goa Explore Hyderabad, Telangana Step into the Charms of the City of Pearls Explore LEH, Ladakh Embrace the Serenity of Leh's Majestic Landscapes Explore Mumbai, Maharashtra Dive into the Dream City: Mumbai Awaits Explore Pune, Maharashtra Unravel the heritage and modernity of Pune Explore Srinagar, Jammu and Kashmir Explore everything that makes this place a \u2018Paradise on Earth\u2019 Explore "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Ayodhya, Uttar Pradesh Bangkok, Thailand Bengaluru Delhi GOA Hyderabad, Telangana LEH, Ladakh Mumbai, Maharashtra Pune, Maharashtra Srinagar, Jammu and Kashmir "
+        },
+        {
+          "change_type": "equal",
+          "text": "Add more 6E Add-ons to your journey Add more 6E Add-ons to your journey View All Pre book Fast forward at up to 50% discount Priority check-in and anytime boarding. "
         },
         {
           "change_type": "insertion",
@@ -2361,15 +2486,7 @@
         },
         {
           "change_type": "equal",
-          "text": "Pre-paid excess baggage starting at \u20b91515 Excess baggage and additional piece "
-        },
-        {
-          "change_type": "insertion",
-          "text": "Learn more "
-        },
-        {
-          "change_type": "equal",
-          "text": "XL (Extra legroom) seat starting at \u20b9500 Window, aisle or seat with extra legroom"
+          "text": "Pre-paid excess baggage starting at \u20b91515 Excess baggage and additional piece"
         },
         {
           "change_type": "insertion",
@@ -2377,53 +2494,73 @@
         },
         {
           "change_type": "equal",
-          "text": " Share Feedback"
+          "text": " XL (Extra legroom) seat starting at \u20b9500 Window, aisle or seat with extra legroom "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Share Feedback Please enter valid email address. COMPANY About us"
         },
         {
           "change_type": "insertion",
-          "text": " Add e-mail id to get inspired"
+          "text": "Learn"
         },
         {
           "change_type": "equal",
-          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved. Kindly accept cookies and continue using our website for a smoother experience. Accept Accept cookies"
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved. Kindly accept cookies and continue using our website for a smoother experience. Accept Accept cookies"
+        },
+        {
+          "change_type": "insertion",
+          "text": "more"
         }
       ],
-      "similarity_score": 0.5780994720857004
+      "similarity_score": 0.5236864644888722
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
       "differences": [
         {
-          "change_type": "deletion",
+          "change_type": "equal",
           "text": "Skip to main content "
         },
         {
-          "change_type": "equal",
-          "text": "Book "
-        },
-        {
           "change_type": "deletion",
-          "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+          "text": "Book Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. Trips My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare Deals and Offers Check-in IndiGo BluChip DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up IndiGo BluChips Balance Login Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME Explore My trips Book Check-in Profile "
         },
         {
           "change_type": "equal",
-          "text": "Trips "
+          "text": "Home Flights Flight Tracker Delhi to Mumbai Delhi to Mumbai Flight Status "
         },
         {
           "change_type": "deletion",
-          "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+          "text": "28/08/2025 - Today "
         },
         {
           "change_type": "equal",
-          "text": "Deals and Offers Check-in IndiGo BluChip "
+          "text": "Search "
         },
         {
           "change_type": "deletion",
-          "text": "DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log"
+          "text": "Flight Share Feedback Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report"
         },
         {
           "change_type": "insertion",
-          "text": "Skip"
+          "text": "by"
+        },
+        {
+          "change_type": "equal",
+          "text": " 6E "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Embrace - Diversity"
+        },
+        {
+          "change_type": "insertion",
+          "text": "flight"
         },
         {
           "change_type": "equal",
@@ -2431,11 +2568,11 @@
         },
         {
           "change_type": "deletion",
-          "text": "In"
+          "text": "Equity & Inclusion"
         },
         {
           "change_type": "insertion",
-          "text": "to"
+          "text": "number"
         },
         {
           "change_type": "equal",
@@ -2443,11 +2580,11 @@
         },
         {
           "change_type": "deletion",
-          "text": "Sign"
+          "text": "IndiGoReach - Our"
         },
         {
           "change_type": "insertion",
-          "text": "main"
+          "text": "or"
         },
         {
           "change_type": "equal",
@@ -2455,181 +2592,153 @@
         },
         {
           "change_type": "deletion",
-          "text": "Up"
+          "text": "CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity"
         },
         {
           "change_type": "insertion",
-          "text": "content"
+          "text": "by"
         },
         {
           "change_type": "equal",
-          "text": " IndiGo BluChips Balance Login "
+          "text": " "
         },
         {
           "change_type": "deletion",
-          "text": "Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME "
-        },
-        {
-          "change_type": "equal",
-          "text": "Explore My trips Book Check-in Profile Home Flights Flight Tracker Delhi to Mumbai Delhi to Mumbai Flight Status "
+          "text": "Policy"
         },
         {
           "change_type": "insertion",
-          "text": "Search by 6E flight number or by PNR Departing Arriving "
+          "text": "PNR"
         },
         {
           "change_type": "equal",
-          "text": "28/08/2025 - Today Search Flight Share Feedback"
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Transgender"
         },
         {
           "change_type": "insertion",
-          "text": " Add e-mail id to get inspired"
+          "text": "Departing"
         },
         {
           "change_type": "equal",
-          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "Persons Policy"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Arriving"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "HIV"
+        },
+        {
+          "change_type": "insertion",
+          "text": "28"
+        },
+        {
+          "change_type": "equal",
+          "text": "/"
+        },
+        {
+          "change_type": "deletion",
+          "text": "AIDS workplace policy Seat"
+        },
+        {
+          "change_type": "insertion",
+          "text": "08"
+        },
+        {
+          "change_type": "equal",
+          "text": "/"
+        },
+        {
+          "change_type": "deletion",
+          "text": "Aircraft"
+        },
+        {
+          "change_type": "insertion",
+          "text": "2025 - Today"
+        },
+        {
+          "change_type": "equal",
+          "text": " "
+        },
+        {
+          "change_type": "deletion",
+          "text": "information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app"
+        },
+        {
+          "change_type": "insertion",
+          "text": "Search"
+        },
+        {
+          "change_type": "equal",
+          "text": " Flight"
+        },
+        {
+          "change_type": "deletion",
+          "text": " status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
         }
       ],
-      "similarity_score": 0.7042847725614679
+      "similarity_score": 0.20363812764106792
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "differences": [
         {
-          "change_type": "deletion",
+          "change_type": "equal",
           "text": "Skip to main content "
         },
         {
-          "change_type": "equal",
-          "text": "Book "
-        },
-        {
           "change_type": "deletion",
-          "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+          "text": "Book Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. Trips My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare Deals and Offers Check-in IndiGo BluChip DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up IndiGo BluChips Balance Login Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME Explore My trips Book Check-in Profile "
         },
         {
           "change_type": "equal",
-          "text": "Trips "
+          "text": "Back Explore"
         },
         {
           "change_type": "deletion",
-          "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+          "text": " Copy Link Copied"
         },
         {
           "change_type": "equal",
-          "text": "Deals and Offers Check-in IndiGo BluChip "
+          "text": " Delhi Photo Credits: Santosh kumar Delhi Photo Credits: Akshana Prasad Delhi Photo Credits: Chandan Mishra Delhi Photo Credits: Ekansh Mehta Delhi Photo Credits: Lalit Singh Delhi Photo Credits: Santosh kumar Delhi Photo Credits: Akshana Prasad Places To visit Places to eat Where to stay Things to do Best time to visit Shopping Festivals More reasons to visit Delhi, the bustling capital of India, holds a rich history, inclusive culture, and progressive modernity. Its ancient monuments, like the iconic Red Fort and Qutub Minar, are a testament to its storied past while its colourful markets and diverse cuisine reflect its dynamic present. Sure to be a memorable trip, Delhi tourism promises a beautiful contrast of tradition and modernity alongside its resilience and cosmopolitan atmosphere. This Delhi travel guide covers everything, from places that deserve your attention to delicious cuisine that will melt in your mouth. Let\u2019s explore the heart of India. How to reach Delhi By air: Indira Gandhi International Airport (DEL) , or Delhi Airport, is the main airport, around 16 km from the city\u2019s centre. Terminals 1 and 2 cater to domestic flights, and Terminal 3 handles domestic and international. These terminals handle all flights to Delhi and from it. By train: Delhi is served by several major railway stations. Old Delhi Railway Station and New Delhi Railway Station are the primary ones connecting the city to major destinations across the country. By bus: Delhi boasts an extensive network of state-run and private bus services. They offer connections to many cities and towns. Getting around/local transport in Delhi : Delhi offers various modes of local transportation, including taxis, buses, auto rickshaws, and cycle rickshaws. Additionally, the Delhi Metro is a popular and efficient way to navigate the city. View More "
         },
         {
           "change_type": "deletion",
-          "text": "DISCOVER"
+          "text": "Places to visit "
+        },
+        {
+          "change_type": "equal",
+          "text": "Trending Safdarjung Tomb Historical elegance, Mughal heritage, soaring height, and intricate carvings. Exploration time: 1-2 hours Qutub Minar Exploration time: 1-2 hours Humayun\u2019s Tomb Exploration time: 1-2 hours Lotus Temple Exploration time: 1 hour Jantar Mantar Exploration time: 2 hour Rashtrapati Bhawan Exploration time: 2-3 hours India Gate Exploration time: 1 hours Red Fort Exploration time: 1 hours Akshardham Temple Exploration time: 3-4 hours"
+        },
+        {
+          "change_type": "deletion",
+          "text": " View All 9 places View less"
+        },
+        {
+          "change_type": "equal",
+          "text": " Places to eat Chennai is considered the best east coast destination to visit in South India. So, if you plan to book your flights to Chennai, make sure to plan between November to February. Karim\u2019s This iconic eatery in Old Delhi was established in 1913. The restaurant is popular for its non-vegetarian dishes. Popular dishes: Kebabs, meat curries, naan Moti Mahal Tandoori food is their expertise, and their ability to retain those distinguished flavours makes Moti Mahal a must-visit. Popular dishes: Butter chicken, butter naan, dal makhani Embassy Embassy offers a beautiful journey through North Indian cuisine, captivating the taste buds of food enthusiasts from near and far. Popular dishes: Butter chicken, chicken tikka masala, garlic naan Yeti - Himalayan Kitchen Yeti is celebrated for offering an authentic taste of Nepalese and Tibetan cuisine. Known for its dedication to quality and authenticity, Yeti promises an unforgettable dining experience. Popular dishes: Momos, thukpa, and ema datshi Kake Di Hatti This eatery is renowned for its hearty Punjabi cuisine and generous portions. Kake Di Hatti promises a feast for the senses, from aromatic curries to sizzling tandoori delights. Popular dishes: Naan, chole bhature, dal makhani Bukhara Bukhara is the epitome of culinary excellence and is one of Delhi's most revered dining destinations. With its rustic charm and timeless elegance, you will find an open kitchen at this restaurant in the ITC Hotel. It is renowned for its curries cooked in traditional clay ovens.an see, feel and experience in Chennai. Where to stay in Delhi Up to 25%* off on hotel bookings with IndiGo, Use code GOSTAY "
         },
         {
           "change_type": "insertion",
-          "text": "Skip"
+          "text": "Deventure Sarovar Portico Kapashera \u2605\u2605\u2605\u2605 "
         },
         {
           "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Join"
-        },
-        {
-          "change_type": "insertion",
-          "text": "to"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Program"
-        },
-        {
-          "change_type": "insertion",
-          "text": "main"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up"
-        },
-        {
-          "change_type": "insertion",
-          "text": "content"
-        },
-        {
-          "change_type": "equal",
-          "text": " IndiGo BluChips Balance Login "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME "
-        },
-        {
-          "change_type": "equal",
-          "text": "Explore My trips Book Check-in Profile Back Explore"
-        },
-        {
-          "change_type": "deletion",
-          "text": " "
-        },
-        {
-          "change_type": "insertion",
-          "text": " # "
-        },
-        {
-          "change_type": "equal",
-          "text": "Copy Link Copied Delhi Photo Credits: Santosh kumar Delhi Photo Credits: Akshana Prasad Delhi Photo Credits: Chandan Mishra Delhi Photo Credits: Ekansh Mehta Delhi Photo Credits: Lalit Singh Delhi Photo Credits: Santosh kumar Delhi Photo Credits: Akshana Prasad Places To visit Places to eat Where to stay Things to do Best time to visit Shopping Festivals More reasons to visit Delhi, the bustling capital of India, holds a rich history, inclusive culture, and progressive modernity. Its ancient monuments, like the iconic Red Fort and Qutub Minar, are a testament to its storied past while its colourful markets and diverse cuisine reflect its dynamic present. Sure to be a memorable trip, Delhi tourism promises a beautiful contrast of tradition and modernity alongside its resilience and cosmopolitan atmosphere. This Delhi travel guide covers everything, from places that deserve your attention to delicious cuisine that will melt in your mouth. Let\u2019s explore the heart of India. How to reach Delhi By air: Indira Gandhi International Airport (DEL) , or Delhi Airport, is the main airport, around 16 km from the city\u2019s centre. Terminals 1 and 2 cater to domestic flights, and Terminal 3 handles domestic and international. These terminals handle all flights to Delhi and from it. By train: Delhi is served by several major railway stations. Old Delhi Railway Station and New Delhi Railway Station are the primary ones connecting the city to major destinations across the country. By bus: Delhi boasts an extensive network of state-run and private bus services. They offer connections to many cities and towns. Getting around/local transport in Delhi : Delhi offers various modes of local transportation, including taxis, buses, auto rickshaws, and cycle rickshaws. Additionally, the Delhi Metro is a popular and efficient way to navigate the city. View More "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Places to visit Trending "
-        },
-        {
-          "change_type": "equal",
-          "text": "Safdarjung Tomb Historical elegance, Mughal heritage, soaring height, and intricate carvings. Exploration time: 1-2 hours"
-        },
-        {
-          "change_type": "insertion",
-          "text": " Trending"
-        },
-        {
-          "change_type": "equal",
-          "text": " Qutub Minar Exploration time: 1-2 hours Humayun\u2019s Tomb Exploration time: 1-2 hours Lotus Temple Exploration time: 1 hour Jantar Mantar Exploration time: 2 hour Rashtrapati Bhawan Exploration time: 2-3 hours India Gate Exploration time: 1 hours Red Fort Exploration time: 1 hours Akshardham Temple Exploration time: 3-4 hours "
-        },
-        {
-          "change_type": "deletion",
-          "text": "View All 9 places View less "
-        },
-        {
-          "change_type": "equal",
-          "text": "Places to eat Chennai is considered the best east coast destination to visit in South India. So, if you plan to book your flights to Chennai, make sure to plan between November to February. Karim\u2019s This iconic eatery in Old Delhi was established in 1913. The restaurant is popular for its non-vegetarian dishes. Popular dishes: Kebabs, meat curries, naan Moti Mahal Tandoori food is their expertise, and their ability to retain those distinguished flavours makes Moti Mahal a must-visit. Popular dishes: Butter chicken, butter naan, dal makhani Embassy Embassy offers a beautiful journey through North Indian cuisine, captivating the taste buds of food enthusiasts from near and far. Popular dishes: Butter chicken, chicken tikka masala, garlic naan Yeti - Himalayan Kitchen Yeti is celebrated for offering an authentic taste of Nepalese and Tibetan cuisine. Known for its dedication to quality and authenticity, Yeti promises an unforgettable dining experience. Popular dishes: Momos, thukpa, and ema datshi Kake Di Hatti This eatery is renowned for its hearty Punjabi cuisine and generous portions. Kake Di Hatti promises a feast for the senses, from aromatic curries to sizzling tandoori delights. Popular dishes: Naan, chole bhature, dal makhani Bukhara Bukhara is the epitome of culinary excellence and is one of Delhi's most revered dining destinations. With its rustic charm and timeless elegance, you will find an open kitchen at this restaurant in the ITC Hotel. It is renowned for its curries cooked in traditional clay ovens.an see, feel and experience in Chennai. Where to stay in Delhi Up to 25%* off on hotel bookings with IndiGo, Use code GOSTAY "
-        },
-        {
-          "change_type": "insertion",
-          "text": "Deventure Sarovar Portico Kapashera \u2605\u2605\u2605\u2605"
-        },
-        {
-          "change_type": "equal",
-          "text": "3.8/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "148 reviews"
+          "text": "3.8/5 (148 reviews"
         },
         {
           "change_type": "deletion",
@@ -2653,7 +2762,7 @@
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605\u26054/5(926"
+          "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (926"
         },
         {
           "change_type": "equal",
@@ -2681,7 +2790,7 @@
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u26054.2/5(729"
+          "text": " \u2605\u2605\u2605 4.2/5 (729"
         },
         {
           "change_type": "equal",
@@ -2709,7 +2818,7 @@
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605\u26053.8/5(910"
+          "text": " \u2605\u2605\u2605\u2605\u2605 3.8/5 (910"
         },
         {
           "change_type": "equal",
@@ -2737,7 +2846,7 @@
         },
         {
           "change_type": "insertion",
-          "text": " \u2605\u2605\u2605\u2605\u26054/5(924"
+          "text": " \u2605\u2605\u2605\u2605\u2605 4/5 (924"
         },
         {
           "change_type": "equal",
@@ -2757,23 +2866,11 @@
         },
         {
           "change_type": "insertion",
-          "text": "Bloom Hotel - Karol Bagh \u2605\u2605\u2605"
+          "text": "Bloom Hotel - Karol Bagh \u2605\u2605\u2605 "
         },
         {
           "change_type": "equal",
-          "text": "4.3/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "7 reviews"
+          "text": "4.3/5 (7 reviews"
         },
         {
           "change_type": "deletion",
@@ -2801,23 +2898,11 @@
         },
         {
           "change_type": "insertion",
-          "text": "Hotel Diplomat \u2605\u2605\u2605\u2605"
+          "text": "Hotel Diplomat \u2605\u2605\u2605\u2605 "
         },
         {
           "change_type": "equal",
-          "text": "3.2/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "63 reviews"
+          "text": "3.2/5 (63 reviews"
         },
         {
           "change_type": "deletion",
@@ -2832,28 +2917,20 @@
           "text": "9,055 \u20b9 6,955 /night + \u20b9 1,512 Taxes & fees Book "
         },
         {
-          "change_type": "deletion",
-          "text": "4.3/5 (53 reviews) "
+          "change_type": "insertion",
+          "text": "Le ROI Express Paharganj \u2605\u2605\u2605 "
         },
         {
           "change_type": "equal",
-          "text": "Le ROI Express Paharganj"
-        },
-        {
-          "change_type": "insertion",
-          "text": " \u2605\u2605\u26054.3/5(53"
-        },
-        {
-          "change_type": "equal",
-          "text": " "
+          "text": "4.3/5 (53 reviews"
         },
         {
           "change_type": "deletion",
-          "text": "Delhi \u20b9 "
+          "text": ") Le ROI Express Paharganj Delhi \u20b9 "
         },
         {
           "change_type": "insertion",
-          "text": "reviews) \u20b9 "
+          "text": ") \u20b9 "
         },
         {
           "change_type": "equal",
@@ -2861,23 +2938,11 @@
         },
         {
           "change_type": "insertion",
-          "text": "Bloomrooms @ Janpath \u2605\u2605\u2605"
+          "text": "Bloomrooms @ Janpath \u2605\u2605\u2605 "
         },
         {
           "change_type": "equal",
-          "text": "4.3/5"
-        },
-        {
-          "change_type": "deletion",
-          "text": " ("
-        },
-        {
-          "change_type": "insertion",
-          "text": "("
-        },
-        {
-          "change_type": "equal",
-          "text": "157 reviews"
+          "text": "4.3/5 (157 reviews"
         },
         {
           "change_type": "deletion",
@@ -2897,137 +2962,313 @@
         },
         {
           "change_type": "equal",
-          "text": " Best time to visit The best time to visit the city is during the winter months, from October to March, when the weather is pleasant for outdoor activities. View More Shopping The best way to take memories from a place is by shopping and collecting souvenirs. Let\u2019s explore some places that hold the best of Delhi\u2019s novelties: Sarojini Nagar: This market is well-known for its lively and budget-friendly shopping options. It is a popular destination for trendy clothes, accessories, and household items. Lajpat Nagar: Lajpat Nagar market has an eclectic mix of clothing, accessories, and household items. It caters to a wide range of tastes and budgets. It is also a popular destination for bridal shopping. Janpath: Janpath is famous for its shops, boutiques, and street vendors offering diverse merchandise. It caters to varied tastes and budgets, offering traditional handicrafts, textiles, trendy clothes, and accessories. Chandni Chowk: Chandni Chowk is one of Delhi's oldest and busiest marketplaces, offering various things at economical prices. The place is known for wedding shopping. Additionally, its street food is quite a favourite and attracts many foreign visitors. Dilli Haat: Here artisans from different states display and sell traditional handicrafts, textiles, and artworks. It is a great place to shop specialities from various regions like dhokra sculptures from Chhattisgarh, and Madhubani and bamboo handicrafts from the North-East. Chor Bazaar: Chor Bazaar, also known as the Thieves Market, is a bustling flea market where one can find many second-hand goods, antiques, and vintage items at bargain prices. Khan Market: One of Delhi's most premium shopping places, Khan Market houses a range of dining options, boutique stores, expensive brands, and more. Known for its chic ambience and high-end offerings, Khan Market is a favourite destination for fashionistas and foodies. View More Festivals Delhi becomes vibrant during the festive season, and if you can plan your visit during these times, you will witness a unique side of the city: Diwali Celebrated with grandeur and enthusiasm, the festival of lights Holi Delhi bursts with colours and laughter as streets come alive with playful water Eid-ul-Fitr Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful Durga Puja Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful More reasons to visit While Delhi brings uncountable reasons to plan a visit, let\u2019s go through some more reasons that can make your trip even more wholesome: Explore the street art: Explore India's first public open-air art gallery in the Lodhi Art District. Several famous international and local artists have painted over 50 murals on the walls. Explore spice markets: From aromatic cloves and cardamom to fiery chilli peppers and fragrant saffron, the spice markets in Delhi hold several culinary delights. Wander through the lanes of Khari Baoli and encounter fellow tourists marvelling at the abundance of spices. The National Museum: The National Museum is one of India's premier cultural institutions. Established in 1949, it boasts an extensive collection of artefacts spanning thousands of years of Indian history and culture. View More Related travel blogs Exciting activities to indulge in a Delhi tour with family and friends Dilli ki sardi: Here\u2019s why Delhi winters are worth all the hype 12 places to explore the art and culture of Delhi Iconic Delhi markets to shop till you drop at Share Feedback"
+          "text": " Best time to visit The best time to visit the city is during the winter months, from October to March, when the weather is pleasant for outdoor activities. View More Shopping The best way to take memories from a place is by shopping and collecting souvenirs. Let\u2019s explore some places that hold the best of Delhi\u2019s novelties: Sarojini Nagar: This market is well-known for its lively and budget-friendly shopping options. It is a popular destination for trendy clothes, accessories, and household items. Lajpat Nagar: Lajpat Nagar market has an eclectic mix of clothing, accessories, and household items. It caters to a wide range of tastes and budgets. It is also a popular destination for bridal shopping. Janpath: Janpath is famous for its shops, boutiques, and street vendors offering diverse merchandise. It caters to varied tastes and budgets, offering traditional handicrafts, textiles, trendy clothes, and accessories. Chandni Chowk: Chandni Chowk is one of Delhi's oldest and busiest marketplaces, offering various things at economical prices. The place is known for wedding shopping. Additionally, its street food is quite a favourite and attracts many foreign visitors. Dilli Haat: Here artisans from different states display and sell traditional handicrafts, textiles, and artworks. It is a great place to shop specialities from various regions like dhokra sculptures from Chhattisgarh, and Madhubani and bamboo handicrafts from the North-East. Chor Bazaar: Chor Bazaar, also known as the Thieves Market, is a bustling flea market where one can find many second-hand goods, antiques, and vintage items at bargain prices. Khan Market: One of Delhi's most premium shopping places, Khan Market houses a range of dining options, boutique stores, expensive brands, and more. Known for its chic ambience and high-end offerings, Khan Market is a favourite destination for fashionistas and foodies. View More Festivals Delhi becomes vibrant during the festive season, and if you can plan your visit during these times, you will witness a unique side of the city: Diwali Celebrated with grandeur and enthusiasm, the festival of lights Holi Delhi bursts with colours and laughter as streets come alive with playful water Eid-ul-Fitr Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful Durga Puja Delhi embraces the spirit of Eid-ul-Fitr with prayers, feasts, and joyful More reasons to visit While Delhi brings uncountable reasons to plan a visit, let\u2019s go through some more reasons that can make your trip even more wholesome: Explore the street art: Explore India's first public open-air art gallery in the Lodhi Art District. Several famous international and local artists have painted over 50 murals on the walls. Explore spice markets: From aromatic cloves and cardamom to fiery chilli peppers and fragrant saffron, the spice markets in Delhi hold several culinary delights. Wander through the lanes of Khari Baoli and encounter fellow tourists marvelling at the abundance of spices. The National Museum: The National Museum is one of India's premier cultural institutions. Established in 1949, it boasts an extensive collection of artefacts spanning thousands of years of Indian history and culture. View More Related travel blogs Exciting activities to indulge in a Delhi tour with family and friends Dilli ki sardi: Here\u2019s why Delhi winters are worth all the hype 12 places to explore the art and culture of Delhi Iconic Delhi markets to shop till you drop at"
         },
         {
-          "change_type": "insertion",
-          "text": " Add e-mail id to get inspired"
-        },
-        {
-          "change_type": "equal",
-          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+          "change_type": "deletion",
+          "text": " Share Feedback Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
         }
       ],
-      "similarity_score": 0.9754205966066933
+      "similarity_score": 0.9421688578929551
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "differences": [
         {
-          "change_type": "deletion",
+          "change_type": "equal",
           "text": "Skip to main content "
         },
         {
-          "change_type": "equal",
-          "text": "Book "
-        },
-        {
           "change_type": "deletion",
-          "text": "Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. "
+          "text": "Book Book Flight Group Bookings Hotels Sight Seeing Book CarGo Experiences Exclusive Student Fare, Family Fare, and more Book your stay on goIndiGo.in and get up to 25%* off. Trips My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare Deals and Offers Check-in IndiGo BluChip DISCOVER Join Program Join Program Loyalty Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up IndiGo BluChips Balance Login Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME Explore My trips Book Check-in Profile "
         },
         {
           "change_type": "equal",
-          "text": "Trips "
+          "text": "Back Explore"
         },
         {
           "change_type": "deletion",
-          "text": "My trips Find & view booking Upgrade booking Change your journey Edit Booking Cancel flight Split PNR Update IndiGo BluChip Number Customise your journey 6E Add-ons, Services and Fares Fees & Charges Plan B Change, cancel or refund Other Flight status Track refund View GST Invoice Codeshare "
+          "text": " Copy Link Copied"
         },
         {
           "change_type": "equal",
-          "text": "Deals and Offers Check-in IndiGo BluChip "
+          "text": " Mumbai Photo Credits: Akshada Balasaheb Aher Mumbai Photo Credits: Mihir Joshi Mumbai Photo Credits: Sagar Sanjay Kulkarni Mumbai Photo Credits: Vedant Sanjay Chavan Mumbai Photo Credits: Akshada Balasaheb Aher Mumbai Photo Credits: Mihir Joshi Places To visit Places to eat Where to stay Things to do Best time to visit Shopping Festivals More reasons to visit Mumbai, India's bustling metropolis, is a dynamic tourist destination offering a blend of history, culture, and modernity. Mumbai tourism is known for its iconic landmarks, such as the Gateway of India, Marine Drive, and the Colaba and Crawford market. Mumbai is also home to the Bollywood film industry, with Film City being a major attraction. The city's diverse gourmet scene, offering everything from street food to fine dining, is a culinary delight. Additionally, Mumbai's rich history is evident in its colonial-era architecture and heritage sites like the Chhatrapati Shivaji Terminus and Elephanta Caves. Let's explore some of the best aspects of the dream city in this detailed Mumbai travel guide. How to reach Mumbai By air: Chhatrapati Shivaji International Airport (BOM) , or Mumbai Airport, is approximately 30 km from the city centre. It ranks among India's busiest airports, serving as a significant hub for domestic and international flights to Mumbai . It has two main terminals. Terminal 1 operates domestic flights, and Terminal 2 handles international flights. By train: Mumbai boasts an extensive train network connecting it to various parts of the country. Travellers from central, eastern, and western India can book tickets to Chhatrapati Shivaji Terminus, while Mumbai Central Station caters to those from the north. By road: Mumbai Central Bus Station is Mumbai's main bus terminus. It serves buses operated by the Maharashtra State Road Transport Corporation (MSRTC) for various destinations in Maharashtra and inter-state routes to cities in Gujarat, Madhya Pradesh, and Karnataka. Getting around/local transport in Mumbai: Mumbai has multiple modes of public transport primarily facilitated by suburban trains, city buses, taxis, cabs, and auto-rickshaws. The suburban train network, known as Mumbai Local, is the lifeline of the city, connecting various parts of Mumbai and its suburbs. View More "
         },
         {
           "change_type": "deletion",
-          "text": "DISCOVER"
+          "text": "Places to visit Trending "
+        },
+        {
+          "change_type": "equal",
+          "text": "Gateway of India An iconic monument overlooking the Arabian Sea, known for its grand archway, intricate design, and historical significance. Exploration time: 1-2 "
+        },
+        {
+          "change_type": "deletion",
+          "text": "hours"
         },
         {
           "change_type": "insertion",
-          "text": "Skip"
+          "text": "hoursTrending"
         },
         {
           "change_type": "equal",
-          "text": " "
+          "text": " Juhu Beach Exploration time: 1-2 hours Marine Drive Exploration time: 1-2 hours Hanging Garden Exploration time: 1-2 hours Prince of Wales Museum Exploration time: 3-5 hours Film City Mumbai Exploration time: 3-4 hours, Movie studio "
         },
         {
           "change_type": "deletion",
-          "text": "Join Program Join Program"
+          "text": "View All 6 places View less "
+        },
+        {
+          "change_type": "equal",
+          "text": "Places to eat Mumbai is renowned for its diverse culinary scene, offering various dining options to suit every palate. Here are some popular places to eat in Mumbai: Joey\u2019s Pizza Joey's Pizza is a popular pizza chain in Mumbai known for its delicious and innovative pizzas. They offer a variety of toppings and flavours, catering to vegetarian and non-vegetarian preferences. Popular dishes: Supreme pizza, roasted chicken salad, chicken tornado, and makhani pizza. Cafe Madras Cafe Madras is a legendary restaurant located in Mumbai's Matunga area. It is famous for its authentic and delicious South Indian cuisine in a warm and welcoming ambience. Popular dishes: Dosa, idli, upma, butter idli, and filter coffee. The Bombay Canteen The Bombay Canteen is a popular restaurant in Mumbai known for its innovative take on traditional Indian cuisine. The place offers a lively ambience and a menu celebrating local flavours and ingredients. Popular dishes: Egg Kejriwal, ghee roast chicken seekh, and chilled seabass. Cafe Noorani Cafe Noorani is a popular restaurant located in Mumbai. It is known for its delicious and authentic Mughlai and North Indian cuisine. Popular dishes: Chicken tikka biryani, brain masala, Hyderabadi biryani and caramel custard. Indigo Delicatessen The award-winning restaurant specialises in European-style cuisine. The place offers an impeccable fine dining experience with flavorful dishes and exceptional service. Popular dishes: Pasta, burgers, tiramisu, and waffles. The Table The Table is popular for its contemporary European and American cuisine, focusing on using fresh, locally sourced ingredients. The restaurant offers a stylish and elegant dining experience. Popular dishes: Panna cotta, zucchini spaghetti, and truffle fries Where to stay in Mumbai Up to 25%* off on hotel bookings with IndiGo, Use code GOSTAY "
+        },
+        {
+          "change_type": "deletion",
+          "text": "4.2/5 (783 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "Holiday Inn Mumbai International Airport by IHG Mumbai"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
         },
         {
           "change_type": "insertion",
-          "text": "to"
+          "text": " 4.2/5(783 reviews) \u20b9 "
         },
         {
           "change_type": "equal",
-          "text": " "
-        },
-        {
-          "change_type": "deletion",
-          "text": "Loyalty"
+          "text": "6,115 /night Incl of taxes & fees Book "
         },
         {
           "change_type": "insertion",
-          "text": "main"
+          "text": "Bawa Regency Mumbai "
         },
         {
           "change_type": "equal",
-          "text": " "
+          "text": "3.3/5"
         },
         {
           "change_type": "deletion",
-          "text": "Dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Earn IndiGo BluChips Redeem IndiGo BluChips Retro Claim IndiGo BluChips Update IndiGo BluChip Number Our Partners Explore Partners & earn IndiGo BluChips Login or Sign up for IndiGo BluChip Log In Sign Up"
+          "text": " ("
         },
         {
           "change_type": "insertion",
-          "text": "content"
+          "text": "("
         },
         {
           "change_type": "equal",
-          "text": " IndiGo BluChips Balance Login "
+          "text": "56 reviews"
         },
         {
           "change_type": "deletion",
-          "text": "Your Information Flight Status IndiGo BluChip My Scratch Card 6E Rewards Other information About us Contact us WhatsApp Terms and Conditions Help and FAQs My Orders Sight Seeing Experiences FULL MENU DISCOVER Join Program Join Program My dashboard About IndiGo BluChip Tiers & Benefits Terms & Conditions FAQ Earn and Redeem Our Partners New Earn IndiGo BluChips Redeem IndiGo BluChips Hello IndiGo BluChip Membership No. My Profile Dashboard My Nominees Log Out Hello there, Log in to save up to 10% on your bookings. \u200b Log in as: Customer Travel partner\u200b SME "
-        },
-        {
-          "change_type": "equal",
-          "text": "Explore My trips Book Check-in Profile Back Explore"
-        },
-        {
-          "change_type": "deletion",
-          "text": " "
+          "text": ") Bawa Regency Mumbai \u20b9 "
         },
         {
           "change_type": "insertion",
-          "text": " # "
+          "text": ") \u20b9 "
         },
         {
           "change_type": "equal",
-          "text": "Copy Link Copied Mumbai Photo Credits: Akshada Balasaheb Aher Mumbai Photo Credits: Mihir Joshi Mumbai Photo Credits: Sagar Sanjay Kulkarni Mumbai Photo Credits: Vedant Sanjay Chavan Mumbai Photo Credits: Akshada Balasaheb Aher Mumbai Photo Credits: Mihir Joshi Places To visit Places to eat Where to stay Things to do Best time to visit Shopping Festivals More reasons to visit Mumbai, India's bustling metropolis, is a dynamic tourist destination offering a blend of history, culture, and modernity. Mumbai tourism is known for its iconic landmarks, such as the Gateway of India, Marine Drive, and the Colaba and Crawford market. Mumbai is also home to the Bollywood film industry, with Film City being a major attraction. The city's diverse gourmet scene, offering everything from street food to fine dining, is a culinary delight. Additionally, Mumbai's rich history is evident in its colonial-era architecture and heritage sites like the Chhatrapati Shivaji Terminus and Elephanta Caves. Let's explore some of the best aspects of the dream city in this detailed Mumbai travel guide. How to reach Mumbai By air: Chhatrapati Shivaji International Airport (BOM) , or Mumbai Airport, is approximately 30 km from the city centre. It ranks among India's busiest airports, serving as a significant hub for domestic and international flights to Mumbai . It has two main terminals. Terminal 1 operates domestic flights, and Terminal 2 handles international flights. By train: Mumbai boasts an extensive train network connecting it to various parts of the country. Travellers from central, eastern, and western India can book tickets to Chhatrapati Shivaji Terminus, while Mumbai Central Station caters to those from the north. By road: Mumbai Central Bus Station is Mumbai's main bus terminus. It serves buses operated by the Maharashtra State Road Transport Corporation (MSRTC) for various destinations in Maharashtra and inter-state routes to cities in Gujarat, Madhya Pradesh, and Karnataka. Getting around/local transport in Mumbai: Mumbai has multiple modes of public transport primarily facilitated by suburban trains, city buses, taxis, cabs, and auto-rickshaws. The suburban train network, known as Mumbai Local, is the lifeline of the city, connecting various parts of Mumbai and its suburbs. View More "
+          "text": "9,750 /night + \u20b9 1,755 Taxes & fees Book "
         },
         {
           "change_type": "deletion",
-          "text": "Places to visit "
+          "text": "4.4/5 (138 reviews) "
         },
         {
           "change_type": "equal",
-          "text": "Trending Gateway of India An iconic monument overlooking the Arabian Sea, known for its grand archway, intricate design, and historical significance. Exploration time: 1-2 hours Juhu Beach Exploration time: 1-2 hours Marine Drive Exploration time: 1-2 hours Hanging Garden Exploration time: 1-2 hours Prince of Wales Museum Exploration time: 3-5 hours Film City Mumbai Exploration time: 3-4 hours, Movie studio"
+          "text": "Novotel Mumbai International Airport Mumbai"
         },
         {
           "change_type": "deletion",
-          "text": " View All 6 places View less"
-        },
-        {
-          "change_type": "equal",
-          "text": " Places to eat Mumbai is renowned for its diverse culinary scene, offering various dining options to suit every palate. Here are some popular places to eat in Mumbai: Joey\u2019s Pizza Joey's Pizza is a popular pizza chain in Mumbai known for its delicious and innovative pizzas. They offer a variety of toppings and flavours, catering to vegetarian and non-vegetarian preferences. Popular dishes: Supreme pizza, roasted chicken salad, chicken tornado, and makhani pizza. Cafe Madras Cafe Madras is a legendary restaurant located in Mumbai's Matunga area. It is famous for its authentic and delicious South Indian cuisine in a warm and welcoming ambience. Popular dishes: Dosa, idli, upma, butter idli, and filter coffee. The Bombay Canteen The Bombay Canteen is a popular restaurant in Mumbai known for its innovative take on traditional Indian cuisine. The place offers a lively ambience and a menu celebrating local flavours and ingredients. Popular dishes: Egg Kejriwal, ghee roast chicken seekh, and chilled seabass. Cafe Noorani Cafe Noorani is a popular restaurant located in Mumbai. It is known for its delicious and authentic Mughlai and North Indian cuisine. Popular dishes: Chicken tikka biryani, brain masala, Hyderabadi biryani and caramel custard. Indigo Delicatessen The award-winning restaurant specialises in European-style cuisine. The place offers an impeccable fine dining experience with flavorful dishes and exceptional service. Popular dishes: Pasta, burgers, tiramisu, and waffles. The Table The Table is popular for its contemporary European and American cuisine, focusing on using fresh, locally sourced ingredients. The restaurant offers a stylish and elegant dining experience. Popular dishes: Panna cotta, zucchini spaghetti, and truffle fries "
+          "text": " \u20b9 "
         },
         {
           "change_type": "insertion",
-          "text": "Where to stay in Mumbai Up to 25%* off on hotel bookings with IndiGo, Use code GOSTAY Holiday Inn Mumbai International Airport by IHG \u2605\u2605\u2605\u2605 4.2/5(783 reviews) \u20b9 6,115 /night Incl of taxes & fees Book Bawa Regency \u2605\u2605 3.3/5(56 reviews) \u20b9 9,750 /night + \u20b9 1,755 Taxes & fees Book Novotel Mumbai International Airport \u2605\u2605\u2605\u2605\u2605 4.4/5(138 reviews) \u20b9 7,599 \u20b9 6,840 /night + \u20b9 821 Taxes & fees Book Lemon Tree Premier Mumbai Intl. Airport \u2605\u2605\u2605\u2605 4/5(90 reviews) \u20b9 7,638 /night Incl of taxes & fees Book Bawa International \u2605\u2605\u2605\u2605 3.6/5(252 reviews) \u20b9 5,000 /night + \u20b9 600 Taxes & fees Book Suba Galaxy \u2605\u2605\u2605\u2605 3.9/5(76 reviews) \u20b9 3,420 /night + \u20b9 411 Taxes & fees Book Hotel Parle International \u2605\u2605\u2605 3.5/5(154 reviews) \u20b9 7,500 \u20b9 6,750 /night + \u20b9 810 Taxes & fees Book Novotel Mumbai Juhu Beach Hotel \u2605\u2605\u2605\u2605\u2605 3.5/5(840 reviews) \u20b9 11,180 /night Incl of taxes & fees Book Hotel Oriental Aster - Mumbai International Airport \u2605\u2605\u2605\u2605 3.8/5(123 reviews) \u20b9 4,938 /night Incl of taxes & fees Book T24 Residency Mumbai International Airport Hotel \u2605\u2605\u2605\u2605 3.6/5(130 reviews) \u20b9 6,599 /night Incl of taxes & fees Book Show more "
+          "text": " 4.4/5(138 reviews) \u20b9 "
         },
         {
           "change_type": "equal",
-          "text": "Things To Do Mumbai is a city filled with many experiences. The city never stops to fascinate its travellers. Here are some of the best things to do and fun activities on your trip to Mumbai that will surely keep you engaged: Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food Vibrant nightlife Temple visits Beach outing Museum visits Local cuisine"
+          "text": "7,599 \u20b9 6,840 /night + \u20b9 821 Taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "4/5 (90 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "Lemon Tree Premier Mumbai Intl. Airport Mumbai"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " 4/5(90 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "7,638 /night Incl of taxes & fees Book "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Bawa International Mumbai "
+        },
+        {
+          "change_type": "equal",
+          "text": "3.6/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "252 reviews"
+        },
+        {
+          "change_type": "deletion",
+          "text": ") Bawa International Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": ") \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "5,000 /night + \u20b9 600 Taxes & fees Book "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Suba Galaxy Mumbai "
+        },
+        {
+          "change_type": "equal",
+          "text": "3.9/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "76 reviews"
+        },
+        {
+          "change_type": "deletion",
+          "text": ") Suba Galaxy Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": ") \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "3,420 /night + \u20b9 411 Taxes & fees Book "
+        },
+        {
+          "change_type": "insertion",
+          "text": "Hotel Parle International Mumbai "
+        },
+        {
+          "change_type": "equal",
+          "text": "3.5/5"
+        },
+        {
+          "change_type": "deletion",
+          "text": " ("
+        },
+        {
+          "change_type": "insertion",
+          "text": "("
+        },
+        {
+          "change_type": "equal",
+          "text": "154 reviews"
+        },
+        {
+          "change_type": "deletion",
+          "text": ") Hotel Parle International Mumbai \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": ") \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "7,500 \u20b9 6,750 /night + \u20b9 810 Taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "3.5/5 (840 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "Novotel Mumbai Juhu Beach Hotel Mumbai"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " 3.5/5(840 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "11,180 /night Incl of taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "3.8/5 (123 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "Hotel Oriental Aster - Mumbai International Airport Mumbai"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " 3.8/5(123 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "4,938 /night Incl of taxes & fees Book "
+        },
+        {
+          "change_type": "deletion",
+          "text": "3.6/5 (130 reviews) "
+        },
+        {
+          "change_type": "equal",
+          "text": "T24 Residency Mumbai International Airport Hotel Mumbai"
+        },
+        {
+          "change_type": "deletion",
+          "text": " \u20b9 "
+        },
+        {
+          "change_type": "insertion",
+          "text": " 3.6/5(130 reviews) \u20b9 "
+        },
+        {
+          "change_type": "equal",
+          "text": "6,599 /night Incl of taxes & fees Book Show more Things To Do Mumbai is a city filled with many experiences. The city never stops to fascinate its travellers. Here are some of the best things to do and fun activities on your trip to Mumbai that will surely keep you engaged: Architectural Tours Heritage Excursions Historical Site Visits Cultural Tour Street Shopping Museum Exploration Street food Vibrant nightlife Temple visits Beach outing Museum visits Local cuisine"
         },
         {
           "change_type": "deletion",
@@ -3035,18 +3276,14 @@
         },
         {
           "change_type": "equal",
-          "text": " Best time to visit The best time to visit Mumbai is from November to February when the weather is cool and pleasant. View More Most commonly spoken languages Mumbai's official language is Marathi. Other languages spoken in this region are Hindi, English, and Gujarati. View More Shopping Mumbai offers an indulging shopping scene with markets catering to every need. Here are some famous shopping destinations: Colaba Causeway: Colaba Causeway is a throbbing shopping street in South Mumbai, known for its bustling atmosphere and various goods. Here, you can find everything from clothes, accessories, and jewellery to handicrafts, home decor items, and souvenirs. It's a great place to shop for local and street fashion, with many shops offering unique and affordable items. Crawford Market: Crawford Market, officially known as Mahatma Jyotiba Phule Market, is a bustling market in South Mumbai that offers a wide range of goods. It's an excellent place for local shopping, especially for fresh fruits, vegetables, spices, and household items. The market is also known for its high-spirited atmosphere and architecture, blending Gothic and Romanesque styles. It is also a hub for pets, birds, and flowers, making it a unique shopping experience. Fashion Street: Fashion Street is a bustling street market known for its affordable fashion items. It is a favourite among college students and budget shoppers looking for trendy clothing at bargain prices. The market offers various items, including western wear, ethnic wear, shoes, bags, and accessories. Linking Road: Linking Road in Bandra is a top destination for street shopping. The place has shops and stalls offering various clothing, footwear, bags, and accessories. It is especially famous for its affordable prices and the latest fashion trends. View More Festivals With a seamless mix of different cultures, Mumbai celebrates various festivals with great enthusiasm and zeal. Some of the major festivals celebrated in Mumbai include: Ganesh Chaturthi Ganesh Chaturthi is one of Mumbai's most significant and widely celebrated festivals. The city comes alive with colourful decorations, elaborate pandals (temporary structures), and huge processions carrying Ganesha idols. The festival lasts 10 days and culminates in the immersion of idols in the water amidst joyous chants and music. Navratri Navratri is celebrated with immense joy and enthusiasm in Mumbai. The festival spans nine nights of vibrant dance performances, Garba and Dandiya Raas, where people dress in traditional attire and dance to rhythmic music. Many locals and societies organise Navratri events, attracting people of all ages to participate in the festivities. Christmas Christmas in Mumbai is a lively and festive affair, celebrated with great enthusiasm by the city's locals. Many areas, especially in South Mumbai, are lit with fairy lights and Christmas trees, creating a magical atmosphere. One of the highlights of Christmas in Mumbai is the Mount Mary Church in Bandra, which attracts thousands of devotees for prayers and blessings. Janmashtami The festival marking the birth of Lord Krishna is celebrated with great enthusiasm in Mumbai. The city is adorned with decorations, and temples are beautifully decorated. Dahi Handi is a popular event where groups form human pyramids to break a pot filled with curd hung at a height. The streets are filled with joyous celebrations, and temples like ISKCON witness a massive influx of devotees. Gudi Padwa The Marathi New Year is enthusiastically celebrated in Mumbai. Homes are cleaned and decorated with rangoli, flowers, and mango leaves. People dress traditionally and perform rituals like raising the Gudi (a decorated pole) outside their homes. Maharashtrian delicacies like Puran Poli and Shrikhand are prepared and shared. Cultural programs, processions, and community gatherings are organised. The festival signifies new beginnings and is a time for family reunions and bonding. More reasons to visit There are several reasons why Mumbai can be your ideal next travel destination. Here are some more of them: Victoria Terminus: Chhatrapati Shivaji Terminus (CST), formerly known as Victoria Terminus, is a historic railway station in Mumbai. Built in 1878, it is renowned for its stunning Victorian Gothic architecture, blending traditional Indian and Victorian styles. The station is a significant hub for long-distance and suburban trains, including the iconic Mumbai local trains. CST was designated a UNESCO World Heritage Site in 2004, recognising its historical and architectural significance. Sanjay Gandhi National Park: Sanjay Gandhi National Park, once known as Borivali National Park, is renowned for its rich biodiversity, including rare flora like the Karvi plant, teak, shisham, and flame of the woods trees. The park is also home to various wildlife, such as deer, hyenas, leopards, monkeys, and a diverse range of bird species, making it a haven for nature lovers and wildlife enthusiasts. Additionally, the park features the ancient Kanheri Caves, which offer a glimpse into the region's rich history and cultural heritage. Siddhivinayak Temple: Siddhivinayak Temple is a temple dedicated to Lord Ganesha. The temple is known for its beautiful architecture and spiritual significance. The idol of Lord Ganesha is carved out of a single black stone and is believed to be self-manifested (Swayambhu). View More Related travel blogs Want to explore the true Maharashtrian culture? Visit Kolhapur and witness amazing cultural festivals Here\u2019s why you should visit Shirdi during the festive season Want to explo Discover Aurangabad: Here\u2019s are the seven reasons why Aurangabad should be your next travel destination re the true Maharashtrian culture? Visit Kolhapur and witness amazing cultural festivals Why Mumbai should be your go-to destination to bring in the New Year Share Feedback"
+          "text": " Best time to visit The best time to visit Mumbai is from November to February when the weather is cool and pleasant. View More Most commonly spoken languages Mumbai's official language is Marathi. Other languages spoken in this region are Hindi, English, and Gujarati. View More Shopping Mumbai offers an indulging shopping scene with markets catering to every need. Here are some famous shopping destinations: Colaba Causeway: Colaba Causeway is a throbbing shopping street in South Mumbai, known for its bustling atmosphere and various goods. Here, you can find everything from clothes, accessories, and jewellery to handicrafts, home decor items, and souvenirs. It's a great place to shop for local and street fashion, with many shops offering unique and affordable items. Crawford Market: Crawford Market, officially known as Mahatma Jyotiba Phule Market, is a bustling market in South Mumbai that offers a wide range of goods. It's an excellent place for local shopping, especially for fresh fruits, vegetables, spices, and household items. The market is also known for its high-spirited atmosphere and architecture, blending Gothic and Romanesque styles. It is also a hub for pets, birds, and flowers, making it a unique shopping experience. Fashion Street: Fashion Street is a bustling street market known for its affordable fashion items. It is a favourite among college students and budget shoppers looking for trendy clothing at bargain prices. The market offers various items, including western wear, ethnic wear, shoes, bags, and accessories. Linking Road: Linking Road in Bandra is a top destination for street shopping. The place has shops and stalls offering various clothing, footwear, bags, and accessories. It is especially famous for its affordable prices and the latest fashion trends. View More Festivals With a seamless mix of different cultures, Mumbai celebrates various festivals with great enthusiasm and zeal. Some of the major festivals celebrated in Mumbai include: Ganesh Chaturthi Ganesh Chaturthi is one of Mumbai's most significant and widely celebrated festivals. The city comes alive with colourful decorations, elaborate pandals (temporary structures), and huge processions carrying Ganesha idols. The festival lasts 10 days and culminates in the immersion of idols in the water amidst joyous chants and music. Navratri Navratri is celebrated with immense joy and enthusiasm in Mumbai. The festival spans nine nights of vibrant dance performances, Garba and Dandiya Raas, where people dress in traditional attire and dance to rhythmic music. Many locals and societies organise Navratri events, attracting people of all ages to participate in the festivities. Christmas Christmas in Mumbai is a lively and festive affair, celebrated with great enthusiasm by the city's locals. Many areas, especially in South Mumbai, are lit with fairy lights and Christmas trees, creating a magical atmosphere. One of the highlights of Christmas in Mumbai is the Mount Mary Church in Bandra, which attracts thousands of devotees for prayers and blessings. Janmashtami The festival marking the birth of Lord Krishna is celebrated with great enthusiasm in Mumbai. The city is adorned with decorations, and temples are beautifully decorated. Dahi Handi is a popular event where groups form human pyramids to break a pot filled with curd hung at a height. The streets are filled with joyous celebrations, and temples like ISKCON witness a massive influx of devotees. Gudi Padwa The Marathi New Year is enthusiastically celebrated in Mumbai. Homes are cleaned and decorated with rangoli, flowers, and mango leaves. People dress traditionally and perform rituals like raising the Gudi (a decorated pole) outside their homes. Maharashtrian delicacies like Puran Poli and Shrikhand are prepared and shared. Cultural programs, processions, and community gatherings are organised. The festival signifies new beginnings and is a time for family reunions and bonding. More reasons to visit There are several reasons why Mumbai can be your ideal next travel destination. Here are some more of them: Victoria Terminus: Chhatrapati Shivaji Terminus (CST), formerly known as Victoria Terminus, is a historic railway station in Mumbai. Built in 1878, it is renowned for its stunning Victorian Gothic architecture, blending traditional Indian and Victorian styles. The station is a significant hub for long-distance and suburban trains, including the iconic Mumbai local trains. CST was designated a UNESCO World Heritage Site in 2004, recognising its historical and architectural significance. Sanjay Gandhi National Park: Sanjay Gandhi National Park, once known as Borivali National Park, is renowned for its rich biodiversity, including rare flora like the Karvi plant, teak, shisham, and flame of the woods trees. The park is also home to various wildlife, such as deer, hyenas, leopards, monkeys, and a diverse range of bird species, making it a haven for nature lovers and wildlife enthusiasts. Additionally, the park features the ancient Kanheri Caves, which offer a glimpse into the region's rich history and cultural heritage. Siddhivinayak Temple: Siddhivinayak Temple is a temple dedicated to Lord Ganesha. The temple is known for its beautiful architecture and spiritual significance. The idol of Lord Ganesha is carved out of a single black stone and is believed to be self-manifested (Swayambhu). View More Related travel blogs Want to explore the true Maharashtrian culture? Visit Kolhapur and witness amazing cultural festivals Here\u2019s why you should visit Shirdi during the festive season Want to explo Discover Aurangabad: Here\u2019s are the seven reasons why Aurangabad should be your next travel destination re the true Maharashtrian culture? Visit Kolhapur and witness amazing cultural festivals Why Mumbai should be your go-to destination to bring in the New Year"
         },
         {
-          "change_type": "insertion",
-          "text": " Add e-mail id to get inspired"
-        },
-        {
-          "change_type": "equal",
-          "text": " Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
+          "change_type": "deletion",
+          "text": " Share Feedback Please enter valid email address. COMPANY About us IndiGo Green \u2013 ESG report 6E Embrace - Diversity Equity & Inclusion IndiGoReach - Our CSR initiatives Board of Directors Leadership Team Investor Relations InterGlobe Enterprises RPWD - Equal Opportunity Policy Transgender Persons Policy HIV/AIDS workplace policy Seat/Aircraft information SUPPORT Plan B Special/Disability Assistance Medical Assistance Seat Select 6E Eats Add-ons & Services Baggage Refund Claim Charter Services Hotels 6Eskai Contact Us IndiGo CarGo Tax exemption FAQ's QUICK LINKS Tariff Sheet Offers Careers Advertise with us Sitemap Destinations Blogs Terms and Conditions Conditions of carriage Privacy Policy Disclaimer International Travel Tips Web check-in advisory Purchase requirement Download app Flight status Codeshare Partners Domestic Flights International Flights Passenger Charter MEDIA Press releases Our awards Testimonials Hello 6E Magazine Awards Best Low Cost Airline-Asia Passenger Choice Awards Best Low Cost Airline-Central Asia SOCIAL MEDIA facebook Twitter Instagram LinkedIn DOWNLOAD APP iOS / Android +917065145858 Connect with us on WhatsApp Site map Privacy Policy Terms & condition Cookie Policy Cyber security Disclaimer @Copyright 2025 IndiGo All rights reserved."
         }
       ],
-      "similarity_score": 0.9653984296211219
+      "similarity_score": 0.9658661823880292
     }
   ]
 }
