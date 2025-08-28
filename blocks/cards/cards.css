@@ -1,4 +1,3 @@
-/* stylelint-disable no-descending-specificity */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -425,23 +424,19 @@
   padding: 32px 0;
   width: 100%;
   overflow-x: auto;
-
-  /* Ensure block is visible */
   display: block;
 }
 
 .cards.cards14 > ul {
   display: flex;
   flex-direction: row;
-  gap: 14px; /* tighter horizontal gap for visual compactness */
+  gap: 14px;
   overflow-x: auto;
   list-style: none;
   margin: 0;
   padding: 0 20px;
   min-height: 1px;
 }
-
-/* Card sizing and styling */
 .cards.cards14 > ul > li {
   display: flex;
   flex-direction: column;
@@ -458,14 +453,10 @@
   transition: box-shadow 0.18s, transform 0.18s;
   padding: 0;
 }
-
-/* Card Hover Effect */
 .cards.cards14 > ul > li:hover {
   box-shadow: 0 8px 32px 0 rgb(34 43 69 / 16%);
   transform: translateY(-2px) scale(1.01);
 }
-
-/* Image wrapper and image: wider aspect ratio, less vertical height */
 .cards.cards14 > ul > li > .cards-card-body:first-child {
   position: relative;
   min-height: 0;
@@ -478,16 +469,12 @@
   justify-content: flex-start;
   background: none;
 }
-
-/* Remove default margin from the p that wraps picture/image */
 .cards.cards14 > ul > li > .cards-card-body:first-child > p {
   margin: 0;
   padding: 0;
   line-height: 0;
   background: none;
 }
-
-/* Show image at top of card */
 .cards.cards14 > ul > li > .cards-card-body:first-child picture,
 .cards.cards14 > ul > li > .cards-card-body:first-child img {
   display: block;
@@ -498,10 +485,8 @@
   border-top-right-radius: 20px;
   margin: 0;
   padding: 0;
-  background: #d8d8d8; /* fallback in case of missing image */
+  background: #d8d8d8;
 }
-
-/* Badge overlays image, hug top/left */
 .cards.cards14 > ul > li > .cards-card-body:first-child p:not(:first-child) {
   position: absolute;
   top: 6px;
@@ -520,8 +505,6 @@
   line-height: 1.2;
   pointer-events: none;
 }
-
-/* Content section: minimal top padding, tight vertical stacking */
 .cards.cards14 > ul > li > .cards-card-body:last-child {
   display: flex;
   flex-direction: column;
@@ -542,8 +525,6 @@
   line-height: 1.32;
   word-break: break-word;
 }
-
-/* Title appearance */
 .cards.cards14 > ul > li > .cards-card-body:last-child p strong {
   color: #222B45;
   font-size: 17px;
@@ -552,30 +533,22 @@
   margin-bottom: 1px;
   margin-top: 0;
 }
-
-/* Strikethrough price subtlety */
 .cards.cards14 > ul > li > .cards-card-body:last-child p del {
   color: #7A869A;
   font-size: 14px;
   font-weight: 500;
   margin-right: 5px;
 }
-
-/* Taxes/fees and secondary info style */
 .cards.cards14 > ul > li > .cards-card-body:last-child p:not(:first-child) {
   color: #7A869A;
   font-size: 13px;
   margin: 0;
   font-weight: 400;
 }
-
-/* Remove default <br> spacing */
 .cards.cards14 > ul > li > .cards-card-body:last-child p br {
   line-height: 0;
   margin: 0;
 }
-
-/* Book Button: right-aligned, pill, consistent margin, tighter spacing */
 .cards.cards14 > ul > li > .cards-card-body:last-child p strong:last-child {
   display: inline-block;
   background: #0143E7;
@@ -593,8 +566,6 @@
   letter-spacing: 0.025em;
   min-width: 90px;
 }
-
-/* Responsive: stack cards more compactly, adjust card/image height/width */
 @media (width <= 800px) {
   .cards.cards14 > ul {
     padding-left: 4px;
@@ -616,4 +587,146 @@
     min-height: 76px;
     max-height: 76px;
   }
+}
+
+
+.cards.cards15 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #bbb #f8f8f8;
+  align-items: flex-start;
+}
+
+/* Refined card width/height for closer aspect ratio match */
+.cards.cards15 > ul > li {
+  flex: 0 0 228px;
+  width: 228px;
+  min-width: 228px;
+  max-width: 228px;
+  height: 246px;
+  border-radius: 20px;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.13);
+  background: #d4d4d4;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+
+.cards.cards15 > ul > li:hover {
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Card image overlay, maintain vibrancy */
+.cards.cards15 > ul > li > .cards-card-body:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(34,34,34,0.12);
+  background-blend-mode: darken;
+}
+
+/* Example backgrounds for first 5 cards */
+.cards.cards15 > ul > li:nth-child(1) > .cards-card-body:first-child {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80');
+}
+.cards.cards15 > ul > li:nth-child(2) > .cards-card-body:first-child {
+  background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80');
+}
+.cards.cards15 > ul > li:nth-child(3) > .cards-card-body:first-child {
+  background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80');
+}
+.cards.cards15 > ul > li:nth-child(4) > .cards-card-body:first-child {
+  background-image: url('https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=400&q=80');
+}
+.cards.cards15 > ul > li:nth-child(5) > .cards-card-body:first-child {
+  background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80');
+}
+
+/* Text layer at the bottom */
+.cards.cards15 > ul > li > .cards-card-body:last-child {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  pointer-events: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cards.cards15 > ul > li > .cards-card-body:last-child p,
+.cards.cards15 > ul > li > .cards-card-body:last-child strong {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  word-break: break-word;
+}
+
+/* Remove .cards-card-body margin/padding */
+.cards.cards15 .cards-card-body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .cards.cards15 > ul {
+    gap: 4px;
+  }
+  .cards.cards15 > ul > li {
+    flex-basis: 120px;
+    width: 120px;
+    min-width: 100px;
+    max-width: 120px;
+    height: 140px;
+    border-radius: 11px;
+  }
+  .cards.cards15 > ul > li > .cards-card-body:last-child {
+    padding-bottom: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+.cards.cards15 > ul::-webkit-scrollbar {
+  height: 8px;
+}
+.cards.cards15 > ul::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 4px;
+}
+.cards.cards15 > ul::-webkit-scrollbar-track {
+  background: #f8f8f8;
+  border-radius: 4px;
 }
