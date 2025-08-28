@@ -42,13 +42,13 @@
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
           "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-31-e7b29dc29e3d3f65da6219c3896d33ba47325cc2",
+          "uuid": "5cb71fd6-32-e7b29dc29e3d3f65da6219c3896d33ba47325cc2",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]"
         },
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
           "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-29-46d1269ddbfb0926c33649de5c6a21ea1edc6d4a",
+          "uuid": "addaec9a-30-46d1269ddbfb0926c33649de5c6a21ea1edc6d4a",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[1]"
         },
         {
@@ -71,71 +71,53 @@
   ],
   "blocks": [
     {
-      "name": "Columns",
+      "name": "Table",
       "cluster": 1,
-      "source": "Columns",
-      "target": "Columns (columns1)",
-      "key": "columns1",
+      "source": "Table",
+      "target": "Table (table1)",
+      "key": "table1",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
           "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-04-66a8914591701e592eda646e0b21e68d03aeffc6",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "uuid": "5cb71fd6-08-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
           "section": "section-1"
         },
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
           "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-04-66a8914591701e592eda646e0b21e68d03aeffc6",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "uuid": "addaec9a-08-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
           "section": "section-1"
         },
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
           "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
-          "uuid": "ffb2a411-02-66a8914591701e592eda646e0b21e68d03aeffc6",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "uuid": "ffb2a411-05-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
           "section": "section-1"
         }
       ]
     },
     {
-      "name": "unknown",
+      "name": "Columns",
       "cluster": 2,
+      "source": "Columns",
+      "target": "Columns (columns2)",
+      "key": "columns2",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
           "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-02-94a941038f704458dcf1b67880ca61e8608360fa",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[2]"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
-          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-02-94a941038f704458dcf1b67880ca61e8608360fa",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[2]"
-        }
-      ]
-    },
-    {
-      "name": "Table (no header)",
-      "cluster": 3,
-      "source": "Table (no header)",
-      "target": "Table (no header, tableNoHeader3)",
-      "key": "tableNoHeader3",
-      "instances": [
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
-          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-05-4346d22cbeab7d3d8fe878f3862d3dfb7c6a0d8c",
+          "uuid": "5cb71fd6-06-4346d22cbeab7d3d8fe878f3862d3dfb7c6a0d8c",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
           "section": "section-1"
         },
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
           "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-05-4346d22cbeab7d3d8fe878f3862d3dfb7c6a0d8c",
+          "uuid": "addaec9a-06-4346d22cbeab7d3d8fe878f3862d3dfb7c6a0d8c",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
           "section": "section-1"
         },
@@ -149,90 +131,22 @@
       ]
     },
     {
-      "name": "Table",
-      "cluster": 4,
-      "source": "Table",
-      "target": "Table (table4)",
-      "key": "table4",
+      "name": "Cards",
+      "cluster": 3,
+      "source": "Cards",
+      "target": "Cards (cards3)",
+      "key": "cards3",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
           "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-07-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
-          "section": "section-1"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
-          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-07-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
-          "section": "section-1"
-        }
-      ]
-    },
-    {
-      "name": "Cards",
-      "cluster": 5,
-      "source": "Cards",
-      "target": "Cards (cards5)",
-      "key": "cards5",
-      "instances": [
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
-          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-19-7ae5c8018322de190166848419cfdad0e934ca7a",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[5]"
-        }
-      ]
-    },
-    {
-      "name": "Cards",
-      "cluster": 6,
-      "source": "Cards",
-      "target": "Cards (cards6)",
-      "key": "cards6",
-      "instances": [
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
-          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-06-bd32759b5e37b20cf30189249f694c499f75646e",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
-          "section": "section-1"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
-          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-06-bd32759b5e37b20cf30189249f694c499f75646e",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
-          "section": "section-1"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
-          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
-          "uuid": "ffb2a411-04-bd32759b5e37b20cf30189249f694c499f75646e",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
-          "section": "section-1"
-        }
-      ]
-    },
-    {
-      "name": "Cards",
-      "cluster": 7,
-      "source": "Cards",
-      "target": "Cards (cards7)",
-      "key": "cards7",
-      "instances": [
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
-          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-31-e7b29dc29e3d3f65da6219c3896d33ba47325cc2",
+          "uuid": "5cb71fd6-32-e7b29dc29e3d3f65da6219c3896d33ba47325cc2",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]"
         },
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
           "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-29-46d1269ddbfb0926c33649de5c6a21ea1edc6d4a",
+          "uuid": "addaec9a-30-46d1269ddbfb0926c33649de5c6a21ea1edc6d4a",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[1]"
         },
         {
@@ -252,6 +166,81 @@
       ]
     },
     {
+      "name": "Hero",
+      "cluster": 4,
+      "source": "Hero",
+      "target": "Hero (hero4)",
+      "key": "hero4",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-04-c1d42eb5c3c97c8a5b00ba293b3f56bde7bc1395",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 5,
+      "source": "Cards",
+      "target": "Cards (cards5)",
+      "key": "cards5",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-20-7ae5c8018322de190166848419cfdad0e934ca7a",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[5]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 6,
+      "source": "Columns",
+      "target": "Columns (columns6)",
+      "key": "columns6",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-05-66a8914591701e592eda646e0b21e68d03aeffc6",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-05-66a8914591701e592eda646e0b21e68d03aeffc6",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-02-66a8914591701e592eda646e0b21e68d03aeffc6",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 7,
+      "source": "Cards",
+      "target": "Cards (cards7)",
+      "key": "cards7",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-28-80aad53c169962f723791094d5773818e4fdeccc",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[9]"
+        }
+      ]
+    },
+    {
       "name": "Cards",
       "cluster": 8,
       "source": "Cards",
@@ -259,10 +248,10 @@
       "key": "cards8",
       "instances": [
         {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
-          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-17-ba21365e1a7d8bea45d5b9516f0a93d2750a3e5b",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]"
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-20-7ae5c8018322de190166848419cfdad0e934ca7a",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[5]"
         }
       ]
     },
@@ -276,8 +265,8 @@
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
           "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-19-7ae5c8018322de190166848419cfdad0e934ca7a",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[5]"
+          "uuid": "5cb71fd6-18-ba21365e1a7d8bea45d5b9516f0a93d2750a3e5b",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]"
         }
       ]
     },
@@ -289,9 +278,9 @@
       "key": "cards10",
       "instances": [
         {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
-          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-17-ba21365e1a7d8bea45d5b9516f0a93d2750a3e5b",
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-18-ba21365e1a7d8bea45d5b9516f0a93d2750a3e5b",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]"
         }
       ]
@@ -306,18 +295,18 @@
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
           "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-13-7ce210e779277ab3ecc2d686304baa4feb56c8e1",
+          "uuid": "addaec9a-14-7ce210e779277ab3ecc2d686304baa4feb56c8e1",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]",
           "section": "section-2"
         }
       ]
     },
     {
-      "name": "Tabs",
+      "name": "Carousel",
       "cluster": 12,
-      "source": "Tabs",
-      "target": "Tabs (tabs12)",
-      "key": "tabs12",
+      "source": "Carousel",
+      "target": "Carousel (carousel12)",
+      "key": "carousel12",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
@@ -329,41 +318,41 @@
       ]
     },
     {
-      "name": "header",
+      "name": "Table",
       "cluster": 13,
-      "source": "Header",
-      "target": "Header (header13)",
-      "key": "header13",
+      "source": "Table",
+      "target": "Table (table13)",
+      "key": "table13",
       "instances": [
         {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
-          "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
-          "uuid": "d8babc7d-00-1043e21f51a00adb8d6584df49c47388be0401a9",
-          "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[1]"
-        }
-      ]
-    },
-    {
-      "name": "Carousel",
-      "cluster": 14,
-      "source": "Carousel",
-      "target": "Carousel (carousel14)",
-      "key": "carousel14",
-      "instances": [
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-07-bd32759b5e37b20cf30189249f694c499f75646e",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
           "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-03-4ddda9f674db34ab5cdaf3b62a80ecd241d3c39e",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]"
+          "uuid": "addaec9a-07-bd32759b5e37b20cf30189249f694c499f75646e",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-04-bd32759b5e37b20cf30189249f694c499f75646e",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
         }
       ]
     },
     {
       "name": "Cards",
-      "cluster": 15,
+      "cluster": 14,
       "source": "Cards",
-      "target": "Cards (cards15)",
-      "key": "cards15",
+      "target": "Cards (cards14)",
+      "key": "cards14",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
@@ -375,26 +364,26 @@
       ]
     },
     {
-      "name": "Cards",
-      "cluster": 16,
-      "source": "Cards",
-      "target": "Cards (cards16)",
-      "key": "cards16",
+      "name": "header",
+      "cluster": 15,
+      "source": "Header",
+      "target": "Header (header15)",
+      "key": "header15",
       "instances": [
         {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
-          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-27-80aad53c169962f723791094d5773818e4fdeccc",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[9]"
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
+          "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
+          "uuid": "d8babc7d-00-1043e21f51a00adb8d6584df49c47388be0401a9",
+          "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[1]"
         }
       ]
     },
     {
       "name": "header",
-      "cluster": 17,
+      "cluster": 16,
       "source": "Header",
-      "target": "Header (header17)",
-      "key": "header17",
+      "target": "Header (header16)",
+      "key": "header16",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
@@ -406,16 +395,32 @@
     },
     {
       "name": "Carousel",
-      "cluster": 18,
+      "cluster": 17,
       "source": "Carousel",
-      "target": "Carousel (carousel18)",
-      "key": "carousel18",
+      "target": "Carousel (carousel17)",
+      "key": "carousel17",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
           "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
           "uuid": "ffb2a411-09-247eac70c2fe15cee497852045bf2a7093b0b3b6",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 18,
+      "source": "Columns",
+      "target": "Columns (columns18)",
+      "key": "columns18",
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
+          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
+          "uuid": "ffb2a411-08-a80647bd078c625e1ee398c69d21c044ad73f160",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[2]/div[1]",
+          "section": "section-4"
         }
       ]
     },
@@ -429,56 +434,24 @@
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
           "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-13-7ce210e779277ab3ecc2d686304baa4feb56c8e1",
+          "uuid": "5cb71fd6-14-7ce210e779277ab3ecc2d686304baa4feb56c8e1",
           "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]",
           "section": "section-2"
         }
       ]
     },
     {
-      "name": "Cards",
-      "cluster": 20,
-      "source": "Cards",
-      "target": "Cards (cards20)",
-      "key": "cards20",
-      "instances": [
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
-          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
-          "uuid": "ffb2a411-08-a80647bd078c625e1ee398c69d21c044ad73f160",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/section[1]/div[2]/div[1]",
-          "section": "section-4"
-        }
-      ]
-    },
-    {
       "name": "Carousel",
-      "cluster": 21,
+      "cluster": 20,
       "source": "Carousel",
-      "target": "Carousel (carousel21)",
-      "key": "carousel21",
+      "target": "Carousel (carousel20)",
+      "key": "carousel20",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
           "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-03-4ddda9f674db34ab5cdaf3b62a80ecd241d3c39e",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]"
-        }
-      ]
-    },
-    {
-      "name": "Table",
-      "cluster": 22,
-      "source": "Table",
-      "target": "Table (table22)",
-      "key": "table22",
-      "instances": [
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
-          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
-          "uuid": "ffb2a411-05-d49850bc43fb7dc35f6c9cd760314f52c4d7e48b",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
-          "section": "section-1"
+          "uuid": "5cb71fd6-04-c1d42eb5c3c97c8a5b00ba293b3f56bde7bc1395",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[2]"
         }
       ]
     }
@@ -499,116 +472,128 @@
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-08-34c33152fa064c0d1c7a2d93175ecafc1a587f21",
+      "uuid": "5cb71fd6-02-70cd7a05793dd9a244ea2f002201248d1911ab0c",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-03-f577863a927476a64538186c05ec32c6723fc4b4",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[3]/div[2]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+      "uuid": "5cb71fd6-09-34c33152fa064c0d1c7a2d93175ecafc1a587f21",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-09-247eac70c2fe15cee497852045bf2a7093b0b3b6",
+      "uuid": "5cb71fd6-10-247eac70c2fe15cee497852045bf2a7093b0b3b6",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]",
       "section": "section-1"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-10-50a752eae62d95b49c324a18ca66eae86e168b42",
+      "uuid": "5cb71fd6-11-50a752eae62d95b49c324a18ca66eae86e168b42",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[2]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-11-0e5e57595dd4bfae65fdf9a72e8b17ecd26fc487",
+      "uuid": "5cb71fd6-12-0e5e57595dd4bfae65fdf9a72e8b17ecd26fc487",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-12-65cda75fa33f01b6093c0988881f0f7c24a38963",
+      "uuid": "5cb71fd6-13-65cda75fa33f01b6093c0988881f0f7c24a38963",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[4]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-14-1771008bd5a043bf6c1e32905e7631cdb3b9044c",
+      "uuid": "5cb71fd6-15-1771008bd5a043bf6c1e32905e7631cdb3b9044c",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-15-7404eceacdb211cc41be5ba8e0f21fb8e6c3c591",
+      "uuid": "5cb71fd6-16-7404eceacdb211cc41be5ba8e0f21fb8e6c3c591",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-16-9eea6b2ca5853d85c2cee2e47cc8f05dd1501691",
+      "uuid": "5cb71fd6-17-9eea6b2ca5853d85c2cee2e47cc8f05dd1501691",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-18-f1d72434ac7dc0152fa72637af7d582806085a93",
+      "uuid": "5cb71fd6-19-f1d72434ac7dc0152fa72637af7d582806085a93",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[4]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-20-9238d7907341e60c5a9871510b83ffcd29d333d3",
+      "uuid": "5cb71fd6-21-9238d7907341e60c5a9871510b83ffcd29d333d3",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[6]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-21-40098005ae6c5c75fe3ffcd7e42b2dea9cbc55b7",
+      "uuid": "5cb71fd6-22-40098005ae6c5c75fe3ffcd7e42b2dea9cbc55b7",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-22-67d8cbf3d9b55d11570f16c2379d3d528ac945bc",
+      "uuid": "5cb71fd6-23-67d8cbf3d9b55d11570f16c2379d3d528ac945bc",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[4]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-23-cf967c644f8a1170dd12b54002c9ef0236ef9c62",
+      "uuid": "5cb71fd6-24-cf967c644f8a1170dd12b54002c9ef0236ef9c62",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[5]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-24-d0b0f9a40a305d4c6ccda1596e50ea89a2ff9ec3",
+      "uuid": "5cb71fd6-25-d0b0f9a40a305d4c6ccda1596e50ea89a2ff9ec3",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[6]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-25-265113f81edaf297bcea90bfcecb033fee11533c",
+      "uuid": "5cb71fd6-26-265113f81edaf297bcea90bfcecb033fee11533c",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[7]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-26-c1af56173eeac31befd69958f3d01a32cfd261ee",
+      "uuid": "5cb71fd6-27-c1af56173eeac31befd69958f3d01a32cfd261ee",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[8]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-28-feeb781a7bb8d195139401c7f94412af382d4c2c",
+      "uuid": "5cb71fd6-29-feeb781a7bb8d195139401c7f94412af382d4c2c",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[10]/div[1]/div[1]/div[1]/span[1]/ul[3]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-29-0b497486ec212937b2302d4136a345c8c74edfa4",
+      "uuid": "5cb71fd6-30-0b497486ec212937b2302d4136a345c8c74edfa4",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[11]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-30-82eb2484df49a9db163b9e0e3ac0d6c2d2a81c33",
+      "uuid": "5cb71fd6-31-82eb2484df49a9db163b9e0e3ac0d6c2d2a81c33",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[2]/section[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]",
       "section": "section-1"
     },
@@ -627,111 +612,123 @@
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-08-34c33152fa064c0d1c7a2d93175ecafc1a587f21",
+      "uuid": "addaec9a-02-70cd7a05793dd9a244ea2f002201248d1911ab0c",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-03-f577863a927476a64538186c05ec32c6723fc4b4",
+      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[3]/div[2]"
+    },
+    {
+      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+      "uuid": "addaec9a-09-34c33152fa064c0d1c7a2d93175ecafc1a587f21",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-09-247eac70c2fe15cee497852045bf2a7093b0b3b6",
+      "uuid": "addaec9a-10-247eac70c2fe15cee497852045bf2a7093b0b3b6",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]",
       "section": "section-1"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-10-50a752eae62d95b49c324a18ca66eae86e168b42",
+      "uuid": "addaec9a-11-50a752eae62d95b49c324a18ca66eae86e168b42",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[2]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-11-0e5e57595dd4bfae65fdf9a72e8b17ecd26fc487",
+      "uuid": "addaec9a-12-0e5e57595dd4bfae65fdf9a72e8b17ecd26fc487",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-12-65cda75fa33f01b6093c0988881f0f7c24a38963",
+      "uuid": "addaec9a-13-65cda75fa33f01b6093c0988881f0f7c24a38963",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[4]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-14-1771008bd5a043bf6c1e32905e7631cdb3b9044c",
+      "uuid": "addaec9a-15-1771008bd5a043bf6c1e32905e7631cdb3b9044c",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-15-7404eceacdb211cc41be5ba8e0f21fb8e6c3c591",
+      "uuid": "addaec9a-16-7404eceacdb211cc41be5ba8e0f21fb8e6c3c591",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-16-9eea6b2ca5853d85c2cee2e47cc8f05dd1501691",
+      "uuid": "addaec9a-17-9eea6b2ca5853d85c2cee2e47cc8f05dd1501691",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-18-f1d72434ac7dc0152fa72637af7d582806085a93",
+      "uuid": "addaec9a-19-f1d72434ac7dc0152fa72637af7d582806085a93",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[4]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-20-9238d7907341e60c5a9871510b83ffcd29d333d3",
+      "uuid": "addaec9a-21-9238d7907341e60c5a9871510b83ffcd29d333d3",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[6]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-21-c809740312df90d275cf72110678ff8b9679aea4",
+      "uuid": "addaec9a-22-c809740312df90d275cf72110678ff8b9679aea4",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[7]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-22-32104e1e4b5b8343cc5a9451afa95e2348d26622",
+      "uuid": "addaec9a-23-32104e1e4b5b8343cc5a9451afa95e2348d26622",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[8]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-23-8ec294a9f21f5f97d4586216fa5300e250193b90",
+      "uuid": "addaec9a-24-8ec294a9f21f5f97d4586216fa5300e250193b90",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[8]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[4]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-24-80aad53c169962f723791094d5773818e4fdeccc",
+      "uuid": "addaec9a-25-80aad53c169962f723791094d5773818e4fdeccc",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[9]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-25-6578284f6883b424b191d75a064ecdd15198cf53",
+      "uuid": "addaec9a-26-6578284f6883b424b191d75a064ecdd15198cf53",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[11]/div[1]/div[1]/div[1]/span[1]/ul[1]/li[3]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-26-4b6e06ade568aaa6607d8f3049690d27ede926c8",
+      "uuid": "addaec9a-27-4b6e06ade568aaa6607d8f3049690d27ede926c8",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[12]"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-27-82eb2484df49a9db163b9e0e3ac0d6c2d2a81c33",
+      "uuid": "addaec9a-28-82eb2484df49a9db163b9e0e3ac0d6c2d2a81c33",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[2]/section[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]",
       "section": "section-1"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-28-9e4764f32275fc5cc842799790931fa6b4aef2d0",
+      "uuid": "addaec9a-29-9e4764f32275fc5cc842799790931fa6b4aef2d0",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[10]/section[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]",
       "section": "section-1"
     },
