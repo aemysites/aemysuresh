@@ -1384,6 +1384,7 @@
 .cards.cards11 > ul > li:nth-child(4) {
   grid-row: 2;
 }
+
 .cards.cards11 > ul > li:nth-child(5) {
   grid-column: 3;
   grid-row: 2;
@@ -1696,12 +1697,11 @@
   position: relative;
 }
 
-/* Three-column, two-row grid: 1 big card on left, 4 cards in a 2x2 grid on the right */
 .cards.cards19 > ul {
   display: grid;
   grid-template-columns: 1.17fr 1fr;
   grid-template-rows: repeat(2, 1fr);
-  gap: 32px 18px; /* vertical first for tighter side-by-side, then horizontal gap */
+  gap: 32px 18px;
   width: 98%;
   max-width: 1120px;
   margin: 0 auto;
@@ -1710,7 +1710,6 @@
   align-items: start;
 }
 
-/* Feature card: left column, bigger, spans both rows */
 .cards.cards19 > ul > li:first-child {
   grid-column: 1 / 2;
   grid-row: 1 / span 2;
@@ -1723,7 +1722,6 @@
   justify-content: flex-start;
 }
 
-/* Arrange right-column cards in a 2x2 grid */
 .cards.cards19 > ul > li:nth-child(2) {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -1752,12 +1750,10 @@
   margin-left: 8px;
 }
 
-/* Hide cards beyond the first five */
 .cards.cards19 > ul > li:nth-child(n+6) {
   display: none;
 }
 
-/* Card base styles */
 .cards.cards19 > ul > li {
   background: #fff;
   border-radius: 16px;
@@ -1772,7 +1768,6 @@
   min-height: 160px;
 }
 
-/* Right grid cards: smaller for compact look */
 .cards.cards19 > ul > li:nth-child(2),
 .cards.cards19 > ul > li:nth-child(3),
 .cards.cards19 > ul > li:nth-child(4),
@@ -1783,7 +1778,6 @@
   flex: 1 1 0;
 }
 
-/* Card image area */
 .cards.cards19 > ul > li .cards-card-body:first-child {
   width: 100%;
   height: 180px;
@@ -1803,7 +1797,6 @@
   border-radius: 20px 20px 0 0;
 }
 
-/* Card text area */
 .cards.cards19 > ul > li .cards-card-body:not(:first-child) {
   background: #fff;
   padding: 18px 15px 14px;
@@ -1821,7 +1814,6 @@
   border-radius: 0 0 20px 20px;
 }
 
-/* Card Title */
 .cards.cards19 > ul > li .cards-card-body:not(:first-child) h2,
 .cards.cards19 > ul > li .cards-card-body:not(:first-child) h3 {
   font-size: 20px;
@@ -1833,7 +1825,6 @@
   line-height: 1.22;
 }
 
-/* Card Description */
 .cards.cards19 > ul > li .cards-card-body:not(:first-child) p {
   font-size: 16px;
   font-family: Poppins, var(--body-font-family), sans-serif;
@@ -1842,7 +1833,6 @@
   line-height: 1.5;
 }
 
-/* Card Highlight (exploration time) */
 .cards.cards19 > ul > li .cards-card-body:not(:first-child) p:last-child {
   font-size: 14px;
   color: #ffd672;
@@ -1852,12 +1842,10 @@
   margin-bottom: 0;
 }
 
-/* Card hover effect */
 .cards.cards19 > ul > li:hover {
   box-shadow: 0 8px 28px rgb(0 22 119 / 15%);
 }
 
-/* Responsive: stack cards vertically on small screens, keep feature card bigger */
 @media (width <= 900px) {
   .cards.cards19 {
     padding: 16px 0 14px;
@@ -1898,5 +1886,128 @@
   .cards.cards19 > ul > li:first-child .cards-card-body:not(:first-child) {
     padding: 18px 12px 10px;
     border-radius: 0 0 12px 12px;
+  }
+}
+
+
+.cards.cards3 {
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 12px 32px 0 rgb(2 12 170 / 8%);
+  max-width: 950px;
+  margin: 32px auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 0;
+}
+
+.cards.cards3 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main side-by-side columns layout */
+.cards.cards3 > ul > li {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  justify-content: stretch;
+  box-sizing: border-box;
+  padding: 36px 40px;
+}
+
+/* Left column: Large blue card */
+.cards.cards3 > ul > li > .cards-card-body:first-child {
+  background: #020CAA;
+  border-radius: 20px;
+  width: 42%;
+  min-width: 220px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 170px;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Right column: Visually emulate the 2x2 grid with background and cell look even if empty */
+.cards.cards3 > ul > li > .cards-card-body:last-child {
+  width: 58%;
+  min-width: 260px;
+  aspect-ratio: 2/1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 0;
+  place-items: stretch stretch;
+  min-height: 170px;
+  position: relative;
+}
+
+/* If there are children, they appear as grid cells styled as cards */
+.cards.cards3 > ul > li > .cards-card-body:last-child > * {
+  background: #fff;
+  border: 1px solid #e6f0ff;
+  border-radius: 14px;
+  min-height: 58px;
+  padding: 20px 16px;
+  box-shadow: 0 1px 4px 0 rgb(2 12 170 / 4%);
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Responsive adjustments */
+@media (width <= 900px) {
+  .cards.cards3 {
+    border-radius: 20px;
+    max-width: 98vw;
+    min-height: 0;
+    margin: 16px auto;
+    padding: 0;
+  }
+
+  .cards.cards3 > ul > li {
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px 8px;
+  }
+
+  .cards.cards3 > ul > li > .cards-card-body:first-child,
+  .cards.cards3 > ul > li > .cards-card-body:last-child {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    border-radius: 16px;
+    min-height: 120px;
+  }
+
+  .cards.cards3 > ul > li > .cards-card-body:last-child {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px;
+    aspect-ratio: auto;
+  }
+
+  .cards.cards3 > ul > li > .cards-card-body:last-child > * {
+    border-radius: 12px;
+    padding: 12px 9px;
+    min-height: 44px;
   }
 }
