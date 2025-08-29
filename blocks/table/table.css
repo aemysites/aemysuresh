@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .table.block {
   width: 100%;
   overflow-x: auto;
@@ -50,18 +51,99 @@
   margin-top: 0.25em;
 }
 
-/* no header variant */
 .table.block.no-header table tbody tr {
   border-top: 1px solid;
 }
 
-/* striped variant */
 .table.block.striped tbody tr:nth-child(odd) {
   background-color: var(--overlay-background-color);
 }
 
-/* bordered variant */
 .table.block.bordered table th,
 .table.block.bordered table td {
   border: 1px solid;
+}
+
+
+.table.table1 {
+  width: 100%;
+  background: transparent;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+/* Center the table horizontally and limit its max width for balance */
+.table.table1 table {
+  border-collapse: separate;
+  border-spacing: 24px 0; /* moderate gap between cards */
+  table-layout: fixed;
+  background: transparent;
+  margin: 0 auto;
+  max-width: 880px;
+  width: auto;
+}
+
+/* Make sure <thead> uses default table layout */
+.table.table1 thead {
+  display: table-header-group;
+  width: 100%;
+}
+
+.table.table1 thead tr {
+  height: 54px;
+  background: transparent;
+}
+
+/* Card styling for each <th> */
+.table.table1 th {
+  background: linear-gradient(90deg, #ececec 0%, #f3f5f6 100%);
+  border-radius: 14px;
+  border: none;
+  box-shadow: none;
+  height: 40px;
+  min-width: 160px;
+  max-width: 260px;
+  width: 240px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+/* Remove cell borders */
+.table.table1 th,
+.table.table1 td,
+.table.table1 tr {
+  border: none;
+  box-shadow: none;
+}
+
+/* Hide empty tbody for visual accuracy */
+.table.table1 tbody,
+.table.table1 td {
+  display: none;
+}
+
+/* Responsive: Stack cards vertically, shrink gaps */
+@media (width <= 900px) {
+  .table.table1 table {
+    max-width: 100%;
+    border-spacing: 0 16px;
+  }
+
+  .table.table1 th {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    font-size: var(--body-font-size-xs);
+    border-radius: 12px;
+  }
+
+  .table.table1 thead tr {
+    height: auto;
+  }
 }
