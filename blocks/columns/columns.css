@@ -461,9 +461,9 @@
   border: 1.5px solid #e6f0fe;
   background-color: #f4f7fd;
   background-image:
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0 0 / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0 100% / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 0 / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0% 0% / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0% 100% / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 0% / calc(50% - 18px) calc(50% - 12px),
     linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 100% / calc(50% - 18px) calc(50% - 12px),
     linear-gradient(to right, transparent 0%, transparent 24px, #e6f0fe 24px, #e6f0fe calc(100% - 24px), transparent calc(100% - 24px), transparent 100%) center / 100% 2px,
     linear-gradient(to bottom, transparent 0%, transparent 28px, #e6f0fe 28px, #e6f0fe calc(100% - 28px), transparent calc(100% - 28px), transparent 100%) center / 2px 100%;
@@ -533,174 +533,6 @@
         transparent 100%
       ) 0 0 / 100% 100%;
     background-repeat: no-repeat;
-  }
-}
-
-
-.columns.columns18 {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 24px 0;
-  background: none;
-}
-
-.columns.columns18 > div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.18fr;
-  grid-template-rows: minmax(160px, auto) minmax(220px, auto);
-  gap: 18px 24px;
-  width: 100%;
-  box-sizing: border-box;
-  align-items: stretch;
-}
-
-.columns.columns18 > div > div {
-  border-radius: 18px;
-  box-shadow: 0 4px 24px 0 rgb(44 50 96 / 9%);
-  overflow: hidden;
-  padding: 28px 24px 24px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  min-height: 0;
-  height: 100%;
-  position: relative;
-}
-
-.columns.columns18 > div > div:nth-child(1) {
-  background: #FFE3CF;
-  color: #181922;
-  grid-column: 1;
-  grid-row: 1;
-  font-family: var(--heading-font-family);
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.columns.columns18 > div > div:nth-child(2) {
-  background: #181922;
-  color: #fff;
-  grid-column: 2;
-  grid-row: 1;
-  font-family: var(--heading-font-family);
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.columns.columns18 > div > div:nth-child(3) {
-  background: linear-gradient(180deg, #1B2B4B 65%, #112042 100%);
-  color: #fff;
-  grid-column: 1 / span 2;
-  grid-row: 2;
-  font-family: var(--heading-font-family);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 220px;
-  height: 100%;
-}
-
-.columns.columns18 > div > div:nth-child(4) {
-  background: #181922;
-  color: #A2CCFF;
-  grid-column: 3;
-  grid-row: 1 / span 2;
-  font-family: var(--heading-font-family);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  min-height: 0;
-  height: 100%;
-  padding-top: 56px;
-  padding-bottom: 0;
-}
-
-.columns.columns18 h1,
-.columns.columns18 h2,
-.columns.columns18 h3 {
-  font-family: var(--heading-font-family);
-  font-weight: 700;
-  margin: 0 0 18px;
-  color: inherit;
-  font-size: var(--heading-font-size-m);
-  line-height: 1.18;
-}
-
-.columns.columns18 > div > div:nth-child(3) h3 {
-  color: #FFA94D;
-  font-size: var(--heading-font-size-m);
-}
-
-.columns.columns18 > div > div:nth-child(4) h3 {
-  color: #A2CCFF;
-  font-size: var(--heading-font-size-xl);
-  margin-bottom: 18px;
-}
-
-.columns.columns18 p,
-.columns.columns18 a {
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-s);
-  margin: 0 0 14px;
-  color: inherit;
-}
-
-.columns.columns18 .button {
-  border-radius: 24px;
-  font-weight: 600;
-  padding: 12px 32px;
-  box-shadow: 0 2px 8px rgb(44 50 96 / 9%);
-  font-size: var(--body-font-size-s);
-  background-color: #fff;
-  color: #1C46B5;
-  border: none;
-  transition: background-color 0.18s, color 0.18s;
-  margin: 0;
-}
-
-.columns.columns18 > div > div:nth-child(3) .button {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.columns.columns18 > div > div:nth-child(4) .button {
-  background-color: #A2CCFF;
-  color: #18181F;
-}
-
-@media (width <= 900px) {
-  .columns.columns18 > div {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .columns.columns18 > div > div {
-    min-width: 0;
-    min-height: 140px;
-    width: 100%;
-    position: static;
-    padding-top: 24px;
-    grid-column: auto;
-    grid-row: auto;
-    height: auto;
-    justify-content: flex-start;
-  }
-}
-
-@media (width <= 600px) {
-  .columns.columns18 {
-    padding: 8px 0;
-  }
-
-  .columns.columns18 > div > div {
-    padding: 14px 10px 10px;
-    border-radius: 12px;
   }
 }
 
@@ -786,8 +618,6 @@
   padding: 0;
   box-sizing: border-box;
   min-height: 220px;
-
-  /* Make block full-bleed regardless of container context */
   position: relative;
   left: 50%;
   right: 50%;
@@ -818,17 +648,13 @@
   min-width: 0;
   min-height: 220px;
   box-sizing: border-box;
-
-  /* Prevent unwanted overflow */
   overflow: hidden;
 }
 
-/* Central faint divider using border for perfect alignment */
 .columns.columns6 > div > div:nth-child(2) {
   border-left: 1px solid #eceeef;
 }
 
-/* Responsive: stack columns vertically on small screens */
 @media (width <= 900px) {
   .columns.columns6 {
     width: 100%;
@@ -851,5 +677,124 @@
   .columns.columns6 > div > div:nth-child(2) {
     border-left: none;
     border-top: 1px solid #eceeef;
+  }
+}
+
+
+.columns.columns18 {
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  max-width: 1100px;
+}
+
+@media (width >= 900px) {
+  .columns.columns18 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.1fr;
+    grid-template-rows: 1fr auto;
+    gap: 12px 32px;
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+  }
+
+  /* Top row cards: Stretch & Kotak - ensure equal heights and side-by-side alignment */
+  .columns.columns18 > div > div:nth-child(1),
+  .columns.columns18 > div > div:nth-child(2) {
+    align-self: stretch;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  /* Hotels card - must align flush bottom with BluChip card */
+  .columns.columns18 > div > div:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
+    align-self: stretch;
+    height: 100%;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  /* BluChip card - right, should match exact height of combined left stack */
+  .columns.columns18 > div > div:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 1 / span 2;
+    align-self: stretch;
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* Ensure the grid tracks expand based on content, then stretch all cards */
+}
+
+/* Stack vertically on mobile/tablet */
+@media (width <= 899px) {
+  .columns.columns18 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .columns.columns18 > div > div {
+    width: 100%;
+    min-width: 0;
+    min-height: 140px;
+    height: auto;
+    position: static;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-column: auto;
+    grid-row: auto;
+    padding: 16px 10px 10px;
+  }
+}
+
+/* Card base styles */
+.columns.columns18 > div > div {
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgb(44 50 96 / 9%);
+  background: #fff;
+  overflow: hidden;
+  padding: 28px 24px 24px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Card background colors */
+.columns.columns18 > div > div:nth-child(1) {
+  background: #FFE3CF;
+  color: #181922;
+}
+
+.columns.columns18 > div > div:nth-child(2) {
+  background: #181922;
+  color: #fff;
+}
+
+.columns.columns18 > div > div:nth-child(3) {
+  background: linear-gradient(180deg, #1B2B4B 65%, #112042 100%);
+  color: #fff;
+}
+
+.columns.columns18 > div > div:nth-child(4) {
+  background: #181922;
+  color: #A2CCFF;
+  padding-top: 56px;
+  padding-bottom: 0;
+}
+
+/* Tighter padding/gaps for small screens */
+@media (width <= 600px) {
+  .columns.columns18 > div > div {
+    padding: 10px 6px 8px;
+    border-radius: 12px;
   }
 }
