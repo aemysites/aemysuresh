@@ -492,12 +492,12 @@
   border: 1.5px solid #e6f0fe;
   background-color: #f4f7fd;
   background-image: 
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0px 0px / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 0px / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0px 100% / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0 0 / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 0 / calc(50% - 18px) calc(50% - 12px),
+    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0 100% / calc(50% - 18px) calc(50% - 12px),
     linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 100% / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(to right, transparent 0%, transparent 24px, #e6f0fe 24px, #e6f0fe calc(100% - 24px), transparent calc(100% - 24px), transparent 100%) 0px 50% / 100% 2px,
-    linear-gradient(to bottom, transparent 0%, transparent 28px, #e6f0fe 28px, #e6f0fe calc(100% - 28px), transparent calc(100% - 28px), transparent 100%) 50% 0px / 2px 100%;
+    linear-gradient(to right, transparent 0, transparent 24px, #e6f0fe 24px, #e6f0fe calc(100% - 24px), transparent calc(100% - 24px), transparent 100%) 0 50% / 100% 2px,
+    linear-gradient(to bottom, transparent 0, transparent 28px, #e6f0fe 28px, #e6f0fe calc(100% - 28px), transparent calc(100% - 28px), transparent 100%) 50% 0 / 2px 100%;
   background-repeat: no-repeat;
 }
 
@@ -575,18 +575,16 @@
   background: none;
 }
 
-/* Refined grid: Left two columns for offers, right column for BluChip (spans both rows) */
 .columns.columns18 > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1.18fr;
-  grid-template-rows: minmax(160px, auto) minmax(220px, auto); /* Ensures bottom row is taller, visually balanced */
+  grid-template-rows: minmax(160px, auto) minmax(220px, auto);
   gap: 18px 24px;
   width: 100%;
   box-sizing: border-box;
   align-items: stretch;
 }
 
-/* Card base styling */
 .columns.columns18 > div > div {
   border-radius: 18px;
   box-shadow: 0 4px 24px 0 rgb(44 50 96 / 9%);
@@ -602,7 +600,6 @@
   position: relative;
 }
 
-/* Top-left (Stretch) card */
 .columns.columns18 > div > div:nth-child(1) {
   background: #FFE3CF;
   color: #181922;
@@ -613,7 +610,6 @@
   align-items: flex-start;
 }
 
-/* Top-middle (Credit Card) card */
 .columns.columns18 > div > div:nth-child(2) {
   background: #181922;
   color: #fff;
@@ -624,7 +620,6 @@
   align-items: flex-start;
 }
 
-/* Hotels card: spans bottom of left two columns, taller than top row, content centered vertically */
 .columns.columns18 > div > div:nth-child(3) {
   background: linear-gradient(180deg, #1B2B4B 65%, #112042 100%);
   color: #fff;
@@ -639,7 +634,6 @@
   height: 100%;
 }
 
-/* BluChip card: full height, right column, aligns with both top and bottom rows */
 .columns.columns18 > div > div:nth-child(4) {
   background: #181922;
   color: #A2CCFF;
@@ -648,7 +642,7 @@
   font-family: var(--heading-font-family);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;      /* Content aligned closer to top to match original */
+  justify-content: flex-start;
   align-items: flex-start;
   min-height: 0;
   height: 100%;
@@ -656,7 +650,6 @@
   padding-bottom: 0;
 }
 
-/* Headings inside cards */
 .columns.columns18 h1,
 .columns.columns18 h2,
 .columns.columns18 h3 {
@@ -668,20 +661,17 @@
   line-height: 1.18;
 }
 
-/* Hotels card headline color */
 .columns.columns18 > div > div:nth-child(3) h3 {
   color: #FFA94D;
   font-size: var(--heading-font-size-m);
 }
 
-/* BluChip card headline color */
 .columns.columns18 > div > div:nth-child(4) h3 {
   color: #A2CCFF;
   font-size: var(--heading-font-size-xl);
   margin-bottom: 18px;
 }
 
-/* Paragraphs and links */
 .columns.columns18 p,
 .columns.columns18 a {
   font-family: var(--body-font-family);
@@ -690,7 +680,6 @@
   color: inherit;
 }
 
-/* Buttons */
 .columns.columns18 .button {
   border-radius: 24px;
   font-weight: 600;
@@ -704,20 +693,17 @@
   margin: 0;
 }
 
-/* Hotels card: outlined button */
 .columns.columns18 > div > div:nth-child(3) .button {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
 
-/* BluChip card: solid blue button */
 .columns.columns18 > div > div:nth-child(4) .button {
   background-color: #A2CCFF;
   color: #18181F;
 }
 
-/* Responsive: stack cards vertically below 900px */
 @media (width <= 900px) {
   .columns.columns18 > div {
     display: flex;
@@ -738,7 +724,6 @@
   }
 }
 
-/* Responsive: card padding and radius on very small screens */
 @media (width <= 600px) {
   .columns.columns18 {
     padding: 8px 0;
@@ -746,6 +731,85 @@
 
   .columns.columns18 > div > div {
     padding: 14px 10px 10px;
+    border-radius: 12px;
+  }
+}
+
+
+.columns.columns2 {
+  background: #fff;
+  margin: 0;
+  padding: 0 2vw;
+  box-sizing: border-box;
+}
+
+/* Flex row for pills with extra space and vertical alignment */
+.columns.columns2 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10vw;
+  margin-top: 8px;
+  margin-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Pill styling - force visibility, more elongated and subtle shadow */
+.columns.columns2 > div > div {
+  display: block;
+  position: relative;
+  background: linear-gradient(90deg, #e6e7e9 0%, #f5f6fa 100%);
+  border-radius: 999px;
+  min-height: 16px;
+  height: 16px;
+  min-width: 160px; /* Ensures empty pills still appear */
+  box-shadow:
+    0 8px 14px -6px rgb(180 184 196 / 19%);
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+/* Left pill - wider */
+.columns.columns2 > div > div:first-child {
+  flex: 1 1 0;
+  min-width: 480px;
+  max-width: 900px;
+  background: linear-gradient(90deg, #e6e7e9 0%, #f5f6fa 100%);
+}
+
+/* Right pill - less wide, reverse gradient */
+.columns.columns2 > div > div:last-child {
+  flex: 0 0 220px;
+  min-width: 160px;
+  max-width: 320px;
+  background: linear-gradient(90deg, #f5f6fa 0%, #e6e7e9 100%);
+}
+
+/* Responsive: Stack pills vertically and shrink height */
+@media (width <= 700px) {
+  .columns.columns2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .columns.columns2 > div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    margin-top: 4px;
+  }
+
+  .columns.columns2 > div > div {
+    width: 100%;
+    min-width: 0;
+    max-width: unset;
+    height: 12px;
+    min-height: 12px;
     border-radius: 12px;
   }
 }
