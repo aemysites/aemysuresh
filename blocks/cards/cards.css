@@ -731,202 +731,6 @@
 }
 
 
-.cards.cards9 > ul {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  overflow: auto visible;
-  padding: 28px 0 36px;
-  margin: 0;
-  list-style: none;
-  align-items: flex-start;
-  min-width: 0;
-  width: 100%;
-  box-sizing: border-box;
-  scroll-snap-type: x mandatory;
-}
-
-.cards.cards9 > ul > li {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgb(16 24 40 / 9%);
-  width: 278px;
-  min-width: 278px;
-  max-width: 278px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  scroll-snap-align: start;
-  border: none;
-  height: auto;
-  transition: box-shadow 0.2s;
-}
-
-.cards.cards9 .cards-card-image,
-.cards.cards9 .cards-card-image img,
-.cards.cards9 .cards-card-image picture {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-.cards.cards9 .cards-card-image {
-  background: none;
-  position: relative;
-  width: 100%;
-  height: 148px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cards.cards9 .cards-card-image img,
-.cards.cards9 .cards-card-image picture {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.cards.cards9 .cards-card-body p:nth-child(3) {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgb(75 85 99 / 55%);
-  color: #fff;
-  font-weight: 500;
-  font-size: 13px;
-  border-radius: 16px;
-  padding: 4px 12px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
-  max-width: 72%;
-  line-height: 1.2;
-  margin: 0;
-  z-index: 2;
-  pointer-events: none;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.cards.cards9 .cards-card-body {
-  padding: 12px 15px;
-  min-height: 0;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  flex: 1 1 auto;
-  position: relative;
-}
-
-.cards.cards9 .cards-card-body p strong {
-  font-family: Poppins, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #232b38;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 1.13;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 92%;
-}
-
-.cards.cards9 .cards-card-body p:nth-child(2) {
-  color: #f6ad26;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  margin-bottom: 0;
-  margin-top: 2px;
-  line-height: 1.07;
-  font-family: inherit;
-}
-
-.cards.cards9 .cards-card-body del {
-  color: #b6b6b6;
-  font-size: 12px;
-  margin-right: 4px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-}
-
-.cards.cards9 .cards-card-body p:nth-child(4),
-.cards.cards9 .cards-card-body p:nth-child(5) {
-  font-size: 15px;
-  font-weight: 700;
-  color: #232b38;
-  margin-top: 2px;
-  margin-bottom: 0;
-  line-height: 1.07;
-  letter-spacing: 0.01em;
-}
-
-.cards.cards9 .cards-card-body p:nth-child(6) {
-  font-size: 11px;
-  color: #bac1ce;
-  margin-top: 1px;
-  margin-bottom: 0;
-  line-height: 1.07;
-}
-
-.cards.cards9 .cards-card-body p:last-child {
-  background-color: #0070C9;
-  color: #fff;
-  border-radius: 22px;
-  padding: 10px 0;
-  font-weight: 700;
-  font-size: 16px;
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  margin-top: 12px;
-  margin-bottom: 8px;
-  text-align: center;
-  box-shadow: 0 1px 4px rgb(0 0 0 / 5%);
-  transition: background 0.2s;
-  line-height: 1.13;
-  letter-spacing: 0.01em;
-  border: none;
-}
-
-.cards.cards9 .cards-card-body p:last-child:hover {
-  background-color: #005fa3;
-}
-
-.cards.cards9 .cards-card-body p {
-  margin: 0;
-  padding: 0;
-}
-
-@media (width <= 900px) {
-  .cards.cards9 > ul {
-    gap: 6px;
-    padding: 0 2vw 10px;
-  }
-
-  .cards.cards9 > ul > li {
-    width: 80vw;
-    min-width: 150px;
-    max-width: 97vw;
-    border-radius: 7px;
-  }
-
-  .cards.cards9 .cards-card-image,
-  .cards.cards9 .cards-card-image img,
-  .cards.cards9 .cards-card-image picture {
-    height: 56px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-  }
-}
-
-
 .cards.cards10 {
   max-width: 1100px;
   margin: 0 auto;
@@ -1923,7 +1727,6 @@
   box-sizing: border-box;
 }
 
-/* Layout row for cards */
 .cards.cards8 > ul {
   display: flex;
   flex-direction: row;
@@ -1940,7 +1743,6 @@
   box-sizing: border-box;
 }
 
-/* Card container */
 .cards.cards8 > ul > li {
   position: relative;
   flex: 0 0 212px;
@@ -1956,20 +1758,17 @@
   justify-content: flex-end;
   box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
   margin: 0;
-  background: #222; /* fallback for loading only */
+  background: #222;
 }
 
-/* Card image: image is in normal flow, overlay absolutely positioned */
 .cards.cards8 > ul > li > .cards-card-image {
   width: 100%;
   height: 100%;
   display: block;
-  position: relative; /* So overlay pseudo is positioned correctly */
+  position: relative;
 }
 
-/* Use ::after for overlay over image, but under text */
 .cards.cards8 > ul > li > .cards-card-image::after {
-  /* Overlay */
   position: absolute;
   left: 0;
   top: 0;
@@ -1980,11 +1779,8 @@
   z-index: 2;
   pointer-events: none;
   display: block;
-
-  /* No content property, as required */
 }
 
-/* Image itself: fills container, stays in the flow */
 .cards.cards8 > ul > li > .cards-card-image picture,
 .cards.cards8 > ul > li > .cards-card-image img {
   width: 100%;
@@ -1992,11 +1788,8 @@
   object-fit: cover;
   display: block;
   border-radius: 18px;
-
-  /* Do not absolutely position! */
 }
 
-/* Text layer: above overlay and image */
 .cards.cards8 > ul > li > .cards-card-body:last-child {
   position: absolute;
   left: 0;
@@ -2027,7 +1820,6 @@
   line-height: 1.15;
 }
 
-/* Responsive adjustments */
 @media (width <= 700px) {
   .cards.cards8 > ul {
     gap: 10px;
@@ -2058,5 +1850,223 @@
     font-size: 0.92rem;
     padding: 0 4px;
     border-radius: 5px;
+  }
+}
+
+
+.cards.cards9 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0 0 32px;
+  margin: 0;
+  list-style: none;
+  overflow: auto visible;
+  scroll-snap-type: x mandatory;
+  align-items: flex-start;
+}
+
+.cards.cards9 > ul > li {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(30 58 108 / 7%);
+  min-width: 245px;
+  max-width: 245px;
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  overflow: visible;
+  scroll-snap-align: start;
+  border: none;
+  margin-bottom: 0;
+}
+
+.cards.cards9 .cards-card-image {
+  position: relative;
+  width: 100%;
+  height: 145px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #eaeaea;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.cards.cards9 .cards-card-image img,
+.cards.cards9 .cards-card-image picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: block;
+}
+
+.cards.cards9 .cards-card-body {
+  position: relative;
+  padding: 24px 13px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  flex: 1 1 auto;
+  background: #fff;
+  min-height: 0;
+}
+
+.cards.cards9 .cards-card-body p:nth-child(3) {
+  position: absolute;
+  top: -44px;
+  left: 11px;
+  background: #e5e5e5;
+  color: #232323;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 17px;
+  padding: 4px 12px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  line-height: 1.13;
+  z-index: 2;
+  pointer-events: none;
+  white-space: nowrap;
+  max-width: 76%;
+  display: flex;
+  align-items: center;
+}
+
+.cards.cards9 .cards-card-body p:first-child {
+  margin-top: 2px;
+}
+
+.cards.cards9 .cards-card-body p {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font-family);
+  color: #232b38;
+  font-size: 14px;
+  line-height: 1.45;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.cards.cards9 .cards-card-body p strong {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: #232b38;
+  margin: 0 0 1px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 92%;
+}
+
+.cards.cards9 .cards-card-body p:nth-child(2) {
+  color: #f5b301;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  margin-bottom: 2px;
+  margin-top: 0;
+  line-height: 1.08;
+}
+
+.cards.cards9 .cards-card-body del {
+  color: #b6b6b6;
+  font-size: 12px;
+  margin-right: 4px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.cards.cards9 .cards-card-body p:nth-child(4) {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121;
+  margin-top: 3px;
+  margin-bottom: 0;
+  line-height: 1.13;
+  letter-spacing: 0.01em;
+}
+
+.cards.cards9 .cards-card-body p:nth-child(5) {
+  font-size: 12px;
+  color: #8a8a8a;
+  margin-top: 1px;
+  margin-bottom: 0;
+  line-height: 1.07;
+}
+
+.cards.cards9 .cards-card-body p:last-child {
+  background-color: #0024d6;
+  color: #fff;
+  border-radius: 22px;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgb(0 36 214 / 8%);
+  transition: background 0.2s;
+  line-height: 1.13;
+  letter-spacing: 0.01em;
+  border: none;
+  font-family: inherit;
+}
+
+.cards.cards9 .cards-card-body p:last-child:hover {
+  background-color: #03f;
+}
+
+@media (width <= 900px) {
+  .cards.cards9 > ul {
+    gap: 6px;
+    padding: 0 2vw 10px;
+  }
+
+  .cards.cards9 > ul > li {
+    width: 92vw;
+    min-width: 140px;
+    max-width: 99vw;
+    border-radius: 8px;
+  }
+
+  .cards.cards9 .cards-card-image,
+  .cards.cards9 .cards-card-image img,
+  .cards.cards9 .cards-card-image picture {
+    height: 70px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .cards.cards9 .cards-card-body {
+    padding: 12px 6px 8px;
+    gap: 5px;
+  }
+
+  .cards.cards9 .cards-card-body p:nth-child(3) {
+    top: -16px;
+    left: 6px;
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .cards.cards9 .cards-card-body p:last-child {
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+
+  .cards.cards9 .cards-card-body p strong {
+    font-size: 13.5px;
+    max-width: 98%;
   }
 }
