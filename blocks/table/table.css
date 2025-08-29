@@ -75,10 +75,9 @@
   padding: 0;
 }
 
-/* Center the table horizontally and limit its max width for balance */
 .table.table1 table {
   border-collapse: separate;
-  border-spacing: 24px 0; /* moderate gap between cards */
+  border-spacing: 24px 0;
   table-layout: fixed;
   background: transparent;
   margin: 0 auto;
@@ -86,7 +85,6 @@
   width: auto;
 }
 
-/* Make sure <thead> uses default table layout */
 .table.table1 thead {
   display: table-header-group;
   width: 100%;
@@ -97,7 +95,6 @@
   background: transparent;
 }
 
-/* Card styling for each <th> */
 .table.table1 th {
   background: linear-gradient(90deg, #ececec 0%, #f3f5f6 100%);
   border-radius: 14px;
@@ -114,7 +111,6 @@
   font-weight: 400;
 }
 
-/* Remove cell borders */
 .table.table1 th,
 .table.table1 td,
 .table.table1 tr {
@@ -122,13 +118,11 @@
   box-shadow: none;
 }
 
-/* Hide empty tbody for visual accuracy */
 .table.table1 tbody,
 .table.table1 td {
   display: none;
 }
 
-/* Responsive: Stack cards vertically, shrink gaps */
 @media (width <= 900px) {
   .table.table1 table {
     max-width: 100%;
@@ -145,5 +139,148 @@
 
   .table.table1 thead tr {
     height: auto;
+  }
+}
+
+
+.table.table13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+  background: var(--background-color);
+}
+
+.table.table13 table {
+  border-collapse: separate;
+  border-spacing: 0;
+  background: transparent;
+  width: auto;
+  max-width: none;
+}
+
+.table.table13 thead,
+.table.table13 tbody,
+.table.table13 tr,
+.table.table13 th,
+.table.table13 td {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Simulate 5 horizontal cards with rounded corners and subtle gradient on right cards */
+.table.table13 th {
+  display: block;
+  width: 1200px;
+  max-width: 96vw;
+  height: 140px;
+  margin: 0 auto;
+  border-radius: 32px;
+  box-shadow: none;
+
+  /* 
+    - Cards are arranged using a multi-stop linear gradient.
+    - Each card gets rounded corners using a mask-image with a grid of 5 rounded rectangles.
+    - We use a very subtle gradient from #f3f4f6 to #fff for cards 2-5.
+  */
+  background:
+    linear-gradient(
+      to right,
+      #f3f4f6 0%,
+      #f3f4f6 17%,
+      #f3f4f6 17.01%,
+      #f3f4f6 33%,
+      #f3f4f6 33.01%,
+      #f3f4f6 49%,
+      #f3f4f6 49.01%,
+      #f3f4f6 65%,
+      #f3f4f6 65.01%,
+      #f3f4f6 81%,
+      #f3f4f6 81.01%,
+      #f3f4f6 97%,
+      #f3f4f6 97.01%,
+      #fff 100%
+    ),
+    /* Very subtle fade in cards 2-5 */
+    linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 17%,
+      #fff 18%,
+      #fff 33%,
+      #fff 34%,
+      #fff 49%,
+      #fff 50%,
+      #fff 65%,
+      #fff 66%,
+      #fff 81%,
+      #fff 82%,
+      #fff 97%,
+      transparent 100%
+    );
+
+  /* Simulate gaps between cards */
+  background-size: 20% 100%, 20% 100%;
+  background-repeat: repeat-x, repeat-x;
+
+  /* Mask image to simulate all cards with rounded corners using SVG data uri */
+  mask-image: url('data:image/svg+xml;utf8,<svg width="1200" height="140" viewBox="0 0 1200 140" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="200" height="140" rx="32" fill="black"/><rect x="250" y="0" width="200" height="140" rx="32" fill="black"/><rect x="500" y="0" width="200" height="140" rx="32" fill="black"/><rect x="750" y="0" width="200" height="140" rx="32" fill="black"/><rect x="1000" y="0" width="200" height="140" rx="32" fill="black"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<svg width="1200" height="140" viewBox="0 0 1200 140" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="200" height="140" rx="32" fill="black"/><rect x="250" y="0" width="200" height="140" rx="32" fill="black"/><rect x="500" y="0" width="200" height="140" rx="32" fill="black"/><rect x="750" y="0" width="200" height="140" rx="32" fill="black"/><rect x="1000" y="0" width="200" height="140" rx="32" fill="black"/></svg>');
+  mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+@media (width <= 700px) {
+  .table.table13 th {
+    width: 98vw;
+    height: 64px;
+    border-radius: 14px;
+    margin: 0 1vw;
+    background:
+      linear-gradient(
+        to right,
+        #f3f4f6 0%,
+        #f3f4f6 17%,
+        #f3f4f6 17.01%,
+        #f3f4f6 33%,
+        #f3f4f6 33.01%,
+        #f3f4f6 49%,
+        #f3f4f6 49.01%,
+        #f3f4f6 65%,
+        #f3f4f6 65.01%,
+        #f3f4f6 81%,
+        #f3f4f6 81.01%,
+        #f3f4f6 97%,
+        #f3f4f6 97.01%,
+        #fff 100%
+      ),
+      linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 17%,
+        #fff 18%,
+        #fff 33%,
+        #fff 34%,
+        #fff 49%,
+        #fff 50%,
+        #fff 65%,
+        #fff 66%,
+        #fff 81%,
+        #fff 82%,
+        #fff 97%,
+        transparent 100%
+      );
+    background-size: 20% 100%, 20% 100%;
+    background-repeat: repeat-x, repeat-x;
+    mask-image: url('data:image/svg+xml;utf8,<svg width="700" height="64" viewBox="0 0 700 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="120" height="64" rx="14" fill="black"/><rect x="145" y="0" width="120" height="64" rx="14" fill="black"/><rect x="290" y="0" width="120" height="64" rx="14" fill="black"/><rect x="435" y="0" width="120" height="64" rx="14" fill="black"/><rect x="580" y="0" width="120" height="64" rx="14" fill="black"/></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg width="700" height="64" viewBox="0 0 700 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="120" height="64" rx="14" fill="black"/><rect x="145" y="0" width="120" height="64" rx="14" fill="black"/><rect x="290" y="0" width="120" height="64" rx="14" fill="black"/><rect x="435" y="0" width="120" height="64" rx="14" fill="black"/><rect x="580" y="0" width="120" height="64" rx="14" fill="black"/></svg>');
+    mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    mask-size: 100% 100%;
   }
 }
