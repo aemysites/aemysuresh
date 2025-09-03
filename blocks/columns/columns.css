@@ -457,10 +457,10 @@
     border: 1.5px solid #e6f0fe;
     background-color: #f4f7fd;
     background-image:
-      linear-gradient(#fff, #fff) 0px 0px / 100% calc(25% - 6px),
-      linear-gradient(#fff, #fff) 0px 33.33% / 100% calc(25% - 6px),
-      linear-gradient(#fff, #fff) 0px 66.66% / 100% calc(25% - 6px),
-      linear-gradient(#fff, #fff) 0px 100% / 100% calc(25% - 6px),
+      linear-gradient(to bottom, #fff, #fff) 0% 0% / 100% calc(25% - 6px),
+      linear-gradient(to bottom, #fff, #fff) 0% 33.33% / 100% calc(25% - 6px),
+      linear-gradient(to bottom, #fff, #fff) 0% 66.66% / 100% calc(25% - 6px),
+      linear-gradient(to bottom, #fff, #fff) 0% 100% / 100% calc(25% - 6px),
       linear-gradient(
         to bottom,
         transparent 0%,
@@ -544,76 +544,6 @@
         transparent 100%
       ) 0 0 / 100% 100%;
     background-repeat: no-repeat;
-  }
-}
-
-
-.columns.columns6 {
-  background: #f3f5f7;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  min-height: 220px;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-}
-
-.columns.columns6 > div {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  gap: 0;
-  box-sizing: border-box;
-  min-height: 220px;
-}
-
-.columns.columns6 > div > div {
-  flex: 1 1 0;
-  width: 50%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  min-width: 0;
-  min-height: 220px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.columns.columns6 > div > div:nth-child(2) {
-  border-left: 1px solid #eceeef;
-}
-
-@media (width <= 900px) {
-  .columns.columns6 {
-    width: 100%;
-    left: 0;
-    right: 0;
-    transform: none;
-    min-height: 0;
-  }
-
-  .columns.columns6 > div {
-    flex-direction: column;
-    min-height: 0;
-  }
-
-  .columns.columns6 > div > div {
-    width: 100%;
-    min-height: 110px;
-  }
-
-  .columns.columns6 > div > div:nth-child(2) {
-    border-left: none;
-    border-top: 1px solid #eceeef;
   }
 }
 
@@ -742,7 +672,6 @@
   overflow: visible;
 }
 
-/* Pill shapes as pseudo-elements */
 .columns.columns2::before,
 .columns.columns2::after {
   position: absolute;
@@ -755,7 +684,6 @@
   box-sizing: border-box;
 }
 
-/* Left pill: wide, gradient, inset from left edge */
 .columns.columns2::before {
   left: 10px;
   width: 37vw;
@@ -764,7 +692,6 @@
   background: linear-gradient(90deg, #e3e3e3 0%, #edeff1 100%);
 }
 
-/* Right pill: short, lighter, inset from right edge */
 .columns.columns2::after {
   right: 10px;
   width: 5vw;
@@ -773,7 +700,6 @@
   background: linear-gradient(90deg, #edeff1 20%, #fafbfc 100%);
 }
 
-/* Responsive adjustments */
 @media (width <= 700px) {
   .columns.columns2 {
     height: 13px;
@@ -799,5 +725,80 @@
     min-width: 18px;
     max-width: 32px;
     background: linear-gradient(90deg, #edeff1 30%, #fafbfc 100%);
+  }
+}
+
+
+.columns.columns6 {
+  background: #f4f6f8 !important;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 220px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  border: none;
+}
+
+.columns.columns6 > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.columns.columns6 > div > div {
+  flex: 1 1 0;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  min-width: 0;
+  min-height: 220px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.columns.columns6 > div > div:first-child {
+  border-right: 1px solid #eceef0;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.columns.columns6 > div > div:nth-child(2) {
+  border-left: none;
+}
+
+@media (width <= 900px) {
+  .columns.columns6 {
+    width: 100%;
+    left: 0;
+    right: 0;
+    transform: none;
+    min-height: 0;
+  }
+
+  .columns.columns6 > div {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .columns.columns6 > div > div {
+    width: 100%;
+    min-height: 110px;
+  }
+
+  .columns.columns6 > div > div:first-child {
+    border-right: none;
+    border-bottom: 1px solid #eceef0;
   }
 }
