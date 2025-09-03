@@ -505,185 +505,6 @@
 }
 
 
-.carousel.carousel21 {
-  background: linear-gradient(114deg, #1439C3 74%, #1b56e0 98%, #6db7ff 100%);
-  border-radius: 18px;
-  max-width: 1150px;
-  width: 96vw;
-  height: 480px;
-  min-height: 380px;
-  margin: 48px auto 0;
-  box-shadow: 0 8px 32px 0 rgb(20 57 195 / 14%);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.carousel.carousel21 .carousel-navigation-buttons {
-  display: none;
-}
-
-.carousel.carousel21 .carousel-slide-content {
-  background: none;
-  box-shadow: none;
-  border-radius: 0;
-  color: #fff;
-  width: 100%;
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 40px 36px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: Montserrat, Arial, sans-serif;
-  position: relative;
-  z-index: 2;
-  min-height: unset;
-}
-
-.carousel.carousel21 .carousel-slide-content p:first-child,
-.carousel.carousel21 .carousel-slide-content strong,
-.carousel.carousel21 .carousel-slide-content b {
-  font-size: 48px;
-  font-family: Montserrat, Arial, sans-serif;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 16px;
-  letter-spacing: 0.04em;
-  text-shadow: 0 2px 12px rgb(20 57 195 / 22%);
-  line-height: 1.09;
-}
-
-.carousel.carousel21 .carousel-slide-content p:nth-child(2) {
-  font-size: 24px;
-  color: #cce3ff;
-  margin-bottom: 28px;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-.carousel.carousel21 .carousel-slide-content a {
-  display: inline-block;
-  background: #eaf3ff;
-  color: #1439C3;
-  border-radius: 999px;
-  padding: 10px 30px;
-  font-size: 19px;
-  font-weight: 600;
-  box-shadow: 0 2px 10px rgb(20 57 195 / 10%);
-  margin-bottom: 36px;
-  margin-top: 12px;
-  text-align: center;
-  line-height: 1.5;
-  max-width: 90vw;
-  word-break: break-all;
-}
-
-.carousel.carousel21 .carousel-slide-content ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 22px;
-  width: 100%;
-  padding: 0;
-  margin: 36px 0 7px;
-  list-style: none;
-}
-
-.carousel.carousel21 .carousel-slide-content ul li {
-  background: linear-gradient(100deg, #1439C3 92%, #245fed 100%);
-  border-radius: 13px;
-  color: #fff;
-  padding: 16px 18px 14px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  box-shadow: 0 1px 6px rgb(20 57 195 / 13%);
-  font-size: 15px;
-  text-align: left;
-  position: relative;
-  margin: 0 2px;
-}
-
-.carousel.carousel21 .carousel-slide-indicators {
-  position: absolute;
-  left: 50%;
-  bottom: 36px;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  gap: 0 18px;
-  padding: 0;
-  background: none;
-  z-index: 3;
-}
-
-.carousel.carousel21 .carousel-slide-indicator button {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #fff;
-  opacity: 0.45;
-  margin: 0;
-  border: none;
-  box-shadow: 0 1px 8px rgb(20 57 195 / 8%);
-  transition: opacity 0.14s, background 0.14s, width 0.14s;
-}
-
-.carousel.carousel21 .carousel-slide-indicator button:disabled,
-.carousel.carousel21 .carousel-slide-indicator button[aria-current="true"] {
-  background: #fff;
-  opacity: 0.95;
-  box-shadow: 0 2px 10px rgb(20 57 195 / 13%);
-}
-
-@media (width <= 850px) {
-  .carousel.carousel21 {
-    height: 310px;
-    min-height: 160px;
-    max-width: 99vw;
-    border-radius: 10px;
-  }
-
-  .carousel.carousel21 .carousel-slide-content {
-    padding: 16px 8px 0;
-    max-width: 99vw;
-  }
-
-  .carousel.carousel21 .carousel-slide-content p:first-child,
-  .carousel.carousel21 .carousel-slide-content strong,
-  .carousel.carousel21 .carousel-slide-content b {
-    font-size: 2rem;
-  }
-
-  .carousel.carousel21 .carousel-slide-content ul {
-    gap: 8px;
-    margin: 12px 0 4px;
-  }
-
-  .carousel.carousel21 .carousel-slide-content ul li {
-    min-width: 110px;
-    font-size: 12px;
-    padding: 7px 10px;
-    border-radius: 7px;
-  }
-
-  .carousel.carousel21 .carousel-slide-indicators {
-    bottom: 14px;
-    gap: 0 7px;
-  }
-
-  .carousel.carousel21 .carousel-slide-indicator button {
-    width: 9px;
-    height: 9px;
-  }
-}
-
-
 .carousel {
   position: relative;
   border-radius: 22px;
@@ -978,7 +799,6 @@
 
 
 .carousel.carousel20 {
-  /* Remove card-like look: make block full viewport, no border-radius/shadow/background */
   border-radius: 0;
   box-shadow: none;
   background: #000;
@@ -1002,7 +822,6 @@
 }
 
 .carousel.carousel20 .carousel-slide .carousel-slide-content {
-  /* Remove dark rectangle, overlay text directly, align to bottom left */
   position: absolute;
   left: 56px;
   bottom: 134px;
@@ -1015,13 +834,10 @@
   flex-direction: column;
   gap: 14px;
   align-items: flex-start;
-
-  /* Remove border-radius/shadow */
   border-radius: 0;
   box-shadow: none;
 }
 
-/* Title: larger, bold, left-aligned, no box */
 .carousel.carousel20 .carousel-slide .carousel-slide-content h2 {
   font-size: 3.2rem;
   font-weight: 700;
@@ -1035,7 +851,6 @@
     0 2px 8px rgb(0 0 0 / 20%);
 }
 
-/* Photo credit: pill-shaped, semi-transparent, left-aligned */
 .carousel.carousel20 .carousel-slide .carousel-slide-content p {
   display: inline-block;
   color: #fff;
@@ -1050,7 +865,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Indicators: left under credit, pill bars */
 .carousel.carousel20 .carousel-slide-indicators {
   position: absolute;
   left: 56px;
@@ -1065,7 +879,6 @@
   padding: 0;
 }
 
-/* Indicator bars */
 .carousel.carousel20 .carousel-slide-indicator button {
   width: 22px;
   height: 4px;
@@ -1080,7 +893,6 @@
   opacity: 1;
 }
 
-/* Active indicator style */
 .carousel.carousel20 .carousel-slide-indicator button:disabled,
 .carousel.carousel20 .carousel-slide-indicator button[aria-current="true"] {
   background: #fff;
@@ -1088,7 +900,6 @@
   opacity: 1;
 }
 
-/* Mobile adjustments */
 @media (width <= 900px) {
   .carousel.carousel20 .carousel-slide .carousel-slide-content {
     left: 14px;
@@ -1123,5 +934,96 @@
   .carousel.carousel20 .carousel-slide-indicator button:disabled,
   .carousel.carousel20 .carousel-slide-indicator button[aria-current="true"] {
     width: 18px;
+  }
+}
+
+
+.carousel.carousel21 {
+  /* Improved diagonal gradient background to match screenshot */
+  background: linear-gradient(120deg, #1846c4 68%, #205de8 82%, #61a9ff 92%);
+  border-radius: 22px;
+  box-shadow: 0 8px 36px 0 rgb(25 55 180 / 14%);
+  max-width: 1200px;
+  width: 96vw;
+  height: 420px;
+  min-height: 320px;
+  margin: 54px auto 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Add a diagonal shadow overlay to emphasize the color separation */
+.carousel.carousel21::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: inherit;
+  background: linear-gradient(117deg, transparent 65%, rgb(0 0 0 / 16%) 80%, transparent 99%);
+  content: "";
+}
+
+/* Indicators: make them more visually prominent and closer to the bottom */
+.carousel.carousel21 .carousel-slide-indicators {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 0 11px;
+  padding: 0;
+  background: none;
+  z-index: 3;
+}
+
+/* Style indicator dots as pill-shaped, matching screenshot proportions */
+.carousel.carousel21 .carousel-slide-indicator button {
+  width: 28px;
+  height: 6px;
+  border-radius: 4px;
+  background: #fff;
+  opacity: 0.27;
+  margin: 0;
+  border: none;
+  box-shadow: 0 1px 6px rgb(30 67 185 / 15%);
+  transition: opacity 0.15s, width 0.15s, background 0.15s;
+}
+
+/* Active indicator: wider and full opacity */
+.carousel.carousel21 .carousel-slide-indicator button:disabled,
+.carousel.carousel21 .carousel-slide-indicator button[aria-current="true"] {
+  opacity: 0.98;
+  width: 36px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgb(30 67 185 / 24%);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (width <= 850px) {
+  .carousel.carousel21 {
+    height: 250px;
+    min-height: 140px;
+    border-radius: 12px;
+    margin-top: 22px;
+  }
+
+  .carousel.carousel21 .carousel-slide-indicators {
+    bottom: 8px;
+    gap: 0 7px;
+  }
+
+  .carousel.carousel21 .carousel-slide-indicator button {
+    width: 15px;
+    height: 4px;
+    border-radius: 2.5px;
+  }
+
+  .carousel.carousel21 .carousel-slide-indicator button:disabled,
+  .carousel.carousel21 .carousel-slide-indicator button[aria-current="true"] {
+    width: 22px;
   }
 }
