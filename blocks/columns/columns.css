@@ -457,10 +457,10 @@
     border: 1.5px solid #e6f0fe;
     background-color: #f4f7fd;
     background-image:
-      linear-gradient(to bottom, #fff, #fff) 0% 0% / 100% calc(25% - 6px),
-      linear-gradient(to bottom, #fff, #fff) 0% 33.33% / 100% calc(25% - 6px),
-      linear-gradient(to bottom, #fff, #fff) 0% 66.66% / 100% calc(25% - 6px),
-      linear-gradient(to bottom, #fff, #fff) 0% 100% / 100% calc(25% - 6px),
+      linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0 0 / 100% calc(25% - 6px),
+      linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0 33.33% / 100% calc(25% - 6px),
+      linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0 66.66% / 100% calc(25% - 6px),
+      linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0 100% / 100% calc(25% - 6px),
       linear-gradient(
         to bottom,
         transparent 0%,
@@ -544,116 +544,6 @@
         transparent 100%
       ) 0 0 / 100% 100%;
     background-repeat: no-repeat;
-  }
-}
-
-
-.columns.columns18 {
-  margin: 0 auto;
-  padding: 0;
-  background: none;
-  max-width: 1100px;
-}
-
-@media (width >= 900px) {
-  .columns.columns18 > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.1fr;
-    grid-template-rows: 1fr auto;
-    gap: 12px 32px;
-    align-items: stretch;
-    grid-auto-rows: 1fr;
-  }
-
-  .columns.columns18 > div > div:nth-child(1),
-  .columns.columns18 > div > div:nth-child(2) {
-    align-self: stretch;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-  }
-
-  .columns.columns18 > div > div:nth-child(3) {
-    grid-column: 1 / span 2;
-    grid-row: 2 / 3;
-    align-self: stretch;
-    height: 100%;
-    min-height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-  }
-
-  .columns.columns18 > div > div:nth-child(4) {
-    grid-column: 3 / 4;
-    grid-row: 1 / span 2;
-    align-self: stretch;
-    height: 100%;
-    min-height: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-
-@media (width <= 899px) {
-  .columns.columns18 > div {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .columns.columns18 > div > div {
-    width: 100%;
-    min-width: 0;
-    min-height: 140px;
-    height: auto;
-    position: static;
-    align-items: flex-start;
-    justify-content: flex-start;
-    grid-column: auto;
-    grid-row: auto;
-    padding: 16px 10px 10px;
-  }
-}
-
-.columns.columns18 > div > div {
-  border-radius: 18px;
-  box-shadow: 0 4px 24px 0 rgb(44 50 96 / 9%);
-  background: #fff;
-  overflow: hidden;
-  padding: 28px 24px 24px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.columns.columns18 > div > div:nth-child(1) {
-  background: #FFE3CF;
-  color: #181922;
-}
-
-.columns.columns18 > div > div:nth-child(2) {
-  background: #181922;
-  color: #fff;
-}
-
-.columns.columns18 > div > div:nth-child(3) {
-  background: linear-gradient(180deg, #1B2B4B 65%, #112042 100%);
-  color: #fff;
-}
-
-.columns.columns18 > div > div:nth-child(4) {
-  background: #181922;
-  color: #A2CCFF;
-  padding-top: 56px;
-  padding-bottom: 0;
-}
-
-@media (width <= 600px) {
-  .columns.columns18 > div > div {
-    padding: 10px 6px 8px;
-    border-radius: 12px;
   }
 }
 
@@ -800,5 +690,144 @@
   .columns.columns6 > div > div:first-child {
     border-right: none;
     border-bottom: 1px solid #eceef0;
+  }
+}
+
+
+.columns.columns18 {
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  max-width: 1100px;
+}
+
+.columns.columns18 > div {
+  /* Wider left columns, right column more balanced */
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 12px 24px;
+  align-items: stretch;
+  width: 100%;
+  grid-auto-rows: minmax(140px, auto);
+}
+
+/* Top left card (Peach) */
+.columns.columns18 > div > div:nth-child(1) {
+  background: #FCE2D3;
+  color: #181922;
+  border-radius: 22px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px 28px 24px;
+}
+
+/* Top mid card (Black) */
+.columns.columns18 > div > div:nth-child(2) {
+  background: #181922;
+  color: #fff;
+  border-radius: 22px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px 28px 24px;
+}
+
+/* Wide hotel card (Blue) - spans both left columns */
+.columns.columns18 > div > div:nth-child(3) {
+  background: linear-gradient(180deg, #0E2578 0%, #036 100%);
+  color: #fff;
+  border-radius: 22px;
+  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px 28px 40px;
+}
+
+/* Tall right card (Black) */
+.columns.columns18 > div > div:nth-child(4) {
+  background: #181922;
+  color: #B3C8FF;
+  border-radius: 22px;
+  grid-column: 3 / 4;
+  grid-row: 1 / span 2;
+  min-height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 56px 28px 32px;
+}
+
+/* Button container and buttons left-aligned with breathing room */
+.columns.columns18 .button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.columns.columns18 .button {
+  background: #3152C5;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 22px;
+  padding: 10px 24px;
+  margin: 0;
+  box-shadow: none;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+  align-self: flex-start;
+}
+
+/* Responsive: stack vertically at mobile, adjust paddings/gaps */
+@media (width <= 900px) {
+  .columns.columns18 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .columns.columns18 > div > div {
+    width: 100%;
+    min-width: 0;
+    min-height: 120px;
+    height: auto;
+    grid-column: auto;
+    grid-row: auto;
+    padding: 18px 10px;
+    border-radius: 14px;
+  }
+
+  .columns.columns18 > div > div:nth-child(3) {
+    padding-bottom: 30px;
+  }
+
+  .columns.columns18 > div > div:nth-child(4) {
+    min-height: 220px;
+    padding-top: 32px;
+  }
+}
+
+@media (width <= 600px) {
+  .columns.columns18 > div > div {
+    padding: 10px 6px 7px;
+    border-radius: 10px;
   }
 }
