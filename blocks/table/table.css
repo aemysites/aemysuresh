@@ -65,134 +65,7 @@
 }
 
 
-.table.table13 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 48px 0;
-  background: var(--background-color);
-}
-
-.table.table13 table {
-  border-collapse: separate;
-  border-spacing: 0;
-  background: transparent;
-  width: auto;
-  max-width: none;
-}
-
-.table.table13 thead,
-.table.table13 tbody,
-.table.table13 tr,
-.table.table13 th,
-.table.table13 td {
-  border: none;
-  background: transparent;
-  box-shadow: none;
-  padding: 0;
-}
-
-.table.table13 th {
-  display: block;
-  width: 1200px;
-  max-width: 96vw;
-  height: 140px;
-  margin: 0 auto;
-  border-radius: 32px;
-  box-shadow: none;
-  background:
-    linear-gradient(
-      to right,
-      #f3f4f6 0%,
-      #f3f4f6 17%,
-      #f3f4f6 17.01%,
-      #f3f4f6 33%,
-      #f3f4f6 33.01%,
-      #f3f4f6 49%,
-      #f3f4f6 49.01%,
-      #f3f4f6 65%,
-      #f3f4f6 65.01%,
-      #f3f4f6 81%,
-      #f3f4f6 81.01%,
-      #f3f4f6 97%,
-      #f3f4f6 97.01%,
-      #fff 100%
-    ),
-    /* Very subtle fade in cards 2-5 */
-    linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 17%,
-      #fff 18%,
-      #fff 33%,
-      #fff 34%,
-      #fff 49%,
-      #fff 50%,
-      #fff 65%,
-      #fff 66%,
-      #fff 81%,
-      #fff 82%,
-      #fff 97%,
-      transparent 100%
-    );
-  background-size: 20% 100%, 20% 100%;
-  background-repeat: repeat-x, repeat-x;
-  mask-image: url('data:image/svg+xml;utf8,<svg width="1200" height="140" viewBox="0 0 1200 140" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="200" height="140" rx="32" fill="black"/><rect x="250" y="0" width="200" height="140" rx="32" fill="black"/><rect x="500" y="0" width="200" height="140" rx="32" fill="black"/><rect x="750" y="0" width="200" height="140" rx="32" fill="black"/><rect x="1000" y="0" width="200" height="140" rx="32" fill="black"/></svg>');
-  mask-repeat: no-repeat;
-  mask-size: 100% 100%;
-}
-
-@media (width <= 700px) {
-  .table.table13 th {
-    width: 98vw;
-    height: 64px;
-    border-radius: 14px;
-    margin: 0 1vw;
-    background:
-      linear-gradient(
-        to right,
-        #f3f4f6 0%,
-        #f3f4f6 17%,
-        #f3f4f6 17.01%,
-        #f3f4f6 33%,
-        #f3f4f6 33.01%,
-        #f3f4f6 49%,
-        #f3f4f6 49.01%,
-        #f3f4f6 65%,
-        #f3f4f6 65.01%,
-        #f3f4f6 81%,
-        #f3f4f6 81.01%,
-        #f3f4f6 97%,
-        #f3f4f6 97.01%,
-        #fff 100%
-      ),
-      linear-gradient(
-        to right,
-        transparent 0%,
-        transparent 17%,
-        #fff 18%,
-        #fff 33%,
-        #fff 34%,
-        #fff 49%,
-        #fff 50%,
-        #fff 65%,
-        #fff 66%,
-        #fff 81%,
-        #fff 82%,
-        #fff 97%,
-        transparent 100%
-      );
-    background-size: 20% 100%, 20% 100%;
-    background-repeat: repeat-x, repeat-x;
-    mask-image: url('data:image/svg+xml;utf8,<svg width="700" height="64" viewBox="0 0 700 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="120" height="64" rx="14" fill="black"/><rect x="145" y="0" width="120" height="64" rx="14" fill="black"/><rect x="290" y="0" width="120" height="64" rx="14" fill="black"/><rect x="435" y="0" width="120" height="64" rx="14" fill="black"/><rect x="580" y="0" width="120" height="64" rx="14" fill="black"/></svg>');
-    mask-repeat: no-repeat;
-    mask-size: 100% 100%;
-  }
-}
-
-
 .table.table1 {
-  /* Flex container for horizontal centering and spacing */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -203,8 +76,6 @@
   position: relative;
 }
 
-/* Use an SVG background to visually create three pill shapes side by side.
-   This works even if the block is empty, and maintains separation and spacing. */
 .table.table1::before {
   display: block;
   content: "";
@@ -238,7 +109,95 @@
   }
 }
 
-/* Hide the empty table content so only the visual pills are shown */
 .table.table1 table {
   display: none;
+}
+
+
+.table.table13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--background-color);
+  padding: 32px 0;
+  box-sizing: border-box;
+}
+
+/* Use a centered and max-width-limited block for the cards */
+.table.table13 table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Remove table and cell padding/border/shadow for a clean block look */
+.table.table13 thead,
+.table.table13 tbody,
+.table.table13 tr,
+.table.table13 th,
+.table.table13 td {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* The visual "cards" block */
+.table.table13 th {
+  display: block;
+  margin: 0 auto;
+  width: calc(100% - 64px);  /* Add 32px margin on each side for the cards group */
+  max-width: 1136px;         /* 1200px container minus 2*32px side margin */
+  height: 140px;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  /* Use a repeating-linear-gradient to fake the 5 cards and their gaps, matching original proportions */
+  background: repeating-linear-gradient(
+    to right,
+    #f3f4f6 0,
+    #f3f4f6 208px,
+    transparent 208px,
+    transparent 232px
+  );
+
+  /* Cards: width 208px, gap 24px. First card inset by 32px, last card inset by 32px. */
+  mask-image: url('data:image/svg+xml;utf8,<svg width="1136" height="140" viewBox="0 0 1136 140" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="208" height="140" rx="20" fill="black"/><rect x="232" y="0" width="208" height="140" rx="20" fill="black"/><rect x="464" y="0" width="208" height="140" rx="20" fill="black"/><rect x="696" y="0" width="208" height="140" rx="20" fill="black"/><rect x="928" y="0" width="208" height="140" rx="20" fill="black"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<svg width="1136" height="140" viewBox="0 0 1136 140" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="208" height="140" rx="20" fill="black"/><rect x="232" y="0" width="208" height="140" rx="20" fill="black"/><rect x="464" y="0" width="208" height="140" rx="20" fill="black"/><rect x="696" y="0" width="208" height="140" rx="20" fill="black"/><rect x="928" y="0" width="208" height="140" rx="20" fill="black"/></svg>');
+  mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+/* Responsive: shrink cards, gaps, and side margins for smaller screens */
+@media (width <= 700px) {
+  .table.table13 table {
+    max-width: 100vw;
+  }
+
+  .table.table13 th {
+    height: 64px;
+    border-radius: 12px;
+    width: calc(100vw - 16px);
+    max-width: calc(100vw - 16px);
+    margin: 0 8px;
+    background: repeating-linear-gradient(
+      to right,
+      #f3f4f6 0,
+      #f3f4f6 86px,
+      transparent 86px,
+      transparent 102px
+    );
+    mask-image: url('data:image/svg+xml;utf8,<svg width="494" height="64" viewBox="0 0 494 64" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="86" height="64" rx="12" fill="black"/><rect x="102" y="0" width="86" height="64" rx="12" fill="black"/><rect x="204" y="0" width="86" height="64" rx="12" fill="black"/><rect x="306" y="0" width="86" height="64" rx="12" fill="black"/><rect x="408" y="0" width="86" height="64" rx="12" fill="black"/></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg width="494" height="64" viewBox="0 0 494 64" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="86" height="64" rx="12" fill="black"/><rect x="102" y="0" width="86" height="64" rx="12" fill="black"/><rect x="204" y="0" width="86" height="64" rx="12" fill="black"/><rect x="306" y="0" width="86" height="64" rx="12" fill="black"/><rect x="408" y="0" width="86" height="64" rx="12" fill="black"/></svg>');
+    mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
 }
