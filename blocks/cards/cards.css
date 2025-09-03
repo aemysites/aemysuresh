@@ -590,225 +590,6 @@
 }
 
 
-.cards.cards10 {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 0 32px;
-  background: none;
-  box-sizing: border-box;
-}
-
-.cards.cards10 > ul {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 18px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  overflow: auto visible;
-  align-items: flex-start;
-  min-height: 1px;
-  width: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: #d0d0d0 #fafafa;
-}
-
-.cards.cards10 > ul > li {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgb(44 62 80 / 8%);
-  border: none;
-  width: 310px;
-  min-width: 310px;
-  max-width: 310px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  align-items: stretch;
-  flex-shrink: 0;
-}
-
-.cards.cards10 .cards-card-image {
-  position: relative;
-  width: 100%;
-  height: 160px;
-  min-height: 160px;
-  max-height: 160px;
-  overflow: hidden;
-  background: #eaeaea;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.cards.cards10 .cards-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-}
-
-.cards.cards10 > ul > li .cards-card-body p:nth-child(3) {
-  position: absolute;
-  top: 12px;
-  left: 16px;
-  background: rgb(44 62 80 / 85%);
-  color: #fff;
-  border-radius: 14px;
-  padding: 2px 12px;
-  font-size: 13px;
-  font-weight: 500;
-  z-index: 2;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 9%);
-  white-space: nowrap;
-  pointer-events: none;
-  margin: 0;
-  line-height: 1.1;
-}
-
-.cards.cards10 > ul > li .cards-card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
-  padding: 20px 16px 16px;
-  box-sizing: border-box;
-  margin: 0;
-  gap: 0;
-}
-
-.cards.cards10 > ul > li .cards-card-body h3 {
-  font-size: 18px;
-  font-family: var(--heading-font-family);
-  color: #212121;
-  font-weight: 600;
-  margin: 0 0 4px;
-  line-height: 1.22;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.cards.cards10 > ul > li .cards-card-body p:nth-child(2) {
-  font-size: 15px;
-  color: #757575;
-  font-weight: 400;
-  margin: 0 0 4px;
-}
-
-.cards.cards10 > ul > li .cards-card-body p:nth-child(4) {
-  font-size: 16px;
-  color: #212121;
-  font-weight: bold;
-  margin: 0 0 2px;
-}
-
-.cards.cards10 > ul > li .cards-card-body p:nth-child(5),
-.cards.cards10 > ul > li .cards-card-body p:nth-child(6),
-.cards.cards10 > ul > li .cards-card-body p:nth-child(7) {
-  font-size: 13px;
-  color: #aaa;
-  font-weight: 400;
-  margin: 0 0 2px;
-}
-
-.cards.cards10 > ul > li .cards-card-body p:last-child {
-  background-color: #03c;
-  border-radius: 999px;
-  font-size: 16px;
-  font-family: var(--heading-font-family);
-  color: #fff;
-  align-self: flex-end;
-  padding: 8px 28px;
-  margin: 16px 0 0;
-  display: inline-block;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  line-height: 1.22;
-  box-shadow: 0 2px 6px 0 rgb(44 62 80 / 8%);
-  border: none;
-  width: max-content;
-  transition: background 0.15s;
-}
-
-.cards.cards10 > ul > li .cards-card-body p:last-child:hover {
-  background-color: #002d5c;
-}
-
-@media (width <= 900px) {
-  .cards.cards10 {
-    padding: 0 0 12px;
-  }
-
-  .cards.cards10 > ul {
-    gap: 8px;
-  }
-
-  .cards.cards10 > ul > li {
-    min-width: 85vw;
-    max-width: 85vw;
-    width: 85vw;
-  }
-
-  .cards.cards10 .cards-card-image {
-    height: 100px;
-    min-height: 100px;
-    max-height: 100px;
-  }
-
-  .cards.cards10 > ul > li .cards-card-body {
-    padding: 12px 8px 10px;
-  }
-
-  .cards.cards10 > ul > li .cards-card-body h3 {
-    font-size: 15px;
-  }
-
-  .cards.cards10 > ul > li .cards-card-body p,
-  .cards.cards10 > ul > li .cards-card-body p:nth-child(2),
-  .cards.cards10 > ul > li .cards-card-body p:nth-child(4),
-  .cards.cards10 > ul > li .cards-card-body p:nth-child(5) {
-    font-size: 12px;
-  }
-
-  .cards.cards10 > ul > li .cards-card-body p:nth-child(3) {
-    font-size: 10px;
-    padding: 2px 8px;
-    left: 8px;
-    top: 8px;
-  }
-
-  .cards.cards10 > ul > li .cards-card-body p:last-child {
-    font-size: 13px;
-    padding: 7px 16px;
-    margin-right: 3px;
-  }
-}
-
-.cards.cards10 > ul::-webkit-scrollbar {
-  height: 8px;
-}
-
-.cards.cards10 > ul::-webkit-scrollbar-thumb {
-  background: #d0d0d0;
-  border-radius: 4px;
-}
-
-.cards.cards10 > ul::-webkit-scrollbar-track {
-  background: #fafafa;
-  border-radius: 4px;
-}
-
-
 .cards.cards11 {
   background: linear-gradient(180deg, #eaf3fb 0%, #9096cf 100%);
   border-radius: 24px;
@@ -1963,7 +1744,6 @@
   box-shadow: 0 6px 24px rgb(30 58 108 / 15%);
 }
 
-/* Card image area */
 .cards.cards9 .cards-card-image {
   position: relative;
   width: 100%;
@@ -1989,7 +1769,6 @@
   display: block;
 }
 
-/* Badge: lighter, less padding, more subtle, snug to top */
 .cards.cards9 .cards-card-body p:nth-child(3) {
   position: absolute;
   top: 4px;
@@ -2013,7 +1792,6 @@
   transform: translateY(-128px);
 }
 
-/* Card body: left-aligned, very tight gaps */
 .cards.cards9 .cards-card-body {
   padding: 15px 16px 8px;
   display: flex;
@@ -2032,7 +1810,6 @@
   margin-bottom: 0;
 }
 
-/* Hotel name/title */
 .cards.cards9 .cards-card-body h3 {
   color: #232b38;
   font-size: 15px;
@@ -2045,7 +1822,6 @@
   max-width: 95%;
 }
 
-/* Stars: minimal margin below, close to name */
 .cards.cards9 .cards-card-body p:nth-child(2) {
   color: #f5b301;
   font-size: 12px;
@@ -2055,7 +1831,6 @@
   display: block;
 }
 
-/* Price */
 .cards.cards9 .cards-card-body p:nth-child(4) {
   color: #232b38;
   font-size: 14px;
@@ -2064,7 +1839,6 @@
   line-height: 1.10;
 }
 
-/* Taxes/fees: tiny, lighter, closer spacing */
 .cards.cards9 .cards-card-body p:nth-child(5),
 .cards.cards9 .cards-card-body p:nth-child(6) {
   color: #8a8a8a;
@@ -2073,7 +1847,6 @@
   line-height: 1.06;
 }
 
-/* Book button container: left align, minimal margin above */
 .cards.cards9 .cards-card-body p.button-container,
 .cards.cards9 .cards-card-body p:last-child {
   margin: 0;
@@ -2086,7 +1859,6 @@
   width: 100%;
 }
 
-/* Book button: compact and subtle */
 .cards.cards9 .cards-card-body .button,
 .cards.cards9 .cards-card-body p:last-child a,
 .cards.cards9 .cards-card-body p.button-container a {
@@ -2107,7 +1879,6 @@
   max-width: 180px;
 }
 
-/* Book button hover */
 .cards.cards9 .cards-card-body .button:hover,
 .cards.cards9 .cards-card-body p:last-child a:hover,
 .cards.cards9 .cards-card-body p.button-container a:hover,
@@ -2115,7 +1886,6 @@
   background-color: #03f;
 }
 
-/* Responsive: stack cards, shrink image height, adjust button size */
 @media (width <= 700px) {
   .cards.cards9 > ul {
     gap: 10px;
@@ -2170,4 +1940,257 @@
     border-radius: 12px;
     max-width: 110px;
   }
+}
+
+
+.cards.cards10 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto visible;
+  align-items: stretch;
+  scrollbar-width: thin;
+  scrollbar-color: #d0d0d0 #fafafa;
+}
+
+.cards.cards10 > ul > li {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgb(44 62 80 / 8%);
+  border: none;
+  width: 310px;
+  min-width: 310px;
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  align-items: stretch;
+  flex-shrink: 0;
+  transition: box-shadow 0.18s;
+}
+
+.cards.cards10 > ul > li:hover {
+  box-shadow: 0 8px 28px rgb(44 62 80 / 13%);
+}
+
+/* Image section */
+.cards.cards10 .cards-card-image {
+  position: relative;
+  width: 100%;
+  height: 148px;
+  min-height: 148px;
+  max-height: 148px;
+  overflow: hidden;
+  background: #eaeaea;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.cards.cards10 .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Badge: Use as green pill, slightly darker and tighter */
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(6),
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(7) {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  background: #388e3c;
+  color: #fff;
+  border-radius: 14px;
+  padding: 3px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  white-space: nowrap;
+  pointer-events: none;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Only show the badge if it contains "Incl of taxes", "+ ₹", or "/night" pattern, otherwise hide (as much as possible via CSS) */
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(6):not([style]),
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(7):not([style]) {
+  /* In practice, unable to filter for content due to constraints */
+}
+
+/* Body content stack, tight vertical space, button at bottom */
+.cards.cards10 > ul > li .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  min-height: 0;
+  padding: 14px 16px 12px;
+  box-sizing: border-box;
+  margin: 0;
+  gap: 0;
+}
+
+/* Title: slightly less bold, max two lines, better clamp for ellipsis */
+.cards.cards10 > ul > li .cards-card-body h3 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 5px;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: normal;
+  max-height: 2.5em;
+}
+
+/* Subtitle/location */
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(1) {
+  font-size: 13px;
+  color: #757575;
+  margin: 0 0 2px;
+  line-height: 1.25;
+}
+
+/* Star rating: yellow, tight line spacing */
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(2) {
+  font-size: 13px;
+  color: #efb810;
+  letter-spacing: 0.8px;
+  margin: 0 0 2px;
+  line-height: 1.1;
+}
+
+/* Price, bold, clear vertical space */
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(5) {
+  font-size: 15px;
+  font-weight: 600;
+  color: #232323;
+  margin: 8px 0 2px;
+  line-height: 1.22;
+}
+
+/* Muted tax/fees line, always under price, not in badge */
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(7),
+.cards.cards10 > ul > li .cards-card-body p:nth-of-type(8) {
+  font-size: 12px;
+  color: #b1b1b1;
+  margin: 2px 0 0;
+  line-height: 1.18;
+  position: static;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  z-index: 1;
+}
+
+/* Book button container at bottom, no excessive margin */
+.cards.cards10 > ul > li .cards-card-body p.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 0;
+  background: none;
+}
+
+/* Book button: pill, blue, reduced padding */
+.cards.cards10 > ul > li .cards-card-body .button {
+  background: #0039d7;
+  color: #fff;
+  border-radius: 999px;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 2px 6px 0 rgb(44 62 80 / 8%);
+  cursor: pointer;
+  transition: background 0.18s;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  line-height: 1.22;
+}
+
+.cards.cards10 > ul > li .cards-card-body .button:hover {
+  background: #0140ff;
+}
+
+/* Responsive tweaks */
+@media (width <= 900px) {
+  .cards.cards10 > ul {
+    gap: 8px;
+  }
+
+  .cards.cards10 > ul > li {
+    min-width: 92vw;
+    max-width: 92vw;
+    width: 92vw;
+  }
+
+  .cards.cards10 .cards-card-image {
+    height: 98px;
+    min-height: 98px;
+    max-height: 98px;
+  }
+
+  .cards.cards10 > ul > li .cards-card-body {
+    padding: 10px 8px 8px;
+  }
+
+  .cards.cards10 > ul > li .cards-card-body h3 {
+    font-size: 14px;
+    max-height: 2.3em;
+    -webkit-line-clamp: 2;
+  }
+
+  .cards.cards10 > ul > li .cards-card-body p,
+  .cards.cards10 > ul > li .cards-card-body p:nth-of-type(1),
+  .cards.cards10 > ul > li .cards-card-body p:nth-of-type(2),
+  .cards.cards10 > ul > li .cards-card-body p:nth-of-type(5),
+  .cards.cards10 > ul > li .cards-card-body p:nth-of-type(6),
+  .cards.cards10 > ul > li .cards-card-body p:nth-of-type(7),
+  .cards.cards10 > ul > li .cards-card-body p:nth-of-type(8) {
+    font-size: 11px;
+  }
+
+  .cards.cards10 > ul > li .cards-card-body .button {
+    font-size: 11px;
+    padding: 6px 13px;
+  }
+}
+
+/* Custom scroll styling */
+.cards.cards10 > ul::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards.cards10 > ul::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 4px;
+}
+
+.cards.cards10 > ul::-webkit-scrollbar-track {
+  background: #fafafa;
+  border-radius: 4px;
 }
