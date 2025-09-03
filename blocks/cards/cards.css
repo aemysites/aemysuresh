@@ -1832,157 +1832,6 @@
 }
 
 
-.cards.cards5 {
-  padding: 0 2px;
-}
-
-.cards.cards5 > ul {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  min-height: 260px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  align-items: stretch;
-  background: none;
-}
-
-.cards.cards5 > ul::-webkit-scrollbar {
-  display: none;
-}
-
-.cards.cards5 > ul > li {
-  position: relative;
-  flex: 0 0 192px;
-  width: 192px;
-  height: 265px;
-  margin: 0;
-  border-radius: 22px;
-  box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
-  overflow: hidden;
-  background: none;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  transition: box-shadow 0.16s;
-}
-
-.cards.cards5 > ul > li .cards-card-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: none;
-  display: flex;
-}
-
-.cards.cards5 > ul > li .cards-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 22px;
-  background: none;
-}
-
-.cards.cards5 > ul > li .cards-card-image::after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 35%;
-  background: linear-gradient(to top, rgb(0 0 0 / 82%) 94%, rgb(0 0 0 / 0%) 100%);
-  border-bottom-left-radius: 22px;
-  border-bottom-right-radius: 22px;
-  z-index: 2;
-  pointer-events: none;
-  display: block;
-}
-
-.cards.cards5 > ul > li .cards-card-body {
-  background: none;
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-  z-index: 3;
-}
-
-.cards.cards5 > ul > li .cards-card-body:last-child {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  min-height: 28px;
-  padding-bottom: 4px;
-  pointer-events: none;
-  margin: 0;
-  background: none;
-}
-
-.cards.cards5 > ul > li .cards-card-body:last-child p,
-.cards.cards5 > ul > li .cards-card-body:last-child strong {
-  font-family: var(--body-font-family);
-  font-size: 17px;
-  font-weight: 700;
-  color: #fff;
-  margin: 0 auto;
-  padding: 2px 4px 0;
-  text-align: center;
-  border-radius: 0 0 16px 16px;
-  text-shadow: 0 2px 10px rgb(0 0 0 / 38%);
-  background: none;
-  pointer-events: none;
-  line-height: 1.25;
-  white-space: normal;
-  overflow-wrap: break-word;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  max-width: 98%;
-}
-
-@media (width <= 900px) {
-  .cards.cards5 {
-    padding: 0 1vw;
-  }
-
-  .cards.cards5 > ul {
-    gap: 4px;
-    min-height: 110px;
-  }
-
-  .cards.cards5 > ul > li {
-    width: 74vw;
-    min-width: 74vw;
-    max-width: 94vw;
-    height: 120px;
-    border-radius: 12px;
-  }
-
-  .cards.cards5 > ul > li .cards-card-image img,
-  .cards.cards5 > ul > li .cards-card-image::after {
-    border-radius: 12px;
-  }
-
-  .cards.cards5 > ul > li .cards-card-body:last-child p,
-  .cards.cards5 > ul > li .cards-card-body:last-child strong {
-    font-size: 13px;
-    padding: 1px 2px 0;
-    border-radius: 0 0 8px 8px;
-  }
-}
-
-
 .cards.cards3 > ul > li {
   display: flex;
   flex-direction: row;
@@ -1994,7 +1843,6 @@
   box-sizing: border-box;
 }
 
-/* --- BLUE CARD --- */
 .cards.cards3 .cards-card-image {
   background: #0116b3;
   border-radius: 20px;
@@ -2018,7 +1866,6 @@
   display: none;
 }
 
-/* Only show the first stat in blue card, hide others */
 .cards.cards3 .cards-card-image p {
   display: none;
   margin: 0;
@@ -2042,11 +1889,7 @@
   margin: 0;
   min-height: 150px;
   height: auto;
-
-  /* Center text vertically */
 }
-
-/* Make the content (text + icon) visually centered vertically/horizontally in blue card */
 
 .cards.cards3 .cards-card-image p:first-child strong {
   color: #fff;
@@ -2069,7 +1912,6 @@
   vertical-align: middle;
 }
 
-/* Use grid for .cards-card-body and only show stats 2-5 */
 .cards.cards3 .cards-card-body {
   flex: 1 1 0%;
   min-width: 320px;
@@ -2084,12 +1926,10 @@
   height: auto;
 }
 
-/* Hide the first stat in right grid */
 .cards.cards3 .cards-card-body p:first-child {
   display: none;
 }
 
-/* Four stat cards */
 .cards.cards3 .cards-card-body p {
   background: #fff;
   border: 1.5px solid #e6f0ff;
@@ -2120,7 +1960,6 @@
   letter-spacing: 0.01em;
 }
 
-/* --- Responsive --- */
 @media (width <= 900px) {
   .cards.cards3 > ul > li {
     flex-direction: column;
@@ -2175,5 +2014,149 @@
 
   .cards.cards3 .cards-card-body p strong {
     font-size: 1.17rem;
+  }
+}
+
+
+.cards.cards5 {
+  padding: 0;
+  background: none;
+}
+
+/* Layout: horizontal row of cards with tight gaps */
+.cards.cards5 > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: flex-start;
+  align-items: stretch;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+/* Card styling */
+.cards.cards5 > ul > li {
+  position: relative;
+  flex: 0 0 170px;
+  width: 170px;
+  height: 250px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 11%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  transition: box-shadow 0.15s;
+}
+
+/* Ensure images show and fill card. Remove pointer-events and stacking issues. */
+.cards.cards5 .cards-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+  background: transparent;
+
+  /* Remove pointer-events which can break image rendering in some browsers */
+}
+
+.cards.cards5 .cards-card-image picture,
+.cards.cards5 .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+  background: transparent;
+
+  /* Remove pointer-events for images */
+}
+
+/* Overlay for legibility: semi-transparent dark (not opaque) */
+.cards.cards5 .cards-card-image::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 5%) 0%, rgb(0 0 0 / 35%) 85%);
+  border-radius: 18px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Text position: bottom center, hugging edge */
+.cards.cards5 .cards-card-body {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding-bottom: 11px;
+  min-height: unset;
+  background: none;
+
+  /* pointer-events: none;  <-- REMOVE, allows accessibility/interactivity if needed */
+}
+
+/* Card text: single line, white, shadow for contrast */
+.cards.cards5 .cards-card-body h3,
+.cards.cards5 .cards-card-body p,
+.cards.cards5 .cards-card-body strong {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 2px 8px 0;
+  text-shadow: 0 2px 10px rgb(0 0 0 / 48%);
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+  background: none;
+  border-radius: 0 0 10px 10px;
+  max-width: 95%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+/* Responsive adjustments: stack/shrink cards on small screens */
+@media (width <= 900px) {
+  .cards.cards5 > ul {
+    gap: 7px;
+  }
+
+  .cards.cards5 > ul > li {
+    width: 63vw;
+    min-width: 63vw;
+    max-width: 95vw;
+    height: 110px;
+    border-radius: 10px;
+  }
+
+  .cards.cards5 .cards-card-image img,
+  .cards.cards5 .cards-card-image::after {
+    border-radius: 10px;
+  }
+
+  .cards.cards5 .cards-card-body {
+    padding-bottom: 4px;
+  }
+
+  .cards.cards5 .cards-card-body h3,
+  .cards.cards5 .cards-card-body p,
+  .cards.cards5 .cards-card-body strong {
+    font-size: 10px;
+    border-radius: 0 0 6px 6px;
+    padding: 1px 3px 0;
   }
 }
