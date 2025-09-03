@@ -1,73 +1,6 @@
 {
   "fragments": [
-    {
-      "name": "nav",
-      "path": "/nav",
-      "totalBoxes": 1,
-      "instances": [
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
-          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-00-3a8584d0f1e2b03d0dee50c532054ba4e78528b5",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
-          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-00-3a8584d0f1e2b03d0dee50c532054ba4e78528b5",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
-          "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
-          "uuid": "d8babc7d-00-1043e21f51a00adb8d6584df49c47388be0401a9",
-          "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[1]"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
-          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
-          "uuid": "ffb2a411-00-3353ae61382f621708c316532e894cf664704c2c",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]"
-        }
-      ],
-      "styles": {
-        "height": 88
-      }
-    },
-    {
-      "name": "footer",
-      "path": "/footer",
-      "totalBoxes": 1,
-      "instances": [
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
-          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-          "uuid": "5cb71fd6-32-e7b29dc29e3d3f65da6219c3896d33ba47325cc2",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]/div[1]/div[1]"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
-          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-          "uuid": "addaec9a-30-46d1269ddbfb0926c33649de5c6a21ea1edc6d4a",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/div[1]/div[1]/div[1]"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/check-flight-status/delhi-to-mumbai.html",
-          "urlHash": "d8babc7d4d4f2cf2a8c6de8786fc1a5913403ea0",
-          "uuid": "d8babc7d-01-9764ff3e5ee31c28757d8d3e04a490aa98d413b3",
-          "xpath": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]"
-        },
-        {
-          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/",
-          "urlHash": "ffb2a41160fb417e317865000df5f9c2e3a22d3f",
-          "uuid": "ffb2a411-13-ea973c9fa70ef0d0c7ecaf5477aed5fbdb1589b2",
-          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]"
-        }
-      ],
-      "styles": {
-        "background": "rgb(175, 228, 255) none repeat scroll 0% 0% / auto padding-box border-box"
-      }
-    }
+    
   ],
   "blocks": [
     {
@@ -468,6 +401,9 @@
     {
       "name": "Hero",
       "cluster": 22,
+      "source": "Hero",
+      "target": "Hero (hero22)",
+      "key": "hero22",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
@@ -480,6 +416,9 @@
     {
       "name": "Columns",
       "cluster": 23,
+      "source": "Columns",
+      "target": "Columns (columns23)",
+      "key": "columns23",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
@@ -490,8 +429,11 @@
       ]
     },
     {
-      "name": "new",
+      "name": "Tabs",
       "cluster": 24,
+      "source": "Tabs",
+      "target": "Tabs (tabs24)",
+      "key": "tabs24",
       "instances": [
         {
           "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
@@ -503,7 +445,10 @@
       ]
     },
     {
-      "name": "new",
+      "name": "Tabs",
+      "source": "Tabs",
+      "target": "Tabs (tabs25)",
+      "key": "tabs25",
       "cluster": 25,
       "instances": [
         {
