@@ -56,3 +56,88 @@
 .tabs .tabs-panel[aria-hidden='true'] {
   display: none;
 }
+
+
+.tabs.tabs24 {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Edge-to-edge flex row for tabs, perfect vertical centering */
+.tabs.tabs24 .tabs-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #E0E0E0;
+  background: #fff;
+  box-sizing: border-box;
+
+  /* Remove all gaps and spacing so tabs precisely fill row */
+}
+
+/* Tabs: fill their space, equal width, vertical and horizontal centering */
+.tabs.tabs24 .tabs-list button {
+  flex: 1 1 0%;
+  min-width: 0;
+  min-height: 33px; /* Slightly larger for perfect vertical centering */
+  height: 33px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #5B6681;
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Selected tab: only cursor change */
+.tabs.tabs24 .tabs-list button[aria-selected="true"] {
+  color: #5B6681;
+  background: transparent;
+  font-weight: 400;
+  cursor: default;
+}
+
+/* Tab label text: perfectly centered, no margin */
+.tabs.tabs24 .tabs-list button p {
+  margin: 0;
+  color: inherit;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 33px; /* Ensures precise vertical centering */
+  text-align: center;
+  padding: 0;
+}
+
+/* Remove border, padding, margin from tab panels */
+.tabs.tabs24 .tabs-panel {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+/* Responsive: horizontally scroll on small screens, keep tabs a reasonable width */
+@media (width <= 900px) {
+  .tabs.tabs24 .tabs-list {
+    overflow-x: auto;
+  }
+
+  .tabs.tabs24 .tabs-list button {
+    min-width: 120px;
+    flex: 0 0 auto;
+  }
+}
