@@ -1,64 +1,48 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // 1. Table header EXACT match
+  // Find the carousel wrapper containing all slides
+  const carouselWrapper = element.querySelector('.carousel__wrapper');
+  if (!carouselWrapper) return;
+
+  // Get all slide anchors (each slide is an <a> element)
+  const slides = Array.from(carouselWrapper.children).filter(child => child.classList.contains('carousel__slide'));
+
+  // Table header as specified
   const headerRow = ['Carousel (carousel21)'];
+  const rows = [headerRow];
 
-  // 2. Find carousel slides (direct children <a> inside .carousel__wrapper)
-  const wrapper = element.querySelector('.carousel__wrapper');
-  if (!wrapper) return;
-  const slides = Array.from(wrapper.children).filter(child => child.tagName === 'A');
-
-  // 3. Parse each slide
-  const rows = slides.map((slide) => {
-    // IMAGE: always in <picture><img>
-    let img = null;
+  slides.forEach(slide => {
+    // Find the image for the slide
+    let imgEl = null;
     const picture = slide.querySelector('picture');
     if (picture) {
-      const picImg = picture.querySelector('img');
-      if (picImg) img = picImg;
+      imgEl = picture.querySelector('img');
     }
+    if (!imgEl) return;
 
-    // TEXT CONTENT: Capture all non-picture content
-    // Instead of piecing together text nodes, we reference all elements except <picture>
-    const textEls = [];
-    Array.from(slide.childNodes).forEach((node) => {
-      if (node.nodeType === 1 && node.tagName !== 'PICTURE') {
-        // Reference the actual element
-        textEls.push(node);
-      } else if (node.nodeType === 3) {
-        const text = node.textContent.trim();
-        if (text) {
-          const span = document.createElement('span');
-          span.textContent = text;
-          textEls.push(span);
-        }
+    // Extract all visible text from the slide (including nested elements)
+    const textCell = document.createElement('div');
+    const slideClone = slide.cloneNode(true);
+    Array.from(slideClone.querySelectorAll('img')).forEach(img => img.remove());
+    Array.from(slideClone.querySelectorAll('picture')).forEach(pic => pic.remove());
+    Array.from(slideClone.childNodes).forEach(node => {
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        textCell.appendChild(node.cloneNode(true));
+      } else if (node.nodeType === Node.TEXT_NODE) {
+        textCell.appendChild(document.createTextNode(node.textContent));
       }
     });
-
-    // Add link as CTA at the bottom (never invent content)
-    const href = slide.getAttribute('href');
-    if (href) {
-      let linkText = slide.getAttribute('title') || slide.getAttribute('aria-label') || '';
-      // If no title or aria-label, try to find a visible text child
-      if (!linkText) {
-        // Just use href as fallback if absolutely no label
-        linkText = href;
-      }
-      const cta = document.createElement('a');
-      cta.href = href;
-      cta.textContent = linkText;
-      cta.target = slide.getAttribute('target') || '_self';
-      // Only add CTA if not already present as a text element
-      textEls.push(document.createElement('br'));
-      textEls.push(cta);
+    // Only include second column if there is actual text content, otherwise omit
+    if (textCell.textContent.trim()) {
+      rows.push([imgEl, textCell]);
+    } else {
+      rows.push([imgEl, '']);
     }
-
-    // Edge case: If nothing in textEls, use empty string as cell
-    return [img || '', textEls.length ? textEls : ''];
   });
 
-  // 4. Build block table
-  const cells = [headerRow, ...rows];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  // Create the block table
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+
+  // Replace the original element with the block table
   element.replaceWith(block);
 }

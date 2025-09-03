@@ -13,23 +13,26 @@
 /* eslint-disable no-console */
 import cards8Parser from './parsers/cards8.js';
 import cards5Parser from './parsers/cards5.js';
-import table1Parser from './parsers/table1.js';
-import cards7Parser from './parsers/cards7.js';
 import hero4Parser from './parsers/hero4.js';
 import table13Parser from './parsers/table13.js';
-import columns2Parser from './parsers/columns2.js';
-import cards14Parser from './parsers/cards14.js';
-import cards10Parser from './parsers/cards10.js';
+import table1Parser from './parsers/table1.js';
 import cards9Parser from './parsers/cards9.js';
-import columns6Parser from './parsers/columns6.js';
-import carousel17Parser from './parsers/carousel17.js';
-import carousel20Parser from './parsers/carousel20.js';
-import carousel12Parser from './parsers/carousel12.js';
-import cards11Parser from './parsers/cards11.js';
-import cards3Parser from './parsers/cards3.js';
-import cards19Parser from './parsers/cards19.js';
-import carousel21Parser from './parsers/carousel21.js';
+import cards10Parser from './parsers/cards10.js';
+import columns2Parser from './parsers/columns2.js';
 import columns18Parser from './parsers/columns18.js';
+import columns6Parser from './parsers/columns6.js';
+import cards3Parser from './parsers/cards3.js';
+import carousel20Parser from './parsers/carousel20.js';
+import columns23Parser from './parsers/columns23.js';
+import cards14Parser from './parsers/cards14.js';
+import carousel17Parser from './parsers/carousel17.js';
+import cards11Parser from './parsers/cards11.js';
+import cards7Parser from './parsers/cards7.js';
+import tabs24Parser from './parsers/tabs24.js';
+import cards19Parser from './parsers/cards19.js';
+import tabs25Parser from './parsers/tabs25.js';
+import carousel21Parser from './parsers/carousel21.js';
+import hero22Parser from './parsers/hero22.js';
 import headerParser from './parsers/header.js';
 import metadataParser from './parsers/metadata.js';
 import cleanupTransformer from './transformers/cleanup.js';
@@ -48,23 +51,26 @@ const parsers = {
   metadata: metadataParser,
   cards8: cards8Parser,
   cards5: cards5Parser,
-  table1: table1Parser,
-  cards7: cards7Parser,
   hero4: hero4Parser,
   table13: table13Parser,
-  columns2: columns2Parser,
-  cards14: cards14Parser,
-  cards10: cards10Parser,
+  table1: table1Parser,
   cards9: cards9Parser,
-  columns6: columns6Parser,
-  carousel17: carousel17Parser,
-  carousel20: carousel20Parser,
-  carousel12: carousel12Parser,
-  cards11: cards11Parser,
-  cards3: cards3Parser,
-  cards19: cards19Parser,
-  carousel21: carousel21Parser,
+  cards10: cards10Parser,
+  columns2: columns2Parser,
   columns18: columns18Parser,
+  columns6: columns6Parser,
+  cards3: cards3Parser,
+  carousel20: carousel20Parser,
+  columns23: columns23Parser,
+  cards14: cards14Parser,
+  carousel17: carousel17Parser,
+  cards11: cards11Parser,
+  cards7: cards7Parser,
+  tabs24: tabs24Parser,
+  cards19: cards19Parser,
+  tabs25: tabs25Parser,
+  carousel21: carousel21Parser,
+  hero22: hero22Parser,
   ...customParsers,
 };
 

@@ -1,50 +1,100 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the cards wrapper section
-  const cardsWrapper = element.querySelector('.cards-wrapper');
-  if (!cardsWrapper) return;
+  // Defensive: find the main cards container
+  const cardsContainer = element.querySelector('.cards-conatiner');
+  if (!cardsContainer) return;
 
-  // Grab all cards (main and extra)
-  const allCards = Array.from(cardsWrapper.querySelectorAll('.card'));
-  if (!allCards.length) return;
+  // Find all card elements (main and extra)
+  const cardNodes = [
+    ...cardsContainer.querySelectorAll('.card-container > .card'),
+    ...cardsContainer.querySelectorAll('.card-extra-container > .card')
+  ];
 
-  // Table header row: block name exactly
+  // Table header row
   const headerRow = ['Cards (cards19)'];
   const rows = [headerRow];
 
-  allCards.forEach(card => {
-    // First cell: reference the image element
+  cardNodes.forEach(card => {
+    // Get image
     const img = card.querySelector('img');
-    // Second cell: title, description (always present), info, and ribbon
-    const cellContents = [];
-    // Ribbon/marker
-    const ribbon = card.querySelector('.ribbon');
-    if (ribbon) cellContents.push(ribbon);
-    // Card details container
+
+    // Get card details
     const details = card.querySelector('.card--details');
+    let textContent = [];
     if (details) {
       // Title
-      const titleEl = details.querySelector('.card--title');
-      if (titleEl) cellContents.push(titleEl);
-      // Description: always insert a <p class="card--description">
-      let descEl = details.querySelector('.card--description');
-      if (!descEl) {
-        descEl = document.createElement('p');
-        descEl.className = 'card--description';
+      const title = details.querySelector('.card--title');
+      if (title) {
+        const h = document.createElement('h3');
+        h.textContent = title.textContent;
+        textContent.push(h);
       }
-      cellContents.push(descEl);
-      // Info (Exploration time)
-      const infoEl = details.querySelector('.card--info');
-      if (infoEl) cellContents.push(infoEl);
+      // Description (optional)
+      const desc = details.querySelector('.card--description');
+      if (desc) {
+        const p = document.createElement('p');
+        p.textContent = desc.textContent;
+        textContent.push(p);
+      }
+      // Info (exploration time)
+      const info = details.querySelector('.card--info');
+      if (info) {
+        const span = document.createElement('span');
+        span.textContent = info.textContent;
+        textContent.push(span);
+      }
     }
-    // Add the row: [image, cellContents]
+    // Ribbon (Trending)
+    const ribbon = card.querySelector('.ribbon');
+    if (ribbon) {
+      const r = document.createElement('span');
+      r.textContent = ribbon.textContent;
+      r.className = 'card-ribbon';
+      textContent.unshift(r); // Add at top
+    }
+    // Defensive: ensure image and text
+    // FIX: Add fallback for missing description and info by using data-model JSON
+    if (textContent.length === 0) {
+      // Try to get from data-model JSON
+      const section = element.closest('section[data-model]');
+      if (section) {
+        try {
+          const model = JSON.parse(section.getAttribute('data-model').replace(/&quot;/g, '"'));
+          const idx = parseInt(card.getAttribute('data-index'), 10);
+          const cardData = model[idx];
+          if (cardData) {
+            if (cardData.title) {
+              const h = document.createElement('h3');
+              h.textContent = cardData.title;
+              textContent.push(h);
+            }
+            if (cardData.description) {
+              const p = document.createElement('p');
+              p.textContent = cardData.description;
+              textContent.push(p);
+            }
+            if (cardData.label) {
+              const span = document.createElement('span');
+              span.textContent = cardData.label;
+              textContent.push(span);
+            }
+            if (cardData.marker) {
+              const r = document.createElement('span');
+              r.textContent = cardData.marker;
+              r.className = 'card-ribbon';
+              textContent.unshift(r);
+            }
+          }
+        } catch(e) {}
+      }
+    }
     rows.push([
       img || '',
-      cellContents.length === 1 ? cellContents[0] : cellContents
+      textContent.length > 1 ? textContent : textContent[0] || ''
     ]);
   });
 
-  // Create and replace
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+  // Create table block
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(block);
 }

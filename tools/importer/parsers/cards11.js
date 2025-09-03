@@ -1,63 +1,63 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Block header as in example
-  const headerRow = ['Cards (cards11)'];
-  const rows = [headerRow];
+  // Defensive: Find the section containing the cards
+  const section = element.querySelector('section.cards-wrapper');
+  if (!section) return;
 
-  // Get all cards: both main and extra
-  const cardDivs = [
-    ...element.querySelectorAll('.card-container > .card-main-container > .card'),
-    ...element.querySelectorAll('.card-extra-container > .card')
+  // Find the card containers
+  const cardMainContainer = section.querySelector('.card-container');
+  const cardExtraContainer = section.querySelector('.card-extra-container');
+  if (!cardMainContainer) return;
+
+  // Get all card elements (main + extra)
+  const cards = [
+    ...cardMainContainer.querySelectorAll('.card'),
+    ...(cardExtraContainer ? cardExtraContainer.querySelectorAll('.card') : [])
   ];
 
-  // Utility to create the card text content cell
-  function createTextCell(details, ribbon) {
-    const cell = document.createElement('div');
-    // Title (always present)
-    const titleEl = details.querySelector('.card--title');
-    if (titleEl) {
-      const strong = document.createElement('strong');
-      strong.textContent = titleEl.textContent.trim();
-      cell.appendChild(strong);
+  // Build table rows: header first
+  const rows = [
+    ['Cards (cards11)']
+  ];
+
+  // For each card, build a row: [image, text cell]
+  cards.forEach((card) => {
+    // Image (first img in card)
+    const img = card.querySelector('img');
+    // Only add row if BOTH image and details exist (no empty cell allowed)
+    const details = card.querySelector('.card--details');
+    if (!img || !details) return;
+    const frag = document.createDocumentFragment();
+    // Title
+    const title = details.querySelector('.card--title');
+    if (title) {
+      const h3 = document.createElement('h3');
+      h3.textContent = title.textContent;
+      frag.appendChild(h3);
     }
     // Description (optional)
-    const descEl = details.querySelector('.card--description');
-    if (descEl) {
+    const desc = details.querySelector('.card--description');
+    if (desc) {
       const p = document.createElement('p');
-      p.textContent = descEl.textContent.trim();
-      cell.appendChild(p);
+      p.textContent = desc.textContent;
+      frag.appendChild(p);
     }
-    // Info (always present)
-    const infoEl = details.querySelector('.card--info');
-    if (infoEl) {
+    // Info (e.g. exploration time)
+    const info = details.querySelector('.card--info');
+    if (info) {
       const span = document.createElement('span');
-      span.textContent = infoEl.textContent.trim();
-      cell.appendChild(span);
+      span.textContent = info.textContent;
+      frag.appendChild(span);
     }
-    // Ribbon (optional, eg. 'Trending')
-    if (ribbon) {
-      const rib = document.createElement('span');
-      rib.textContent = ribbon.textContent.trim();
-      rib.className = 'ribbon';
-      cell.appendChild(rib);
-    }
-    return cell;
-  }
-
-  // Iterate each card to build rows
-  cardDivs.forEach(cardDiv => {
-    const img = cardDiv.querySelector('img'); // always present
-    const details = cardDiv.querySelector('.card--details');
-    const ribbon = cardDiv.querySelector('.ribbon');
-    if (img && details) {
-      rows.push([
-        img,
-        createTextCell(details, ribbon)
-      ]);
-    }
+    rows.push([
+      img,
+      frag
+    ]);
   });
 
-  // Create the block table
-  const block = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(block);
+  // Create the table block
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+
+  // Replace the original section with the table
+  section.replaceWith(table);
 }

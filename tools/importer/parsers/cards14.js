@@ -1,60 +1,53 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // HEADER: Must exactly match the block name from instructions
+  // Find the swiper wrapper containing the cards
+  const swiperWrapper = element.querySelector('.swiper-wrapper');
+  if (!swiperWrapper) return;
+
+  // Get all card anchor elements (each card is an <a> inside .swiper-wrapper)
+  const cardEls = Array.from(swiperWrapper.querySelectorAll('a.swiper-slide'));
+
+  // Table header row
   const headerRow = ['Cards (cards14)'];
-  const cells = [headerRow];
+  const rows = [headerRow];
 
-  // Get the card container
-  const wrapper = element.querySelector('.swiper-wrapper');
-  if (!wrapper) return;
-
-  // Find all direct card children
-  const slides = Array.from(wrapper.children).filter(child => child.matches('a.swiper-slide'));
-
-  slides.forEach((slide) => {
-    // ICON CELL: Use icon span if present, else empty string
-    let iconCell = '';
-    const iconSpan = slide.querySelector('.swiper-slide__flight-icon');
-    if (iconSpan) iconCell = iconSpan;
-
-    // TEXT CELL: Compose all text content in semantic order
-    const textContainer = document.createElement('div');
-
-    // Title (strong)
-    const titleEl = slide.querySelector('.swiper-slide__main');
-    if (titleEl && titleEl.textContent.trim()) {
-      const strong = document.createElement('strong');
-      strong.textContent = titleEl.textContent.trim();
-      textContainer.appendChild(strong);
+  // For each card, build a row: [icon, text content]
+  cardEls.forEach((card) => {
+    // Defensive: find the icon span (first cell)
+    let iconSpan = card.querySelector('.swiper-slide__flight-icon');
+    // If not found, fallback to any span with icon class
+    if (!iconSpan) {
+      iconSpan = card.querySelector('span');
     }
 
-    // Description paragraph (if present)
-    const descEl = slide.querySelector('.swiper-slide__text p');
-    if (descEl && descEl.textContent.trim()) {
-      if (titleEl) textContainer.appendChild(document.createElement('br'));
-      textContainer.appendChild(descEl);
+    // Compose text content (second cell)
+    const textContent = document.createElement('div');
+    // Title
+    const title = card.querySelector('.swiper-slide__main');
+    if (title) {
+      // Clone to avoid removing from source
+      textContent.appendChild(title.cloneNode(true));
+    }
+    // Description: get all <p> inside .swiper-slide__text
+    const descPs = card.querySelectorAll('.swiper-slide__text p');
+    descPs.forEach((desc) => {
+      textContent.appendChild(desc.cloneNode(true));
+    });
+    // Call-to-action: use the card's href as a link if present
+    if (card.href) {
+      const link = document.createElement('a');
+      link.href = card.href;
+      link.textContent = 'Learn more';
+      link.target = card.target || '_self';
+      textContent.appendChild(link);
     }
 
-    // CTA: If slide is a link, include as link at bottom
-    const href = slide.getAttribute('href');
-    if (href) {
-      textContainer.appendChild(document.createElement('br'));
-      const cta = document.createElement('a');
-      cta.href = href;
-      cta.target = slide.getAttribute('target') || '_self';
-      cta.textContent = 'Learn more';
-      textContainer.appendChild(cta);
-    }
-
-    // If no text was found, use fallback: all textContent from slide
-    if (!textContainer.textContent.trim()) {
-      textContainer.textContent = slide.textContent.trim();
-    }
-
-    cells.push([iconCell, textContainer]);
+    // Add row: [icon, textContent]
+    rows.push([iconSpan ? iconSpan.cloneNode(true) : '', textContent]);
   });
 
-  // Create table using WebImporter API, replace original
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(table);
+  // Create the block table
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+  // Replace the original element
+  element.replaceWith(block);
 }

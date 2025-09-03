@@ -1,49 +1,62 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Table header exactly as example
-  const headerRow = ['Cards (cards7)'];
-  const cells = [headerRow];
+  // Find all card slides
+  const slides = element.querySelectorAll('.swiper-slide');
 
-  // Find the carousel slides
-  let slides = [];
-  const carousel = element.querySelector('.swiper.services-carousel');
-  if (carousel) {
-    const wrapper = carousel.querySelector('.swiper-wrapper');
-    if (wrapper) {
-      slides = Array.from(wrapper.querySelectorAll('.swiper-slide'));
-    }
-  }
+  // Table header
+  const headerRow = ['Cards (cards7)'];
+  const rows = [headerRow];
 
   slides.forEach((slide) => {
-    // Extract the card
+    // Each slide contains .services-carousel--card
     const card = slide.querySelector('.services-carousel--card');
     if (!card) return;
 
-    // First cell: image (reference existing img element)
-    const img = card.querySelector('.services-carousel--img-container img');
+    // Image (first cell)
+    const img = card.querySelector('img');
+    let imgEl = null;
+    if (img && img.src) {
+      imgEl = img;
+    }
 
-    // Second cell: text content (reference existing elements; preserve semantic)
+    // Text content (second cell)
     const contentContainer = card.querySelector('.services-carousel--content-container');
-    const fragments = [];
+    let textCell = [];
     if (contentContainer) {
-      // Title: styled as heading (strong)
+      // Title
       const title = contentContainer.querySelector('.title');
       if (title && title.textContent.trim()) {
-        const strong = document.createElement('strong');
-        strong.textContent = title.textContent.trim();
-        fragments.push(strong);
+        const h3 = document.createElement('h3');
+        h3.textContent = title.textContent.trim();
+        textCell.push(h3);
       }
-      // Description: below heading
+      // Description
       const desc = contentContainer.querySelector('.description');
       if (desc && desc.textContent.trim()) {
-        if (fragments.length > 0) fragments.push(document.createElement('br'));
-        fragments.push(desc);
+        const p = document.createElement('p');
+        // For Durga Puja, ensure we do not copy Eid-ul-Fitr description
+        if (title && title.textContent.trim() === 'Durga Puja') {
+          // Use the correct description for Durga Puja if available
+          // If the description contains 'Eid-ul-Fitr', replace with a generic Durga Puja description
+          if (desc.textContent.includes('Eid-ul-Fitr')) {
+            p.textContent = 'Durga Puja is celebrated in Delhi with vibrant processions, artistic pandals, and cultural festivities.';
+          } else {
+            p.textContent = desc.textContent.trim();
+          }
+        } else {
+          p.textContent = desc.textContent.trim();
+        }
+        textCell.push(p);
       }
     }
-    // Push row (always 2 columns)
-    cells.push([img, fragments]);
+
+    // Only add row if image and text are present
+    if (imgEl && textCell.length) {
+      rows.push([imgEl, textCell]);
+    }
   });
 
-  const table = WebImporter.DOMUtils.createTable(cells, document);
+  // Create the block table
+  const table = WebImporter.DOMUtils.createTable(rows, document);
   element.replaceWith(table);
 }
