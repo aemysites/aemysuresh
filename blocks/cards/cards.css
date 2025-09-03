@@ -590,211 +590,6 @@
 }
 
 
-.cards.cards11 {
-  background: linear-gradient(180deg, #eaf3fb 0%, #9096cf 100%);
-  border-radius: 24px;
-  box-shadow: 0 4px 24px rgb(81 86 126 / 8%);
-  padding: 40px 0 36px;
-  margin: 0 auto 40px;
-  max-width: 1160px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cards.cards11 > ul {
-  display: grid;
-  grid-template-columns: 1.35fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 14px;
-  width: 100%;
-  max-width: 1050px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  box-sizing: border-box;
-  align-items: stretch;
-  min-height: 0;
-  height: auto;
-}
-
-.cards.cards11 > ul > li:first-child {
-  grid-column: 1 / 2;
-  grid-row: 1 / span 2;
-  display: flex;
-  flex-direction: column;
-  border-radius: 18px;
-  box-shadow: 0 6px 18px rgb(138 144 201 / 13%);
-  border: 1px solid #e4eaf3;
-  min-height: 0;
-  height: 100%;
-  background: #fff;
-  overflow: hidden;
-}
-
-.cards.cards11 > ul > li:not(:first-child) {
-  overflow: hidden;
-}
-
-.cards.cards11 > ul > li:nth-child(2) {
-.cards.cards11 > ul > li:nth-child(3) {
-.cards.cards11 > ul > li:nth-child(4) {
-.cards.cards11 > ul > li:nth-child(5) {
-  grid-row: 2;
-}
-}
-}
-}
-
-.cards.cards11 > ul > li:nth-child(3) {
-  grid-row: 1;
-}
-
-.cards.cards11 > ul > li:nth-child(4) {
-.cards.cards11 > ul > li:nth-child(5) {
-  grid-row: 2;
-}
-}
-
-.cards.cards11 > ul > li:nth-child(5) {
-  grid-row: 2;
-}
-.cards.cards11 > ul > li:nth-child(n+6) { display: none; }
-
-.cards.cards11 > ul > li .cards-card-image {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 50%;
-  min-height: 0;
-  height: 50%;
-  background: #e6e6e6;
-  border-radius: 18px 18px 0 0;
-  overflow: hidden;
-}
-
-.cards.cards11 .cards-card-image img,
-.cards.cards11 .cards-card-image picture {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 18px 18px 0 0;
-}
-
-.cards.cards11 > ul > li .cards-card-body {
-  background: #fff;
-  border-radius: 0 0 18px 18px;
-  flex: 1 1 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 0;
-  margin: 0;
-  padding: 18px 22px 16px;
-  box-sizing: border-box;
-}
-
-.cards.cards11 > ul > li:first-child .cards-card-body {
-  padding: 24px 30px 22px;
-}
-
-.cards.cards11 > ul > li:not(:first-child) .cards-card-body {
-  padding: 10px 16px 14px;
-}
-
-.cards.cards11 .cards-card-body p strong {
-  display: block;
-  font-size: 1.22rem;
-  color: #282828;
-  font-weight: 800;
-  font-family: var(--body-font-family);
-  margin-bottom: 7px;
-  margin-top: 0;
-  line-height: 1.22;
-}
-
-.cards.cards11 .cards-card-body p {
-  color: #757575;
-  font-size: 1rem;
-  font-family: var(--body-font-family);
-  line-height: 1.48;
-  margin: 0 0 7px;
-}
-
-.cards.cards11 > ul > li:first-child .cards-card-body p:last-child {
-  color: #5d84ef;
-  font-size: 0.97rem;
-  font-weight: 500;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-.cards.cards11 > ul > li:not(:first-child) .cards-card-body p:last-child {
-  color: #f7b048;
-  font-size: 0.97rem;
-  font-weight: 500;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-.cards.cards11 > ul > li {
-  -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-}
-
-@media (width <= 900px) {
-  .cards.cards11 {
-    padding: 16px 0 18px;
-    border-radius: 12px;
-    max-width: 99vw;
-  }
-
-  .cards.cards11 > ul {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 10px;
-    width: 100%;
-    max-width: 99vw;
-    padding: 0 4px;
-    min-height: 0;
-    height: auto;
-  }
-
-  .cards.cards11 > ul > li,
-  .cards.cards11 > ul > li:first-child {
-    height: auto;
-    border-radius: 12px;
-    min-height: 120px;
-    max-width: 98vw;
-  }
-
-  .cards.cards11 > ul > li .cards-card-image {
-    height: 100px;
-    border-radius: 12px 12px 0 0;
-  }
-
-  .cards.cards11 > ul > li:first-child .cards-card-image {
-    height: 120px;
-    flex: none;
-  }
-
-  .cards.cards11 .cards-card-body {
-    padding: 10px 10px 8px;
-    border-radius: 0 0 12px 12px;
-  }
-
-  .cards.cards11 > ul > li:first-child .cards-card-body {
-    padding: 12px 12px 10px;
-  }
-}
-
-.cards.cards11 .cards-card-image img {
-  border-radius: inherit;
-}
-
-
 .cards.cards14 {
   background-image:
     linear-gradient(120deg, rgb(28 40 51 / 54%) 0%, rgb(46 57 87 / 54%) 100%),
@@ -1979,7 +1774,6 @@
   box-shadow: 0 8px 28px rgb(44 62 80 / 13%);
 }
 
-/* Image section */
 .cards.cards10 .cards-card-image {
   position: relative;
   width: 100%;
@@ -2004,7 +1798,6 @@
   border-top-right-radius: 16px;
 }
 
-/* Badge: Use as green pill, slightly darker and tighter */
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(6),
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(7) {
   position: absolute;
@@ -2024,13 +1817,10 @@
   line-height: 1.1;
 }
 
-/* Only show the badge if it contains "Incl of taxes", "+ ₹", or "/night" pattern, otherwise hide (as much as possible via CSS) */
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(6):not([style]),
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(7):not([style]) {
-  /* In practice, unable to filter for content due to constraints */
 }
 
-/* Body content stack, tight vertical space, button at bottom */
 .cards.cards10 > ul > li .cards-card-body {
   display: flex;
   flex-direction: column;
@@ -2043,7 +1833,6 @@
   gap: 0;
 }
 
-/* Title: slightly less bold, max two lines, better clamp for ellipsis */
 .cards.cards10 > ul > li .cards-card-body h3 {
   font-size: 17px;
   font-weight: 500;
@@ -2055,12 +1844,11 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  word-break: break-word;
+  word-break: break-wrap;
   white-space: normal;
   max-height: 2.5em;
 }
 
-/* Subtitle/location */
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(1) {
   font-size: 13px;
   color: #757575;
@@ -2068,7 +1856,6 @@
   line-height: 1.25;
 }
 
-/* Star rating: yellow, tight line spacing */
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(2) {
   font-size: 13px;
   color: #efb810;
@@ -2077,7 +1864,6 @@
   line-height: 1.1;
 }
 
-/* Price, bold, clear vertical space */
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(5) {
   font-size: 15px;
   font-weight: 600;
@@ -2086,7 +1872,6 @@
   line-height: 1.22;
 }
 
-/* Muted tax/fees line, always under price, not in badge */
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(7),
 .cards.cards10 > ul > li .cards-card-body p:nth-of-type(8) {
   font-size: 12px;
@@ -2101,7 +1886,6 @@
   z-index: 1;
 }
 
-/* Book button container at bottom, no excessive margin */
 .cards.cards10 > ul > li .cards-card-body p.button-container {
   width: 100%;
   display: flex;
@@ -2113,7 +1897,6 @@
   background: none;
 }
 
-/* Book button: pill, blue, reduced padding */
 .cards.cards10 > ul > li .cards-card-body .button {
   background: #0039d7;
   color: #fff;
@@ -2136,7 +1919,6 @@
   background: #0140ff;
 }
 
-/* Responsive tweaks */
 @media (width <= 900px) {
   .cards.cards10 > ul {
     gap: 8px;
@@ -2180,7 +1962,6 @@
   }
 }
 
-/* Custom scroll styling */
 .cards.cards10 > ul::-webkit-scrollbar {
   height: 8px;
 }
@@ -2193,4 +1974,179 @@
 .cards.cards10 > ul::-webkit-scrollbar-track {
   background: #fafafa;
   border-radius: 4px;
+}
+
+
+.cards.cards11 {
+  background: linear-gradient(180deg, #e6f0fb 0%, #7d89b8 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgb(81 86 126 / 8%);
+  padding: 40px 0 36px;
+  margin: 0 auto 40px;
+  max-width: 1160px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Grid: lock rows to equal height for perfect top alignment */
+.cards.cards11 > ul {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  grid-template-rows: 160px 160px;
+  gap: 12px 14px;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+/* Large card: spans both rows, fills height of two cards */
+.cards.cards11 > ul > li:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgb(138 144 201 / 13%);
+  background: #fff;
+  overflow: hidden;
+  height: 100%;
+  min-height: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* Small cards: fill row height */
+.cards.cards11 > ul > li:not(:first-child) {
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgb(81 86 126 / 6%);
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* Card image: same height for all for top alignment */
+.cards.cards11 > ul > li .cards-card-image {
+  width: 100%;
+  height: 85px;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* Large card image: matches small card image height */
+.cards.cards11 > ul > li:first-child .cards-card-image {
+  height: 85px;
+}
+
+/* Images: fill container */
+.cards.cards11 .cards-card-image img,
+.cards.cards11 .cards-card-image picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+/* Card body: fills remaining space, reduce padding for balance */
+.cards.cards11 > ul > li .cards-card-body {
+  background: #fff;
+  border-radius: 0 0 18px 18px;
+  margin: 0;
+  padding: 12px 16px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Large card body: balanced padding */
+.cards.cards11 > ul > li:first-child .cards-card-body {
+  padding: 16px 20px 12px;
+}
+
+/* Title styling */
+.cards.cards11 .cards-card-body h3 {
+  font-size: 1.22rem;
+  color: #1a253c;
+  font-weight: 700;
+  margin: 0 0 6px;
+  line-height: 1.22;
+}
+
+/* Description styling */
+.cards.cards11 .cards-card-body p {
+  color: #44546a;
+  font-size: 1rem;
+  line-height: 1.48;
+  margin: 0 0 7px;
+}
+
+/* Exploration time styling */
+.cards.cards11 > ul > li .cards-card-body p:last-child {
+  color: #FBAA1A;
+  font-size: 0.97rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+/* Responsive: single column, shrink images and bodies */
+@media (width <= 900px) {
+  .cards.cards11 {
+    padding: 16px 0 18px;
+    border-radius: 12px;
+    max-width: 99vw;
+  }
+
+  .cards.cards11 > ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 10px;
+    padding: 0 4px;
+    max-width: 99vw;
+  }
+
+  .cards.cards11 > ul > li,
+  .cards.cards11 > ul > li:first-child {
+    border-radius: 12px;
+    min-height: 100px;
+    max-width: 98vw;
+    height: auto;
+  }
+
+  .cards.cards11 > ul > li .cards-card-image {
+    height: 52px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .cards.cards11 > ul > li:first-child .cards-card-image {
+    height: 52px;
+  }
+
+  .cards.cards11 .cards-card-body,
+  .cards.cards11 > ul > li:first-child .cards-card-body {
+    padding: 7px 8px 6px;
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+.cards.cards11 > ul > li:nth-child(n+6) {
+  display: none;
 }
