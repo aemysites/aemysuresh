@@ -65,84 +65,6 @@
 }
 
 
-.table.table1 {
-  width: 100%;
-  background: transparent;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0;
-}
-
-.table.table1 table {
-  border-collapse: separate;
-  border-spacing: 24px 0;
-  table-layout: fixed;
-  background: transparent;
-  margin: 0 auto;
-  max-width: 880px;
-  width: auto;
-}
-
-.table.table1 thead {
-  display: table-header-group;
-  width: 100%;
-}
-
-.table.table1 thead tr {
-  height: 54px;
-  background: transparent;
-}
-
-.table.table1 th {
-  background: linear-gradient(90deg, #ececec 0%, #f3f5f6 100%);
-  border-radius: 14px;
-  border: none;
-  box-shadow: none;
-  height: 40px;
-  min-width: 160px;
-  max-width: 260px;
-  width: 240px;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  vertical-align: middle;
-  font-weight: 400;
-}
-
-.table.table1 th,
-.table.table1 td,
-.table.table1 tr {
-  border: none;
-  box-shadow: none;
-}
-
-.table.table1 tbody,
-.table.table1 td {
-  display: none;
-}
-
-@media (width <= 900px) {
-  .table.table1 table {
-    max-width: 100%;
-    border-spacing: 0 16px;
-  }
-
-  .table.table1 th {
-    width: 100%;
-    min-width: 0;
-    max-width: none;
-    font-size: var(--body-font-size-xs);
-    border-radius: 12px;
-  }
-
-  .table.table1 thead tr {
-    height: auto;
-  }
-}
-
-
 .table.table13 {
   display: flex;
   justify-content: center;
@@ -170,7 +92,6 @@
   padding: 0;
 }
 
-/* Simulate 5 horizontal cards with rounded corners and subtle gradient on right cards */
 .table.table13 th {
   display: block;
   width: 1200px;
@@ -179,12 +100,6 @@
   margin: 0 auto;
   border-radius: 32px;
   box-shadow: none;
-
-  /* 
-    - Cards are arranged using a multi-stop linear gradient.
-    - Each card gets rounded corners using a mask-image with a grid of 5 rounded rectangles.
-    - We use a very subtle gradient from #f3f4f6 to #fff for cards 2-5.
-  */
   background:
     linear-gradient(
       to right,
@@ -220,17 +135,10 @@
       #fff 97%,
       transparent 100%
     );
-
-  /* Simulate gaps between cards */
   background-size: 20% 100%, 20% 100%;
   background-repeat: repeat-x, repeat-x;
-
-  /* Mask image to simulate all cards with rounded corners using SVG data uri */
-  mask-image: url('data:image/svg+xml;utf8,<svg width="1200" height="140" viewBox="0 0 1200 140" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="200" height="140" rx="32" fill="black"/><rect x="250" y="0" width="200" height="140" rx="32" fill="black"/><rect x="500" y="0" width="200" height="140" rx="32" fill="black"/><rect x="750" y="0" width="200" height="140" rx="32" fill="black"/><rect x="1000" y="0" width="200" height="140" rx="32" fill="black"/></svg>');
   mask-image: url('data:image/svg+xml;utf8,<svg width="1200" height="140" viewBox="0 0 1200 140" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="200" height="140" rx="32" fill="black"/><rect x="250" y="0" width="200" height="140" rx="32" fill="black"/><rect x="500" y="0" width="200" height="140" rx="32" fill="black"/><rect x="750" y="0" width="200" height="140" rx="32" fill="black"/><rect x="1000" y="0" width="200" height="140" rx="32" fill="black"/></svg>');
   mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
 
@@ -277,10 +185,60 @@
     background-size: 20% 100%, 20% 100%;
     background-repeat: repeat-x, repeat-x;
     mask-image: url('data:image/svg+xml;utf8,<svg width="700" height="64" viewBox="0 0 700 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="120" height="64" rx="14" fill="black"/><rect x="145" y="0" width="120" height="64" rx="14" fill="black"/><rect x="290" y="0" width="120" height="64" rx="14" fill="black"/><rect x="435" y="0" width="120" height="64" rx="14" fill="black"/><rect x="580" y="0" width="120" height="64" rx="14" fill="black"/></svg>');
-    mask-image: url('data:image/svg+xml;utf8,<svg width="700" height="64" viewBox="0 0 700 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="120" height="64" rx="14" fill="black"/><rect x="145" y="0" width="120" height="64" rx="14" fill="black"/><rect x="290" y="0" width="120" height="64" rx="14" fill="black"/><rect x="435" y="0" width="120" height="64" rx="14" fill="black"/><rect x="580" y="0" width="120" height="64" rx="14" fill="black"/></svg>');
     mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    mask-size: 100% 100%;
     mask-size: 100% 100%;
   }
+}
+
+
+.table.table1 {
+  /* Flex container for horizontal centering and spacing */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 88px;
+  padding: 0;
+  background: none;
+  position: relative;
+}
+
+/* Use an SVG background to visually create three pill shapes side by side.
+   This works even if the block is empty, and maintains separation and spacing. */
+.table.table1::before {
+  display: block;
+  content: "";
+  width: 75%;
+  max-width: 900px;
+  min-width: 320px;
+  height: 48px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: 
+    url('data:image/svg+xml;utf8,<svg width="100%" height="48" viewBox="0 0 600 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" rx="14" width="180" height="48" fill="url(%23g1)"/><rect x="210" y="0" rx="14" width="180" height="48" fill="url(%23g1)"/><rect x="420" y="0" rx="14" width="180" height="48" fill="url(%23g1)"/><defs><linearGradient id="g1" x1="0" y1="0" x2="180" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="%23edeff0"/><stop offset="1" stop-color="%23f6f7f8"/></linearGradient></defs></svg>')
+    center/contain no-repeat;
+  box-sizing: border-box;
+}
+
+@media (width <= 900px) {
+  .table.table1::before {
+    width: 96%;
+    min-width: 0;
+    height: 40px;
+    background-size: 100% 40px;
+  }
+}
+
+@media (width <= 600px) {
+  .table.table1::before {
+    width: 98%;
+    min-width: 0;
+    height: 32px;
+    background-size: 100% 32px;
+  }
+}
+
+/* Hide the empty table content so only the visual pills are shown */
+.table.table1 table {
+  display: none;
 }
