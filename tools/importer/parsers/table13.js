@@ -1,20 +1,24 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // 1. Block name header row
+  // Defensive: Ensure element exists and is a container
+  if (!element || !element.children || element.children.length === 0) return;
+
+  // Table header row as specified
   const headerRow = ['Table (table13)'];
 
-  // 2. Get all the immediate child divs, referencing the existing elements
-  const cellDivs = Array.from(element.querySelectorAll(':scope > div'));
-  // Edge case: If no cells, just make an empty cell
-  const contentRow = cellDivs.length > 0 ? [cellDivs] : [''];
+  // Get all immediate children (these are the columns visually)
+  const columns = Array.from(element.children);
 
-  // 3. Table structure (2 rows, 1 column each)
-  const tableRows = [
-    headerRow,
-    contentRow,
-  ];
+  // Compose a single row with all columns as cells
+  // Each column is an empty div, but we reference the actual element for resilience
+  const dataRow = [columns];
 
-  // 4. Create table and replace
-  const blockTable = WebImporter.DOMUtils.createTable(tableRows, document);
-  element.replaceWith(blockTable);
+  // Compose the table cells array
+  const cells = [headerRow, dataRow];
+
+  // Create the block table
+  const block = WebImporter.DOMUtils.createTable(cells, document);
+
+  // Replace the original element with the new block table
+  element.replaceWith(block);
 }

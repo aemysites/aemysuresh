@@ -1,28 +1,28 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Get the immediate child columns
-  const columns = Array.from(element.querySelectorAll(':scope > div'));
-  const numColumns = columns.length;
-
-  // Build table manually for correct colspan handling
-  const table = document.createElement('table');
-
-  // Create header row with one <th> with correct colspan
-  const headerTr = document.createElement('tr');
-  const th = document.createElement('th');
-  th.textContent = 'Columns (columns2)';
-  if (numColumns > 1) th.setAttribute('colspan', numColumns);
-  headerTr.appendChild(th);
-  table.appendChild(headerTr);
-
-  // Create data row with each column content as a cell
-  const row = document.createElement('tr');
-  columns.forEach(col => {
-    const td = document.createElement('td');
-    td.appendChild(col);
-    row.appendChild(td);
-  });
-  table.appendChild(row);
-
+  // Always use the block name as the header row
+  const headerRow = ['Columns (columns2)'];
+  // Get all immediate children (columns)
+  const columns = Array.from(element.children);
+  // Only include columns that have actual content (not empty)
+  const contentRow = columns
+    .map(col => {
+      // If column has content, clone all children into a fragment
+      if (col.textContent.trim() || col.querySelector('*')) {
+        const frag = document.createDocumentFragment();
+        Array.from(col.childNodes).forEach(node => frag.appendChild(node.cloneNode(true)));
+        return frag;
+      }
+      // If column is truly empty, skip it (do not add empty columns)
+      return null;
+    })
+    .filter(cell => cell !== null);
+  // Only add content row if there is at least one non-empty column
+  const cells = [headerRow];
+  if (contentRow.length > 0) {
+    cells.push(contentRow);
+  }
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+  // Replace original element
   element.replaceWith(table);
 }

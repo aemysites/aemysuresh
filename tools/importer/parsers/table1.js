@@ -1,16 +1,19 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // The header row is a single column with the block name
+  if (!element) return;
+
+  // Header row as required
   const headerRow = ['Table (table1)'];
-  // The content row should have three columns, each from the immediate children
-  const columns = Array.from(element.querySelectorAll(':scope > div'));
-  // Defensive: If less than 3 columns, fill the remaining with empty divs
-  while (columns.length < 3) {
-    columns.push(document.createElement('div'));
+
+  // Extract all text content from the element (including children)
+  const text = element.textContent.trim();
+
+  // Only add a data row if there is actual content
+  const tableData = [headerRow];
+  if (text.length > 0) {
+    tableData.push([text]);
   }
-  // Compose the table rows: first row is header (single cell), then one row (three cells)
-  const rows = [headerRow, columns];
-  // Create and replace with the table block
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+
+  const block = WebImporter.DOMUtils.createTable(tableData, document);
+  element.replaceWith(block);
 }

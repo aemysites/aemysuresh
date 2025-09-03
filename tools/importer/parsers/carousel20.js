@@ -1,47 +1,61 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // 1. Table Header: exact match
+  // Helper to create an <img> from background-image style
+  function createImgFromBg(div) {
+    const bg = div.getAttribute('data-bg-image') || '';
+    if (!bg) return null;
+    const img = document.createElement('img');
+    img.src = bg;
+    img.alt = div.getAttribute('title') || '';
+    return img;
+  }
+
+  // Get the image container
+  const imgContainer = element.querySelector('.slider--img-container');
+  let imageDiv = null;
+  if (imgContainer) {
+    imageDiv = imgContainer.querySelector('.slider-img');
+  }
+  const imgEl = imageDiv ? createImgFromBg(imageDiv) : null;
+
+  // Get the heading/title
+  let heading = null;
+  if (imgContainer) {
+    const headingDiv = imgContainer.querySelector('.slider-heading');
+    if (headingDiv) {
+      const h2 = headingDiv.querySelector('.slider-heading--location');
+      if (h2 && h2.textContent.trim()) {
+        heading = document.createElement('h2');
+        heading.textContent = h2.textContent.trim();
+      }
+    }
+  }
+
+  // Get the photo credit
+  let credit = null;
+  if (imgContainer) {
+    const creditDiv = imgContainer.querySelector('.slider--credit-text');
+    if (creditDiv && creditDiv.textContent.trim()) {
+      credit = document.createElement('div');
+      credit.textContent = creditDiv.textContent.trim();
+      credit.style.marginTop = '1em';
+    }
+  }
+
+  // Compose the text cell
+  const textCellContent = [];
+  if (heading) textCellContent.push(heading);
+  if (credit) textCellContent.push(credit);
+
+  // Table header
   const headerRow = ['Carousel (carousel20)'];
+  // Table row for this slide
+  const slideRow = [imgEl, textCellContent];
 
-  // 2. Build content rows
-  // Find the image from .slider-img background
-  let imgUrl = '';
-  const imgDiv = element.querySelector('.slider--img-container .slider-img');
-  if (imgDiv && imgDiv.style.backgroundImage) {
-    // Extract url from: background-image: url("...")
-    const m = imgDiv.style.backgroundImage.match(/url\(["']?(.+?)["']?\)/);
-    if (m) imgUrl = m[1];
-  }
-  let imageEl = null;
-  if (imgUrl) {
-    imageEl = document.createElement('img');
-    imageEl.src = imgUrl;
-    imageEl.alt = '';
-  }
+  // Build table
+  const cells = [headerRow, slideRow];
+  const block = WebImporter.DOMUtils.createTable(cells, document);
 
-  // Text column: collect heading (if present), then credit (if present)
-  const textNodes = [];
-  // Heading (if present)
-  const location = element.querySelector('.slider-heading--location');
-  if (location && location.textContent.trim()) {
-    // Use an <h2> as in the original
-    textNodes.push(location);
-  }
-
-  // Credit (optional)
-  const credit = element.querySelector('.slider--credit-text');
-  if (credit && credit.textContent.trim()) {
-    // Use the existing element
-    textNodes.push(credit);
-  }
-
-  // Compose the table rows: image in col0, text (if any) in col1 (else empty string)
-  const row = [imageEl, textNodes.length > 0 ? textNodes : ''];
-  const cells = [headerRow, row];
-
-  // 3. Create table
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-
-  // 4. Replace original element
-  element.replaceWith(table);
+  // Replace the original element
+  element.replaceWith(block);
 }

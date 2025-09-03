@@ -1,43 +1,50 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: find the carousel content
-  const swiper = element.querySelector('.swiper.image-carousel');
-  if (!swiper) return;
-  const slides = swiper.querySelectorAll('.swiper-slide');
-  const cells = [];
+  // Defensive: Find the carousel wrapper containing the cards
+  const carousel = element.querySelector('.swiper-wrapper');
+  if (!carousel) return;
+
+  // Get all card slides
+  const slides = carousel.querySelectorAll(':scope > .swiper-slide');
+  if (!slides.length) return;
+
   // Table header
-  cells.push(['Cards (cards8)']);
+  const headerRow = ['Cards (cards8)'];
+  const rows = [headerRow];
+
   slides.forEach((slide) => {
-    // Find the card element
+    // Each slide contains a card
     const card = slide.querySelector('.image-carousel--card');
     if (!card) return;
-    // Image (first cell)
-    let img = null;
-    const imgContainer = card.querySelector('.image-carousel--img-container');
+
+    // Image container
+    const imgContainer = card.querySelector('.image-carousel--img-container img');
+    // Defensive: Only add if image exists
+    let imgEl = null;
     if (imgContainer) {
-      img = imgContainer.querySelector('img'); // reference, do NOT clone
+      imgEl = imgContainer;
     }
-    // Text (title, second cell)
-    let titleEl = null;
-    const contentContainer = card.querySelector('.image-carousel--content-container');
-    if (contentContainer) {
-      const titleDiv = contentContainer.querySelector('.title');
-      if (titleDiv) {
-        // Use element, but wrap in <strong>, as in example, if not already
-        const strong = document.createElement('strong');
-        strong.textContent = titleDiv.textContent.trim();
-        titleEl = strong;
-      }
+
+    // Title container
+    const titleContainer = card.querySelector('.image-carousel--content-container .title');
+    let textEl = null;
+    if (titleContainer) {
+      // Create a heading element for the title
+      const heading = document.createElement('h3');
+      heading.textContent = titleContainer.textContent.trim();
+      textEl = heading;
     }
-    // Add row only if at least image or title exists
-    if (img || titleEl) {
-      cells.push([
-        img,
-        titleEl
-      ]);
-    }
+
+    // Add row: [image, title]
+    rows.push([
+      imgEl,
+      textEl
+    ]);
   });
-  // Build and replace
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(table);
+
+  // Create the block table
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+
+  // Replace the original element
+  element.replaceWith(block);
 }

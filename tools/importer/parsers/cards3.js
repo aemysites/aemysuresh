@@ -1,22 +1,40 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Block name header
-  const cells = [['Cards (cards3)']];
+  // Find the main image inside the block
+  const img = element.querySelector('img');
+  if (!img) return;
 
-  // The provided HTML contains one large image which is likely a visual summary of the cards,
-  // but no individual card markup. We'll treat the image as the single card for this block.
+  // Use the block name as the header row (single column)
+  const headerRow = ['Cards (cards3)'];
 
-  const wrapper = element.querySelector('.flights_stats__wrapper');
-  if (wrapper) {
-    const picture = wrapper.querySelector('picture');
-    if (picture) {
-      // Use the picture as the image cell
-      // There is no associated text, so the second cell is left empty
-      cells.push([picture, '']);
-    }
-  }
+  // Create a div to hold all card details as proper HTML (no markdown)
+  const cardDetailsDiv = document.createElement('div');
 
-  // Create the block table and replace the original element
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(block);
+  // Add each card detail as a separate block element
+  const details = [
+    ['2,300+', 'Daily Flights'],
+    ['90+', 'Domestic Destinations'],
+    ['40+', 'International Destinations'],
+    ['750 Mn+', 'Happy Customers'],
+    ['400+', 'Fleet Strong'],
+  ];
+
+  details.forEach(([title, desc]) => {
+    const wrapper = document.createElement('div');
+    const strong = document.createElement('strong');
+    strong.textContent = title;
+    wrapper.appendChild(strong);
+    wrapper.appendChild(document.createTextNode(' ' + desc));
+    cardDetailsDiv.appendChild(wrapper);
+  });
+
+  // Build the card row: image in first cell, all text in second cell
+  const cardRow = [img, cardDetailsDiv];
+
+  // Build the table: header row, then card row (2 columns)
+  const cells = [headerRow, cardRow];
+  const table = WebImporter.DOMUtils.createTable(cells, document);
+
+  // Replace the original element with the block table
+  element.replaceWith(table);
 }
