@@ -470,15 +470,21 @@
           "section": "section-4"
         }
       ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 22,
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
+          "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
+          "uuid": "5cb71fd6-00-3a8584d0f1e2b03d0dee50c532054ba4e78528b5",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+        }
+      ]
     }
   ],
   "outliers": [
-    {
-      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
-      "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
-      "uuid": "5cb71fd6-00-3a8584d0f1e2b03d0dee50c532054ba4e78528b5",
-      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
-    },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/delhi.html",
       "urlHash": "5cb71fd68d6725cf9445436fb02627fe45f78440",
