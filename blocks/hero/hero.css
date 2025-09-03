@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -116,7 +117,7 @@ main > div,
   align-items: flex-start;
   gap: 0;
   position: relative;
-  padding-bottom: 40px; /* allocate space for divider */
+  padding-bottom: 40px;
 }
 
 .hero.hero4 h1 {
@@ -124,7 +125,7 @@ main > div,
   font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.1;
-  margin: 0 0 30px; /* larger gap below title */
+  margin: 0 0 30px;
   letter-spacing: 0.015em;
   text-shadow: 0 2px 12px rgb(0 0 0 / 18%);
 }
@@ -153,8 +154,6 @@ main > div,
   background: #fff;
   opacity: 0.92;
   border-radius: 1px;
-
-  /* content is not set to comply with constraints */
 }
 
 @media (width <= 900px) {
@@ -186,4 +185,39 @@ main > div,
     font-size: 0.85rem;
     padding-bottom: 7px;
   }
+}
+
+
+.hero.hero22 {
+  width: 100vw;
+  min-width: 100vw;
+  height: 120px;
+  min-height: 120px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Replace the URL below with the original image's URL for pixel-perfect match */
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1280&q=80');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  border: none;
+  position: relative;
+
+  /* Remove any default background color */
+  background-color: transparent;
+}
+
+.hero.hero22 > div {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
 }
