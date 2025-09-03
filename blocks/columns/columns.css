@@ -445,30 +445,41 @@
 }
 
 .columns.columns8 > div > div:not(:first-child) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 24px 28px;
-  align-items: stretch;
-  min-width: 440px;
-  max-width: 800px;
-  width: 100%;
-  padding: 8px 0;
-  min-height: 260px;
-  box-sizing: border-box;
-  position: relative;
-  border-radius: 14px;
-  border: 1.5px solid #e6f0fe;
-  background-color: #f4f7fd;
-  background-image:
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0% 0% / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 0% 100% / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 0% / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 100%)) 100% 100% / calc(50% - 18px) calc(50% - 12px),
-    linear-gradient(to right, transparent 0%, transparent 24px, #e6f0fe 24px, #e6f0fe calc(100% - 24px), transparent calc(100% - 24px), transparent 100%) center / 100% 2px,
-    linear-gradient(to bottom, transparent 0%, transparent 28px, #e6f0fe 28px, #e6f0fe calc(100% - 28px), transparent calc(100% - 28px), transparent 100%) center / 2px 100%;
-  background-repeat: no-repeat;
-}
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px 0;
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    padding: 0;
+    min-height: 220px;
+    border-radius: 14px;
+    border: 1.5px solid #e6f0fe;
+    background-color: #f4f7fd;
+    background-image:
+      linear-gradient(#fff, #fff) 0px 0px / 100% calc(25% - 6px),
+      linear-gradient(#fff, #fff) 0px 33.33% / 100% calc(25% - 6px),
+      linear-gradient(#fff, #fff) 0px 66.66% / 100% calc(25% - 6px),
+      linear-gradient(#fff, #fff) 0px 100% / 100% calc(25% - 6px),
+      linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 25%,
+        #e6f0fe 25%,
+        #e6f0fe 25.5%,
+        transparent 25.5%,
+        transparent 50%,
+        #e6f0fe 50%,
+        #e6f0fe 50.5%,
+        transparent 50.5%,
+        transparent 75%,
+        #e6f0fe 75%,
+        #e6f0fe 75.5%,
+        transparent 75.5%,
+        transparent 100%
+      );
+    background-repeat: no-repeat;
+  }
 
 @media (width <= 900px) {
   .columns.columns8 {
@@ -533,80 +544,6 @@
         transparent 100%
       ) 0 0 / 100% 100%;
     background-repeat: no-repeat;
-  }
-}
-
-
-.columns.columns2 {
-  background: #fff;
-  margin: 0;
-  padding: 0 2vw;
-  box-sizing: border-box;
-}
-
-.columns.columns2 > div {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10vw;
-  margin-top: 8px;
-  margin-bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.columns.columns2 > div > div {
-  display: block;
-  position: relative;
-  background: linear-gradient(90deg, #e6e7e9 0%, #f5f6fa 100%);
-  border-radius: 999px;
-  min-height: 16px;
-  height: 16px;
-  min-width: 160px;
-  box-shadow:
-    0 8px 14px -6px rgb(180 184 196 / 19%);
-  margin: 0;
-  padding: 0;
-  border: none;
-  overflow: visible;
-  flex-shrink: 0;
-}
-
-.columns.columns2 > div > div:first-child {
-  flex: 1 1 0;
-  min-width: 480px;
-  max-width: 900px;
-  background: linear-gradient(90deg, #e6e7e9 0%, #f5f6fa 100%);
-}
-
-.columns.columns2 > div > div:last-child {
-  flex: 0 0 220px;
-  min-width: 160px;
-  max-width: 320px;
-  background: linear-gradient(90deg, #f5f6fa 0%, #e6e7e9 100%);
-}
-
-@media (width <= 700px) {
-  .columns.columns2 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .columns.columns2 > div {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 14px;
-    margin-top: 4px;
-  }
-
-  .columns.columns2 > div > div {
-    width: 100%;
-    min-width: 0;
-    max-width: unset;
-    height: 12px;
-    min-height: 12px;
-    border-radius: 12px;
   }
 }
 
@@ -698,7 +635,6 @@
     grid-auto-rows: 1fr;
   }
 
-  /* Top row cards: Stretch & Kotak - ensure equal heights and side-by-side alignment */
   .columns.columns18 > div > div:nth-child(1),
   .columns.columns18 > div > div:nth-child(2) {
     align-self: stretch;
@@ -708,7 +644,6 @@
     justify-content: stretch;
   }
 
-  /* Hotels card - must align flush bottom with BluChip card */
   .columns.columns18 > div > div:nth-child(3) {
     grid-column: 1 / span 2;
     grid-row: 2 / 3;
@@ -720,7 +655,6 @@
     justify-content: stretch;
   }
 
-  /* BluChip card - right, should match exact height of combined left stack */
   .columns.columns18 > div > div:nth-child(4) {
     grid-column: 3 / 4;
     grid-row: 1 / span 2;
@@ -731,11 +665,8 @@
     flex-direction: column;
     justify-content: flex-start;
   }
-
-  /* Ensure the grid tracks expand based on content, then stretch all cards */
 }
 
-/* Stack vertically on mobile/tablet */
 @media (width <= 899px) {
   .columns.columns18 > div {
     display: flex;
@@ -757,7 +688,6 @@
   }
 }
 
-/* Card base styles */
 .columns.columns18 > div > div {
   border-radius: 18px;
   box-shadow: 0 4px 24px 0 rgb(44 50 96 / 9%);
@@ -768,7 +698,6 @@
   position: relative;
 }
 
-/* Card background colors */
 .columns.columns18 > div > div:nth-child(1) {
   background: #FFE3CF;
   color: #181922;
@@ -791,10 +720,84 @@
   padding-bottom: 0;
 }
 
-/* Tighter padding/gaps for small screens */
 @media (width <= 600px) {
   .columns.columns18 > div > div {
     padding: 10px 6px 8px;
     border-radius: 12px;
+  }
+}
+
+
+.columns.columns2 {
+  position: relative;
+  width: 100%;
+  height: 22px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+/* Pill shapes as pseudo-elements */
+.columns.columns2::before,
+.columns.columns2::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-52%);
+  height: 14px;
+  border-radius: 7px;
+  z-index: 1;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+/* Left pill: wide, gradient, inset from left edge */
+.columns.columns2::before {
+  left: 10px;
+  width: 37vw;
+  min-width: 180px;
+  max-width: 510px;
+  background: linear-gradient(90deg, #e3e3e3 0%, #edeff1 100%);
+}
+
+/* Right pill: short, lighter, inset from right edge */
+.columns.columns2::after {
+  right: 10px;
+  width: 5vw;
+  min-width: 42px;
+  max-width: 80px;
+  background: linear-gradient(90deg, #edeff1 20%, #fafbfc 100%);
+}
+
+/* Responsive adjustments */
+@media (width <= 700px) {
+  .columns.columns2 {
+    height: 13px;
+  }
+
+  .columns.columns2::before,
+  .columns.columns2::after {
+    height: 7px;
+    border-radius: 3.5px;
+    top: 51%;
+  }
+
+  .columns.columns2::before {
+    left: 5px;
+    width: 47vw;
+    min-width: 56px;
+    max-width: 130px;
+  }
+
+  .columns.columns2::after {
+    right: 5px;
+    width: 13vw;
+    min-width: 18px;
+    max-width: 32px;
+    background: linear-gradient(90deg, #edeff1 30%, #fafbfc 100%);
   }
 }
