@@ -501,6 +501,19 @@
           "section": "section-1"
         }
       ]
+    },
+    {
+      "name": "new",
+      "cluster": 25,
+      "instances": [
+        {
+          "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
+          "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
+          "uuid": "addaec9a-10-247eac70c2fe15cee497852045bf2a7093b0b3b6",
+          "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]",
+          "section": "section-1"
+        }
+      ]
     }
   ],
   "outliers": [
@@ -660,13 +673,6 @@
       "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
       "uuid": "addaec9a-09-34c33152fa064c0d1c7a2d93175ecafc1a587f21",
       "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]"
-    },
-    {
-      "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
-      "urlHash": "addaec9a4b587eb9a92478bbcbd4520a38d43a14",
-      "uuid": "addaec9a-10-247eac70c2fe15cee497852045bf2a7093b0b3b6",
-      "xpath": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]",
-      "section": "section-1"
     },
     {
       "url": "https://beta-s6web-prod-skyplus6e.goindigo.in/indian-destinations/mumbai.html",
