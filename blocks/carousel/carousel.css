@@ -1165,3 +1165,15 @@
     height: 9px;
   }
 }
+
+
+.carousel {
+  position: relative;
+  border-radius: 22px;
+  box-shadow: 0 5px 24px 0 rgb(34 53 148 / 10%);
+  background: linear-gradient(108deg, #1747c6 80%, #3174f6 100%);
+  min-height: 340px;
+  max-width: 960px;
+  margin: 36px auto 0;
+  overflow: hidden;
+}
